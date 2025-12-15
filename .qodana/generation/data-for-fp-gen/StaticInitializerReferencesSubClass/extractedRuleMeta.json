@@ -1,0 +1,36 @@
+{
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "ruleName": "Static initializer references subclass",
+    "description": "Reports classes that refer to their subclasses in static initializers or static fields. Such references can cause JVM-level deadlocks in multithreaded environment, when one thread tries to load the superclass and another thread tries to load the subclass at the same time. Example: 'class Parent {\n    static final Child field = new Child();\n  }\n  class Child extends Parent { }' Inspection ID: StaticInitializerReferencesSubClass",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TARGZ = new TarArchiverFactory(TarCompression.GZIP);\n\n    /**",
+            "            }\n        };\n        public static final Permalink LAST_FAILED_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+            "            }\n        };\n        public static final Permalink LAST_COMPLETED_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+            "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TAR = new TarArchiverFactory(TarCompression.NONE);\n\n    /**",
+            "     * This singleton is safe because {@link Unsecured} is stateless.\n     */\n    public static final AuthorizationStrategy UNSECURED = new Unsecured();\n\n    public static final class Unsecured extends AuthorizationStrategy implements Serializable {",
+            "    }\n\n    public static final FileSystemProvisioner DEFAULT = new Default();\n\n    public static final class Default extends FileSystemProvisioner {",
+            "        };\n\n        public static final Permalink LAST_UNSTABLE_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+            "     * The default naming strategy which does not restrict the name of a job.\n     */\n    public static final ProjectNamingStrategy DEFAULT_NAMING_STRATEGY = new DefaultProjectNamingStrategy();\n\n    /**",
+            "     * Convenient singleton instance, since this {@link RetentionStrategy} is stateless.\n     */\n    public static final Always INSTANCE = new Always();\n\n    /**",
+            "        };\n\n        public static final Permalink LAST_UNSUCCESSFUL_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+            "            }\n        };\n        public static final Permalink LAST_STABLE_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+            "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TARGZ = new TarArchiverFactory(TarCompression.GZIP);\n\n    /**",
+            "equalIndicatorV2": "2acdbded9ccf0b72"
+        },
+        "after": {
+            "message": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+            "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TARGZ = new TarArchiverFactory(TarCompression.GZIP);\n\n    /**",
+            "equalIndicatorV2": "2acdbded9ccf0b72"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "ruleId": "UnnecessaryLocalVariable",
+    "ruleName": "Redundant local variable",
+    "description": "Reports unnecessary local variables that add nothing to the comprehensibility of a method, including: Local variables that are immediately returned. Local variables that are immediately assigned to another variable and then not used. Local variables that always have the same value as another local variable or parameter. Example: 'boolean yes() {\n    boolean b = true;\n    return b;\n  }' After the quick-fix is applied: 'boolean yes() {\n    return true;\n  }' Configure the inspection: Use the Ignore immediately returned or thrown variables option to ignore immediately returned or thrown variables. Some coding styles suggest using such variables for clarity and ease of debugging. Use the Ignore variables which have an annotation option to ignore annotated variables. Inspection ID: UnnecessaryLocalVariable",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "        @Override\n        public String toString() {\n            String sb = \"LoadStatisticsSnapshot{\" + \"definedExecutors=\" + definedExecutors +\n                    \", onlineExecutors=\" + onlineExecutors +\n                    \", connectingExecutors=\" + connectingExecutors +",
+            "            }\n            String xml2 = dom.asXML();\n            ToolInstallation clone = (ToolInstallation) Timer.get().submit(() -> Jenkins.XSTREAM2.fromXML(xml2)).get();\n            return clone;\n        }",
+            "            public InputStream open(OpenOption... openOptions) throws IOException {\n                String rootPath = determineRootPath();\n                InputStream inputStream = FilePath.newInputStreamDenyingSymlinkAsNeeded(f, rootPath, openOptions);\n                return inputStream;\n            }",
+            "    @SuppressFBWarnings(value = {\"DMI_RANDOM_USED_ONLY_ONCE\", \"PREDICTABLE_RANDOM\"}, justification = \"https://github.com/spotbugs/spotbugs/issues/1539 and doesn't need to be secure, we're just not hardcoding a 'wrong' password\")\n    private static String generatePassword() {\n        String password = new Random().ints(20, 33, 127).mapToObj(i -> (char) i)\n                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();\n        return password;",
+            "            clazz = ((Descriptor) it).clazz;\n\n        String buf = Stapler.getCurrentRequest().getContextPath() + Jenkins.VIEW_RESOURCE_PATH + '/' +\n                clazz.getName().replace('.', '/').replace('$', '/') +\n                '/' + path;",
+            "                    }\n\n                    Integer exitStatus = channel.getExitStatus();\n                    return exitStatus;\n",
+            "        if (channel == null) {\n            File file = new File(remote);\n            InputStream inputStream = newInputStreamDenyingSymlinkAsNeeded(file, rootPathString, openOptions);\n            return inputStream;\n        }",
+            "            fileName = system.getString(\"file\");\n        }\n        File dataFile = new File(fileName);\n        return dataFile;\n    }",
+            "        @Override\n        public String toString() {\n            String sb = \"DisplayExecutor{\" + \"displayName='\" + displayName + '\\'' +\n                    \", url='\" + url + '\\'' +\n                    \", executor=\" + executor +",
+            "        @Override\n        public String toString() {\n            String sb = \"StrategyState{\" + \"label=\" + label +\n                    \", snapshot=\" + snapshot +\n                    \", plannedCapacitySnapshot=\" + plannedCapacitySnapshot +"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Local variable 'sb' is redundant",
+            "contextSnippet": "        @Override\n        public String toString() {\n            String sb = \"LoadStatisticsSnapshot{\" + \"definedExecutors=\" + definedExecutors +\n                    \", onlineExecutors=\" + onlineExecutors +\n                    \", connectingExecutors=\" + connectingExecutors +",
+            "equalIndicatorV2": "269dfc642d62dcac"
+        },
+        "after": {
+            "message": "Local variable 'sb' is redundant",
+            "contextSnippet": "        @Override\n        public String toString() {\n            String sb = \"LoadStatisticsSnapshot{\" + \"definedExecutors=\" + definedExecutors +\n                    \", onlineExecutors=\" + onlineExecutors +\n                    \", connectingExecutors=\" + connectingExecutors +",
+            "equalIndicatorV2": "269dfc642d62dcac"
+        }
+    }
+}

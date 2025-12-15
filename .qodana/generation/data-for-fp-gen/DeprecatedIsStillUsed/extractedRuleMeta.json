@@ -1,0 +1,36 @@
+{
+    "ruleId": "DeprecatedIsStillUsed",
+    "ruleName": "Deprecated member is still used",
+    "description": "Reports deprecated classes, methods, and fields that are used in your code nonetheless. Example: 'class MyCode {\n    @Deprecated\n    void oldMethod() {}// warning: \"Deprecated member is still used\"\n\n    void newMethod() {\n      oldMethod(); // forgotten usage\n    }\n  }' Usages within deprecated elements are ignored. NOTE: Due to performance reasons, a non-private member is checked only when its name rarely occurs in the project. Inspection ID: DeprecatedIsStillUsed",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "     */\n    @Deprecated\n    public Iterable<FutureLoad> predict(Computer computer, long start, long end) {\n        return Collections.emptyList();\n    }",
+            "         */\n        @Deprecated\n        public String getShellOrDefault() {\n            if (shell == null) {\n                return Functions.isWindows() ? \"sh\" : \"/bin/sh\";",
+            "     */\n    @Deprecated\n    public static boolean isAnonymous(@NonNull org.acegisecurity.Authentication authentication) {\n        return isAnonymous2(authentication.toSpring());\n    }",
+            "     */\n    @Deprecated\n    public abstract int computeIdleExecutors();\n\n    /**",
+            "     */\n    @Deprecated\n    public static class CloudList extends Jenkins.CloudList {\n        public CloudList(Jenkins h) {\n            super(h);",
+            "     */\n    @Deprecated\n    public String getSecretKey() {\n        return secretKey;\n    }",
+            "     */\n    @Deprecated\n    public static final PermissionGroup HUDSON_PERMISSIONS = new PermissionGroup(Hudson.class, hudson.model.Messages._Hudson_Permissions_Title());\n    /**\n     * {@link Permission} that represents the God-like access. Equivalent of Unix root.",
+            "\n    @Deprecated\n    public void onChangeLogParsed(AbstractBuild<?, ?> build, BuildListener listener, ChangeLogSet<?> changelog) throws Exception {\n        if (Util.isOverridden(SCMListener.class, getClass(), \"onChangeLogParsed\", Run.class, SCM.class, TaskListener.class, ChangeLogSet.class)) {\n            onChangeLogParsed(build, build.getProject().getScm(), listener, changelog);",
+            " */\n@Deprecated\npublic interface SCMedItem extends BuildableItem {\n    /**\n     * Gets the {@link SCM} for this item.",
+            "    /** @deprecated use {@link #getChildJobs} */\n    @Deprecated\n    public List<AbstractProject> getChildProjects(AbstractProject owner) {\n        return getChildProjects(owner == null ? null : owner.getParent());\n    }",
+            "     */\n    @Deprecated\n    public Action getProjectAction(AbstractProject job) {\n        return null;\n    }"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Deprecated member 'predict' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public Iterable<FutureLoad> predict(Computer computer, long start, long end) {\n        return Collections.emptyList();\n    }",
+            "equalIndicatorV2": "cb7d2e076ced4ed8"
+        },
+        "after": {
+            "message": "Deprecated member 'predict' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public Iterable<FutureLoad> predict(Computer computer, long start, long end) {\n        return Collections.emptyList();\n    }",
+            "equalIndicatorV2": "cb7d2e076ced4ed8"
+        }
+    }
+}

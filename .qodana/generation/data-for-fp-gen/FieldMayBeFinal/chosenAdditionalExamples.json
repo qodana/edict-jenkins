@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Field 'parent' may be 'final'",
+            "contextSnippet": "     * Parent to delegate to. Can be null.\n     */\n    private ACL parent;\n\n    public SparseACL(ACL parent) {",
+            "equalIndicatorV2": "2624757676f31916"
+        },
+        {
+            "message": "Field 'openOptions' may be 'final'",
+            "contextSnippet": "        private final boolean useDefaultExcludes;\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        Scanner(String includes, String excludes, boolean useDefaultExcludes, String verificationRoot, OpenOption... openOptions) {",
+            "equalIndicatorV2": "64b7c6e47947583f"
+        },
+        {
+            "message": "Field 'length' may be 'final'",
+            "contextSnippet": "         * length of this artifact for files.\n         */\n        private String length;\n\n        Artifact(SerializableArtifact clone) {",
+            "equalIndicatorV2": "2852dd2ddd86bfef"
+        },
+        {
+            "message": "Field 'url' may be 'final'",
+            "contextSnippet": "\n    static class UrlPluginCopier implements PluginCopier {\n        private String url;\n\n        UrlPluginCopier(String url) {",
+            "equalIndicatorV2": "a3964b1076ee6361"
+        },
+        {
+            "message": "Field 'openOptions' may be 'final'",
+            "contextSnippet": "\n        private boolean useDefaultExcludes = true;\n        private OpenOption[] openOptions;\n\n        public Glob(String includes, String excludes) {",
+            "equalIndicatorV2": "578f967a31e6583b"
+        },
+        {
+            "message": "Field 'discarder' may be 'final'",
+            "contextSnippet": "public class SimpleGlobalBuildDiscarderStrategy extends GlobalBuildDiscarderStrategy {\n\n    private BuildDiscarder discarder;\n\n    @DataBoundConstructor",
+            "equalIndicatorV2": "1afc536cfc1ee5c6"
+        },
+        {
+            "message": "Field 'LOGGER' may be 'final'",
+            "contextSnippet": "public abstract class PartialHeader extends Header {\n\n    private static Logger LOGGER = Logger.getLogger(PartialHeader.class.getName());\n\n    /**",
+            "equalIndicatorV2": "09b0a7bac6331864"
+        },
+        {
+            "message": "Field 'lastNlines' may be 'final'",
+            "contextSnippet": "    private long seek(Run<?, ?> run) throws IOException {\n        class RingBuffer {\n            long[] lastNlines = new long[n];\n            int ptr = 0;\n",
+            "equalIndicatorV2": "5540f38d9ef8ee3d"
+        },
+        {
+            "message": "Field 'changeSetLock' may be 'final'",
+            "contextSnippet": "     * No need to lock the entire AbstractBuild on change set calculation\n     */\n    private transient Object changeSetLock = new Object();\n\n    /**",
+            "equalIndicatorV2": "1b4d63415c96f3a7"
+        },
+        {
+            "message": "Field 'filtered' may be 'final'",
+            "contextSnippet": "    private List<QueueItem> queueItems;\n\n    private boolean filtered;\n\n    public BuildQueueWidget(@NonNull String ownerUrl, @NonNull List<QueueItem> queueItems) {",
+            "equalIndicatorV2": "774b1aecea247344"
+        }
+    ],
+    "negativeExamples": []
+}

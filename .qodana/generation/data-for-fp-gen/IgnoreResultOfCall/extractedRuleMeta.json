@@ -1,0 +1,36 @@
+{
+    "ruleId": "IgnoreResultOfCall",
+    "ruleName": "Result of method call ignored",
+    "description": "Reports method calls whose result is ignored. For many methods, ignoring the result is perfectly legitimate, but for some it is almost certainly an error. Examples of methods where ignoring the result is likely an error include 'java.io.inputStream.read()', which returns the number of bytes actually read, and any method on 'java.lang.String' or 'java.math.BigInteger'. These methods do not produce side-effects and thus pointless if their result is ignored. The calls to the following methods are inspected: Simple getters (which do nothing except return a field) Methods specified in the settings of this inspection Methods annotated with 'org.jetbrains.annotations.Contract(pure=true)' Methods annotated with .*.'CheckReturnValue' Methods in a class or package annotated with 'javax.annotation.CheckReturnValue' Optionally, all non-library methods Calls to methods annotated with Error Prone's or AssertJ's '@CanIgnoreReturnValue' annotation are not reported. Use the inspection settings to specify the classes to check. Methods are matched by name or name pattern using Java regular expression syntax. For classes, use fully-qualified names. Each entry applies to both the class and all its inheritors. Inspection ID: IgnoreResultOfCall",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+            "                         */\n                        cc.getGenericSuperclass();\n                        cc.getGenericInterfaces();\n\n                        /*",
+            "                                    || method.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || method.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                method.getAnnotatedParameterTypes();\n                                method.getParameterAnnotations();\n                            }",
+            "        public void writePollingLogTo(long offset, XMLOutput out) throws IOException {\n            // TODO: resurrect compressed log file support\n            getPollingLogText().writeHtmlTo(offset, out.asWriter());\n        }\n",
+            "    @Deprecated\n    public R getFirstBuild() {\n        size();\n        return first;\n    }",
+            "         * which will have a more useful message than something we make up here.\n         */\n        path.toFile().setWritable(true);\n    }\n",
+            "        private void process(File f) {\n            if (f.isFile()) {\n                f.setExecutable(true, false);\n            } else {\n                File[] kids = f.listFiles();",
+            "        final CharBuffer charBuffer = CharBuffer.wrap(cbuf, off, len);\n        ByteBuffer byteBuffer = charset.encode(charBuffer);\n        channel.write(byteBuffer);\n    }\n",
+            "                                    || f.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                f.getAnnotations();\n                                f.getAnnotatedType().getAnnotations();\n                                resolve(f.getType(), encountered);\n                            }",
+            "    static {\n        try {\n            new Font(\"SansSerif\", Font.BOLD, 18).toString();\n        } catch (Throwable t) {\n            awtProblemCause = t;",
+            "            for (File file : listParentFiles(f)) {\n                if (file.getName().startsWith(f.getName() + WorkspaceList.COMBINATOR)) {\n                    Util.deleteRecursive(file.toPath(), path -> path.toFile());\n                }\n            }"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+            "contextSnippet": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+            "equalIndicatorV2": "88f18a5223b37195"
+        },
+        "after": {
+            "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+            "contextSnippet": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+            "equalIndicatorV2": "88f18a5223b37195"
+        }
+    }
+}

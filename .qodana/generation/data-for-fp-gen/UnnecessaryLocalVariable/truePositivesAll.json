@@ -1,0 +1,582 @@
+[
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'sb' is redundant",
+      "markdown": "Local variable `sb` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/LoadStatistics.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 585,
+            "startColumn": 20,
+            "charOffset": 21748,
+            "charLength": 2,
+            "snippet": {
+              "text": "sb"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 583,
+            "startColumn": 1,
+            "charOffset": 21676,
+            "charLength": 275,
+            "snippet": {
+              "text": "        @Override\n        public String toString() {\n            String sb = \"LoadStatisticsSnapshot{\" + \"definedExecutors=\" + definedExecutors +\n                    \", onlineExecutors=\" + onlineExecutors +\n                    \", connectingExecutors=\" + connectingExecutors +"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "269dfc642d62dcac",
+      "equalIndicator/v1": "2b7b6b317ec4d175711ad421912da81576413e1f3218972562e198d1d00ca9d9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'clone' is redundant",
+      "markdown": "Local variable `clone` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/ToolInstallation.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 250,
+            "startColumn": 30,
+            "charOffset": 9943,
+            "charLength": 5,
+            "snippet": {
+              "text": "clone"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 248,
+            "startColumn": 1,
+            "charOffset": 9861,
+            "charLength": 208,
+            "snippet": {
+              "text": "            }\n            String xml2 = dom.asXML();\n            ToolInstallation clone = (ToolInstallation) Timer.get().submit(() -> Jenkins.XSTREAM2.fromXML(xml2)).get();\n            return clone;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9772a1d84bd6d19e",
+      "equalIndicator/v1": "2333251eff5889ec59c578ab3e0d493150c77a124e6a3553ea1f82364905276c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'inputStream' is redundant",
+      "markdown": "Local variable `inputStream` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/util/VirtualFile.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 751,
+            "startColumn": 29,
+            "charOffset": 32411,
+            "charLength": 11,
+            "snippet": {
+              "text": "inputStream"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 749,
+            "startColumn": 1,
+            "charOffset": 32244,
+            "charLength": 303,
+            "snippet": {
+              "text": "            public InputStream open(OpenOption... openOptions) throws IOException {\n                String rootPath = determineRootPath();\n                InputStream inputStream = FilePath.newInputStreamDenyingSymlinkAsNeeded(f, rootPath, openOptions);\n                return inputStream;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "caa2bc64d88fe462",
+      "equalIndicator/v1": "a87bf1cd59a1d6e155cb7996f8a3178939f7f326cb8361ab4273546832930c30"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'password' is redundant",
+      "markdown": "Local variable `password` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/HudsonPrivateSecurityRealm.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 983,
+            "startColumn": 16,
+            "charOffset": 38096,
+            "charLength": 8,
+            "snippet": {
+              "text": "password"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 981,
+            "startColumn": 1,
+            "charOffset": 37805,
+            "charLength": 493,
+            "snippet": {
+              "text": "    @SuppressFBWarnings(value = {\"DMI_RANDOM_USED_ONLY_ONCE\", \"PREDICTABLE_RANDOM\"}, justification = \"https://github.com/spotbugs/spotbugs/issues/1539 and doesn't need to be secure, we're just not hardcoding a 'wrong' password\")\n    private static String generatePassword() {\n        String password = new Random().ints(20, 33, 127).mapToObj(i -> (char) i)\n                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();\n        return password;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "338d0fc76290692c",
+      "equalIndicator/v1": "2d98341ecb5a0220802bc7ba8de527b9024ef562fb87b02d11be3df30b77cc4a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'buf' is redundant",
+      "markdown": "Local variable `buf` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Functions.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1681,
+            "startColumn": 16,
+            "charOffset": 62499,
+            "charLength": 3,
+            "snippet": {
+              "text": "buf"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1679,
+            "startColumn": 1,
+            "charOffset": 62438,
+            "charLength": 246,
+            "snippet": {
+              "text": "            clazz = ((Descriptor) it).clazz;\n\n        String buf = Stapler.getCurrentRequest().getContextPath() + Jenkins.VIEW_RESOURCE_PATH + '/' +\n                clazz.getName().replace('.', '/').replace('$', '/') +\n                '/' + path;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3300dff368addb96",
+      "equalIndicator/v1": "338be6bbbb5bd80ca08b09b1cdb02ae73b03699d0b8771df4e0e6d88e7d67536"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'exitStatus' is redundant",
+      "markdown": "Local variable `exitStatus` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/SSHCLI.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 122,
+            "startColumn": 29,
+            "charOffset": 5651,
+            "charLength": 10,
+            "snippet": {
+              "text": "exitStatus"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 120,
+            "startColumn": 1,
+            "charOffset": 5600,
+            "charLength": 128,
+            "snippet": {
+              "text": "                    }\n\n                    Integer exitStatus = channel.getExitStatus();\n                    return exitStatus;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "32bfbdd430e310ac",
+      "equalIndicator/v1": "e71e2ded334a2ee7ab391da9ab38b0bd7ac36eaa7cb25a3226889f829340fb06"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'inputStream' is redundant",
+      "markdown": "Local variable `inputStream` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2192,
+            "startColumn": 25,
+            "charOffset": 83129,
+            "charLength": 11,
+            "snippet": {
+              "text": "inputStream"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2190,
+            "startColumn": 1,
+            "charOffset": 83032,
+            "charLength": 225,
+            "snippet": {
+              "text": "        if (channel == null) {\n            File file = new File(remote);\n            InputStream inputStream = newInputStreamDenyingSymlinkAsNeeded(file, rootPathString, openOptions);\n            return inputStream;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "71f0412385cf8dc0",
+      "equalIndicator/v1": "cb9ff0d83ca0fbd7b7fc63fcadc7840b3c697f24e803c1241e56ff15d15440cb"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'dataFile' is redundant",
+      "markdown": "Local variable `dataFile` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/monitor/OperatingSystemEndOfLifeAdminMonitor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 177,
+            "startColumn": 14,
+            "charOffset": 7569,
+            "charLength": 8,
+            "snippet": {
+              "text": "dataFile"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 175,
+            "startColumn": 1,
+            "charOffset": 7497,
+            "charLength": 133,
+            "snippet": {
+              "text": "            fileName = system.getString(\"file\");\n        }\n        File dataFile = new File(fileName);\n        return dataFile;\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f1d6ea63bca2428e",
+      "equalIndicator/v1": "f8cf50131fe05b492dd4e763db49a2c11e140cd4c7e90b80d79e503692c9173e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'sb' is redundant",
+      "markdown": "Local variable `sb` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Computer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1742,
+            "startColumn": 20,
+            "charOffset": 62707,
+            "charLength": 2,
+            "snippet": {
+              "text": "sb"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1740,
+            "startColumn": 1,
+            "charOffset": 62635,
+            "charLength": 228,
+            "snippet": {
+              "text": "        @Override\n        public String toString() {\n            String sb = \"DisplayExecutor{\" + \"displayName='\" + displayName + '\\'' +\n                    \", url='\" + url + '\\'' +\n                    \", executor=\" + executor +"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1f560cd2d3a6b909",
+      "equalIndicator/v1": "0674f92a5250864d1b61f56e012dd9ed06fc6096b5d16d9d1b6d88a1c265c11a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryLocalVariable",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Local variable 'sb' is redundant",
+      "markdown": "Local variable `sb` is redundant"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/NodeProvisioner.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 608,
+            "startColumn": 20,
+            "charOffset": 25083,
+            "charLength": 2,
+            "snippet": {
+              "text": "sb"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 606,
+            "startColumn": 1,
+            "charOffset": 25011,
+            "charLength": 238,
+            "snippet": {
+              "text": "        @Override\n        public String toString() {\n            String sb = \"StrategyState{\" + \"label=\" + label +\n                    \", snapshot=\" + snapshot +\n                    \", plannedCapacitySnapshot=\" + plannedCapacitySnapshot +"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "003d5c583f176039",
+      "equalIndicator/v1": "de1ea85bcbf4d3bd2f347c391eff8bba7df68a16e067d7c39a29f19d14c7e80c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

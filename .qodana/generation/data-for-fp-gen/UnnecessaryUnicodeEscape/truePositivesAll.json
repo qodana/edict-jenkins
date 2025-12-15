@@ -1,0 +1,698 @@
+[
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u2018' can be replaced with '‘'",
+      "markdown": "Unicode escape sequence `\\u2018` can be replaced with '''"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 80,
+            "startColumn": 39,
+            "charOffset": 2827,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u2018"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 78,
+            "startColumn": 1,
+            "charOffset": 2618,
+            "charLength": 420,
+            "snippet": {
+              "text": "                    AbstractItem project = Items.findNearest(AbstractItem.class, job_s, jenkins);\n                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "48522a4c9e6ebc84",
+      "equalIndicator/v1": "2234ef68eb92fb7764a11cc08ba6ac2e81225ba08d5abd5cc52ada4c3a3e3c44"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u002E' can be replaced with '.'",
+      "markdown": "Unicode escape sequence `\\u002E` can be replaced with '.'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/DomainValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2274,
+            "startColumn": 23,
+            "charOffset": 116965,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u002E"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2272,
+            "startColumn": 1,
+            "charOffset": 116829,
+            "charLength": 271,
+            "snippet": {
+              "text": "            char lastChar = input.charAt(length - 1); // fetch original last char\n            switch (lastChar) {\n                case '\\u002E': // \".\" full stop\n                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "7921e2c4193e5674",
+      "equalIndicator/v1": "0ce4920c20baa202de09c342add6663b6ed679b6e7e6fa9729d2e276c5788553"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u2018' can be replaced with '‘'",
+      "markdown": "Unicode escape sequence `\\u2018` can be replaced with '''"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 81,
+            "startColumn": 94,
+            "charOffset": 2957,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u2018"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 79,
+            "startColumn": 1,
+            "charOffset": 2716,
+            "charLength": 340,
+            "snippet": {
+              "text": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e4c280b1070b752c",
+      "equalIndicator/v1": "89dd4e46062beb918117f75655553e79b766880c88f37362ff44a77ff7ae5a22"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\uFF61' can be replaced with '｡'",
+      "markdown": "Unicode escape sequence `\\uFF61` can be replaced with '｡'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/DomainValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2277,
+            "startColumn": 23,
+            "charOffset": 117123,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\uFF61"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2275,
+            "startColumn": 1,
+            "charOffset": 116991,
+            "charLength": 268,
+            "snippet": {
+              "text": "                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop\n                case '\\uFF61': // halfwidth ideographic full stop\n                    return ascii + \".\"; // restore the missing stop\n                default:"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "df897e525b0462b8",
+      "equalIndicator/v1": "13296786b699b4f137b054801dcf67fcb33d807abbbddad5be77193ae5d9d9b6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\uFF0E' can be replaced with '．'",
+      "markdown": "Unicode escape sequence `\\uFF0E` can be replaced with '．'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/DomainValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2276,
+            "startColumn": 23,
+            "charOffset": 117069,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\uFF0E"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2274,
+            "startColumn": 1,
+            "charOffset": 116943,
+            "charLength": 291,
+            "snippet": {
+              "text": "                case '\\u002E': // \".\" full stop\n                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop\n                case '\\uFF61': // halfwidth ideographic full stop\n                    return ascii + \".\"; // restore the missing stop"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e5f47af7e1e2de2f",
+      "equalIndicator/v1": "986098bdc6c24a3d9b54e1ec1c312156dd74722e53dab34bd965c0f161553acc"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u57f7' can be replaced with '執'",
+      "markdown": "Unicode escape sequence `\\u57f7` can be replaced with '執'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/diagnostics/URICheckEncodingMonitor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 41,
+            "startColumn": 34,
+            "charOffset": 1255,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u57f7"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 39,
+            "startColumn": 1,
+            "charOffset": 1123,
+            "charLength": 217,
+            "snippet": {
+              "text": "        Jenkins.get().checkPermission(Jenkins.ADMINISTER);\n        // expected is non-ASCII String\n        final String expected = \"\\u57f7\\u4e8b\";\n        final String value = fixEmpty(request.getParameter(\"value\"));\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "442901a6d99d4f8a",
+      "equalIndicator/v1": "6bdeb2bc407faee5d637f57ad3eb40628d397f927b4faacfb43c072fd1d044a0"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u4e8b' can be replaced with '事'",
+      "markdown": "Unicode escape sequence `\\u4e8b` can be replaced with '事'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/diagnostics/URICheckEncodingMonitor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 41,
+            "startColumn": 40,
+            "charOffset": 1261,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u4e8b"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 39,
+            "startColumn": 1,
+            "charOffset": 1123,
+            "charLength": 217,
+            "snippet": {
+              "text": "        Jenkins.get().checkPermission(Jenkins.ADMINISTER);\n        // expected is non-ASCII String\n        final String expected = \"\\u57f7\\u4e8b\";\n        final String value = fixEmpty(request.getParameter(\"value\"));\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c7787ef34c3a4624",
+      "equalIndicator/v1": "80b81dc383c0d56577d2e06b451dd18673e6fcf55884b904c6d3ad129b72c076"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u2019' can be replaced with '’'",
+      "markdown": "Unicode escape sequence `\\u2019` can be replaced with '''"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 81,
+            "startColumn": 102,
+            "charOffset": 2965,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u2019"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 79,
+            "startColumn": 1,
+            "charOffset": 2716,
+            "charLength": 340,
+            "snippet": {
+              "text": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "01912256c72f5a70",
+      "equalIndicator/v1": "12c12a78891d1a634e4cd6b15a5dcaeae1f15367e0efc73febbcdcf4fe2df37e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u2018' can be replaced with '‘'",
+      "markdown": "Unicode escape sequence `\\u2018` can be replaced with '''"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 81,
+            "startColumn": 53,
+            "charOffset": 2916,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u2018"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 79,
+            "startColumn": 1,
+            "charOffset": 2716,
+            "charLength": 340,
+            "snippet": {
+              "text": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b6b239269c8ded79",
+      "equalIndicator/v1": "ac9a2617fb643923828c3acf1ea00da2d708a148bb694deed634a79e1ceb2c66"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u2019' can be replaced with '’'",
+      "markdown": "Unicode escape sequence `\\u2019` can be replaced with '''"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 80,
+            "startColumn": 58,
+            "charOffset": 2846,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u2019"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 78,
+            "startColumn": 1,
+            "charOffset": 2618,
+            "charLength": 420,
+            "snippet": {
+              "text": "                    AbstractItem project = Items.findNearest(AbstractItem.class, job_s, jenkins);\n                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b4c1ac4e0138db95",
+      "equalIndicator/v1": "19e4f058fa457955c66cd2a8da6694c595c3edb83224f108dc965cbf92404602"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u2019' can be replaced with '’'",
+      "markdown": "Unicode escape sequence `\\u2019` can be replaced with '''"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 81,
+            "startColumn": 61,
+            "charOffset": 2924,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u2019"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 79,
+            "startColumn": 1,
+            "charOffset": 2716,
+            "charLength": 340,
+            "snippet": {
+              "text": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f06c366f229cbd37",
+      "equalIndicator/v1": "4504aa25155170c79e3d0f5b1a6ff9f14e1a57a5adc2037c3219a876c7d57ef7"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryUnicodeEscape",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Unicode escape sequence '\\u3002' can be replaced with '。'",
+      "markdown": "Unicode escape sequence `\\u3002` can be replaced with '。'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/DomainValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2275,
+            "startColumn": 23,
+            "charOffset": 117013,
+            "charLength": 6,
+            "snippet": {
+              "text": "\\u3002"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2273,
+            "startColumn": 1,
+            "charOffset": 116911,
+            "charLength": 255,
+            "snippet": {
+              "text": "            switch (lastChar) {\n                case '\\u002E': // \".\" full stop\n                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop\n                case '\\uFF61': // halfwidth ideographic full stop"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "884240f922be0291",
+      "equalIndicator/v1": "dcb732f153f2ad570ff9af516dfb80c8c9ffeef3ef3caac4b5ae07b2b7f01910"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

@@ -1,0 +1,756 @@
+[
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 95,
+            "startColumn": 17,
+            "charOffset": 3432,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 93,
+            "startColumn": 1,
+            "charOffset": 3336,
+            "charLength": 129,
+            "snippet": {
+              "text": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3d282f450a61d083",
+      "equalIndicator/v1": "eb8eac40d998f4e397847c5f06f236139a456f1de065839e1d8920fb3552c713"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/install/SetupWizard.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 607,
+            "startColumn": 21,
+            "charOffset": 28238,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 605,
+            "startColumn": 1,
+            "charOffset": 28097,
+            "charLength": 219,
+            "snippet": {
+              "text": "                    // not found or otherwise unavailable\n                    LOGGER.log(Level.FINE, e.getMessage(), e);\n                    continue updateSiteList;\n                }\n            } catch (Exception e) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0ea9d21f33566df2",
+      "equalIndicator/v1": "09da56bc1cb28f4cfcafe5934d98c1d45b761dc3223bb51cf3130498be3b3946"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Fingerprinter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 515,
+            "startColumn": 21,
+            "charOffset": 18649,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 513,
+            "startColumn": 1,
+            "charOffset": 18509,
+            "charLength": 168,
+            "snippet": {
+              "text": "                } catch (AccessDeniedException e) {\n                    // Need to log in to access this job, so ignore\n                    continue;\n                }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "141a23c81eb02c32",
+      "equalIndicator/v1": "064fcaa33a06ad8af9e127220218756e91dc0dd197018cd9a9033bc045a49160"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/DeleteViewCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 91,
+            "startColumn": 17,
+            "charOffset": 3050,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 89,
+            "startColumn": 1,
+            "charOffset": 2954,
+            "charLength": 129,
+            "snippet": {
+              "text": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "afad44526d51845b",
+      "equalIndicator/v1": "db3fcb07c52b667af03f6e1c167c11906b9c6846cedf52d411452f7e51c55a27"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ConnectNodeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 75,
+            "startColumn": 17,
+            "charOffset": 2768,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 73,
+            "startColumn": 1,
+            "charOffset": 2672,
+            "charLength": 129,
+            "snippet": {
+              "text": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6926dd94836e6861",
+      "equalIndicator/v1": "c9e5be218808cd1e3f1ea5a6766bb98ebc0d949a3935884d2b796d0210055787"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/DisconnectNodeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 92,
+            "startColumn": 17,
+            "charOffset": 3378,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 90,
+            "startColumn": 1,
+            "charOffset": 3260,
+            "charLength": 151,
+            "snippet": {
+              "text": "                stderr.println(node_s + \": \" + e.getMessage());\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b8c5943c8eb8557e",
+      "equalIndicator/v1": "d6fcdd19aba846db78aab981e6d38acc1b649ef35d3001055c9a6c86253d1974"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/OfflineNodeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 84,
+            "startColumn": 17,
+            "charOffset": 3185,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 82,
+            "startColumn": 1,
+            "charOffset": 3067,
+            "charLength": 151,
+            "snippet": {
+              "text": "                stderr.println(node_s + \": \" + e.getMessage());\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e08ae1380a8eff15",
+      "equalIndicator/v1": "48df82729592b74f5ccec06326e4c6a4f590d80eaeb35f0ba4125c927d257409"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Fingerprint.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 742,
+            "startColumn": 29,
+            "charOffset": 25371,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 740,
+            "startColumn": 1,
+            "charOffset": 25245,
+            "charLength": 190,
+            "snippet": {
+              "text": "                            }\n                            // ignore malformed text like \"1-10-50\"\n                            continue;\n                        }\n                    } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "97a563dda9f4538c",
+      "equalIndicator/v1": "2847c3c0fdd41964169199e492995b08af70e7b519d00efff42c280133b2a143"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/OnlineNodeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 67,
+            "startColumn": 17,
+            "charOffset": 2382,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 65,
+            "startColumn": 1,
+            "charOffset": 2286,
+            "charLength": 129,
+            "snippet": {
+              "text": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ccd94d85947bcb44",
+      "equalIndicator/v1": "d9704e29be3e0d577f6892c572ae2812671055e390e69cffd96e2efca75195b6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/DeleteNodeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 80,
+            "startColumn": 17,
+            "charOffset": 2631,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 78,
+            "startColumn": 1,
+            "charOffset": 2535,
+            "charLength": 129,
+            "snippet": {
+              "text": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8e5d5bacaa508478",
+      "equalIndicator/v1": "74db2f4bad514598e85e4ab6b2618077509c5d85858e908d8f78f09790a0d4f6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/Jenkins.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 5287,
+            "startColumn": 17,
+            "charOffset": 195457,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 5285,
+            "startColumn": 1,
+            "charOffset": 195286,
+            "charLength": 260,
+            "snippet": {
+              "text": "                // item. This is to prevent an validation warning if the user\n                // sets the displayName to what the existing display name is\n                continue;\n            }\n            else if (displayName.equals(item.getDisplayName())) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "086b868e7692beb0",
+      "equalIndicator/v1": "3a35d857f13a98731226916ea16cf8c11b50b0417d3c9f415f87480c2bf451d5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Items.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 350,
+            "startColumn": 17,
+            "charOffset": 13695,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 348,
+            "startColumn": 1,
+            "charOffset": 13564,
+            "charLength": 260,
+            "snippet": {
+              "text": "            } else if (itemFullNameA[i].equals(groupFullNameA[i])) {\n                // identical up to this point\n                continue;\n            } else {\n                // first mismatch; insert ../ for rest of groupFullName, then rest of itemFullName"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "fa47483ccb13f41a",
+      "equalIndicator/v1": "a34b3130c98aede752505073714d95a32b468f9776cc0fc90519acb83d37534f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "UnnecessaryContinue",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'continue' is unnecessary as the last statement in a loop",
+      "markdown": "`continue` is unnecessary as the last statement in a loop"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/DeleteJobCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 82,
+            "startColumn": 17,
+            "charOffset": 2731,
+            "charLength": 8,
+            "snippet": {
+              "text": "continue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 80,
+            "startColumn": 1,
+            "charOffset": 2635,
+            "charLength": 129,
+            "snippet": {
+              "text": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5a73312ebcdaa278",
+      "equalIndicator/v1": "9ac37b05ea4d8681aab42c5b42081adac86369a0777f4ae03e106c787b575ac1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

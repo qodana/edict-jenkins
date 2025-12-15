@@ -1,0 +1,1336 @@
+[
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/Graph.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 71,
+            "startColumn": 23,
+            "charOffset": 2566,
+            "charLength": 12,
+            "snippet": {
+              "text": "defaultScale"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 69,
+            "startColumn": 1,
+            "charOffset": 2471,
+            "charLength": 152,
+            "snippet": {
+              "text": "    private final int defaultWidth;\n    private final int defaultHeight;\n    private final int defaultScale = 1;\n    private volatile JFreeChart graph;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5ba5f3530480d63c",
+      "equalIndicator/v1": "02bc88cc7403f4551b0addf26bdde45e4392d2a755ffa77ab0cec7feda893f6c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1765,
+            "startColumn": 27,
+            "charOffset": 72310,
+            "charLength": 17,
+            "snippet": {
+              "text": "sizeOf_kinfo_proc"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1763,
+            "startColumn": 1,
+            "charOffset": 72256,
+            "charLength": 238,
+            "snippet": {
+              "text": "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X."
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a009d59fd8f53339",
+      "equalIndicator/v1": "4071cec2ebdb46b3ed82f99d8533c242e4a2c33db45836f6cc5d4ee8414e13f1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1804,
+            "startColumn": 27,
+            "charOffset": 74083,
+            "charLength": 21,
+            "snippet": {
+              "text": "kinfo_proc_pid_offset"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1802,
+            "startColumn": 1,
+            "charOffset": 73932,
+            "charLength": 301,
+            "snippet": {
+              "text": "        private static final long sizeOf_kinfo_proc_32 = 768;\n        private static final long sizeOf_kinfo_proc_64 = 1088;\n        private final int kinfo_proc_pid_offset;\n        private static final int kinfo_proc_pid_offset_32 = 40;\n        private static final int kinfo_proc_pid_offset_64 = 72;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "637277cfb1b1ccc9",
+      "equalIndicator/v1": "248575961d87cdfc0ab31640e9c9ef752fd7c46c68c4e005688b70f359b947df"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ClassicPluginStrategy.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 557,
+            "startColumn": 28,
+            "charOffset": 22824,
+            "charLength": 4,
+            "snippet": {
+              "text": "_for"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 555,
+            "startColumn": 1,
+            "charOffset": 22704,
+            "charLength": 173,
+            "snippet": {
+              "text": "         * This classloader is created for this plugin. Useful during debugging.\n         */\n        private final File _for;\n\n        private List<Dependency> dependencies;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3a5922808e4ff1bc",
+      "equalIndicator/v1": "0ebf9f5e959804037fd371ede51b3c58ff64999737f387fb439c58f29de7107f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/FormValidation.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 626,
+            "startColumn": 30,
+            "charOffset": 22251,
+            "charLength": 6,
+            "snippet": {
+              "text": "method"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 624,
+            "startColumn": 1,
+            "charOffset": 22139,
+            "charLength": 171,
+            "snippet": {
+              "text": "    public static class CheckMethod {\n        private final Descriptor descriptor;\n        private final Method method;\n        private final String capitalizedFieldName;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "48bf1f5f8b640311",
+      "equalIndicator/v1": "09a4f2007e756b963fb70220e18fc61e38ae3abbc2416c0ea9d01ae07304c67c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/scheduler/CronTab.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 205,
+            "startColumn": 30,
+            "charOffset": 6970,
+            "charLength": 11,
+            "snippet": {
+              "text": "displayName"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 203,
+            "startColumn": 1,
+            "charOffset": 6893,
+            "charLength": 234,
+            "snippet": {
+              "text": "         */\n        @SuppressWarnings(\"unused\")\n        private final String displayName;\n\n        private CalendarField(String displayName, int field, int min, int offset, boolean redoAdjustmentIfModified, CalendarField lowerField) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "88083f41398e348a",
+      "equalIndicator/v1": "7195c0e250f7d429c1983647714a7b957b4c506e904f38c95a4cc98413643178"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/xstream/ImmutableSetConverter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 18,
+            "startColumn": 41,
+            "charOffset": 712,
+            "charLength": 2,
+            "snippet": {
+              "text": "sc"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 16,
+            "startColumn": 1,
+            "charOffset": 603,
+            "charLength": 160,
+            "snippet": {
+              "text": " */\npublic class ImmutableSetConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableSetConverter(XStream xs) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8c4de92531068be3",
+      "equalIndicator/v1": "e64528222ffb7bedf0fa81b3142d09bd228bdff078a9263d8738a96891f80100"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1801,
+            "startColumn": 28,
+            "charOffset": 73913,
+            "charLength": 17,
+            "snippet": {
+              "text": "sizeOf_kinfo_proc"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1799,
+            "startColumn": 1,
+            "charOffset": 73858,
+            "charLength": 198,
+            "snippet": {
+              "text": "\n        // Local constants\n        private final long sizeOf_kinfo_proc;\n        private static final long sizeOf_kinfo_proc_32 = 768;\n        private static final long sizeOf_kinfo_proc_64 = 1088;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a4c9fa00a9ad7ec9",
+      "equalIndicator/v1": "2d69c4936af61acca775f69ffcbc50df48fe69c3b3c01556958d73ab13135ff1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/WebAppMain.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 132,
+            "startColumn": 21,
+            "charOffset": 5539,
+            "charLength": 10,
+            "snippet": {
+              "text": "terminated"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 130,
+            "startColumn": 1,
+            "charOffset": 5473,
+            "charLength": 109,
+            "snippet": {
+              "text": "\n    private static final String APP = \"app\";\n    private boolean terminated;\n    private Thread initThread;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "758c13a78aa0e51b",
+      "equalIndicator/v1": "9ed40854b99dd95efacc87ab37617095b07d6a292dc11f49a985f3bde2520b63"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/NodeProvisioner.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 145,
+            "startColumn": 27,
+            "charOffset": 5532,
+            "charLength": 17,
+            "snippet": {
+              "text": "provisioningState"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 143,
+            "startColumn": 1,
+            "charOffset": 5470,
+            "charLength": 145,
+            "snippet": {
+              "text": "\n    @GuardedBy(\"provisioningLock\")\n    private StrategyState provisioningState = null;\n\n    private transient volatile long lastSuggestedReview;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "288788baa0112206",
+      "equalIndicator/v1": "d8f0c77e8628025d78d4426283248faf1f708de26307394baeb220368fe75f4b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1807,
+            "startColumn": 27,
+            "charOffset": 74260,
+            "charLength": 22,
+            "snippet": {
+              "text": "kinfo_proc_ppid_offset"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1805,
+            "startColumn": 1,
+            "charOffset": 74106,
+            "charLength": 307,
+            "snippet": {
+              "text": "        private static final int kinfo_proc_pid_offset_32 = 40;\n        private static final int kinfo_proc_pid_offset_64 = 72;\n        private final int kinfo_proc_ppid_offset;\n        private static final int kinfo_proc_ppid_offset_32 = 44;\n        private static final int kinfo_proc_ppid_offset_64 = 76;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "878c78b77d4038a4",
+      "equalIndicator/v1": "cf568360e5645f708c527709012613c3cefc4ccdc83234f3ae45dad0e7122cd7"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1771,
+            "startColumn": 27,
+            "charOffset": 72698,
+            "charLength": 22,
+            "snippet": {
+              "text": "kinfo_proc_ppid_offset"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1769,
+            "startColumn": 1,
+            "charOffset": 72544,
+            "charLength": 309,
+            "snippet": {
+              "text": "        private static final int kinfo_proc_pid_offset_32 = 24;\n        private static final int kinfo_proc_pid_offset_64 = 40;\n        private final int kinfo_proc_ppid_offset;\n        private static final int kinfo_proc_ppid_offset_32 = 416;\n        private static final int kinfo_proc_ppid_offset_64 = 560;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6fc7af01a7403b21",
+      "equalIndicator/v1": "eaf613afa842cd4f0f23b89f8ff2110ac4a6e787f4238600f1828c76f6e793d2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Proc.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 186,
+            "startColumn": 30,
+            "charOffset": 7128,
+            "charLength": 4,
+            "snippet": {
+              "text": "name"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 184,
+            "startColumn": 1,
+            "charOffset": 7021,
+            "charLength": 163,
+            "snippet": {
+              "text": "        private final OutputStream out;\n        private final EnvVars cookie;\n        private final String name;\n\n        private final InputStream stdout, stderr;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "894ac4c27f91befe",
+      "equalIndicator/v1": "852e2f2f96eb173486ab5a24288aa7fba5e05a8bef0d8868f627c394c2bdaa2d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/declarative/MethodBinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 52,
+            "startColumn": 30,
+            "charOffset": 2066,
+            "charLength": 7,
+            "snippet": {
+              "text": "command"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 50,
+            "startColumn": 1,
+            "charOffset": 2012,
+            "charLength": 133,
+            "snippet": {
+              "text": " */\nclass MethodBinder {\n    private final CLICommand command;\n    private final Method method;\n    private final Object[] arguments;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "d6f18cbc9500bda3",
+      "equalIndicator/v1": "16aad7316c3474a84e3c29b35eed88ffb78703466e3e1f6e75115062b7144b90"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/FullDuplexHttpStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 20,
+            "startColumn": 23,
+            "charOffset": 622,
+            "charLength": 4,
+            "snippet": {
+              "text": "base"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 18,
+            "startColumn": 1,
+            "charOffset": 560,
+            "charLength": 107,
+            "snippet": {
+              "text": " */\npublic class FullDuplexHttpStream {\n    private final URL base;\n\n    private final OutputStream output;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c19c6cbe4c902f4d",
+      "equalIndicator/v1": "f198075a47a537be68dd5f3b5af0b04c0e98708121d887868fd17ef36fde1317"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1768,
+            "startColumn": 27,
+            "charOffset": 72521,
+            "charLength": 21,
+            "snippet": {
+              "text": "kinfo_proc_pid_offset"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1766,
+            "startColumn": 1,
+            "charOffset": 72329,
+            "charLength": 342,
+            "snippet": {
+              "text": "        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.\n        private final int kinfo_proc_pid_offset;\n        private static final int kinfo_proc_pid_offset_32 = 24;\n        private static final int kinfo_proc_pid_offset_64 = 40;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2cc7f5ee6e0f73c3",
+      "equalIndicator/v1": "338cab339f7b7b8aef6eecbb25c6bb96b9363eb0a27393b623b97efa8bacfb6f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/xstream/ImmutableMapConverter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 45,
+            "startColumn": 41,
+            "charOffset": 1974,
+            "charLength": 2,
+            "snippet": {
+              "text": "sc"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 43,
+            "startColumn": 1,
+            "charOffset": 1872,
+            "charLength": 153,
+            "snippet": {
+              "text": " */\npublic class ImmutableMapConverter extends MapConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableMapConverter(XStream xs) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f854d0eb96c80771",
+      "equalIndicator/v1": "77be2470fff32cad330fc7a77a8c320a4383865391c315a963b6d8a3d419b22c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/diagnosis/HsErrPidList.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 48,
+            "startColumn": 30,
+            "charOffset": 1549,
+            "charLength": 3,
+            "snippet": {
+              "text": "map"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 46,
+            "startColumn": 1,
+            "charOffset": 1407,
+            "charLength": 175,
+            "snippet": {
+              "text": "     * Used to keep a marker file memory-mapped, so that we can find hs_err_pid files that belong to us.\n     */\n    private MappedByteBuffer map;\n\n    public HsErrPidList() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "845de7fb16debe7a",
+      "equalIndicator/v1": "ce6fd7048851e9fbcda8fbc7a9bfd70063437ef83e7b4ea88b0385ea400b0a11"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/DirectoryBrowserSupport.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 751,
+            "startColumn": 29,
+            "charOffset": 29706,
+            "charLength": 4,
+            "snippet": {
+              "text": "root"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 749,
+            "startColumn": 1,
+            "charOffset": 29567,
+            "charLength": 220,
+            "snippet": {
+              "text": "\n    private static final class BuildChildPaths extends MasterToSlaveCallable<List<List<Path>>, IOException> {\n        private VirtualFile root;\n        private final VirtualFile cur;\n        private final Locale locale;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "764274a919b5e0bb",
+      "equalIndicator/v1": "a338c9c74a323a3b934634651a38054564aa6b802246730cc3cc43717f7ac7f4"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/xstream/ImmutableSortedSetConverter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 18,
+            "startColumn": 41,
+            "charOffset": 724,
+            "charLength": 2,
+            "snippet": {
+              "text": "sc"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 16,
+            "startColumn": 1,
+            "charOffset": 609,
+            "charLength": 172,
+            "snippet": {
+              "text": " */\npublic class ImmutableSortedSetConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableSortedSetConverter(XStream xs) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c37da6eff47e8d3f",
+      "equalIndicator/v1": "55d1c3ca21c512593e4582793dab088486d3e72400ff71d452b290fa09966a58"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Cause.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 135,
+            "startColumn": 38,
+            "charOffset": 4804,
+            "charLength": 10,
+            "snippet": {
+              "text": "stackTrace"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 133,
+            "startColumn": 1,
+            "charOffset": 4609,
+            "charLength": 242,
+            "snippet": {
+              "text": "    public static class LegacyCodeCause extends Cause {\n        @SuppressFBWarnings(value = \"URF_UNREAD_FIELD\", justification = \"for backward compatibility\")\n        private StackTraceElement [] stackTrace;\n\n        public LegacyCodeCause() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "930047f4de58271f",
+      "equalIndicator/v1": "b57682998c8caee8ebe9f6a07c9b59908a503e8c96627e83bfe2fe4fcd6b1f6a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/xstream/ImmutableListConverter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 49,
+            "startColumn": 41,
+            "charOffset": 2161,
+            "charLength": 2,
+            "snippet": {
+              "text": "sc"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 47,
+            "startColumn": 1,
+            "charOffset": 2051,
+            "charLength": 162,
+            "snippet": {
+              "text": " */\npublic class ImmutableListConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableListConverter(XStream xs) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5478266b1867d1e5",
+      "equalIndicator/v1": "7dc0baab0ef6a9ae950201f25f7411de86a1b0f891451019f821763a5600c1da"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "FieldCanBeLocal",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Field can be converted to a local variable",
+      "markdown": "Field can be converted to a local variable"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/MultipartFormDataParser.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 49,
+            "startColumn": 37,
+            "charOffset": 2133,
+            "charLength": 6,
+            "snippet": {
+              "text": "upload"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 47,
+            "startColumn": 1,
+            "charOffset": 2029,
+            "charLength": 229,
+            "snippet": {
+              "text": " */\npublic class MultipartFormDataParser implements AutoCloseable {\n    private final ServletFileUpload upload = new ServletFileUpload(new DiskFileItemFactory());\n    private final Map<String, FileItem> byName = new HashMap<>();\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2cf9d44faad93152",
+      "equalIndicator/v1": "f20c3b2779b9dda31544899c4925bb449952b81dce81b1cd4ae37cd9a5de19d1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

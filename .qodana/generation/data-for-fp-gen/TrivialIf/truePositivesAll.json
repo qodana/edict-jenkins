@@ -1,0 +1,1890 @@
+[
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/InetAddressValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 219,
+            "startColumn": 9,
+            "charOffset": 7728,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 217,
+            "startColumn": 1,
+            "charOffset": 7683,
+            "charLength": 189,
+            "snippet": {
+              "text": "            validOctets++;\n        }\n        if (validOctets > IPV6_MAX_HEX_GROUPS || (validOctets < IPV6_MAX_HEX_GROUPS && !containsCompressedZeroes)) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9a768bd1351b8c8f",
+      "equalIndicator/v1": "b2b23f6e08643d0460ceb85b308f98a5a1cc5d050fc2e6355c91df701e6a1049"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/UrlValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 344,
+            "startColumn": 9,
+            "charOffset": 13745,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 342,
+            "startColumn": 1,
+            "charOffset": 13726,
+            "charLength": 100,
+            "snippet": {
+              "text": "        }\n\n        if (!isValidFragment(uri.getRawFragment())) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3c20abd31713ccfb",
+      "equalIndicator/v1": "a09d58a5f8b1add29644d69a7c619895a0ce5b455ce08d5c1b658d54d529a6e8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/ParameterValue.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 265,
+            "startColumn": 9,
+            "charOffset": 9523,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 263,
+            "startColumn": 1,
+            "charOffset": 9436,
+            "charLength": 163,
+            "snippet": {
+              "text": "            return false;\n        ParameterValue other = (ParameterValue) obj;\n        if (!Objects.equals(name, other.name)) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "042c0560bea6f299",
+      "equalIndicator/v1": "07d98e3e651345a03c5ff5279e5336f043a42da7790a6f91e404af1db24985bd"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/UrlValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 470,
+            "startColumn": 9,
+            "charOffset": 18481,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 468,
+            "startColumn": 1,
+            "charOffset": 18422,
+            "charLength": 143,
+            "snippet": {
+              "text": "\n        int slash2Count = countToken(\"//\", path);\n        if (isOff(ALLOW_2_SLASHES) && slash2Count > 0) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f6c98516e956ca3b",
+      "equalIndicator/v1": "f1b3c75f6a3461e39762e5da703e52a3766e23e71a9a9fba9a8fb11606824f3d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/LoadStatistics.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 564,
+            "startColumn": 13,
+            "charOffset": 21114,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 562,
+            "startColumn": 1,
+            "charOffset": 21058,
+            "charLength": 138,
+            "snippet": {
+              "text": "                return false;\n            }\n            if (queueLength != that.queueLength) {\n                return false;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1362e9d4d90d2538",
+      "equalIndicator/v1": "607a24d558766bf7557d0524c2438a0be40e1103889bc4731aac1d48204700b4"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/UpdateSite.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1335,
+            "startColumn": 21,
+            "charOffset": 46940,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1333,
+            "startColumn": 1,
+            "charOffset": 46822,
+            "charLength": 295,
+            "snippet": {
+              "text": "            if (installedVersion != null) {\n                if (compatibleSinceVersion != null) {\n                    if (new VersionNumber(installedVersion.getVersion())\n                            .isOlderThan(new VersionNumber(compatibleSinceVersion))) {\n                        return false;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "66a465dc76f6cf80",
+      "equalIndicator/v1": "8125cd7008a292aa6557ca144a6df3d09fbbba9ca1632cbf57499b4aac83a113"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/queue/MappingWorksheet.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 138,
+            "startColumn": 13,
+            "charOffset": 5141,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 136,
+            "startColumn": 1,
+            "charOffset": 5078,
+            "charLength": 301,
+            "snippet": {
+              "text": "                return false;   // label mismatch\n\n            if (!(Node.SKIP_BUILD_CHECK_ON_FLYWEIGHTS && item.task instanceof Queue.FlyweightTask) && !nodeAcl.hasPermission2(item.authenticate2(), Computer.BUILD))\n                return false;   // tasks don't have a permission to run on this node\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "adeb970f2b5b22f3",
+      "equalIndicator/v1": "03bd5df9799e7557cce5ce9da97f56088cd830462a1fcf013df6169a6ab08c87"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/Jenkins.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 5309,
+            "startColumn": 14,
+            "charOffset": 196077,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 5307,
+            "startColumn": 1,
+            "charOffset": 196029,
+            "charLength": 227,
+            "snippet": {
+              "text": "            return true;\n        }\n        else if (item.getName().equals(currentJobName)) {\n            // the candidate name returned an item, but the item is the item\n            // that the user is configuring so this is ok"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8b024626c09f5a61",
+      "equalIndicator/v1": "b9745b624d6274e8c462cace7ba2c5551d36cb324fb1ac3e22a0590ad0f6389c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/FileParameterValue.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 209,
+            "startColumn": 9,
+            "charOffset": 8212,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 207,
+            "startColumn": 1,
+            "charOffset": 8142,
+            "charLength": 180,
+            "snippet": {
+              "text": "        FileParameterValue other = (FileParameterValue) obj;\n\n        if (location == null && other.location == null)\n            return true; // Consider null parameters as equal\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f13626c0948b17a5",
+      "equalIndicator/v1": "460162aadc5757d30c8037ae094eee2e2604a3ff5cf570dc45729d3183e538f1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Maven.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 744,
+            "startColumn": 13,
+            "charOffset": 28148,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 742,
+            "startColumn": 1,
+            "charOffset": 28025,
+            "charLength": 255,
+            "snippet": {
+              "text": "\n            if (getHome() != null ? !getHome().equals(that.getHome()) : that.getHome() != null) return false;\n            if (getName() != null ? !getName().equals(that.getName()) : that.getName() != null) return false;\n            return true;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1b7e26dbffa0cceb",
+      "equalIndicator/v1": "edde4294f46530ff1d71d588aab05d4ea3260281a4150b7a6006a429d5ab4c40"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Queue.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 815,
+            "startColumn": 13,
+            "charOffset": 31578,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 813,
+            "startColumn": 1,
+            "charOffset": 31461,
+            "charLength": 321,
+            "snippet": {
+              "text": "        if (t instanceof AccessControlled) {\n            AccessControlled taskAC = (AccessControlled) t;\n            if (taskAC.hasPermission(hudson.model.Item.READ)\n                    || taskAC.hasPermission(Permission.READ)) { // TODO should be unnecessary given the 'implies' relationship\n                return true;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "86b56ae2a2c4c4fc",
+      "equalIndicator/v1": "6961dc413e5a8bc714d72c69593d6363a78cf447e951a9564b417180083934c5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/NonSerializableSecurityContext.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 69,
+            "startColumn": 13,
+            "charOffset": 2749,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 67,
+            "startColumn": 1,
+            "charOffset": 2722,
+            "charLength": 208,
+            "snippet": {
+              "text": "            }\n\n            if (this.getAuthentication() != null && test.getAuthentication() != null\n                && this.getAuthentication().equals(test.getAuthentication())) {\n                return true;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "41647c653a0727a6",
+      "equalIndicator/v1": "0b7b86ddcb7937532f8c7d62fc6664ba7297d2e8889c5835661376696ea83832"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/PluginWrapper.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 681,
+            "startColumn": 9,
+            "charOffset": 24243,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 679,
+            "startColumn": 1,
+            "charOffset": 24165,
+            "charLength": 129,
+            "snippet": {
+              "text": "\n        v = manifest.getMainAttributes().getValue(\"Hudson-Version\");\n        if (v != null) return v;\n        return null;\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c5f7b0a0341a765c",
+      "equalIndicator/v1": "8998bb569aaec5b4939694af2011874f89e32e1297ccab32ac34ca13a3b90d6d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/UpdateSite.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1039,
+            "startColumn": 21,
+            "charOffset": 35281,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1037,
+            "startColumn": 1,
+            "charOffset": 35108,
+            "charLength": 273,
+            "snippet": {
+              "text": "                    // check whether warning is relevant to installed version\n                    VersionNumber currentCore = plugin.getVersionNumber();\n                    if (!isRelevantToVersion(currentCore)) {\n                        return false;\n                    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0e03f144f656d282",
+      "equalIndicator/v1": "080ecd000f30b647f3d65e8a0268626cdc635ec441ea28af97ebf06384eafcc3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/UrlValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 436,
+            "startColumn": 9,
+            "charOffset": 17417,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 434,
+            "startColumn": 1,
+            "charOffset": 17338,
+            "charLength": 164,
+            "snippet": {
+              "text": "\n        String extra = authorityMatcher.group(PARSE_AUTHORITY_EXTRA);\n        if (extra != null && extra.trim().length() > 0) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "957f363a91c5aea0",
+      "equalIndicator/v1": "75533e0fdbcc20d0e94165789765bd35fd650140c37127cc20d31dfffbf615bf"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Maven.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 573,
+            "startColumn": 21,
+            "charOffset": 21833,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 571,
+            "startColumn": 1,
+            "charOffset": 21739,
+            "charLength": 183,
+            "snippet": {
+              "text": "                }\n                else if (mavenReqVersion == MAVEN_30) {\n                    if (mavenVersion.startsWith(\"3.\"))\n                        return true;\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0d7f43d11187647a",
+      "equalIndicator/v1": "b936b759beb5f1c35b6cc9d2b90ce1918b7fdb7f41c2d90cf6330ee0b92943e5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/HudsonPrivateSecurityRealm.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 920,
+            "startColumn": 17,
+            "charOffset": 35488,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 918,
+            "startColumn": 1,
+            "charOffset": 35332,
+            "charLength": 282,
+            "snippet": {
+              "text": "                // no number format exception due to the expression\n                int logNumOfRoundInt = Integer.parseInt(logNumOfRound);\n                if (logNumOfRoundInt > 0 && logNumOfRoundInt <= MAXIMUM_BCRYPT_LOG_ROUND) {\n                    return true;\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2543e74fb468191c",
+      "equalIndicator/v1": "db4f9e6e410378c205f3265325377e4bb48473b9e644cbaf888e7ebcb79532a8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Run.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2314,
+            "startColumn": 9,
+            "charOffset": 82910,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2312,
+            "startColumn": 1,
+            "charOffset": 82854,
+            "charLength": 149,
+            "snippet": {
+              "text": "     */\n    public boolean canToggleLogKeep() {\n        if (!keepLog && isKeepLog()) {\n            // Definitely prevented.\n            return false;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "d3f0d8fc423b6c7b",
+      "equalIndicator/v1": "d7da8e24af646eda53f78f727e52b52d366be7a133673acc07c8acf83a0fbbdc"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/widgets/HistoryPageFilter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 343,
+            "startColumn": 13,
+            "charOffset": 13211,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 341,
+            "startColumn": 1,
+            "charOffset": 13095,
+            "charLength": 237,
+            "snippet": {
+              "text": "        } else {\n            ParametersAction parametersAction = run.getAction(ParametersAction.class);\n            if (parametersAction != null && fitsSearchBuildParameters(parametersAction)) {\n                return true;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a25dc36311ddd85c",
+      "equalIndicator/v1": "0cc44903af7e16d9d9c68d0a450fade0872246a84b98d2155f49e643e683f278"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/RobustReflectionConverter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 137,
+            "startColumn": 13,
+            "charOffset": 6363,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 135,
+            "startColumn": 1,
+            "charOffset": 6307,
+            "charLength": 150,
+            "snippet": {
+              "text": "                return false;\n            }\n            if (!classesWithField.contains(clazz.getName())) {\n                return false;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "202bc2290e306d2f",
+      "equalIndicator/v1": "d4cbb06a197fed8939cb1bd344ccaf162729bc460fa5940349d064955d108d95"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Queue.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2635,
+            "startColumn": 13,
+            "charOffset": 101856,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2633,
+            "startColumn": 1,
+            "charOffset": 101754,
+            "charLength": 182,
+            "snippet": {
+              "text": "        @Restricted(NoExternalUse.class)\n        public boolean isCauseOfBlockageNull() {\n            if (causeOfBlockage == null) {\n                return true;\n            } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "49ed65dee42be414",
+      "equalIndicator/v1": "dc806c5579965faa2055211b83f57d5e9029bf7675602553ededdfad4784dd8f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Maven.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 565,
+            "startColumn": 21,
+            "charOffset": 21466,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 563,
+            "startColumn": 1,
+            "charOffset": 21352,
+            "charLength": 203,
+            "snippet": {
+              "text": "            if (!mavenVersion.isEmpty()) {\n                if (mavenReqVersion == MAVEN_20) {\n                    if (mavenVersion.startsWith(\"2.\"))\n                        return true;\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ed249a721586d212",
+      "equalIndicator/v1": "9d0548eb57f9c98335123d7a96434c029deba12c996d5673f59d6b500ad1d37b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/TokenBasedRememberMeServices2.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 252,
+            "startColumn": 9,
+            "charOffset": 12811,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 250,
+            "startColumn": 1,
+            "charOffset": 12757,
+            "charLength": 121,
+            "snippet": {
+              "text": "        }\n        // Check it has not expired\n        if (tokenExpiryTimeMs < nowMs) {\n            return true;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9f512cfb54e990c0",
+      "equalIndicator/v1": "d72264be83948f228f351d3762ba92fd5a891cb41a12fdf5c90d5f8765a72eaf"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/DownloadFromUrlInstaller.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 164,
+            "startColumn": 25,
+            "charOffset": 6810,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 162,
+            "startColumn": 1,
+            "charOffset": 6672,
+            "charLength": 289,
+            "snippet": {
+              "text": "                    ToolInstallerEntry sampleEntry = entryList[0];\n                    if (sampleEntry != null) {\n                        if (sampleEntry.id != null && sampleEntry.name != null && sampleEntry.url != null) {\n                            return true;\n                        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1b3d8fe94b1f4e26",
+      "equalIndicator/v1": "7b1a7882bc9cb8900f69a92049568992bc58c78337eb288d3150428237f6ae2e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/scheduler/CronTab.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 168,
+            "startColumn": 9,
+            "charOffset": 5579,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 166,
+            "startColumn": 1,
+            "charOffset": 5487,
+            "charLength": 185,
+            "snippet": {
+              "text": "        if (!checkBits(bits[3], checkCal.get(MONTH) + 1))\n            return false;\n        if (!checkBits(dayOfWeek, checkCal.get(Calendar.DAY_OF_WEEK) - 1))\n            return false;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "98a7cf76a3d01023",
+      "equalIndicator/v1": "290d3dc3d73c9ca25ad34ebfe67cedec6d62d9ccb2bfacb93945a0e47b6c60bb"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/widgets/HistoryPageFilter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 317,
+            "startColumn": 16,
+            "charOffset": 12269,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 315,
+            "startColumn": 1,
+            "charOffset": 12174,
+            "charLength": 167,
+            "snippet": {
+              "text": "        if (fitsSearchString(item.getDisplayName())) {\n            return true;\n        } else if (fitsSearchString(item.getId())) {\n            return true;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2a37fec33c529e96",
+      "equalIndicator/v1": "df2795be1e647b91028395592a5b1a347aa62c1842423caf57331bea78715035"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/Jenkins.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 5230,
+            "startColumn": 9,
+            "charOffset": 193089,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 5228,
+            "startColumn": 1,
+            "charOffset": 192972,
+            "charLength": 312,
+            "snippet": {
+              "text": "\n        // TODO SlaveComputer.doSlaveAgentJnlp; there should be an annotation to request unprotected access\n        if ((isAgentJnlpPath(restOfPath, \"jenkins\") || isAgentJnlpPath(restOfPath, \"slave\"))\n            && \"true\".equals(Stapler.getCurrentRequest().getParameter(\"encrypt\"))) {\n            return false;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "721d83b383de0d13",
+      "equalIndicator/v1": "3ae5d1d413fb5d6ead2c03787ac6837b3cb7aa4a776d0ef6fe87001ab318c310"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Maven.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 569,
+            "startColumn": 21,
+            "charOffset": 21632,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 567,
+            "startColumn": 1,
+            "charOffset": 21538,
+            "charLength": 218,
+            "snippet": {
+              "text": "                }\n                else if (mavenReqVersion == MAVEN_21) {\n                    if (mavenVersion.startsWith(\"2.\") && !mavenVersion.startsWith(\"2.0\"))\n                        return true;\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ff6f9186af29b279",
+      "equalIndicator/v1": "e57a843c27304902cc7e723dfe93573fc31d738dc3582c7e926cc1b50b8fb9ff"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/StringParameterValue.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 101,
+            "startColumn": 9,
+            "charOffset": 3316,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 99,
+            "startColumn": 1,
+            "charOffset": 3217,
+            "charLength": 177,
+            "snippet": {
+              "text": "            return false;\n        StringParameterValue other = (StringParameterValue) obj;\n        if (!Objects.equals(value, other.value)) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "06ff948604b036a6",
+      "equalIndicator/v1": "10592853e2b73b654fe6143e8a298c25de53553e424dff723098e948e7abd558"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/UrlValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 369,
+            "startColumn": 9,
+            "charOffset": 14429,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 367,
+            "startColumn": 1,
+            "charOffset": 14410,
+            "charLength": 150,
+            "snippet": {
+              "text": "        }\n\n        if (isOff(ALLOW_ALL_SCHEMES) && !allowedSchemes.contains(scheme.toLowerCase(Locale.ENGLISH))) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a1fdb6a04f4d4757",
+      "equalIndicator/v1": "847db1f0bd062c6dc2a0338381885bd1214934d96524d2c598b979b5504b2852"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/lifecycle/Lifecycle.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 192,
+            "startColumn": 9,
+            "charOffset": 8083,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 190,
+            "startColumn": 1,
+            "charOffset": 8024,
+            "charLength": 138,
+            "snippet": {
+              "text": "        }\n        File parent = f.getParentFile();\n        if (parent == null || !parent.canWrite()) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "858bf622fdfd17f7",
+      "equalIndicator/v1": "887f5e0f245b6e6466f5a5945ac2507e9b065d60e548c7fb555d42cc1e50cebe"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "TrivialIf",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'if' statement can be simplified",
+      "markdown": "`if` statement can be simplified"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ChunkedInputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 150,
+            "startColumn": 13,
+            "charOffset": 5143,
+            "charLength": 2,
+            "snippet": {
+              "text": "if"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 148,
+            "startColumn": 1,
+            "charOffset": 5074,
+            "charLength": 122,
+            "snippet": {
+              "text": "        if (pos >= chunkSize) {\n            nextChunk();\n            if (eof) {\n                return true;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0c3f76687fdf96a2",
+      "equalIndicator/v1": "93dda93a7d2e80f31b638f73531fb1741e4e0a43e9ab3aa7b6a57cc03d3b45b9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1541 @@
+[
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+      "markdown": "Result of `Executable.getAnnotatedParameterTypes()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 525,
+            "startColumn": 39,
+            "charOffset": 21990,
+            "charLength": 26,
+            "snippet": {
+              "text": "getAnnotatedParameterTypes"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 523,
+            "startColumn": 1,
+            "charOffset": 21873,
+            "charLength": 241,
+            "snippet": {
+              "text": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "88f18a5223b37195",
+      "equalIndicator/v1": "ed043a08e22aa72df93aa8ed6b0f59e824e82a2293fd2e273857e3049e614084"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Class.getGenericInterfaces()' is ignored",
+      "markdown": "Result of `Class.getGenericInterfaces()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 501,
+            "startColumn": 28,
+            "charOffset": 20547,
+            "charLength": 20,
+            "snippet": {
+              "text": "getGenericInterfaces"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 499,
+            "startColumn": 1,
+            "charOffset": 20441,
+            "charLength": 157,
+            "snippet": {
+              "text": "                         */\n                        cc.getGenericSuperclass();\n                        cc.getGenericInterfaces();\n\n                        /*"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1c8019fbf6354f0b",
+      "equalIndicator/v1": "98320c69ea2948428a549283bc9c4a3288fb1225ed5159be12b43477e99b87c5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+      "markdown": "Result of `Executable.getAnnotatedParameterTypes()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 535,
+            "startColumn": 40,
+            "charOffset": 22633,
+            "charLength": 26,
+            "snippet": {
+              "text": "getAnnotatedParameterTypes"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 533,
+            "startColumn": 1,
+            "charOffset": 22398,
+            "charLength": 360,
+            "snippet": {
+              "text": "                                    || method.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || method.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                method.getAnnotatedParameterTypes();\n                                method.getParameterAnnotations();\n                            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "461b8783789509b7",
+      "equalIndicator/v1": "77d75c625c794c7389e91f3b1d5ab9b5ac3a7c3c4b8db0f1710fb20bb9ffb802"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+      "markdown": "Result of `AnnotatedLargeText.writeHtmlTo()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/triggers/SCMTrigger.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 489,
+            "startColumn": 33,
+            "charOffset": 16858,
+            "charLength": 11,
+            "snippet": {
+              "text": "writeHtmlTo"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 487,
+            "startColumn": 1,
+            "charOffset": 16680,
+            "charLength": 225,
+            "snippet": {
+              "text": "        public void writePollingLogTo(long offset, XMLOutput out) throws IOException {\n            // TODO: resurrect compressed log file support\n            getPollingLogText().writeHtmlTo(offset, out.asWriter());\n        }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1ec8cd2aa572871c",
+      "equalIndicator/v1": "9c12e0bcd415c4fed1fa35d850a6bb351771dae17da1b6e25d18247b86722618"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'RunList.size()' is ignored",
+      "markdown": "Result of `RunList.size()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/RunList.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 208,
+            "startColumn": 9,
+            "charOffset": 6227,
+            "charLength": 4,
+            "snippet": {
+              "text": "size"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 206,
+            "startColumn": 1,
+            "charOffset": 6172,
+            "charLength": 90,
+            "snippet": {
+              "text": "    @Deprecated\n    public R getFirstBuild() {\n        size();\n        return first;\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0372dcd00476505b",
+      "equalIndicator/v1": "614267d5ce32ffe53db026d4c1f91189d37334bd0a5576c2f626e3e98d49def7"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'File.setWritable()' is ignored",
+      "markdown": "Result of `File.setWritable()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/util/io/PathRemover.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 304,
+            "startColumn": 23,
+            "charOffset": 13050,
+            "charLength": 11,
+            "snippet": {
+              "text": "setWritable"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 302,
+            "startColumn": 1,
+            "charOffset": 12935,
+            "charLength": 140,
+            "snippet": {
+              "text": "         * which will have a more useful message than something we make up here.\n         */\n        path.toFile().setWritable(true);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1963a577ef0f9650",
+      "equalIndicator/v1": "b60dc12f47042c694244d7c07236ea3a7f825c5410a268e7296e76a63f9247d1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'File.setExecutable()' is ignored",
+      "markdown": "Result of `File.setExecutable()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/ZipExtractionInstaller.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 158,
+            "startColumn": 19,
+            "charOffset": 5654,
+            "charLength": 13,
+            "snippet": {
+              "text": "setExecutable"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 156,
+            "startColumn": 1,
+            "charOffset": 5567,
+            "charLength": 180,
+            "snippet": {
+              "text": "        private void process(File f) {\n            if (f.isFile()) {\n                f.setExecutable(true, false);\n            } else {\n                File[] kids = f.listFiles();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "37c51668685a6bdb",
+      "equalIndicator/v1": "bb5272456b87b43aadf8284f4236b3f0d9702c1747c1bee5a969a9ae3304c926"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'FileChannel.write()' is ignored",
+      "markdown": "Result of `FileChannel.write()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/FileChannelWriter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 72,
+            "startColumn": 17,
+            "charOffset": 3398,
+            "charLength": 5,
+            "snippet": {
+              "text": "write"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 70,
+            "startColumn": 1,
+            "charOffset": 3251,
+            "charLength": 172,
+            "snippet": {
+              "text": "        final CharBuffer charBuffer = CharBuffer.wrap(cbuf, off, len);\n        ByteBuffer byteBuffer = charset.encode(charBuffer);\n        channel.write(byteBuffer);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6f2e60fe346582bb",
+      "equalIndicator/v1": "ac23656d0d1503dfb1b8a10b8caa959cac838fa44039297b7ed262aa916fe71d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'AnnotatedElement.getAnnotations()' is ignored",
+      "markdown": "Result of `AnnotatedElement.getAnnotations()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 546,
+            "startColumn": 54,
+            "charOffset": 23320,
+            "charLength": 14,
+            "snippet": {
+              "text": "getAnnotations"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 544,
+            "startColumn": 1,
+            "charOffset": 23119,
+            "charLength": 315,
+            "snippet": {
+              "text": "                                    || f.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                f.getAnnotations();\n                                f.getAnnotatedType().getAnnotations();\n                                resolve(f.getType(), encountered);\n                            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f6a6a130d6579f84",
+      "equalIndicator/v1": "0a88c73fd9d6a8872ac217fb295aae242df427fd6b3bc796ab2079cf3d289b6c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Font.toString()' is ignored",
+      "markdown": "Result of `Font.toString()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ChartUtil.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 270,
+            "startColumn": 50,
+            "charOffset": 10018,
+            "charLength": 8,
+            "snippet": {
+              "text": "toString"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 268,
+            "startColumn": 1,
+            "charOffset": 9942,
+            "charLength": 152,
+            "snippet": {
+              "text": "    static {\n        try {\n            new Font(\"SansSerif\", Font.BOLD, 18).toString();\n        } catch (Throwable t) {\n            awtProblemCause = t;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "269e83bfadf1f1c2",
+      "equalIndicator/v1": "86f8721ae80da7e0915908fcf9ad8c6bbcedc754507a1d7afe39bfeec73e84c2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Path.toFile()' is ignored",
+      "markdown": "Result of `Path.toFile()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1411,
+            "startColumn": 70,
+            "charOffset": 55951,
+            "charLength": 6,
+            "snippet": {
+              "text": "toFile"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1409,
+            "startColumn": 1,
+            "charOffset": 55742,
+            "charLength": 251,
+            "snippet": {
+              "text": "            for (File file : listParentFiles(f)) {\n                if (file.getName().startsWith(f.getName() + WorkspaceList.COMBINATOR)) {\n                    Util.deleteRecursive(file.toPath(), path -> path.toFile());\n                }\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5c85d0b92824a152",
+      "equalIndicator/v1": "a0759f33717d191275f2fab4f4f9c8cc2c409baec5a66fcdf2c83c04e0dce50c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+      "markdown": "Result of `AnnotatedLargeText.writeHtmlTo()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Run.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1541,
+            "startColumn": 22,
+            "charOffset": 53871,
+            "charLength": 11,
+            "snippet": {
+              "text": "writeHtmlTo"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1539,
+            "startColumn": 1,
+            "charOffset": 53826,
+            "charLength": 87,
+            "snippet": {
+              "text": "            }\n        }\n        getLogText().writeHtmlTo(start, out.asWriter());\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3f2ab6af7a050362",
+      "equalIndicator/v1": "d48608b6294e0ee699d43b666a8ea8012ffb8fb5118e7996d291816733795438"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Class.getGenericSuperclass()' is ignored",
+      "markdown": "Result of `Class.getGenericSuperclass()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 500,
+            "startColumn": 28,
+            "charOffset": 20496,
+            "charLength": 20,
+            "snippet": {
+              "text": "getGenericSuperclass"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 498,
+            "startColumn": 1,
+            "charOffset": 20316,
+            "charLength": 255,
+            "snippet": {
+              "text": "                         * See {@link com.google.inject.spi.InjectionPoint#getInjectionPoints(TypeLiteral, boolean, Errors)}\n                         */\n                        cc.getGenericSuperclass();\n                        cc.getGenericInterfaces();\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "961bbc54b7ead7ef",
+      "equalIndicator/v1": "83f4e04055daa93edc14c54e1f8ac6b2c755be43c5a8c2958f865938b0a92a0d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Constructor.getParameterAnnotations()' is ignored",
+      "markdown": "Result of `Constructor.getParameterAnnotations()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 513,
+            "startColumn": 45,
+            "charOffset": 21398,
+            "charLength": 23,
+            "snippet": {
+              "text": "getParameterAnnotations"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 511,
+            "startColumn": 1,
+            "charOffset": 21174,
+            "charLength": 347,
+            "snippet": {
+              "text": "                                    || constructor.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                constructor.getAnnotatedParameterTypes();\n                                constructor.getParameterAnnotations();\n                                foundInjectableConstructor = true;\n                            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "d0147bf7a5805601",
+      "equalIndicator/v1": "485932017448052839e9797d4dc2610fee9be596d252cfeb416db81998918d7f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Path.toFile()' is ignored",
+      "markdown": "Result of `Path.toFile()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1442,
+            "startColumn": 62,
+            "charOffset": 56848,
+            "charLength": 6,
+            "snippet": {
+              "text": "toFile"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1440,
+            "startColumn": 1,
+            "charOffset": 56689,
+            "charLength": 204,
+            "snippet": {
+              "text": "        @Override\n        public Void invoke(File f, VirtualChannel channel) throws IOException {\n            Util.deleteRecursive(fileToPath(f), path -> path.toFile());\n            return null;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "510d42e417fa4dc7",
+      "equalIndicator/v1": "7f753b58558f17a2647267a52571d64e868d76bd7a4d5b4a02da6a4c3f0e05a3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'InputStream.read()' is ignored",
+      "markdown": "Result of `InputStream.read()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "war/src/main/java/executable/Main.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 375,
+            "startColumn": 16,
+            "charOffset": 17747,
+            "charLength": 4,
+            "snippet": {
+              "text": "read"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 373,
+            "startColumn": 1,
+            "charOffset": 17650,
+            "charLength": 191,
+            "snippet": {
+              "text": "        try {\n            buffer = new byte[Math.min(in.available(), maxToRead)];\n            in.read(buffer);\n        } catch (IOException e) {\n            throw new UncheckedIOException(e);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-war",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "db15d058a7498f09",
+      "equalIndicator/v1": "f3349925ceaafe7878911ddb9ddac85de93913b817b8165209408d67d817c6d4"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+      "markdown": "Result of `AnnotatedLargeText.writeHtmlTo()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/triggers/SCMTrigger.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 547,
+            "startColumn": 90,
+            "charOffset": 18823,
+            "charLength": 11,
+            "snippet": {
+              "text": "writeHtmlTo"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 545,
+            "startColumn": 1,
+            "charOffset": 18518,
+            "charLength": 352,
+            "snippet": {
+              "text": "        @SuppressFBWarnings(value = \"RV_RETURN_VALUE_IGNORED\", justification = \"method signature does not permit plumbing through the return value\")\n        public void writeLogTo(XMLOutput out) throws IOException {\n            new AnnotatedLargeText<>(getLogFile(), Charset.defaultCharset(), true, this).writeHtmlTo(0, out.asWriter());\n        }\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2170e4cade3e22af",
+      "equalIndicator/v1": "a3dfcaa536dee7eb4940ac6cc3fef73138f3750c37e733c5a67455c3a2c8f751"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Constructor.getParameterAnnotations()' is ignored",
+      "markdown": "Result of `Constructor.getParameterAnnotations()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 526,
+            "startColumn": 39,
+            "charOffset": 22058,
+            "charLength": 23,
+            "snippet": {
+              "text": "getParameterAnnotations"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 524,
+            "startColumn": 1,
+            "charOffset": 21903,
+            "charLength": 237,
+            "snippet": {
+              "text": "                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }\n                        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "7940d9d94c3112ea",
+      "equalIndicator/v1": "0bfa14e63ff886e3cc86269dd754a95c4df32cdb2f9177222050b97cecfc61a1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Object.hashCode()' is ignored",
+      "markdown": "Result of `Object.hashCode()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "websocket/jetty10/src/main/java/jenkins/websocket/Jetty10Provider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 63,
+            "startColumn": 45,
+            "charOffset": 2874,
+            "charLength": 8,
+            "snippet": {
+              "text": "hashCode"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 61,
+            "startColumn": 1,
+            "charOffset": 2798,
+            "charLength": 94,
+            "snippet": {
+              "text": "\n    public Jetty10Provider() {\n        JettyWebSocketServerContainer.class.hashCode();\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "websocket-jetty10",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f2fe67740598e79a",
+      "equalIndicator/v1": "b057c9068265f066dae07109faf927bf936e0ce15a69295e0133eb0a2aad7ca6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'AnnotatedLargeText.writeLogTo()' is ignored",
+      "markdown": "Result of `AnnotatedLargeText.writeLogTo()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/triggers/SCMTrigger.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 475,
+            "startColumn": 37,
+            "charOffset": 16196,
+            "charLength": 10,
+            "snippet": {
+              "text": "writeLogTo"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 473,
+            "startColumn": 1,
+            "charOffset": 15976,
+            "charLength": 263,
+            "snippet": {
+              "text": "                 // Prevent jelly from flushing stream so Content-Length header can be added afterwards\n                 FlushProofOutputStream out = new FlushProofOutputStream(os)) {\n                getPollingLogText().writeLogTo(0, out);\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "fbb0d64521e48ec4",
+      "equalIndicator/v1": "2ba0aac0338977873e1ecd6a226236df45564d677e0572a669071f0276aa41b5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+      "markdown": "Result of `Executable.getAnnotatedParameterTypes()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 512,
+            "startColumn": 45,
+            "charOffset": 21324,
+            "charLength": 26,
+            "snippet": {
+              "text": "getAnnotatedParameterTypes"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 510,
+            "startColumn": 1,
+            "charOffset": 21074,
+            "charLength": 417,
+            "snippet": {
+              "text": "                                    || constructor.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || constructor.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                constructor.getAnnotatedParameterTypes();\n                                constructor.getParameterAnnotations();\n                                foundInjectableConstructor = true;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e9c8ec9ed0123407",
+      "equalIndicator/v1": "ce0cd6cb5501b2942e44be6b883ded360c8b3831905c4c4487765d422735611b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Method.getParameterAnnotations()' is ignored",
+      "markdown": "Result of `Method.getParameterAnnotations()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 536,
+            "startColumn": 40,
+            "charOffset": 22702,
+            "charLength": 23,
+            "snippet": {
+              "text": "getParameterAnnotations"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 534,
+            "startColumn": 1,
+            "charOffset": 22493,
+            "charLength": 291,
+            "snippet": {
+              "text": "                                    || method.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                method.getAnnotatedParameterTypes();\n                                method.getParameterAnnotations();\n                            }\n                        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "65d8303ffabb38d4",
+      "equalIndicator/v1": "ba33f9e5578f18d360def2d3ae380b42ce11476e6ef6d2ea04df5fcea30118ae"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Thread.interrupted()' is ignored",
+      "markdown": "Result of `Thread.interrupted()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Executor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 253,
+            "startColumn": 16,
+            "charOffset": 9824,
+            "charLength": 11,
+            "snippet": {
+              "text": "interrupted"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 251,
+            "startColumn": 1,
+            "charOffset": 9634,
+            "charLength": 398,
+            "snippet": {
+              "text": "        // as a result we need to clean the interrupt flag so that the lock's lock method doesn't\n        // get confused and think it was interrupted while awaiting the lock\n        Thread.interrupted();\n        // we need to use a write lock as we may be repeatedly interrupted while processing and\n        // we need the same lock as used in void interrupt(Result,boolean,CauseOfInterruption...)"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "070a02da51b8fdfa",
+      "equalIndicator/v1": "7c44b7bec0afb94297dfbe354bf772232497fab7966dabab3dc3753d1574b7ad"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'AccessibleObject.getAnnotations()' is ignored",
+      "markdown": "Result of `AccessibleObject.getAnnotations()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExtensionFinder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 545,
+            "startColumn": 35,
+            "charOffset": 23249,
+            "charLength": 14,
+            "snippet": {
+              "text": "getAnnotations"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 543,
+            "startColumn": 1,
+            "charOffset": 23029,
+            "charLength": 375,
+            "snippet": {
+              "text": "                                    || f.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || f.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                f.getAnnotations();\n                                f.getAnnotatedType().getAnnotations();\n                                resolve(f.getType(), encountered);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c67ee5d431646845",
+      "equalIndicator/v1": "e25fcc283853de2469c5224f6c55865bf8d49eb45f1ee2c6d8c3d8c7d2af6096"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Run.getPreviousBuild()' is ignored",
+      "markdown": "Result of `Run.getPreviousBuild()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/lazy/LazyBuildMixIn.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 194,
+            "startColumn": 23,
+            "charOffset": 7959,
+            "charLength": 16,
+            "snippet": {
+              "text": "getPreviousBuild"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 192,
+            "startColumn": 1,
+            "charOffset": 7888,
+            "charLength": 222,
+            "snippet": {
+              "text": "            }\n            builds.put(lastBuild);\n            lastBuild.getPreviousBuild(); // JENKINS-20662: create connection to previous build\n            return lastBuild;\n        } catch (InvocationTargetException e) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6d7daee0d153f3cb",
+      "equalIndicator/v1": "e90ea99f127ec47a0598cbda102007b4602d082f7eac001013f4c110ebfea29e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Path.toFile()' is ignored",
+      "markdown": "Result of `Path.toFile()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1459,
+            "startColumn": 70,
+            "charOffset": 57422,
+            "charLength": 6,
+            "snippet": {
+              "text": "toFile"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1457,
+            "startColumn": 1,
+            "charOffset": 57255,
+            "charLength": 212,
+            "snippet": {
+              "text": "        @Override\n        public Void invoke(File f, VirtualChannel channel) throws IOException {\n            Util.deleteContentsRecursive(fileToPath(f), path -> path.toFile());\n            return null;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8e96898100a382fa",
+      "equalIndicator/v1": "2ba7317dba6eb6971b7cc3089cbdc31fcf2b7cb13998137311b43ab5d323b057"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "IgnoreResultOfCall",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Result of 'Thread.interrupted()' is ignored",
+      "markdown": "Result of `Thread.interrupted()` is ignored"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 450,
+            "startColumn": 24,
+            "charOffset": 16446,
+            "charLength": 11,
+            "snippet": {
+              "text": "interrupted"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 448,
+            "startColumn": 1,
+            "charOffset": 16210,
+            "charLength": 371,
+            "snippet": {
+              "text": "                // It might make sense to introduce retries, but it's probably not going to get better.\n                LOGGER.log(Level.FINE, \"Caught InterruptedException while checking if vetoers exist: \", ie);\n                Thread.interrupted(); // Clear the interrupt flag and just accept that no known vetoers exist.\n            }\n            catch (Exception e) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e156aae58ce6ed84",
+      "equalIndicator/v1": "e2ac54310abd978cb6f6405db20c03bccbf56c60e31a05af999b33ab4a8d3db8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

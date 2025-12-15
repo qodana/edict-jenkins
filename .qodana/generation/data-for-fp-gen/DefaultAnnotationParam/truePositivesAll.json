@@ -1,0 +1,582 @@
+[
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/AbstractBuildRangeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 18,
+            "startColumn": 93,
+            "charOffset": 557,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 16,
+            "startColumn": 1,
+            "charOffset": 384,
+            "charLength": 214,
+            "snippet": {
+              "text": "@Deprecated\npublic abstract class AbstractBuildRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public AbstractProject<?, ?> job;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ee3a2f8f51f1ffc1",
+      "equalIndicator/v1": "708162a6d9025ea471941306eb435a08f1ed50bb4ce97196f23451d1ac89b258"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/SetBuildDisplayNameCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 19,
+            "startColumn": 93,
+            "charOffset": 594,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 17,
+            "startColumn": 1,
+            "charOffset": 495,
+            "charLength": 138,
+            "snippet": {
+              "text": "    }\n\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public transient Job<?, ?> job;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9420c96c0852e85e",
+      "equalIndicator/v1": "a04939e40716d7c3fc51161274364f0f1ef64f1c9a4752feafaa31803248a1f6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ListJobsCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 48,
+            "startColumn": 72,
+            "charOffset": 1764,
+            "charLength": 5,
+            "snippet": {
+              "text": "false"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 46,
+            "startColumn": 1,
+            "charOffset": 1686,
+            "charLength": 109,
+            "snippet": {
+              "text": "    }\n\n    @Argument(metaVar = \"NAME\", usage = \"Name of the view\", required = false)\n    public String name;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "17c3c554ada2a1fe",
+      "equalIndicator/v1": "2f3726e343e97c9ca3f8809dc94c51555393d44f1a22ba7504ed976a2be94e99"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/RunRangeCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 15,
+            "startColumn": 93,
+            "charOffset": 436,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 13,
+            "startColumn": 1,
+            "charOffset": 281,
+            "charLength": 184,
+            "snippet": {
+              "text": " */\npublic abstract class RunRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public Job<?, ?> job;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "cb5204b806c69dac",
+      "equalIndicator/v1": "035233287656edc241d55ddd59cd34e99b2d1ed942398fd0481e5cf66a404aa1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/AddJobToViewCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 41,
+            "startColumn": 68,
+            "charOffset": 1527,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 39,
+            "startColumn": 1,
+            "charOffset": 1405,
+            "charLength": 148,
+            "snippet": {
+              "text": "public class AddJobToViewCommand extends CLICommand {\n\n    @Argument(usage = \"Name of the view\", required = true, index = 0)\n    private View view;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6d9eea4b05b98fc8",
+      "equalIndicator/v1": "7e8abcdbb89f61cbb48376008b565e1380416bec599c8c19228b954d5e7ae10e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/RemoveJobFromViewCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 41,
+            "startColumn": 68,
+            "charOffset": 1532,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 39,
+            "startColumn": 1,
+            "charOffset": 1405,
+            "charLength": 153,
+            "snippet": {
+              "text": "public class RemoveJobFromViewCommand extends CLICommand {\n\n    @Argument(usage = \"Name of the view\", required = true, index = 0)\n    private View view;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "603da7161aecbb6b",
+      "equalIndicator/v1": "af92f93f58b940fedd83786fda710e697a19733cf2c353320faa8628fd9aaf08"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/SetBuildDescriptionCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 21,
+            "startColumn": 93,
+            "charOffset": 720,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 19,
+            "startColumn": 1,
+            "charOffset": 620,
+            "charLength": 139,
+            "snippet": {
+              "text": "     }\n\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public transient Job<?, ?> job;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ea8f9489dc0bbc4a",
+      "equalIndicator/v1": "aa3b7814545e2972d2c2a15c8e22e7aa74dbf82d284d039edc9c856a5e579cd9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ConsoleCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 33,
+            "startColumn": 132,
+            "charOffset": 975,
+            "charLength": 5,
+            "snippet": {
+              "text": "false"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 31,
+            "startColumn": 1,
+            "charOffset": 817,
+            "charLength": 215,
+            "snippet": {
+              "text": "    public Job<?, ?> job;\n\n    @Argument(metaVar = \"BUILD\", usage = \"Build number or permalink to point to the build. Defaults to the last build\", required = false, index = 1)\n    public String build = \"lastBuild\";\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "599d5e3445113858",
+      "equalIndicator/v1": "fdb54f054af803f7e488a02e5369c3da50fd6a730529b40de55db4e25644e6c0"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/slaves/systemInfo/ClassLoaderStatisticsSlaveInfo.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 11,
+            "startColumn": 22,
+            "charOffset": 214,
+            "charLength": 1,
+            "snippet": {
+              "text": "0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 9,
+            "startColumn": 1,
+            "charOffset": 160,
+            "charLength": 173,
+            "snippet": {
+              "text": " * @author Kohsuke Kawaguchi\n */\n@Extension(ordinal = 0) @Symbol(\"classLoaderStatistics\")\npublic class ClassLoaderStatisticsSlaveInfo extends SlaveSystemInfo {\n    @Override"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8cfbf6ca1fd643ac",
+      "equalIndicator/v1": "5a588f43157afe2bb4aceb69c5a5047f9a3eed1ba613bca5e0045aba5c5a6dcc"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "DefaultAnnotationParam",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Redundant default parameter value assignment",
+      "markdown": "Redundant default parameter value assignment"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ListPluginsCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 47,
+            "startColumn": 81,
+            "charOffset": 1727,
+            "charLength": 5,
+            "snippet": {
+              "text": "false"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 45,
+            "startColumn": 1,
+            "charOffset": 1640,
+            "charLength": 118,
+            "snippet": {
+              "text": "    }\n\n    @Argument(metaVar = \"NAME\", usage = \"Name of a specific plugin\", required = false)\n    public String name;\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8bcb6f26aeb7d1c6",
+      "equalIndicator/v1": "917fbf2b07115970b872a1687517301fe3d8b426d05b109e174e7082031d808f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

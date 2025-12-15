@@ -1,0 +1,857 @@
+[
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ArchiverFactory.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 60,
+            "startColumn": 47,
+            "charOffset": 2238,
+            "charLength": 18,
+            "snippet": {
+              "text": "TarArchiverFactory"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 58,
+            "startColumn": 1,
+            "charOffset": 2096,
+            "charLength": 191,
+            "snippet": {
+              "text": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TARGZ = new TarArchiverFactory(TarCompression.GZIP);\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2acdbded9ccf0b72",
+      "equalIndicator/v1": "77bd21d753753c7d2d4928c6f284ece72ebff193bb9180cf4f47fe78807a9ac9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/PermalinkProjectAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 147,
+            "startColumn": 63,
+            "charOffset": 5145,
+            "charLength": 17,
+            "snippet": {
+              "text": "PeepholePermalink"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 145,
+            "startColumn": 1,
+            "charOffset": 5058,
+            "charLength": 175,
+            "snippet": {
+              "text": "            }\n        };\n        public static final Permalink LAST_FAILED_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "f85fe4d21683021b",
+      "equalIndicator/v1": "b9f96ac545e6ea60b08161bab51179e2512b79a13b33826665be441001317442"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/PermalinkProjectAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 197,
+            "startColumn": 66,
+            "charOffset": 6729,
+            "charLength": 17,
+            "snippet": {
+              "text": "PeepholePermalink"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 195,
+            "startColumn": 1,
+            "charOffset": 6639,
+            "charLength": 178,
+            "snippet": {
+              "text": "            }\n        };\n        public static final Permalink LAST_COMPLETED_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "abffd7e9186002cf",
+      "equalIndicator/v1": "2ab6e47c117f90505a633063becf55dfa63ddf12faba1584effdfd9a79d69459"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ArchiverFactory.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 54,
+            "startColumn": 45,
+            "charOffset": 2032,
+            "charLength": 18,
+            "snippet": {
+              "text": "TarArchiverFactory"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 52,
+            "startColumn": 1,
+            "charOffset": 1892,
+            "charLength": 189,
+            "snippet": {
+              "text": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TAR = new TarArchiverFactory(TarCompression.NONE);\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "40ca0d7138efb723",
+      "equalIndicator/v1": "abe435fa90f024afd39d49322391dee21bbb669943947ce7cdf87b6059c63e53"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass Unsecured from superclass AuthorizationStrategy initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass Unsecured from superclass AuthorizationStrategy initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/AuthorizationStrategy.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 213,
+            "startColumn": 63,
+            "charOffset": 7775,
+            "charLength": 9,
+            "snippet": {
+              "text": "Unsecured"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 211,
+            "startColumn": 1,
+            "charOffset": 7635,
+            "charLength": 249,
+            "snippet": {
+              "text": "     * This singleton is safe because {@link Unsecured} is stateless.\n     */\n    public static final AuthorizationStrategy UNSECURED = new Unsecured();\n\n    public static final class Unsecured extends AuthorizationStrategy implements Serializable {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "17315ad6c1979114",
+      "equalIndicator/v1": "716b1fb1b7f27a8a03293e37eaf0a9e523e8259be488706ddba81533d2551148"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass Default from superclass FileSystemProvisioner initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass Default from superclass FileSystemProvisioner initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FileSystemProvisioner.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 51,
+            "startColumn": 61,
+            "charOffset": 2182,
+            "charLength": 7,
+            "snippet": {
+              "text": "Default"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 49,
+            "startColumn": 1,
+            "charOffset": 2115,
+            "charLength": 148,
+            "snippet": {
+              "text": "    }\n\n    public static final FileSystemProvisioner DEFAULT = new Default();\n\n    public static final class Default extends FileSystemProvisioner {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b5565cb8ea1b4479",
+      "equalIndicator/v1": "8722af36c5af8846959ccc35bed1da244b6f701530475f11e43dcfdde8e0aefd"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/PermalinkProjectAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 164,
+            "startColumn": 65,
+            "charOffset": 5666,
+            "charLength": 17,
+            "snippet": {
+              "text": "PeepholePermalink"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 162,
+            "startColumn": 1,
+            "charOffset": 5590,
+            "charLength": 164,
+            "snippet": {
+              "text": "        };\n\n        public static final Permalink LAST_UNSTABLE_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "63eeef279480d6c7",
+      "equalIndicator/v1": "b97a840d92b463cb6208d5724842fdb8d98f08732e2b2d1c26e9ac4010923e40"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass DefaultProjectNamingStrategy from superclass ProjectNamingStrategy initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass DefaultProjectNamingStrategy from superclass ProjectNamingStrategy initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/ProjectNamingStrategy.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 105,
+            "startColumn": 77,
+            "charOffset": 4058,
+            "charLength": 28,
+            "snippet": {
+              "text": "DefaultProjectNamingStrategy"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 103,
+            "startColumn": 1,
+            "charOffset": 3896,
+            "charLength": 202,
+            "snippet": {
+              "text": "     * The default naming strategy which does not restrict the name of a job.\n     */\n    public static final ProjectNamingStrategy DEFAULT_NAMING_STRATEGY = new DefaultProjectNamingStrategy();\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "eb465a558bec5965",
+      "equalIndicator/v1": "ff929bffb6da4160dc3ef35f1e4499eb77b8c054b7f2b0c6c94d1770aa009f53"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass Always from superclass RetentionStrategy initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass Always from superclass RetentionStrategy initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/RetentionStrategy.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 156,
+            "startColumn": 47,
+            "charOffset": 6035,
+            "charLength": 6,
+            "snippet": {
+              "text": "Always"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 154,
+            "startColumn": 1,
+            "charOffset": 5892,
+            "charLength": 161,
+            "snippet": {
+              "text": "     * Convenient singleton instance, since this {@link RetentionStrategy} is stateless.\n     */\n    public static final Always INSTANCE = new Always();\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ac619d9295fadfd4",
+      "equalIndicator/v1": "4bcbc7b5003f7ac1507351c00260b58a56b870d6c9dfe1dbf0f1751c54583dd6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/PermalinkProjectAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 181,
+            "startColumn": 69,
+            "charOffset": 6196,
+            "charLength": 17,
+            "snippet": {
+              "text": "PeepholePermalink"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 179,
+            "startColumn": 1,
+            "charOffset": 6116,
+            "charLength": 168,
+            "snippet": {
+              "text": "        };\n\n        public static final Permalink LAST_UNSUCCESSFUL_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ebda2bac58d5c263",
+      "equalIndicator/v1": "793c96bdd2a096ee5f30be37ef095c9581ccdf4d36855c8a479c4c31d194ca73"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/PermalinkProjectAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 114,
+            "startColumn": 63,
+            "charOffset": 3961,
+            "charLength": 17,
+            "snippet": {
+              "text": "PeepholePermalink"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 112,
+            "startColumn": 1,
+            "charOffset": 3874,
+            "charLength": 175,
+            "snippet": {
+              "text": "            }\n        };\n        public static final Permalink LAST_STABLE_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "46a2fb503e3c057f",
+      "equalIndicator/v1": "cb8d86f5956a0072f398f8f68a49eef254c3bf39d6ebebf7830d983b0af82b17"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass ZipArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass ZipArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ArchiverFactory.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 66,
+            "startColumn": 45,
+            "charOffset": 2447,
+            "charLength": 18,
+            "snippet": {
+              "text": "ZipArchiverFactory"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 64,
+            "startColumn": 1,
+            "charOffset": 2307,
+            "charLength": 170,
+            "snippet": {
+              "text": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory ZIP = new ZipArchiverFactory();\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9509cfd05c83f1b0",
+      "equalIndicator/v1": "f2efb35d623d1a1060034addff588ce55ef5ee39fca8b6b292a604c4c4f08af3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass Local from superclass ProcessTree initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass Local from superclass ProcessTree initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 499,
+            "startColumn": 56,
+            "charOffset": 18076,
+            "charLength": 5,
+            "snippet": {
+              "text": "Local"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 497,
+            "startColumn": 1,
+            "charOffset": 17932,
+            "charLength": 231,
+            "snippet": {
+              "text": "     * Empty process list as a default value if the platform doesn't support it.\n     */\n    /*package*/ static final ProcessTree DEFAULT = new Local() {\n        @Override\n        public OSProcess get(@NonNull final Process proc) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8cad84ec7d12f013",
+      "equalIndicator/v1": "90c4765b9a774f959d515a8e4e8075e85b26a6ce52e4d6d9ea9a70a8dcc62558"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass CaseInsensitive from superclass IdStrategy initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass CaseInsensitive from superclass IdStrategy initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/IdStrategy.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 60,
+            "startColumn": 53,
+            "charOffset": 2455,
+            "charLength": 15,
+            "snippet": {
+              "text": "CaseInsensitive"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 58,
+            "startColumn": 1,
+            "charOffset": 2298,
+            "charLength": 184,
+            "snippet": {
+              "text": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in several plugins\")\n    public static IdStrategy CASE_INSENSITIVE = new CaseInsensitive();\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8f80dc1cbac28811",
+      "equalIndicator/v1": "1c2f6595c7594d501a91411a4b5fc7773607a4b91855fc0001bd9ee90370aed9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "StaticInitializerReferencesSubClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+      "markdown": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/PermalinkProjectAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 130,
+            "startColumn": 67,
+            "charOffset": 4483,
+            "charLength": 17,
+            "snippet": {
+              "text": "PeepholePermalink"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 128,
+            "startColumn": 1,
+            "charOffset": 4392,
+            "charLength": 179,
+            "snippet": {
+              "text": "            }\n        };\n        public static final Permalink LAST_SUCCESSFUL_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b33330f2f914e0dc",
+      "equalIndicator/v1": "a67ae59af9f01c469d39ed17a17b9058f3f809a33a9edc35c5b8ce1022fa6656"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

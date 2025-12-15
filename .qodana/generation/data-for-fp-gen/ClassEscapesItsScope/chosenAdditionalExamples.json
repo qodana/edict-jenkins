@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Class 'Op' is exposed outside its defined visibility scope",
+            "contextSnippet": "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }",
+            "equalIndicatorV2": "b72a8c5ba6bd6e00"
+        },
+        {
+            "message": "Class 'FingerprintParams' is exposed outside its defined visibility scope",
+            "contextSnippet": "\n    @Override\n    protected Fingerprint get(String md5sum, boolean createIfNotExist, FingerprintParams createParams) throws IOException {\n        // sanity check\n        if (md5sum.length() != 32)",
+            "equalIndicatorV2": "9ac060532076f993"
+        },
+        {
+            "message": "Class 'Op' is exposed outside its defined visibility scope",
+            "contextSnippet": "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }",
+            "equalIndicatorV2": "b72a8c5ba6bd6e00"
+        },
+        {
+            "message": "Class 'Decision' is exposed outside its defined visibility scope",
+            "contextSnippet": "    }\n\n    @NonNull public abstract Decision decide(@NonNull String signature);\n}\n",
+            "equalIndicatorV2": "57308cc41322747b"
+        },
+        {
+            "message": "Class 'MultiPasswordEncoder' is exposed outside its defined visibility scope",
+            "contextSnippet": "    }\n\n    public static final MultiPasswordEncoder PASSWORD_ENCODER = new MultiPasswordEncoder();\n\n    /**",
+            "equalIndicatorV2": "435f121d0ec2cc4e"
+        },
+        {
+            "message": "Class 'Decision' is exposed outside its defined visibility scope",
+            "contextSnippet": "    @Override\n    @NonNull\n    public synchronized Decision decide(@NonNull String signature) {\n        if (whitelistSignaturesFromFixedList == null || whitelistSignaturesFromUserControlledList == null ||\n                blacklistSignaturesFromFixedList == null || blacklistSignaturesFromUserControlledList == null) {",
+            "equalIndicatorV2": "b982329d0c66d414"
+        },
+        {
+            "message": "Class 'Op' is exposed outside its defined visibility scope",
+            "contextSnippet": "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }",
+            "equalIndicatorV2": "b72a8c5ba6bd6e00"
+        },
+        {
+            "message": "Class 'MonitorTask' is exposed outside its defined visibility scope",
+            "contextSnippet": "\n        @Override\n        protected MonitorTask createCallable(Computer c) {\n            return new MonitorTask();\n        }",
+            "equalIndicatorV2": "155c36c1741ebf24"
+        },
+        {
+            "message": "Class 'Status' is exposed outside its defined visibility scope",
+            "contextSnippet": "    }\n\n    public WeatherIcon(String classSpec, String style, Status status) {\n        super(classSpec, status.url, style, IconFormat.EXTERNAL_SVG_SPRITE);\n    }",
+            "equalIndicatorV2": "40e9c2e70914f708"
+        },
+        {
+            "message": "Class 'FingerprintParams' is exposed outside its defined visibility scope",
+            "contextSnippet": "\n    @Override\n    protected Fingerprint get(String md5sum, boolean createIfNotExist, FingerprintParams createParams) throws IOException {\n        // sanity check\n        if (md5sum.length() != 32)",
+            "equalIndicatorV2": "9ac060532076f993"
+        }
+    ],
+    "negativeExamples": []
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "message": "Local variable 'sb' is redundant",
+        "contextSnippet": "        @Override\n        public String toString() {\n            String sb = \"LoadStatisticsSnapshot{\" + \"definedExecutors=\" + definedExecutors +\n                    \", onlineExecutors=\" + onlineExecutors +\n                    \", connectingExecutors=\" + connectingExecutors +",
+        "equalIndicatorV2": "269dfc642d62dcac"
+    },
+    {
+        "message": "Local variable 'clone' is redundant",
+        "contextSnippet": "            }\n            String xml2 = dom.asXML();\n            ToolInstallation clone = (ToolInstallation) Timer.get().submit(() -> Jenkins.XSTREAM2.fromXML(xml2)).get();\n            return clone;\n        }",
+        "equalIndicatorV2": "9772a1d84bd6d19e"
+    },
+    {
+        "message": "Local variable 'inputStream' is redundant",
+        "contextSnippet": "            public InputStream open(OpenOption... openOptions) throws IOException {\n                String rootPath = determineRootPath();\n                InputStream inputStream = FilePath.newInputStreamDenyingSymlinkAsNeeded(f, rootPath, openOptions);\n                return inputStream;\n            }",
+        "equalIndicatorV2": "caa2bc64d88fe462"
+    },
+    {
+        "message": "Local variable 'password' is redundant",
+        "contextSnippet": "    @SuppressFBWarnings(value = {\"DMI_RANDOM_USED_ONLY_ONCE\", \"PREDICTABLE_RANDOM\"}, justification = \"https://github.com/spotbugs/spotbugs/issues/1539 and doesn't need to be secure, we're just not hardcoding a 'wrong' password\")\n    private static String generatePassword() {\n        String password = new Random().ints(20, 33, 127).mapToObj(i -> (char) i)\n                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append).toString();\n        return password;",
+        "equalIndicatorV2": "338d0fc76290692c"
+    },
+    {
+        "message": "Local variable 'buf' is redundant",
+        "contextSnippet": "            clazz = ((Descriptor) it).clazz;\n\n        String buf = Stapler.getCurrentRequest().getContextPath() + Jenkins.VIEW_RESOURCE_PATH + '/' +\n                clazz.getName().replace('.', '/').replace('$', '/') +\n                '/' + path;",
+        "equalIndicatorV2": "3300dff368addb96"
+    },
+    {
+        "message": "Local variable 'exitStatus' is redundant",
+        "contextSnippet": "                    }\n\n                    Integer exitStatus = channel.getExitStatus();\n                    return exitStatus;\n",
+        "equalIndicatorV2": "32bfbdd430e310ac"
+    },
+    {
+        "message": "Local variable 'inputStream' is redundant",
+        "contextSnippet": "        if (channel == null) {\n            File file = new File(remote);\n            InputStream inputStream = newInputStreamDenyingSymlinkAsNeeded(file, rootPathString, openOptions);\n            return inputStream;\n        }",
+        "equalIndicatorV2": "71f0412385cf8dc0"
+    },
+    {
+        "message": "Local variable 'dataFile' is redundant",
+        "contextSnippet": "            fileName = system.getString(\"file\");\n        }\n        File dataFile = new File(fileName);\n        return dataFile;\n    }",
+        "equalIndicatorV2": "f1d6ea63bca2428e"
+    },
+    {
+        "message": "Local variable 'sb' is redundant",
+        "contextSnippet": "        @Override\n        public String toString() {\n            String sb = \"DisplayExecutor{\" + \"displayName='\" + displayName + '\\'' +\n                    \", url='\" + url + '\\'' +\n                    \", executor=\" + executor +",
+        "equalIndicatorV2": "1f560cd2d3a6b909"
+    },
+    {
+        "message": "Local variable 'sb' is redundant",
+        "contextSnippet": "        @Override\n        public String toString() {\n            String sb = \"StrategyState{\" + \"label=\" + label +\n                    \", snapshot=\" + snapshot +\n                    \", plannedCapacitySnapshot=\" + plannedCapacitySnapshot +",
+        "equalIndicatorV2": "003d5c583f176039"
+    }
+]

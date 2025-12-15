@@ -1,0 +1,36 @@
+{
+    "ruleId": "ProtectedMemberInFinalClass",
+    "ruleName": "'protected' member in 'final' class",
+    "description": "Reports 'protected' members in 'final' classes with no 'protected' modifier. Since 'final' classes cannot be inherited, marking the method as 'protected' may be confusing. It is better to declare such members as 'private' or package-visible instead. Example: 'record Bar(int a, int b) {\n  protected int sum() { \n     return a + b;\n  }\n}'\n After the quick-fix is applied: 'record Bar(int a, int b) {\n  int sum() { \n     return a + b;\n  }\n}' As shown in the example, a class can be marked as 'final' explicitly or implicitly. Inspection ID: ProtectedMemberInFinalClass",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "        }\n\n        protected File getBackup() {\n            File baseDir = pm.rootDir;\n            return new File(baseDir, plugin.name + \".bak\");",
+            "            }\n\n            protected synchronized boolean waitForCheckPoint(@NonNull CheckPoint identifier, @CheckForNull BuildListener listener, @CheckForNull String waiter) throws InterruptedException {\n                final Thread t = Thread.currentThread();\n                final String oldName = t.getName();",
+            "        protected List<String> commands;\n        @CheckForNull\n        protected boolean[] masks;\n        private boolean quiet;\n        @CheckForNull",
+            "     */\n    public final class ProcStarter {\n        protected List<String> commands;\n        @CheckForNull\n        protected boolean[] masks;",
+            "         * Same as {@link DiskSpace#setTriggered(boolean)}, also sets the trigger class which made the decision\n         */\n        protected void setTriggered(Class<? extends AbstractDiskSpaceMonitor> trigger, boolean triggered) {\n            this.trigger = trigger;\n            this.triggered = triggered;",
+            "         * @since 1.399\n         */\n        protected boolean reverseStdin, reverseStdout, reverseStderr;\n\n        /**",
+            "        protected FilePath pwd;\n        @CheckForNull\n        protected OutputStream stdout = OutputStream.nullOutputStream(), stderr;\n        @CheckForNull\n        private TaskListener stdoutListener;",
+            "        private TaskListener stdoutListener;\n        @CheckForNull\n        protected InputStream stdin = NULL_INPUT_STREAM;\n        @CheckForNull\n        protected String[] envs = null;",
+            "     * @see Functions#getCurrentJellyContext()\n     */\n    protected static final ThreadLocal<JellyContext> CURRENT_CONTEXT = new ThreadLocal<>();\n}\n",
+            "            private boolean allDone;\n\n            protected synchronized void report(@NonNull CheckPoint identifier) {\n                checkpoints.add(identifier);\n                notifyAll();"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        },
+        "after": {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        }
+    }
+}

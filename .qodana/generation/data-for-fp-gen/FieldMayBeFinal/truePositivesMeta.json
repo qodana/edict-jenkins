@@ -1,0 +1,902 @@
+[
+    {
+        "message": "Field 'strategy' may be 'final'",
+        "contextSnippet": "            \"- mandatory: all mandatory dependent plugins are also disabled, optional dependent plugins remain enabled.\\n\" +\n            \"- all: all dependent plugins are also disabled, no matter if its dependency is optional or mandatory.\")\n    private String strategy = PluginWrapper.PluginDisableStrategy.NONE.toString();\n\n    @Option(name = \"-quiet\", aliases = \"-q\", usage = \"Be quiet, print only the error messages\")",
+        "equalIndicatorV2": "4bba710edca7e0cb"
+    },
+    {
+        "message": "Field 'parent' may be 'final'",
+        "contextSnippet": "     * Parent to delegate to. Can be null.\n     */\n    private ACL parent;\n\n    public SparseACL(ACL parent) {",
+        "equalIndicatorV2": "2624757676f31916"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "        private final boolean useDefaultExcludes;\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        Scanner(String includes, String excludes, boolean useDefaultExcludes, String verificationRoot, OpenOption... openOptions) {",
+        "equalIndicatorV2": "64b7c6e47947583f"
+    },
+    {
+        "message": "Field 'length' may be 'final'",
+        "contextSnippet": "         * length of this artifact for files.\n         */\n        private String length;\n\n        Artifact(SerializableArtifact clone) {",
+        "equalIndicatorV2": "2852dd2ddd86bfef"
+    },
+    {
+        "message": "Field 'url' may be 'final'",
+        "contextSnippet": "\n    static class UrlPluginCopier implements PluginCopier {\n        private String url;\n\n        UrlPluginCopier(String url) {",
+        "equalIndicatorV2": "a3964b1076ee6361"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "\n        private boolean useDefaultExcludes = true;\n        private OpenOption[] openOptions;\n\n        public Glob(String includes, String excludes) {",
+        "equalIndicatorV2": "578f967a31e6583b"
+    },
+    {
+        "message": "Field 'discarder' may be 'final'",
+        "contextSnippet": "public class SimpleGlobalBuildDiscarderStrategy extends GlobalBuildDiscarderStrategy {\n\n    private BuildDiscarder discarder;\n\n    @DataBoundConstructor",
+        "equalIndicatorV2": "1afc536cfc1ee5c6"
+    },
+    {
+        "message": "Field 'LOGGER' may be 'final'",
+        "contextSnippet": "public abstract class PartialHeader extends Header {\n\n    private static Logger LOGGER = Logger.getLogger(PartialHeader.class.getName());\n\n    /**",
+        "equalIndicatorV2": "09b0a7bac6331864"
+    },
+    {
+        "message": "Field 'lastNlines' may be 'final'",
+        "contextSnippet": "    private long seek(Run<?, ?> run) throws IOException {\n        class RingBuffer {\n            long[] lastNlines = new long[n];\n            int ptr = 0;\n",
+        "equalIndicatorV2": "5540f38d9ef8ee3d"
+    },
+    {
+        "message": "Field 'changeSetLock' may be 'final'",
+        "contextSnippet": "     * No need to lock the entire AbstractBuild on change set calculation\n     */\n    private transient Object changeSetLock = new Object();\n\n    /**",
+        "equalIndicatorV2": "1b4d63415c96f3a7"
+    },
+    {
+        "message": "Field 'filtered' may be 'final'",
+        "contextSnippet": "    private List<QueueItem> queueItems;\n\n    private boolean filtered;\n\n    public BuildQueueWidget(@NonNull String ownerUrl, @NonNull List<QueueItem> queueItems) {",
+        "equalIndicatorV2": "774b1aecea247344"
+    },
+    {
+        "message": "Field 'verificationRoot' may be 'final'",
+        "contextSnippet": "        private static final long serialVersionUID = 1L;\n        private final Pipe p;\n        private String verificationRoot;\n        private OpenOption[] openOptions;\n",
+        "equalIndicatorV2": "67c5f31bf6fc3b64"
+    },
+    {
+        "message": "Field 'rows' may be 'final'",
+        "contextSnippet": "\n    private List<Number> values = new ArrayList<>();\n    private List<Row> rows = new ArrayList<>();\n    private List<Column> columns = new ArrayList<>();\n",
+        "equalIndicatorV2": "1e44f18a8b450f87"
+    },
+    {
+        "message": "Field 'treeNodeId' may be 'final'",
+        "contextSnippet": "         * Id of this node for use in tree view.\n         */\n        private String treeNodeId;\n\n        /**",
+        "equalIndicatorV2": "43495f217edd7639"
+    },
+    {
+        "message": "Field 'start' may be 'final'",
+        "contextSnippet": "                DirectoryScanner ds = bound == Integer.MAX_VALUE ? new DirectoryScanner() : new DirectoryScanner() {\n                    int ticks;\n                    long start = System.currentTimeMillis();\n                    @Override public synchronized boolean isCaseSensitive() {\n                        if (!filesIncluded.isEmpty() || !dirsIncluded.isEmpty() || ticks++ > bound || System.currentTimeMillis() - start > 5000) {",
+        "equalIndicatorV2": "b1dfeda04307f939"
+    },
+    {
+        "message": "Field 'COMP_BY_LAST_USE_THEN_COUNTER' may be 'final'",
+        "contextSnippet": "\n    public static class SingleTokenStats {\n        private static Comparator<SingleTokenStats> COMP_BY_LAST_USE_THEN_COUNTER =\n                Comparator.comparing(SingleTokenStats::getLastUseDate, Comparator.nullsFirst(Comparator.naturalOrder()))\n                        .thenComparing(SingleTokenStats::getUseCounter);",
+        "equalIndicatorV2": "43e1dbd90291af5a"
+    },
+    {
+        "message": "Field 'potentialChildRelativePath' may be 'final'",
+        "contextSnippet": "    private static class IsDescendant extends MasterToSlaveFileCallable<Boolean> {\n        private static final long serialVersionUID = 1L;\n        private String potentialChildRelativePath;\n\n        private IsDescendant(@NonNull String potentialChildRelativePath) {",
+        "equalIndicatorV2": "a4c731f67694f598"
+    },
+    {
+        "message": "Field 'id' may be 'final'",
+        "contextSnippet": "public class Category implements Serializable {\n\n    private String id;\n\n    private String name;",
+        "equalIndicatorV2": "9002e327e1cfd8e6"
+    },
+    {
+        "message": "Field 'TRUNCATED_DESCRIPTION_LIMIT' may be 'final'",
+        "contextSnippet": "     * @since 2.223\n     */\n    private static /* non-final for Groovy */ int TRUNCATED_DESCRIPTION_LIMIT = SystemProperties.getInteger(\"historyWidget.descriptionLimit\", 100);\n\n    protected final transient @NonNull JobT project;",
+        "equalIndicatorV2": "943de92b748109c6"
+    },
+    {
+        "message": "Field 'checkResult' may be 'final'",
+        "contextSnippet": "        private Callable<V> callable;\n        private String action;\n        private BiPredicate<Integer, V> checkResult;\n\n        private int attempts = 3;",
+        "equalIndicatorV2": "45eeaca95d13e814"
+    },
+    {
+        "message": "Field 'nodeProperties' may be 'final'",
+        "contextSnippet": "     * List of built-in node-specific node properties\n     */\n    private DescribableList<NodeProperty<?>, NodePropertyDescriptor> nodeProperties = new DescribableList<>(this);\n\n    /**",
+        "equalIndicatorV2": "c49711a13d986502"
+    },
+    {
+        "message": "Field 'workUnits' may be 'final'",
+        "contextSnippet": "    private final Latch startLatch, endLatch;\n\n    private List<WorkUnit> workUnits = new ArrayList<>();\n\n    /**",
+        "equalIndicatorV2": "f5341a571e684517"
+    },
+    {
+        "message": "Field 'LOGGER' may be 'final'",
+        "contextSnippet": "public class Functions {\n    private static final AtomicLong iota = new AtomicLong();\n    private static Logger LOGGER = Logger.getLogger(Functions.class.getName());\n\n    public Functions() {",
+        "equalIndicatorV2": "bbcd566dd41988d4"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        SymlinkRetainingFileFilter(FilePath verificationRoot, OpenOption... openOptions) {",
+        "equalIndicatorV2": "b0cfb3a0895599b9"
+    },
+    {
+        "message": "Field 'idleMinutes' may be 'final'",
+        "contextSnippet": " */\npublic class CloudRetentionStrategy extends RetentionStrategy<AbstractCloudComputer> {\n    private int idleMinutes;\n\n    public CloudRetentionStrategy(int idleMinutes) {",
+        "equalIndicatorV2": "8f86829d39682eee"
+    },
+    {
+        "message": "Field 'duringActionExceptionListener' may be 'final'",
+        "contextSnippet": "    private BiPredicate<Integer, V> checkResult;\n    private String action;\n    private BiFunction<Integer, Exception, V> duringActionExceptionListener;\n    private Class<?>[] duringActionExceptions;\n",
+        "equalIndicatorV2": "3d14ca1c2636aa9a"
+    },
+    {
+        "message": "Field 'extensionAnnotations' may be 'final'",
+        "contextSnippet": "         * Map from {@link GuiceExtensionAnnotation#annotationType} to {@link GuiceExtensionAnnotation}\n         */\n        private Map<Class<? extends Annotation>, GuiceExtensionAnnotation<?>> extensionAnnotations = new HashMap<>();\n\n        public GuiceFinder() {",
+        "equalIndicatorV2": "b1abdc5a77c76bc4"
+    },
+    {
+        "message": "Field 'iconsByUrl' may be 'final'",
+        "contextSnippet": "\n    private Map<String, Icon> iconsByCSSSelector = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByUrl  = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByClassSpec = new ConcurrentHashMap<>();\n    private Map<String, Icon> coreIcons = new ConcurrentHashMap<>();",
+        "equalIndicatorV2": "25d7020f8f00be38"
+    },
+    {
+        "message": "Field 'queueItems' may be 'final'",
+        "contextSnippet": "    private String ownerUrl;\n    @NonNull\n    private List<QueueItem> queueItems;\n\n    private boolean filtered;",
+        "equalIndicatorV2": "5b857bda979d9456"
+    },
+    {
+        "message": "Field 'upstreamBuild' may be 'final'",
+        "contextSnippet": "        private static final int MAX_LEAF = 25;\n        private String upstreamProject, upstreamUrl;\n        private int upstreamBuild;\n        /**\n         * @deprecated since 2009-02-28",
+        "equalIndicatorV2": "5583267ea4b5372e"
+    },
+    {
+        "message": "Field 'group' may be 'final'",
+        "contextSnippet": "     */\n    private static class DependencyGroup {\n        private Set<Dependency> group = new LinkedHashSet<>();\n\n        DependencyGroup(Dependency first) {",
+        "equalIndicatorV2": "6e8807bd28a70283"
+    },
+    {
+        "message": "Field 'tree' may be 'final'",
+        "contextSnippet": "    private static final class SerializableArtifactList extends ArrayList<SerializableArtifact> {\n        private static final long serialVersionUID = 1L;\n        private LinkedHashMap<SerializableArtifact, String> tree = new LinkedHashMap<>();\n        private int idSeq = 0;\n    }",
+        "equalIndicatorV2": "a7240429814e9123"
+    },
+    {
+        "message": "Field 'forceExistingJobs' may be 'final'",
+        "contextSnippet": "        private final String description;\n\n        private boolean forceExistingJobs;\n\n        @Deprecated",
+        "equalIndicatorV2": "7b4978634e40589a"
+    },
+    {
+        "message": "Field 'pingTimeoutSeconds' may be 'final'",
+        "contextSnippet": "     * Timeout for the ping in seconds.\n     */\n    private int pingTimeoutSeconds = SystemProperties.getInteger(TIMEOUT_SECONDS_PROPERTY, PING_TIMEOUT_SECONDS_DEFAULT, Level.WARNING);\n\n    /**",
+        "equalIndicatorV2": "9da226b4c05de5b0"
+    },
+    {
+        "message": "Field 'downstream' may be 'final'",
+        "contextSnippet": "     */\n    public static class Dependency {\n        private AbstractProject upstream, downstream;\n\n        public Dependency(AbstractProject upstream, AbstractProject downstream) {",
+        "equalIndicatorV2": "dd111a6c12c83d87"
+    },
+    {
+        "message": "Field 'duringActionExceptions' may be 'final'",
+        "contextSnippet": "    private String action;\n    private BiFunction<Integer, Exception, V> duringActionExceptionListener;\n    private Class<?>[] duringActionExceptions;\n\n    private Retrier(Builder<V> builder) {",
+        "equalIndicatorV2": "eb0c5656eec2b5de"
+    },
+    {
+        "message": "Field 'excludeClientIPFromCrumb' may be 'final'",
+        "contextSnippet": "\n    private transient MessageDigest md;\n    private boolean excludeClientIPFromCrumb;\n\n    @Restricted(NoExternalUse.class)",
+        "equalIndicatorV2": "9ebe0594dbffafa3"
+    },
+    {
+        "message": "Field 'description' may be 'final'",
+        "contextSnippet": "    private String name;\n\n    private String description;\n\n    private int order;",
+        "equalIndicatorV2": "688e60e79f2058e3"
+    },
+    {
+        "message": "Field 'SECURITY_243_FULL_DEFENSE' may be 'final'",
+        "contextSnippet": "    public static class UserIDCanonicalIdResolver extends User.CanonicalIdResolver {\n\n        private static /* not final */ boolean SECURITY_243_FULL_DEFENSE =\n                SystemProperties.getBoolean(User.class.getName() + \".SECURITY_243_FULL_DEFENSE\", true);\n",
+        "equalIndicatorV2": "63063fa522573c67"
+    },
+    {
+        "message": "Field 'p' may be 'final'",
+        "contextSnippet": "        private static final long serialVersionUID = 1L;\n\n        private Pipe p;\n        private long offset;\n",
+        "equalIndicatorV2": "15f4834db1c212d8"
+    },
+    {
+        "message": "Field 'FILEUPLOAD_MAX_FILE_SIZE' may be 'final'",
+        "contextSnippet": "     * Set to {@code -1} to disable limits.\n     */\n    private static /* nonfinal for Jenkins script console */ long FILEUPLOAD_MAX_FILE_SIZE = Long.getLong(MultipartFormDataParser.class.getName() + \".FILEUPLOAD_MAX_FILE_SIZE\", -1);\n\n    /**",
+        "equalIndicatorV2": "2c56489165e88743"
+    },
+    {
+        "message": "Field 'globalNodeProperties' may be 'final'",
+        "contextSnippet": "     * List of global properties\n     */\n    private DescribableList<NodeProperty<?>, NodePropertyDescriptor> globalNodeProperties = new DescribableList<>(this);\n\n    /**",
+        "equalIndicatorV2": "c0a3cea5cc6ae688"
+    },
+    {
+        "message": "Field 'action' may be 'final'",
+        "contextSnippet": "    private Callable<V> callable;\n    private BiPredicate<Integer, V> checkResult;\n    private String action;\n    private BiFunction<Integer, Exception, V> duringActionExceptionListener;\n    private Class<?>[] duringActionExceptions;",
+        "equalIndicatorV2": "d1c6f338e1a02c50"
+    },
+    {
+        "message": "Field 'constructed' may be 'final'",
+        "contextSnippet": "    private volatile Future<?> lastConnectActivity = null;\n\n    private Object constructed = new Object();\n\n    private transient volatile String absoluteRemoteFs;",
+        "equalIndicatorV2": "d68e95c94dc4207b"
+    },
+    {
+        "message": "Field 'rules' may be 'final'",
+        "contextSnippet": "public class EnvVarsFilterRuleWrapper implements Serializable {\n    private static final long serialVersionUID = -8647970104978388598L;\n    private List<EnvVarsFilterRule> rules;\n\n    public EnvVarsFilterRuleWrapper(@NonNull List<EnvVarsFilterRule> rules) {",
+        "equalIndicatorV2": "611337c93e90fb6b"
+    },
+    {
+        "message": "Field 'map' may be 'final'",
+        "contextSnippet": "public final class NodeList extends ArrayList<Node> {\n\n    private Map<String, Node> map = new HashMap<>();\n\n    public NodeList() {",
+        "equalIndicatorV2": "0735e8cb3d566f98"
+    },
+    {
+        "message": "Field 'addr' may be 'final'",
+        "contextSnippet": "\n    public static class RemoteCause extends Cause {\n        private String addr;\n        private String note;\n",
+        "equalIndicatorV2": "125fdae1ee44cc41"
+    },
+    {
+        "message": "Field 'lastAttempt' may be 'final'",
+        "contextSnippet": "        private final long interval;\n        private volatile long due = 0;\n        private volatile long lastAttempt = Long.MIN_VALUE;\n\n        /**",
+        "equalIndicatorV2": "252a22bbd67dcb2b"
+    },
+    {
+        "message": "Field 'name' may be 'final'",
+        "contextSnippet": "         *  include multiple path components, like \"dist/pkg/mypkg\")\n         */\n        private String name;\n\n        /**",
+        "equalIndicatorV2": "55a4414fe8359e9e"
+    },
+    {
+        "message": "Field 'PING_INTERVAL_SECONDS' may be 'final'",
+        "contextSnippet": "     * but for example {@link hudson.remoting.PingThread} may be too infrequent.\n     */\n    private static long PING_INTERVAL_SECONDS = SystemProperties.getLong(\"jenkins.websocket.pingInterval\", 30L);\n\n    private static final Logger LOGGER = Logger.getLogger(WebSocketSession.class.getName());",
+        "equalIndicatorV2": "59ddad06336d836d"
+    },
+    {
+        "message": "Field 'timestamp' may be 'final'",
+        "contextSnippet": "        private String path;\n        private String username;\n        private Instant timestamp;\n\n        @VisibleForTesting",
+        "equalIndicatorV2": "331353deb4ad28f5"
+    },
+    {
+        "message": "Field 'IDLE_TIMEOUT_SECONDS' may be 'final'",
+        "contextSnippet": "     * interval to avoid timeout issues.\n     */\n    private static long IDLE_TIMEOUT_SECONDS = Long.getLong(\"jenkins.websocket.idleTimeout\", 60L);\n\n    private static final String ATTR_LISTENER = Jetty10Provider.class.getName() + \".listener\";",
+        "equalIndicatorV2": "648202d42ad52997"
+    },
+    {
+        "message": "Field 'skipVetoes' may be 'final'",
+        "contextSnippet": "     * Flag to skip the veto check since there aren't any.\n     */\n    private boolean skipVetoes;\n\n    // instantiation only allowed for subtypes in this class",
+        "equalIndicatorV2": "88530f2a54c9b24f"
+    },
+    {
+        "message": "Field 'pluginsToBeUpdated' may be 'final'",
+        "contextSnippet": "    public static final class PluginUpdateMonitor extends AdministrativeMonitor {\n\n        private Map<String, PluginUpdateInfo> pluginsToBeUpdated = new HashMap<>();\n\n        /**",
+        "equalIndicatorV2": "122b824d5412b7c3"
+    },
+    {
+        "message": "Field 'vars' may be 'final'",
+        "contextSnippet": "\n    static final class JellyJexlContext implements JexlContext {\n        private Map vars;\n\n        JellyJexlContext(JellyContext context) {",
+        "equalIndicatorV2": "a8fbeaf0d924f631"
+    },
+    {
+        "message": "Field 'items' may be 'final'",
+        "contextSnippet": "    private int minToShow;\n\n    private List<Map<String, Serializable>> items;\n\n    public Category(String id, String name, String description, int order, int minToShow, List<Map<String, Serializable>> items) {",
+        "equalIndicatorV2": "46397f890fa37323"
+    },
+    {
+        "message": "Field 'exitOnRestart' may be 'final'",
+        "contextSnippet": "    private static final String DEFAULT_EXIT_CODE = \"5\";\n\n    private Integer exitOnRestart;\n\n    public ExitLifecycle() {",
+        "equalIndicatorV2": "33e998d78bf874e2"
+    },
+    {
+        "message": "Field 'checkResult' may be 'final'",
+        "contextSnippet": "    private long delay;\n    private Callable<V> callable;\n    private BiPredicate<Integer, V> checkResult;\n    private String action;\n    private BiFunction<Integer, Exception, V> duringActionExceptionListener;",
+        "equalIndicatorV2": "c02dade0399f46b5"
+    },
+    {
+        "message": "Field 'userId' may be 'final'",
+        "contextSnippet": "\n        @CheckForNull\n        private String userId;\n\n        /**",
+        "equalIndicatorV2": "5b47938c722b91cd"
+    },
+    {
+        "message": "Field 'missingDependencies' may be 'final'",
+        "contextSnippet": "\n    private String pluginShortName;\n    private List<Dependency> missingDependencies;\n\n    public MissingDependencyException(String pluginShortName, List<Dependency> missingDependencies) {",
+        "equalIndicatorV2": "0100ffa6b501db9d"
+    },
+    {
+        "message": "Field 'ref' may be 'final'",
+        "contextSnippet": "     */\n    public static class ConverterImpl implements Converter {\n        private RobustReflectionConverter ref;\n\n        public ConverterImpl(Mapper m) {",
+        "equalIndicatorV2": "1c9e3fcae5c0bf36"
+    },
+    {
+        "message": "Field 'activatedGlobalRules' may be 'final'",
+        "contextSnippet": "@Restricted(Beta.class)\npublic class EnvVarsFilterGlobalConfiguration extends GlobalConfiguration {\n    private DescribableList<EnvVarsFilterGlobalRule, Descriptor<EnvVarsFilterGlobalRule>> activatedGlobalRules =\n            new DescribableList<>(this);\n",
+        "equalIndicatorV2": "088f39d6e07f5ab8"
+    },
+    {
+        "message": "Field 'downstream' may be 'final'",
+        "contextSnippet": "        }\n\n        private AbstractProject upstream, downstream;\n\n        public AbstractProject getUpstreamProject() {",
+        "equalIndicatorV2": "1b8f6377488bd5d5"
+    },
+    {
+        "message": "Field 'additionalActions' may be 'final'",
+        "contextSnippet": "        private volatile long startTime;\n\n        private Action[] additionalActions;\n\n        public Runner() {",
+        "equalIndicatorV2": "df0d4e581ae7fd16"
+    },
+    {
+        "message": "Field 'startedBy' may be 'final'",
+        "contextSnippet": "    public static class CLICause extends UserIdCause {\n\n        private String startedBy;\n\n        public CLICause() {",
+        "equalIndicatorV2": "a52b25b3dc10aeb2"
+    },
+    {
+        "message": "Field 'e' may be 'final'",
+        "contextSnippet": "    public void doRssChangelog(StaplerRequest req, StaplerResponse rsp) throws IOException, ServletException {\n        class FeedItem {\n            ChangeLogSet.Entry e;\n            int idx;\n",
+        "equalIndicatorV2": "d348ca06d72bf437"
+    },
+    {
+        "message": "Field 'columns' may be 'final'",
+        "contextSnippet": "    private List<Number> values = new ArrayList<>();\n    private List<Row> rows = new ArrayList<>();\n    private List<Column> columns = new ArrayList<>();\n\n    public void add(Number value, Row rowKey, Column columnKey) {",
+        "equalIndicatorV2": "2737b5a1f4aa68b3"
+    },
+    {
+        "message": "Field 'artifacts' may be 'final'",
+        "contextSnippet": "     * Comma- or space-separated list of patterns of files/directories to be archived.\n     */\n    private String artifacts;\n\n    /**",
+        "equalIndicatorV2": "2d65cd0183a81cca"
+    },
+    {
+        "message": "Field 'name' may be 'final'",
+        "contextSnippet": " */\npublic final class EditType implements CustomExportedBean {\n    private String name;\n    private String description;\n",
+        "equalIndicatorV2": "dbf1d469c476e716"
+    },
+    {
+        "message": "Field 'ADMIN_INITIAL_API_TOKEN' may be 'final'",
+        "contextSnippet": "    @Restricted(NoExternalUse.class)\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"Accessible via System Groovy Scripts\")\n    private static /* not final */ String ADMIN_INITIAL_API_TOKEN = SystemProperties.getString(ADMIN_INITIAL_API_TOKEN_PROPERTY_NAME);\n\n    @NonNull",
+        "equalIndicatorV2": "8ad7179d87c14331"
+    },
+    {
+        "message": "Field 'AUTO_FLUSH' may be 'final'",
+        "contextSnippet": "     */\n\n    private static /* not final */ boolean AUTO_FLUSH = SystemProperties.getBoolean(KEY_AUTO_FLUSH);\n\n    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {",
+        "equalIndicatorV2": "5a4c92aa8c7c887b"
+    },
+    {
+        "message": "Field '_string' may be 'final'",
+        "contextSnippet": "{\n    private static final String __delim = \" \\t\\n\\r\";\n    private String _string;\n    private String _delim = __delim;\n    private boolean _returnQuotes = false;",
+        "equalIndicatorV2": "603970a49873bfe2"
+    },
+    {
+        "message": "Field 'leafLabelConverter' may be 'final'",
+        "contextSnippet": "    // class name is not ConverterImpl, to avoid getting picked up by AssociatedConverterImpl\n    private static class LabelAtomConverter extends XStream2.PassthruConverter<LabelAtom> {\n        private Label.ConverterImpl leafLabelConverter = new Label.ConverterImpl();\n\n        private LabelAtomConverter() {",
+        "equalIndicatorV2": "0c4586f2d8c4d1d3"
+    },
+    {
+        "message": "Field 'dependencies' may be 'final'",
+        "contextSnippet": "        private final File _for;\n\n        private List<Dependency> dependencies;\n\n        private final PluginManager pluginManager;",
+        "equalIndicatorV2": "d70ee75e7dd20c52"
+    },
+    {
+        "message": "Field 'iconsByCSSSelector' may be 'final'",
+        "contextSnippet": "    public static final IconSet icons = new IconSet();\n\n    private Map<String, Icon> iconsByCSSSelector = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByUrl  = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByClassSpec = new ConcurrentHashMap<>();",
+        "equalIndicatorV2": "318b9a5e08e8e480"
+    },
+    {
+        "message": "Field 'FILEUPLOAD_MAX_FILES' may be 'final'",
+        "contextSnippet": "     * Set to {@code -1} to disable limits.\n     */\n    private static /* nonfinal for Jenkins script console */ int FILEUPLOAD_MAX_FILES = Integer.getInteger(MultipartFormDataParser.class.getName() + \".FILEUPLOAD_MAX_FILES\", 1000);\n\n    /**",
+        "equalIndicatorV2": "353c53bb95be30df"
+    },
+    {
+        "message": "Field 'upstreamProject' may be 'final'",
+        "contextSnippet": "         */\n        private static final int MAX_LEAF = 25;\n        private String upstreamProject, upstreamUrl;\n        private int upstreamBuild;\n        /**",
+        "equalIndicatorV2": "837ae0d18c5d8c61"
+    },
+    {
+        "message": "Field 'REPORT_GROUP_HEADERS' may be 'final'",
+        "contextSnippet": "\n    /** If true, report {@code X-You-Are-In-Group} headers. Disabled due to JENKINS-39402; use {@code /whoAmI} etc. to diagnose permission issues. */\n    private static /* not final */ boolean REPORT_GROUP_HEADERS = SystemProperties.getBoolean(AccessDeniedException2.class.getName() + \".REPORT_GROUP_HEADERS\");\n\n    /**",
+        "equalIndicatorV2": "8007e70d72bd4554"
+    },
+    {
+        "message": "Field 'coreIcons' may be 'final'",
+        "contextSnippet": "    private Map<String, Icon> iconsByUrl  = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByClassSpec = new ConcurrentHashMap<>();\n    private Map<String, Icon> coreIcons = new ConcurrentHashMap<>();\n\n    private static final Icon NO_ICON = new Icon(\"_\", \"_\", \"_\");",
+        "equalIndicatorV2": "4f976f9b9b773eab"
+    },
+    {
+        "message": "Field 'KEY' may be 'final'",
+        "contextSnippet": "    }\n\n    private static HMACConfidentialKey KEY = new HMACConfidentialKey(ResourceDomainRootAction.class, \"key\");\n\n    // Not @Restricted because the entire class is",
+        "equalIndicatorV2": "f188370b0898f847"
+    },
+    {
+        "message": "Field 'callable' may be 'final'",
+        "contextSnippet": "    private int attempts;\n    private long delay;\n    private Callable<V> callable;\n    private BiPredicate<Integer, V> checkResult;\n    private String action;",
+        "equalIndicatorV2": "4d6e016c638dceda"
+    },
+    {
+        "message": "Field 'RECORD_FAILURES_FOR_ALL_AUTHENTICATIONS' may be 'final'",
+        "contextSnippet": "public class RobustReflectionConverter implements Converter {\n\n    private static /* non-final for Groovy */ boolean RECORD_FAILURES_FOR_ALL_AUTHENTICATIONS = SystemProperties.getBoolean(RobustReflectionConverter.class.getName() + \".recordFailuresForAllAuthentications\", false);\n    private static /* non-final for Groovy */ boolean RECORD_FAILURES_FOR_ADMINS = SystemProperties.getBoolean(RobustReflectionConverter.class.getName() + \".recordFailuresForAdmins\", false);\n",
+        "equalIndicatorV2": "9738d274e4eb104f"
+    },
+    {
+        "message": "Field 'stream' may be 'final'",
+        "contextSnippet": "\n    // ----------------------------------------------------- Instance Variables\n    private OutputStream stream;\n\n    private byte[] cache;",
+        "equalIndicatorV2": "6efa37350e354d85"
+    },
+    {
+        "message": "Field 'classLoader' may be 'final'",
+        "contextSnippet": "    private static class FileCallableWrapper<T> implements DelegatingCallable<T, IOException> {\n        private final FileCallable<T> callable;\n        private transient ClassLoader classLoader;\n        private final FilePath filePath;\n",
+        "equalIndicatorV2": "b15e3d0d4675a1d6"
+    },
+    {
+        "message": "Field 'cache' may be 'final'",
+        "contextSnippet": "    private OutputStream stream;\n\n    private byte[] cache;\n\n    private int cachePosition = 0;",
+        "equalIndicatorV2": "3bad24fe94fed2d9"
+    },
+    {
+        "message": "Field 'upstream' may be 'final'",
+        "contextSnippet": "        }\n\n        private AbstractProject upstream, downstream;\n\n        public AbstractProject getUpstreamProject() {",
+        "equalIndicatorV2": "c5f9817e300a7676"
+    },
+    {
+        "message": "Field 'attempts' may be 'final'",
+        "contextSnippet": "    private static final Logger LOGGER = Logger.getLogger(Retrier.class.getName());\n\n    private int attempts;\n    private long delay;\n    private Callable<V> callable;",
+        "equalIndicatorV2": "1ec780327cf2b894"
+    },
+    {
+        "message": "Field 'in' may be 'final'",
+        "contextSnippet": "public class ChunkedInputStream extends InputStream {\n    /** The inputstream that we're wrapping */\n    private InputStream in;\n\n    /** The chunk size */",
+        "equalIndicatorV2": "dc1de8e586408e5e"
+    },
+    {
+        "message": "Field 'callable' may be 'final'",
+        "contextSnippet": "     */\n    public static class Builder<V> {\n        private Callable<V> callable;\n        private String action;\n        private BiPredicate<Integer, V> checkResult;",
+        "equalIndicatorV2": "e4753e59b082b4fb"
+    },
+    {
+        "message": "Field 'fileItem' may be 'final'",
+        "contextSnippet": "\n    static class FileUploadPluginCopier implements PluginCopier {\n        private FileItem fileItem;\n\n        FileUploadPluginCopier(FileItem fileItem) {",
+        "equalIndicatorV2": "15c0c2edd9fc87f7"
+    },
+    {
+        "message": "Field 'type' may be 'final'",
+        "contextSnippet": "public class ServerTcpPort {\n    private int value;\n    private String type;\n\n    @DataBoundConstructor",
+        "equalIndicatorV2": "6b78507927ba3cca"
+    },
+    {
+        "message": "Field 'SUPPRESS_ALL' may be 'final'",
+        "contextSnippet": "\n    private static /* not final */ boolean SUPPRESS_WHITELIST = SystemProperties.getBoolean(\"jenkins.security.ClassFilterImpl.SUPPRESS_WHITELIST\");\n    private static /* not final */ boolean SUPPRESS_ALL = SystemProperties.getBoolean(\"jenkins.security.ClassFilterImpl.SUPPRESS_ALL\");\n\n    private static final String JENKINS_LOC = codeSource(Jenkins.class);",
+        "equalIndicatorV2": "835afd76a47cf7f2"
+    },
+    {
+        "message": "Field 'plugin' may be 'final'",
+        "contextSnippet": "     */\n    public static class PluginDisableResult {\n        private String plugin;\n        private PluginDisableStatus status;\n        private String message;",
+        "equalIndicatorV2": "41cc0fdd70ab4bdd"
+    },
+    {
+        "message": "Field 'PREVIEWS_ALLOW_GET' may be 'final'",
+        "contextSnippet": "    private static final Logger LOGGER = Logger.getLogger(MarkupFormatter.class.getName());\n\n    private static /* non-final */ boolean PREVIEWS_ALLOW_GET = SystemProperties.getBoolean(MarkupFormatter.class.getName() + \".previewsAllowGET\");\n    private static /* non-final */ boolean PREVIEWS_SET_CSP = SystemProperties.getBoolean(MarkupFormatter.class.getName() + \".previewsSetCSP\", true);\n",
+        "equalIndicatorV2": "a2077f15b32e1076"
+    },
+    {
+        "message": "Field 'seen' may be 'final'",
+        "contextSnippet": "    private static class SeenFields {\n\n        private Set seen = new HashSet();\n\n        public void add(Class definedInCls, String fieldName) {",
+        "equalIndicatorV2": "ab547ae0a3207b8e"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "        private static final long serialVersionUID = 1L;\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        HasSymlink(String verificationRoot, OpenOption... openOptions) {",
+        "equalIndicatorV2": "5f27a964ae1b2408"
+    },
+    {
+        "message": "Field 'cur' may be 'final'",
+        "contextSnippet": "\n    private static final class Step1 extends MasterToSlaveCallable<Data, IOException> {\n        private Data cur;\n\n        private Step1(Data cur) {",
+        "equalIndicatorV2": "09dc2cbfd8c83279"
+    },
+    {
+        "message": "Field 'REPORT_GROUP_HEADERS' may be 'final'",
+        "contextSnippet": "    /** If true, report {@code X-You-Are-In-Group} headers. Disabled due to JENKINS-39402; use {@code /whoAmI} etc. to diagnose permission issues. */\n    @SuppressWarnings(\"deprecation\")\n    private static /* not final */ boolean REPORT_GROUP_HEADERS = SystemProperties.getBoolean(AccessDeniedException2.class.getName() + \".REPORT_GROUP_HEADERS\");\n\n    /**",
+        "equalIndicatorV2": "cac6dd4512efc807"
+    },
+    {
+        "message": "Field 'culpritIds' may be 'final'",
+        "contextSnippet": "\n        return new AbstractSet<>() {\n            private Set<String> culpritIds = Set.copyOf(getCulpritIds());\n\n            @Override",
+        "equalIndicatorV2": "330dc68e0ac83e83"
+    },
+    {
+        "message": "Field 'LOGGER' may be 'final'",
+        "contextSnippet": "    }\n\n    private static Logger LOGGER = Logger.getLogger(AdministrativeMonitorsConfiguration.class.getName());\n}\n",
+        "equalIndicatorV2": "c40788fffdfa9da2"
+    },
+    {
+        "message": "Field 'baos' may be 'final'",
+        "contextSnippet": "    private static class CapturingServletOutputStream extends ServletOutputStream {\n\n        private ByteArrayOutputStream baos = new ByteArrayOutputStream();\n\n        @Override",
+        "equalIndicatorV2": "f3afc5eba5e13b1d"
+    },
+    {
+        "message": "Field 'collator' may be 'final'",
+        "contextSnippet": "\n    private static final class FileComparator implements Comparator<VirtualFile> {\n        private Collator collator;\n\n        FileComparator(Locale locale) {",
+        "equalIndicatorV2": "826fe8aa6c33a407"
+    },
+    {
+        "message": "Field 'username' may be 'final'",
+        "contextSnippet": "    public static class Token {\n        private String path;\n        private String username;\n        private Instant timestamp;\n",
+        "equalIndicatorV2": "be0531a2d503b6af"
+    },
+    {
+        "message": "Field 'context' may be 'final'",
+        "contextSnippet": "    static final class JellyMap implements Map {\n\n        private JellyContext context;\n\n        JellyMap(JellyContext context) {",
+        "equalIndicatorV2": "09ddc3d37e687429"
+    },
+    {
+        "message": "Field 'iconsByClassSpec' may be 'final'",
+        "contextSnippet": "    private Map<String, Icon> iconsByCSSSelector = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByUrl  = new ConcurrentHashMap<>();\n    private Map<String, Icon> iconsByClassSpec = new ConcurrentHashMap<>();\n    private Map<String, Icon> coreIcons = new ConcurrentHashMap<>();\n",
+        "equalIndicatorV2": "5d7f095444428f3b"
+    },
+    {
+        "message": "Field 'nodeNameAndSelfLabelOverride' may be 'final'",
+        "contextSnippet": "    private String label = \"\";\n\n    private static /* non-final for Groovy */ String nodeNameAndSelfLabelOverride = SystemProperties.getString(Jenkins.class.getName() + \".nodeNameAndSelfLabelOverride\");\n\n    /**",
+        "equalIndicatorV2": "e77e7630c2f6e0f1"
+    },
+    {
+        "message": "Field 'trigger' may be 'final'",
+        "contextSnippet": "\n        private final LocalDateTime time;\n        private Class<? extends TriggerDescriptor> trigger;\n        private final String fullJobName;\n        private final long duration;",
+        "equalIndicatorV2": "5de83493c6f06604"
+    },
+    {
+        "message": "Field 'stackTrace' may be 'final'",
+        "contextSnippet": "    public static class LegacyCodeCause extends Cause {\n        @SuppressFBWarnings(value = \"URF_UNREAD_FIELD\", justification = \"for backward compatibility\")\n        private StackTraceElement [] stackTrace;\n\n        public LegacyCodeCause() {",
+        "equalIndicatorV2": "07332e6b7210449f"
+    },
+    {
+        "message": "Field 'dependencyGraphLock' may be 'final'",
+        "contextSnippet": "    private transient Future<DependencyGraph> scheduledFutureDependencyGraph;\n    private transient Future<DependencyGraph> calculatingFutureDependencyGraph;\n    private transient Object dependencyGraphLock = new Object();\n\n    /**",
+        "equalIndicatorV2": "94d4aaca28c27b50"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        OptionalDiscardingFileFilter(FilePath verificationRoot, OpenOption... openOptions) {",
+        "equalIndicatorV2": "664cadf21bac0e04"
+    },
+    {
+        "message": "Field 'callstack' may be 'final'",
+        "contextSnippet": "     * against symlink induced cycles.\n     */\n    private Set<String> callstack = new HashSet<>();\n\n    public SecretRewriter() throws GeneralSecurityException {",
+        "equalIndicatorV2": "197d8e720bcdcf87"
+    },
+    {
+        "message": "Field 'authentication' may be 'final'",
+        "contextSnippet": "         * The name of the user that started this job\n         */\n        private String authentication;\n\n        /**",
+        "equalIndicatorV2": "a30347b0b4165212"
+    },
+    {
+        "message": "Field 'ADMIN_CAN_GENERATE_NEW_TOKENS' may be 'final'",
+        "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"Accessible via System Groovy Scripts\")\n    private static /* not final */ boolean ADMIN_CAN_GENERATE_NEW_TOKENS =\n            SystemProperties.getBoolean(ApiTokenProperty.class.getName() + \".adminCanGenerateNewTokens\");\n",
+        "equalIndicatorV2": "25e69576123643ea"
+    },
+    {
+        "message": "Field 'context' may be 'final'",
+        "contextSnippet": "     * Can be null.\n     */\n    private T context;\n\n    public AnnotatedLargeText(File file, Charset charset, boolean completed, T context) {",
+        "equalIndicatorV2": "a4a0f47fb242abd0"
+    },
+    {
+        "message": "Field 'ID_REGEX' may be 'final'",
+        "contextSnippet": " */\npublic class HudsonPrivateSecurityRealm extends AbstractPasswordBasedSecurityRealm implements ModelObject, AccessControlled {\n    private static /* not final */ String ID_REGEX = System.getProperty(HudsonPrivateSecurityRealm.class.getName() + \".ID_REGEX\");\n\n    /**",
+        "equalIndicatorV2": "6b373cab3d557344"
+    },
+    {
+        "message": "Field 'action' may be 'final'",
+        "contextSnippet": "    public static class Builder<V> {\n        private Callable<V> callable;\n        private String action;\n        private BiPredicate<Integer, V> checkResult;\n",
+        "equalIndicatorV2": "1c4aa7cfd13bd3b7"
+    },
+    {
+        "message": "Field 'path' may be 'final'",
+        "contextSnippet": "\n    public static class Token {\n        private String path;\n        private String username;\n        private Instant timestamp;",
+        "equalIndicatorV2": "448495f59e3f0a5e"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "        private final Pipe p;\n        private String verificationRoot;\n        private OpenOption[] openOptions;\n\n        Read(Pipe p, String verificationRoot, OpenOption... openOptions) {",
+        "equalIndicatorV2": "49ddd5af9bbf01ee"
+    },
+    {
+        "message": "Field 'DOMAIN_REGEX' may be 'final'",
+        "contextSnippet": "     * </ol>\n     */\n    private static String DOMAIN_REGEX = System.getProperty(\n            UrlHelper.class.getName() + \".DOMAIN_REGEX\",\n            \"^\" +",
+        "equalIndicatorV2": "858132fb730c9fa9"
+    },
+    {
+        "message": "Field 'owner' may be 'final'",
+        "contextSnippet": "    private int cacheGeneration;\n    private RepositoryBrowser cache;\n    private SCM owner;\n\n    AutoBrowserHolder(SCM owner) {",
+        "equalIndicatorV2": "7b6dccc6aa610f3f"
+    },
+    {
+        "message": "Field 'href' may be 'final'",
+        "contextSnippet": "         * Properly encoded relativePath for use in URLs.  This field is null for directories.\n         */\n        private String href;\n\n        /**",
+        "equalIndicatorV2": "311720b91d5edb87"
+    },
+    {
+        "message": "Field 'PERIOD' may be 'final'",
+        "contextSnippet": " */\npublic abstract class AbstractNodeMonitorDescriptor<T> extends Descriptor<NodeMonitor> {\n    private static long PERIOD = TimeUnit.MINUTES.toMillis(SystemProperties.getInteger(AbstractNodeMonitorDescriptor.class.getName() + \".periodMinutes\", 60));\n\n    /**",
+        "equalIndicatorV2": "2971c499087738ce"
+    },
+    {
+        "message": "Field 'pending' may be 'final'",
+        "contextSnippet": "             * Nodes not yet classified for the strongly connected components\n             */\n            Stack<Node> pending = new Stack<>();\n\n            void traverse() {",
+        "equalIndicatorV2": "e5bbc00694979e74"
+    },
+    {
+        "message": "Field 'ownerUrl' may be 'final'",
+        "contextSnippet": "public class BuildQueueWidget extends Widget {\n    @NonNull\n    private String ownerUrl;\n    @NonNull\n    private List<QueueItem> queueItems;",
+        "equalIndicatorV2": "3e7bcaec761694df"
+    },
+    {
+        "message": "Field 'items' may be 'final'",
+        "contextSnippet": "public class Categories implements HttpResponse, Serializable {\n\n    private List<Category> items;\n\n    public Categories() {",
+        "equalIndicatorV2": "b0799c2b61cad844"
+    },
+    {
+        "message": "Field 'idToDirectoryNameMap' may be 'final'",
+        "contextSnippet": "\n    private transient File usersDirectory;\n    private Map<String, String> idToDirectoryNameMap = new ConcurrentHashMap<>();\n\n    static UserIdMapper getInstance() {",
+        "equalIndicatorV2": "4f633fc65d087b61"
+    },
+    {
+        "message": "Field 'inProgress' may be 'final'",
+        "contextSnippet": "@Restricted(NoExternalUse.class)\npublic class BuildStatusIcon extends Icon {\n    private boolean inProgress;\n\n    public BuildStatusIcon(String classSpec, String url, String style, boolean inProgress) {",
+        "equalIndicatorV2": "90d56fb10a8d5d71"
+    },
+    {
+        "message": "Field 'expression' may be 'final'",
+        "contextSnippet": "\n        /** The Jexl expression object */\n        private org.apache.commons.jexl.Expression expression;\n\n        JexlExpression(org.apache.commons.jexl.Expression expression) {",
+        "equalIndicatorV2": "eae1c993ec7f98fc"
+    },
+    {
+        "message": "Field 'message' may be 'final'",
+        "contextSnippet": "\npublic class InvalidBuildsDir extends BootFailure {\n    private String message;\n\n    public InvalidBuildsDir(String message) {",
+        "equalIndicatorV2": "ceb1545bf9ff16d6"
+    },
+    {
+        "message": "Field 'name' may be 'final'",
+        "contextSnippet": "    private String id;\n\n    private String name;\n\n    private String description;",
+        "equalIndicatorV2": "4b60f8d11a7d05ef"
+    },
+    {
+        "message": "Field 'SUPPRESS_WHITELIST' may be 'final'",
+        "contextSnippet": "    private static final Logger LOGGER = Logger.getLogger(ClassFilterImpl.class.getName());\n\n    private static /* not final */ boolean SUPPRESS_WHITELIST = SystemProperties.getBoolean(\"jenkins.security.ClassFilterImpl.SUPPRESS_WHITELIST\");\n    private static /* not final */ boolean SUPPRESS_ALL = SystemProperties.getBoolean(\"jenkins.security.ClassFilterImpl.SUPPRESS_ALL\");\n",
+        "equalIndicatorV2": "e76cf34f7fc92e19"
+    },
+    {
+        "message": "Field 'upstreamUrl' may be 'final'",
+        "contextSnippet": "         */\n        private static final int MAX_LEAF = 25;\n        private String upstreamProject, upstreamUrl;\n        private int upstreamBuild;\n        /**",
+        "equalIndicatorV2": "264195f7d482f46b"
+    },
+    {
+        "message": "Field '_token' may be 'final'",
+        "contextSnippet": "    private boolean _returnQuotes = false;\n    private boolean _returnDelimiters = false;\n    private StringBuilder _token;\n    private boolean _hasToken = false;\n    private int _i = 0;",
+        "equalIndicatorV2": "574680be10e737d1"
+    },
+    {
+        "message": "Field 'authenticationName' may be 'final'",
+        "contextSnippet": "    @Deprecated\n    public static class UserCause extends Cause {\n        private String authenticationName;\n\n        public UserCause() {",
+        "equalIndicatorV2": "8bc36d29e1991957"
+    },
+    {
+        "message": "Field 'version' may be 'final'",
+        "contextSnippet": "\n    private static class ReportException extends Exception {\n        private String version;\n\n        private ReportException(String version) {",
+        "equalIndicatorV2": "7fa4393573c24721"
+    },
+    {
+        "message": "Field 'MIB_PROC_ALL' may be 'final'",
+        "contextSnippet": "        private static final int KERN_PROC_ALL = 0;\n        private static final int ENOMEM = 12;\n        private static int[] MIB_PROC_ALL = {CTL_KERN, KERN_PROC, KERN_PROC_ALL};\n        private static final int KERN_ARGMAX = 8;\n        private static final int KERN_PROCARGS2 = 49;",
+        "equalIndicatorV2": "393d243bd1545654"
+    },
+    {
+        "message": "Field 'FILEUPLOAD_MAX_SIZE' may be 'final'",
+        "contextSnippet": "     * Set to {@code -1} to disable limits.\n     */\n    private static /* nonfinal for Jenkins script console */ long FILEUPLOAD_MAX_SIZE = Long.getLong(MultipartFormDataParser.class.getName() + \".FILEUPLOAD_MAX_SIZE\", -1);\n\n    @Restricted(NoExternalUse.class)",
+        "equalIndicatorV2": "4f39ede60c540611"
+    },
+    {
+        "message": "Field 'authorities' may be 'final'",
+        "contextSnippet": "public final class ContainerAuthentication implements Authentication {\n    private final Principal principal;\n    private Collection<? extends GrantedAuthority> authorities;\n\n    /**",
+        "equalIndicatorV2": "10eef51b96390caa"
+    },
+    {
+        "message": "Field 'offset' may be 'final'",
+        "contextSnippet": "\n        private Pipe p;\n        private long offset;\n\n        private OffsetPipeSecureFileCallable(Pipe p, long offset) {",
+        "equalIndicatorV2": "8a3eedbd2815b127"
+    },
+    {
+        "message": "Field 'number' may be 'final'",
+        "contextSnippet": "     * Executor number that identifies it among other executors for the same {@link Computer}.\n     */\n    private int number;\n    /**\n     * {@link hudson.model.Queue.Executable} being executed right now, or null if the executor is idle.",
+        "equalIndicatorV2": "496a41958a193845"
+    },
+    {
+        "message": "Field 'EMBEDDED_VERSION' may be 'final'",
+        "contextSnippet": "\n    @NonNull\n    private static VersionNumber EMBEDDED_VERSION;\n\n    @NonNull",
+        "equalIndicatorV2": "a9c80e81b7766a5c"
+    },
+    {
+        "message": "Field 'upstreamCauses' may be 'final'",
+        "contextSnippet": "        @Deprecated\n        private transient Cause upstreamCause;\n        private @NonNull List<Cause> upstreamCauses;\n\n        /**",
+        "equalIndicatorV2": "6e2c0efeb7497c45"
+    },
+    {
+        "message": "Field 'SHOW_LEGACY_TOKEN_TO_ADMINS' may be 'final'",
+        "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"Accessible via System Groovy Scripts\")\n    private static /* not final */ boolean SHOW_LEGACY_TOKEN_TO_ADMINS =\n            SystemProperties.getBoolean(ApiTokenProperty.class.getName() + \".showTokenToAdmins\");\n",
+        "equalIndicatorV2": "44347c0d3a25d0dd"
+    },
+    {
+        "message": "Field 'process' may be 'final'",
+        "contextSnippet": "\n        private class CheckVetoes extends SlaveToMasterCallable<String, IOException> {\n            private IOSProcess process;\n\n            CheckVetoes(IOSProcess processToCheck) {",
+        "equalIndicatorV2": "faeecce6794b2b83"
+    },
+    {
+        "message": "Field 'authentication' may be 'final'",
+        "contextSnippet": "        private String computedSHA512;\n\n        private Authentication authentication;\n\n        /**",
+        "equalIndicatorV2": "dca7f2881be34b47"
+    },
+    {
+        "message": "Field 'openOptions' may be 'final'",
+        "contextSnippet": "        private final DirScanner scanner;\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        Archive(ArchiverFactory factory, OutputStream out, DirScanner scanner, String verificationRoot, OpenOption... openOptions) {",
+        "equalIndicatorV2": "569b02c85ee208d9"
+    },
+    {
+        "message": "Field 'data' may be 'final'",
+        "contextSnippet": " */\nclass SortedList<T extends Comparable<T>> extends AbstractList<T> {\n    private List<T> data;\n\n    SortedList(List<T> data) {",
+        "equalIndicatorV2": "c5e508411b540fb3"
+    },
+    {
+        "message": "Field 'CHMOD_WARNED' may be 'final'",
+        "contextSnippet": "    }\n\n    private static boolean CHMOD_WARNED = false;\n\n    /**",
+        "equalIndicatorV2": "39d11e65bcf93a3e"
+    },
+    {
+        "message": "Field 'currentVersion' may be 'final'",
+        "contextSnippet": "\n    public static class VersionRange {\n        private static VersionNumber currentVersion = Jenkins.getVersion();\n\n        final VersionNumber min;",
+        "equalIndicatorV2": "f8df4e4c426c3fa0"
+    },
+    {
+        "message": "Field 'iconFormat' may be 'final'",
+        "contextSnippet": "    private final String style;\n    private IconType iconType;\n    private IconFormat iconFormat;\n\n    /**",
+        "equalIndicatorV2": "df911ac6ff22be83"
+    },
+    {
+        "message": "Field 'root' may be 'final'",
+        "contextSnippet": "\n    private static final class BuildChildPaths extends MasterToSlaveCallable<List<List<Path>>, IOException> {\n        private VirtualFile root;\n        private final VirtualFile cur;\n        private final Locale locale;",
+        "equalIndicatorV2": "61d776173b34ea3f"
+    },
+    {
+        "message": "Field 'properties' may be 'final'",
+        "contextSnippet": "            SystemProperties.getBoolean(LabelAtom.class.getName() + \".allowFolderTraversal\");\n\n    private DescribableList<LabelAtomProperty, LabelAtomPropertyDescriptor> properties =\n            new DescribableList<>(this);\n",
+        "equalIndicatorV2": "5518923303b06100"
+    },
+    {
+        "message": "Field 'converter' may be 'final'",
+        "contextSnippet": "     */\n    public abstract static class PassthruConverter<T> implements Converter {\n        private Converter converter;\n\n        protected PassthruConverter(XStream2 xstream) {",
+        "equalIndicatorV2": "9ac9a4ca5569dc4f"
+    },
+    {
+        "message": "Field 'MAX_SEARCH_SIZE' may be 'final'",
+        "contextSnippet": "     * Limits the maximum number of search results.\n     */\n    private static /* nonfinal for Jenkins script console */ int MAX_SEARCH_SIZE = Integer.getInteger(Search.class.getName() + \".MAX_SEARCH_SIZE\", 500);\n\n    public void doIndex(StaplerRequest req, StaplerResponse rsp) throws IOException, ServletException {",
+        "equalIndicatorV2": "ff50eaedaeea9936"
+    },
+    {
+        "message": "Field 'MAXIMUM_BCRYPT_LOG_ROUND' may be 'final'",
+        "contextSnippet": "        @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"Accessible via System Groovy Scripts\")\n        @Restricted(NoExternalUse.class)\n        private static int MAXIMUM_BCRYPT_LOG_ROUND = SystemProperties.getInteger(HudsonPrivateSecurityRealm.class.getName() + \".maximumBCryptLogRound\", 18);\n\n        private static final Pattern BCRYPT_PATTERN = Pattern.compile(\"^\\\\$2a\\\\$([0-9]{2})\\\\$.{53}$\");",
+        "equalIndicatorV2": "80c5ce5dba2d7d2a"
+    },
+    {
+        "message": "Field 'disabled' may be 'final'",
+        "contextSnippet": "    }\n\n    private static Boolean disabled = SystemProperties.getBoolean(JavaVersionRecommendationAdminMonitor.class.getName() + \".disabled\", false);\n\n    @Override",
+        "equalIndicatorV2": "ebd868f5370962f4"
+    },
+    {
+        "message": "Field 'value' may be 'final'",
+        "contextSnippet": " */\npublic class ServerTcpPort {\n    private int value;\n    private String type;\n",
+        "equalIndicatorV2": "8bc8bc33715efd30"
+    },
+    {
+        "message": "Field 'MINIMUM_SUPPORTED_VERSION' may be 'final'",
+        "contextSnippet": "\n    @NonNull\n    private static VersionNumber MINIMUM_SUPPORTED_VERSION;\n\n    private RemotingVersionInfo() {}",
+        "equalIndicatorV2": "5d04319760b9700c"
+    },
+    {
+        "message": "Field 'minToShow' may be 'final'",
+        "contextSnippet": "    private int order;\n\n    private int minToShow;\n\n    private List<Map<String, Serializable>> items;",
+        "equalIndicatorV2": "c662827fd45d9f12"
+    },
+    {
+        "message": "Field 'safeRestart' may be 'final'",
+        "contextSnippet": " */\npublic class HudsonIsRestarting {\n    private boolean safeRestart;\n\n    /**",
+        "equalIndicatorV2": "2af7c03ed34e060a"
+    },
+    {
+        "message": "Field 'LOGGER' may be 'final'",
+        "contextSnippet": "public class EnvVars extends TreeMap<String, String> {\n    private static final long serialVersionUID = 4320331661987259022L;\n    private static Logger LOGGER = Logger.getLogger(EnvVars.class.getName());\n    /**\n     * If this {@link EnvVars} object represents the whole environment variable set,",
+        "equalIndicatorV2": "ae9644b8823628e9"
+    },
+    {
+        "message": "Field 'upstream' may be 'final'",
+        "contextSnippet": "     */\n    public static class Dependency {\n        private AbstractProject upstream, downstream;\n\n        public Dependency(AbstractProject upstream, AbstractProject downstream) {",
+        "equalIndicatorV2": "131c4f8fba0d50bc"
+    },
+    {
+        "message": "Field 'ALLOW_FOLDER_TRAVERSAL' may be 'final'",
+        "contextSnippet": "    private static final Pattern PROHIBITED_DOUBLE_DOT = Pattern.compile(\".*\\\\.\\\\.[\\\\\\\\/].*\");\n\n    private static /* Script Console modifiable */ boolean ALLOW_FOLDER_TRAVERSAL =\n            SystemProperties.getBoolean(LabelAtom.class.getName() + \".allowFolderTraversal\");\n",
+        "equalIndicatorV2": "ac7bfc4faa186894"
+    },
+    {
+        "message": "Field 'note' may be 'final'",
+        "contextSnippet": "    public static class RemoteCause extends Cause {\n        private String addr;\n        private String note;\n\n        public RemoteCause(String host, String note) {",
+        "equalIndicatorV2": "dc3a9773466bf0c2"
+    },
+    {
+        "message": "Field 'authenticationDetailsSource' may be 'final'",
+        "contextSnippet": "@Extension\npublic class BasicHeaderRealPasswordAuthenticator extends BasicHeaderAuthenticator {\n    private AuthenticationDetailsSource authenticationDetailsSource = new WebAuthenticationDetailsSource();\n\n    @Override",
+        "equalIndicatorV2": "1a7a3de720bd7a46"
+    },
+    {
+        "message": "Field 'ENABLED' may be 'final'",
+        "contextSnippet": "\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"for script console\")\n    private static /*almost final */ boolean ENABLED =\n            SystemProperties.getBoolean(FormElementPathPageDecorator.class.getName() + \".enabled\");\n",
+        "equalIndicatorV2": "89819e085032a05a"
+    },
+    {
+        "message": "Field 'data' may be 'final'",
+        "contextSnippet": "    private static final Logger LOGGER = Logger.getLogger(OldDataMonitor.class.getName());\n\n    private ConcurrentMap<SaveableReference, VersionRange> data = new ConcurrentHashMap<>();\n\n    /**",
+        "equalIndicatorV2": "abbaf164bf90dcbe"
+    },
+    {
+        "message": "Field 'dependentsDisableStatus' may be 'final'",
+        "contextSnippet": "        private PluginDisableStatus status;\n        private String message;\n        private Set<PluginDisableResult> dependentsDisableStatus = new HashSet<>();\n\n        public PluginDisableResult(String plugin) {",
+        "equalIndicatorV2": "85f291356eab798e"
+    },
+    {
+        "message": "Field 'PREVIEWS_SET_CSP' may be 'final'",
+        "contextSnippet": "\n    private static /* non-final */ boolean PREVIEWS_ALLOW_GET = SystemProperties.getBoolean(MarkupFormatter.class.getName() + \".previewsAllowGET\");\n    private static /* non-final */ boolean PREVIEWS_SET_CSP = SystemProperties.getBoolean(MarkupFormatter.class.getName() + \".previewsSetCSP\", true);\n\n    /**",
+        "equalIndicatorV2": "b66adbde6ffc2f23"
+    },
+    {
+        "message": "Field 'order' may be 'final'",
+        "contextSnippet": "    private String description;\n\n    private int order;\n\n    private int minToShow;",
+        "equalIndicatorV2": "5debf9c094869025"
+    },
+    {
+        "message": "Field 'DISABLE_FORCED_FLUSH' may be 'final'",
+        "contextSnippet": "    private static final Logger LOGGER = Logger.getLogger(AtomicFileWriter.class.getName());\n\n    private static /* final */ boolean DISABLE_FORCED_FLUSH = SystemProperties.getBoolean(\n            AtomicFileWriter.class.getName() + \".DISABLE_FORCED_FLUSH\");\n",
+        "equalIndicatorV2": "fc14884e36d6786d"
+    },
+    {
+        "message": "Field 'entrySet' may be 'final'",
+        "contextSnippet": "     */\n    private volatile Index index = new Index();\n    private LazyLoadRunMapEntrySet<R> entrySet = new LazyLoadRunMapEntrySet<>(this);\n\n    private transient volatile Set<Integer> keySet;",
+        "equalIndicatorV2": "a03e8666f1dbb3f5"
+    },
+    {
+        "message": "Field 'LOGGER' may be 'final'",
+        "contextSnippet": "\n    private static final Map<String, AtomicLong> requestsByLanguage = new ConcurrentSkipListMap<>();\n    private static Logger LOGGER = Logger.getLogger(UserLanguages.class.getName());\n\n    @NonNull",
+        "equalIndicatorV2": "7fb0f79320471199"
+    },
+    {
+        "message": "Field 'idx' may be 'final'",
+        "contextSnippet": "        class FeedItem {\n            ChangeLogSet.Entry e;\n            int idx;\n\n            FeedItem(ChangeLogSet.Entry e, int idx) {",
+        "equalIndicatorV2": "c79cf0c7015341f2"
+    },
+    {
+        "message": "Field 'delay' may be 'final'",
+        "contextSnippet": "\n    private int attempts;\n    private long delay;\n    private Callable<V> callable;\n    private BiPredicate<Integer, V> checkResult;",
+        "equalIndicatorV2": "26adfd9045060969"
+    },
+    {
+        "message": "Field 'CORE_ONLY_DEPENDANT' may be 'final'",
+        "contextSnippet": "     * depends on the plugin e.g. UI support library bundle plugin.\n     */\n    private static Set<String> CORE_ONLY_DEPENDANT = Set.of(\"jenkins-core\");\n\n    /**",
+        "equalIndicatorV2": "00776148cfd314ba"
+    },
+    {
+        "message": "Field 'values' may be 'final'",
+        "contextSnippet": "public final class DataSetBuilder<Row extends Comparable, Column extends Comparable> {\n\n    private List<Number> values = new ArrayList<>();\n    private List<Row> rows = new ArrayList<>();\n    private List<Column> columns = new ArrayList<>();",
+        "equalIndicatorV2": "bb058b6322356731"
+    },
+    {
+        "message": "Field 'RECORD_FAILURES_FOR_ADMINS' may be 'final'",
+        "contextSnippet": "\n    private static /* non-final for Groovy */ boolean RECORD_FAILURES_FOR_ALL_AUTHENTICATIONS = SystemProperties.getBoolean(RobustReflectionConverter.class.getName() + \".recordFailuresForAllAuthentications\", false);\n    private static /* non-final for Groovy */ boolean RECORD_FAILURES_FOR_ADMINS = SystemProperties.getBoolean(RobustReflectionConverter.class.getName() + \".recordFailuresForAdmins\", false);\n\n    protected final ReflectionProvider reflectionProvider;",
+        "equalIndicatorV2": "d6fc8c5d3894d1d7"
+    },
+    {
+        "message": "Field 'pluginShortName' may be 'final'",
+        "contextSnippet": "public class MissingDependencyException extends IOException {\n\n    private String pluginShortName;\n    private List<Dependency> missingDependencies;\n",
+        "equalIndicatorV2": "03165d7a3e80c402"
+    },
+    {
+        "message": "Field 'description' may be 'final'",
+        "contextSnippet": "public final class EditType implements CustomExportedBean {\n    private String name;\n    private String description;\n\n    public EditType(String name, String description) {",
+        "equalIndicatorV2": "cffa48e6fd463bc2"
+    }
+]

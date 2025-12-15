@@ -1,0 +1,752 @@
+[
+    {
+        "message": "Deprecated member 'predict' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public Iterable<FutureLoad> predict(Computer computer, long start, long end) {\n        return Collections.emptyList();\n    }",
+        "equalIndicatorV2": "cb7d2e076ced4ed8"
+    },
+    {
+        "message": "Deprecated member 'getShellOrDefault' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        public String getShellOrDefault() {\n            if (shell == null) {\n                return Functions.isWindows() ? \"sh\" : \"/bin/sh\";",
+        "equalIndicatorV2": "2de4c8bfd8472b7a"
+    },
+    {
+        "message": "Deprecated member 'isAnonymous' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static boolean isAnonymous(@NonNull org.acegisecurity.Authentication authentication) {\n        return isAnonymous2(authentication.toSpring());\n    }",
+        "equalIndicatorV2": "09e219433e188695"
+    },
+    {
+        "message": "Deprecated member 'computeIdleExecutors' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public abstract int computeIdleExecutors();\n\n    /**",
+        "equalIndicatorV2": "3e1dc460f973117e"
+    },
+    {
+        "message": "Deprecated member 'CloudList' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static class CloudList extends Jenkins.CloudList {\n        public CloudList(Jenkins h) {\n            super(h);",
+        "equalIndicatorV2": "86889cdd2903956c"
+    },
+    {
+        "message": "Deprecated member 'getSecretKey' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public String getSecretKey() {\n        return secretKey;\n    }",
+        "equalIndicatorV2": "5111877da7355337"
+    },
+    {
+        "message": "Deprecated member 'HUDSON_PERMISSIONS' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final PermissionGroup HUDSON_PERMISSIONS = new PermissionGroup(Hudson.class, hudson.model.Messages._Hudson_Permissions_Title());\n    /**\n     * {@link Permission} that represents the God-like access. Equivalent of Unix root.",
+        "equalIndicatorV2": "410f858b5d8079fc"
+    },
+    {
+        "message": "Deprecated member 'onChangeLogParsed' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public void onChangeLogParsed(AbstractBuild<?, ?> build, BuildListener listener, ChangeLogSet<?> changelog) throws Exception {\n        if (Util.isOverridden(SCMListener.class, getClass(), \"onChangeLogParsed\", Run.class, SCM.class, TaskListener.class, ChangeLogSet.class)) {\n            onChangeLogParsed(build, build.getProject().getScm(), listener, changelog);",
+        "equalIndicatorV2": "54da9ead217ca39b"
+    },
+    {
+        "message": "Deprecated member 'SCMedItem' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic interface SCMedItem extends BuildableItem {\n    /**\n     * Gets the {@link SCM} for this item.",
+        "equalIndicatorV2": "e02727cf0e0adb27"
+    },
+    {
+        "message": "Deprecated member 'getChildProjects' is still used",
+        "contextSnippet": "    /** @deprecated use {@link #getChildJobs} */\n    @Deprecated\n    public List<AbstractProject> getChildProjects(AbstractProject owner) {\n        return getChildProjects(owner == null ? null : owner.getParent());\n    }",
+        "equalIndicatorV2": "7ee0fc435e5f1a8e"
+    },
+    {
+        "message": "Deprecated member 'getProjectAction' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public Action getProjectAction(AbstractProject job) {\n        return null;\n    }",
+        "equalIndicatorV2": "5e1b6d8f23e8496c"
+    },
+    {
+        "message": "Deprecated member 'calcRevisionsFromBuild' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public SCMRevisionState calcRevisionsFromBuild(AbstractBuild<?, ?> build, Launcher launcher, TaskListener listener) throws IOException, InterruptedException {\n        return calcRevisionsFromBuild(build, launcher != null ? build.getWorkspace() : null, launcher, listener);\n    }",
+        "equalIndicatorV2": "159ad145a6aea293"
+    },
+    {
+        "message": "Deprecated member 'loadGroupByGroupname' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public GroupDetails loadGroupByGroupname(String groupname) throws org.acegisecurity.userdetails.UsernameNotFoundException, org.springframework.dao.DataAccessException {\n        try {\n            return loadGroupByGroupname2(groupname, false);",
+        "equalIndicatorV2": "0cbc31bbbfe2792f"
+    },
+    {
+        "message": "Deprecated member 'FieldUtils' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic final class FieldUtils {\n\n    public static Object getProtectedFieldValue(String protectedField, Object object) {",
+        "equalIndicatorV2": "7a124abb9b194873"
+    },
+    {
+        "message": "Deprecated member 'BUILD_NOW_TEXT' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final Message<AbstractProject> BUILD_NOW_TEXT = new Message<>();\n\n    /**",
+        "equalIndicatorV2": "0e4cddee6b874894"
+    },
+    {
+        "message": "Deprecated member 'findExtensions' is still used",
+        "contextSnippet": "    @Restricted(NoExternalUse.class)\n    @Deprecated\n    public <T> Collection<T> findExtensions(Class<T> type, Hudson hudson) {\n        return Collections.emptyList();\n    }",
+        "equalIndicatorV2": "cf2a871549594b5d"
+    },
+    {
+        "message": "Deprecated member 'pollChanges' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public boolean pollChanges(AbstractProject<?, ?> project, Launcher launcher, FilePath workspace, TaskListener listener) throws IOException, InterruptedException {\n        // up until 1.336, this method was abstract, so everyone should have overridden this method\n        // without calling super.pollChanges. So the compatibility implementation is purely for",
+        "equalIndicatorV2": "4b9c4ba800b7826f"
+    },
+    {
+        "message": "Deprecated member 'isAbsoluteUri' is still used",
+        "contextSnippet": "    @RestrictedSince(\"1.651.2 / 2.3\")\n    @Restricted(NoExternalUse.class)\n    public static boolean isAbsoluteUri(@NonNull String uri) {\n        int idx = uri.indexOf(':');\n        if (idx < 0)  return false;   // no ':'. can't be absolute",
+        "equalIndicatorV2": "48ae4cfa3c9326cc"
+    },
+    {
+        "message": "Deprecated member 'logRotator' is still used",
+        "contextSnippet": "    /** @deprecated Replaced by {@link BuildDiscarderProperty} */\n    @Deprecated\n    private volatile BuildDiscarder logRotator;\n\n    /**",
+        "equalIndicatorV2": "00d70a77c44bac49"
+    },
+    {
+        "message": "Deprecated member 'AdminWhitelistRule' is still used",
+        "contextSnippet": "@Deprecated\n@Extension\npublic class AdminWhitelistRule {\n\n    public AdminWhitelistRule() {",
+        "equalIndicatorV2": "0dc5209cd39a5d66"
+    },
+    {
+        "message": "Deprecated member 'getArtifactsDir' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public File getArtifactsDir() {\n        return new File(getRootDir(), \"archive\");\n    }",
+        "equalIndicatorV2": "90a902f52d75f662"
+    },
+    {
+        "message": "Deprecated member 'PasswordParameterValue' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public PasswordParameterValue(String name, String value, String description) {\n        super(name, description);\n        this.value = Secret.fromString(value);",
+        "equalIndicatorV2": "ebafd6c377498ca6"
+    },
+    {
+        "message": "Deprecated member 'installState' is still used",
+        "contextSnippet": "\n    @Deprecated\n    private InstallState installState;\n\n    /**",
+        "equalIndicatorV2": "18176c1597281481"
+    },
+    {
+        "message": "Deprecated member 'MasterComputer' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final class MasterComputer extends Jenkins.MasterComputer {\n        // no op\n    }",
+        "equalIndicatorV2": "986eae5aed778892"
+    },
+    {
+        "message": "Deprecated member 'HudsonIsRestarting' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public HudsonIsRestarting() {\n        this.safeRestart = false;\n    }",
+        "equalIndicatorV2": "698b122c910af851"
+    },
+    {
+        "message": "Deprecated member 'upstreamCause' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        private transient Cause upstreamCause;\n        private @NonNull List<Cause> upstreamCauses;\n",
+        "equalIndicatorV2": "638212d464a21aa6"
+    },
+    {
+        "message": "Deprecated member 'getChannelToMaster' is still used",
+        "contextSnippet": "    @Deprecated\n    @CheckForNull\n    public static VirtualChannel getChannelToMaster() {\n        return getChannelToController();\n    }",
+        "equalIndicatorV2": "7ee7e2b2fbf0d99f"
+    },
+    {
+        "message": "Deprecated member 'build' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient AbstractBuild<?, ?> build;\n\n    private transient Run<?, ?> run;",
+        "equalIndicatorV2": "617d3fccc8447750"
+    },
+    {
+        "message": "Deprecated member 'getJsonSignatureValidator' is still used",
+        "contextSnippet": "    @Deprecated\n    @NonNull\n    protected JSONSignatureValidator getJsonSignatureValidator() {\n        return getJsonSignatureValidator(null);\n    }",
+        "equalIndicatorV2": "bca0fed2cd738db8"
+    },
+    {
+        "message": "Deprecated member 'getPostLogOutUrl' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    protected String getPostLogOutUrl(StaplerRequest req, org.acegisecurity.Authentication auth) {\n        return getPostLogOutUrl2(req, auth.toSpring());\n    }",
+        "equalIndicatorV2": "77da8bd773e56bcf"
+    },
+    {
+        "message": "Deprecated member 'isBuildBlocked' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        default boolean isBuildBlocked() {\n            return getCauseOfBlockage() != null;\n        }",
+        "equalIndicatorV2": "0baf574a625e1f69"
+    },
+    {
+        "message": "Deprecated member 'rememberMe' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        public final org.acegisecurity.ui.rememberme.RememberMeServices rememberMe;\n\n        public SecurityComponents() {",
+        "equalIndicatorV2": "fc326c04e6e9b349"
+    },
+    {
+        "message": "Deprecated member 'doPin' is still used",
+        "contextSnippet": "    @RequirePOST\n    @Deprecated\n    public HttpResponse doPin() throws IOException {\n        Jenkins.get().checkPermission(Jenkins.ADMINISTER);\n        // See https://groups.google.com/d/msg/jenkinsci-dev/kRobm-cxFw8/6V66uhibAwAJ",
+        "equalIndicatorV2": "1deac6ba879915e0"
+    },
+    {
+        "message": "Deprecated member 'getLegacyKey' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    /*package*/ static SecretKey getLegacyKey() throws GeneralSecurityException {\n        if (Secret.SECRET != null) {\n            return Util.toAes128Key(Secret.SECRET);",
+        "equalIndicatorV2": "b02f47ef58fee4b3"
+    },
+    {
+        "message": "Deprecated member 'ReopenableRotatingFileOutputStream' is still used",
+        "contextSnippet": " * @deprecated due to risk for file leak. Prefer {@link RewindableRotatingFileOutputStream}\n */\n@Deprecated public class ReopenableRotatingFileOutputStream extends ReopenableFileOutputStream {\n    private static final Logger LOGGER = Logger.getLogger(ReopenableRotatingFileOutputStream.class.getName());\n",
+        "equalIndicatorV2": "316926f07c957e64"
+    },
+    {
+        "message": "Deprecated member 'agentCommand' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient String agentCommand; // this was called 'agentCommand' from the beginning; not an accidental 2016 rename\n\n    /**",
+        "equalIndicatorV2": "5723978dc57b1adc"
+    },
+    {
+        "message": "Deprecated member 'AUTHENTICATED_AUTHORITY' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final org.acegisecurity.GrantedAuthority AUTHENTICATED_AUTHORITY = new org.acegisecurity.GrantedAuthorityImpl(\"authenticated\");\n\n}",
+        "equalIndicatorV2": "bb9826a5935c624f"
+    },
+    {
+        "message": "Deprecated member 'changeApiToken' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void changeApiToken() throws IOException {\n        // just to keep the same level of security\n        user.checkPermission(Jenkins.ADMINISTER);",
+        "equalIndicatorV2": "adc439b14783881d"
+    },
+    {
+        "message": "Deprecated member 'cliOnline' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void cliOnline() throws ExecutionException, InterruptedException {\n        checkPermission(CONNECT);\n        setTemporarilyOffline(false, null);",
+        "equalIndicatorV2": "862a4634066f0c12"
+    },
+    {
+        "message": "Deprecated member 'RunAction' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic interface RunAction extends Action {\n    /**\n     * Called after the build is loaded and the object is added to the build list.",
+        "equalIndicatorV2": "1c95afc57c1ecaf2"
+    },
+    {
+        "message": "Deprecated member 'getJnlpJars' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public Slave.JnlpJar getJnlpJars(String fileName) {\n        return new Slave.JnlpJar(fileName);\n    }",
+        "equalIndicatorV2": "5098f173343e98b5"
+    },
+    {
+        "message": "Deprecated member 'getTotalSnapshot' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        public int getTotalSnapshot() {\n            return snapshot.getOnlineExecutors();\n        }",
+        "equalIndicatorV2": "df98d9881f748498"
+    },
+    {
+        "message": "Deprecated member 'hasCreatePermission' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public boolean hasCreatePermission(@NonNull org.acegisecurity.Authentication a, @NonNull ViewGroup c,\n                                       @NonNull ViewDescriptor d) {\n        return hasCreatePermission2(a.toSpring(), c, d);",
+        "equalIndicatorV2": "fc6f8b1d8115d835"
+    },
+    {
+        "message": "Deprecated member 'onOffline' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void onOffline(Computer c) {}\n\n    /**",
+        "equalIndicatorV2": "a3128319073982b6"
+    },
+    {
+        "message": "Deprecated member 'RingBufferLogHandler' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public RingBufferLogHandler() {\n        this(DEFAULT_RING_BUFFER_SIZE);\n    }",
+        "equalIndicatorV2": "bc98f541f25048ff"
+    },
+    {
+        "message": "Deprecated member 'getAbsoluteUrl' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    default String getAbsoluteUrl() {\n        String r = Jenkins.get().getRootUrl();\n        if (r == null)",
+        "equalIndicatorV2": "d55aa1b4c12b6f67"
+    },
+    {
+        "message": "Deprecated member 'AdministrativeError' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic class AdministrativeError extends AdministrativeMonitor {\n    public final String message;\n    public final String title;",
+        "equalIndicatorV2": "9af6d9d1d1b1e7ee"
+    },
+    {
+        "message": "Deprecated member 'computeTotalExecutors' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public abstract int computeTotalExecutors();\n\n    /**",
+        "equalIndicatorV2": "2435ee1a5e502581"
+    },
+    {
+        "message": "Deprecated member 'latestOnly' is still used",
+        "contextSnippet": "\n    @Deprecated\n    private Boolean latestOnly;\n\n    /**",
+        "equalIndicatorV2": "918de7274d44b3a9"
+    },
+    {
+        "message": "Deprecated member 'updateDirectly' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public @CheckForNull Future<FormValidation> updateDirectly(final boolean signatureCheck) {\n        if (! getDataFile().exists() || isDue()) {\n            return Jenkins.get().getUpdateCenter().updateService.submit(new Callable<FormValidation>() {",
+        "equalIndicatorV2": "723f6df96b26d8a9"
+    },
+    {
+        "message": "Deprecated member 'processWorkspaceBeforeDeletion' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public boolean processWorkspaceBeforeDeletion(AbstractProject<?, ?> project, FilePath workspace, Node node) throws IOException, InterruptedException {\n        if (Util.isOverridden(SCM.class, getClass(), \"processWorkspaceBeforeDeletion\", Job.class, FilePath.class, Node.class)) {\n            return processWorkspaceBeforeDeletion((Job) project, workspace, node);",
+        "equalIndicatorV2": "25f3af2c9b9dcfe5"
+    },
+    {
+        "message": "Deprecated member 'incrementGeneration' is still used",
+        "contextSnippet": "    @Deprecated\n    @Restricted(NoExternalUse.class) @RestrictedSince(\"2.209\")\n    public void incrementGeneration() {\n        atomicGeneration.incrementAndGet();\n    }",
+        "equalIndicatorV2": "3133c6b926e03a61"
+    },
+    {
+        "message": "Deprecated member 'userDetails' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        public final org.acegisecurity.userdetails.UserDetailsService userDetails;\n        /**\n         * @since 2.266",
+        "equalIndicatorV2": "cfcbd6b874be4f49"
+    },
+    {
+        "message": "Deprecated member 'getBuild' is still used",
+        "contextSnippet": "\n        @Deprecated\n        public AbstractBuild getBuild() {\n            return build instanceof AbstractBuild ? (AbstractBuild) build : null;\n        }",
+        "equalIndicatorV2": "7fa0d1661123fa46"
+    },
+    {
+        "message": "Deprecated member 'onAddedTo' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public void onAddedTo(AbstractBuild build) {\n        if (Util.isOverridden(Cause.class, getClass(), \"onAddedTo\", Run.class)) {\n            onAddedTo((Run) build);",
+        "equalIndicatorV2": "245df4697508f672"
+    },
+    {
+        "message": "Deprecated member 'awtProblem' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static boolean awtProblem = false;\n\n    //TODO: prevent usage of this APIs in plugins. Needs to be deprecated and replaced by a getter method",
+        "equalIndicatorV2": "f0a325e24dc9c57f"
+    },
+    {
+        "message": "Deprecated member 'SimpleParameterDefinition' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    protected SimpleParameterDefinition(@NonNull String name, @CheckForNull String description) {\n        super(name, description);\n    }",
+        "equalIndicatorV2": "15f9229fdbfda3da"
+    },
+    {
+        "message": "Deprecated member 'AnonymousAuthenticationToken' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic class AnonymousAuthenticationToken implements Authentication, Serializable {\n\n    // TODO perhaps better to extend AbstractAuthenticationToken",
+        "equalIndicatorV2": "3d8db4c0e449616d"
+    },
+    {
+        "message": "Deprecated member 'loadGroupByGroupname' is still used",
+        "contextSnippet": "    @Deprecated\n    @Override\n    public GroupDetails loadGroupByGroupname(String groupname) throws org.acegisecurity.userdetails.UsernameNotFoundException, org.springframework.dao.DataAccessException {\n        try {\n            return loadGroupByGroupname2(groupname, false);",
+        "equalIndicatorV2": "fbe532290bec85e9"
+    },
+    {
+        "message": "Deprecated member 'description' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient String description;\n\n    /**",
+        "equalIndicatorV2": "8fe1dbeec6c99f4c"
+    },
+    {
+        "message": "Deprecated member 'getWhyBlocked' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        default String getWhyBlocked() {\n            CauseOfBlockage cause = getCauseOfBlockage();\n            return cause != null ? cause.getShortDescription() : null;",
+        "equalIndicatorV2": "b04083cf00a3086d"
+    },
+    {
+        "message": "Deprecated member 'getToolHome' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static String getToolHome(Node node, ToolInstallation installation, TaskListener log) throws IOException, InterruptedException {\n        String result = null;\n",
+        "equalIndicatorV2": "6e6cede4e3faf171"
+    },
+    {
+        "message": "Deprecated member 'logRecorders' is still used",
+        "contextSnippet": "    @Restricted(NoExternalUse.class)\n    @RestrictedSince(\"2.323\")\n    public final transient Map<String, LogRecorder> logRecorders = new CopyOnWriteMap.Tree<>();\n\n    private List<LogRecorder> recorders;",
+        "equalIndicatorV2": "3f51f9918b5d27fc"
+    },
+    {
+        "message": "Deprecated member 'forMemory' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        public static ListenerAndText forMemory() {\n            return forMemory(null);\n        }",
+        "equalIndicatorV2": "ba65cd3a4650972e"
+    },
+    {
+        "message": "Deprecated member 'AutoBrowserHolder' is still used",
+        "contextSnippet": " */\n@Deprecated\nfinal class AutoBrowserHolder {\n    private int cacheGeneration;\n    private RepositoryBrowser cache;",
+        "equalIndicatorV2": "106fda8817ce3ca3"
+    },
+    {
+        "message": "Deprecated member 'AbstractRunner' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public abstract class AbstractRunner extends AbstractBuildExecution {\n\n    }",
+        "equalIndicatorV2": "09cd756d0e6850b5"
+    },
+    {
+        "message": "Deprecated member 'AbstractTaskListener' is still used",
+        "contextSnippet": "@Restricted(NoExternalUse.class)\n@RestrictedSince(\"2.91\")\npublic abstract class AbstractTaskListener implements TaskListener {\n\n    private static final long serialVersionUID = 7217626701881006422L;",
+        "equalIndicatorV2": "fbba43f6cbda6eda"
+    },
+    {
+        "message": "Deprecated member 'LabelValidator' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public abstract static class LabelValidator implements ExtensionPoint {\n\n        /**",
+        "equalIndicatorV2": "5dad9c7a22f1581b"
+    },
+    {
+        "message": "Deprecated member 'FingerprintAction' is still used",
+        "contextSnippet": "\n        @Deprecated\n        public FingerprintAction(AbstractBuild build, Map<String, String> record) {\n            this((Run) build, record);\n        }",
+        "equalIndicatorV2": "ed0575b128a879b3"
+    },
+    {
+        "message": "Deprecated member 'TransientBuildActionFactory' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic abstract class TransientBuildActionFactory implements ExtensionPoint {\n    /**\n     * Creates actions for the given build.",
+        "equalIndicatorV2": "e697530bc705a595"
+    },
+    {
+        "message": "Deprecated member 'UserMayOrMayNotExistException' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic class UserMayOrMayNotExistException extends UsernameNotFoundException {\n    public UserMayOrMayNotExistException(String msg) {\n        super(msg);",
+        "equalIndicatorV2": "17a1dcb328c109df"
+    },
+    {
+        "message": "Deprecated member 'RUN_SCRIPTS' is still used",
+        "contextSnippet": "    /** @deprecated in Jenkins 2.222 use {@link Jenkins#ADMINISTER} instead */\n    @Deprecated\n    public static final Permission RUN_SCRIPTS = new Permission(PERMISSIONS, \"RunScripts\", Messages._Hudson_RunScriptsPermission_Description(), ADMINISTER, PermissionScope.JENKINS);\n\n    /**",
+        "equalIndicatorV2": "a70848c536f3fc04"
+    },
+    {
+        "message": "Deprecated member 'cliOffline' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void cliOffline(String cause) throws ExecutionException, InterruptedException {\n        checkPermission(DISCONNECT);\n        setTemporarilyOffline(true, new ByCLI(cause));",
+        "equalIndicatorV2": "9e1db8a4de2d8d8a"
+    },
+    {
+        "message": "Deprecated member 'getSCMListeners' is still used",
+        "contextSnippet": "    /** @deprecated Use {@link SCMListener#all} instead. */\n    @Deprecated\n    public CopyOnWriteList<SCMListener> getSCMListeners() {\n        return scmListeners;\n    }",
+        "equalIndicatorV2": "273ab2c50a23ce1e"
+    },
+    {
+        "message": "Deprecated member 'getDefaultAuthentication' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        default @NonNull org.acegisecurity.Authentication getDefaultAuthentication(Queue.Item item) {\n            return org.acegisecurity.Authentication.fromSpring(getDefaultAuthentication2(item));\n        }",
+        "equalIndicatorV2": "eb45e75ab66fc9d2"
+    },
+    {
+        "message": "Deprecated member 'idFromFilename' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public String idFromFilename(@NonNull String filename) {\n        return filename;\n    }",
+        "equalIndicatorV2": "134d4745381a4e5e"
+    },
+    {
+        "message": "Deprecated member 'totalExecutors' is still used",
+        "contextSnippet": "    @Exported\n    @Deprecated\n    public final MultiStageTimeSeries totalExecutors;\n\n    /**",
+        "equalIndicatorV2": "d8cbf5726b98fefa"
+    },
+    {
+        "message": "Deprecated member 'AcegiSecurityException' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic abstract class AcegiSecurityException extends NestedRuntimeException {\n\n    protected AcegiSecurityException(String msg) {",
+        "equalIndicatorV2": "caba89b4459de72d"
+    },
+    {
+        "message": "Deprecated member 'getUpdateCenterUrl' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        public String getUpdateCenterUrl() {\n            return UPDATE_CENTER_URL;\n        }",
+        "equalIndicatorV2": "a714ea28f3522f54"
+    },
+    {
+        "message": "Deprecated member 'user' is still used",
+        "contextSnippet": "    public static class UserCause extends SimpleOfflineCause {\n        @Deprecated\n        private transient User user;\n        // null when unknown\n        private /*final*/ @CheckForNull String userId;",
+        "equalIndicatorV2": "133d4e884981ffc9"
+    },
+    {
+        "message": "Deprecated member 'getModuleRoots' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public FilePath[] getModuleRoots(FilePath workspace) {\n        if (Util.isOverridden(SCM.class, getClass(), \"getModuleRoots\", FilePath.class, AbstractBuild.class))\n            // if the subtype already derives newer getModuleRoots(FilePath,AbstractBuild), delegate to it",
+        "equalIndicatorV2": "02fc55e75d4524b1"
+    },
+    {
+        "message": "Deprecated member 'AuthenticationManager' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic interface AuthenticationManager {\n\n    Authentication authenticate(Authentication authentication) throws AuthenticationException;",
+        "equalIndicatorV2": "b47a4e6397fddd14"
+    },
+    {
+        "message": "Deprecated member 'isTemporarilyOffline' is still used",
+        "contextSnippet": "    @Exported\n    @Deprecated\n    public boolean isTemporarilyOffline() {\n        return temporarilyOffline;\n    }",
+        "equalIndicatorV2": "82a187e4a8c38c8b"
+    },
+    {
+        "message": "Deprecated member '_enabledAgentProtocols' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient String[] _enabledAgentProtocols;\n\n    /**",
+        "equalIndicatorV2": "8e7d537396f478c0"
+    },
+    {
+        "message": "Deprecated member 'password' is still used",
+        "contextSnippet": "\n    @Deprecated\n    private String password;\n\n    /**",
+        "equalIndicatorV2": "a0a429d00ee7fd04"
+    },
+    {
+        "message": "Deprecated member 'cause' is still used",
+        "contextSnippet": "    @Deprecated\n    // there can be multiple causes, so this is deprecated\n    private transient Cause cause;\n\n    /** @deprecated JENKINS-33467 inefficient */",
+        "equalIndicatorV2": "79f4ad972903d5a0"
+    },
+    {
+        "message": "Deprecated member 'postCheckout' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public void postCheckout(AbstractBuild<?, ?> build, Launcher launcher, FilePath workspace, BuildListener listener) throws IOException, InterruptedException {\n        if (Util.isOverridden(SCM.class, getClass(), \"postCheckout\", Run.class, Launcher.class, FilePath.class, TaskListener.class)) {\n            postCheckout((Run) build, launcher, workspace, listener);",
+        "equalIndicatorV2": "b3526d945361bd3d"
+    },
+    {
+        "message": "Deprecated member 'pingInterval' is still used",
+        "contextSnippet": "        private static final long serialVersionUID = -2702219700841759872L;\n        @Deprecated\n        private transient int pingInterval;\n        private final int pingTimeoutSeconds;\n        private final int pingIntervalSeconds;",
+        "equalIndicatorV2": "999bc9abf912d3c5"
+    },
+    {
+        "message": "Deprecated member 'beforeDisconnect' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void beforeDisconnect(SlaveComputer computer, StreamTaskListener listener) {\n    }\n",
+        "equalIndicatorV2": "ec1d0d465f1765c3"
+    },
+    {
+        "message": "Deprecated member 'causes' is still used",
+        "contextSnippet": "    /** @deprecated JENKINS-33467 inefficient */\n    @Deprecated\n    private transient List<Cause> causes;\n\n    private Map<Cause, Integer> causeBag = new LinkedHashMap<>();",
+        "equalIndicatorV2": "912d917e9565fec1"
+    },
+    {
+        "message": "Deprecated member 'statusFilter' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient Boolean statusFilter;\n\n    @DataBoundConstructor",
+        "equalIndicatorV2": "d72963c0bf1f7456"
+    },
+    {
+        "message": "Deprecated member 'getProjectAction' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public Action getProjectAction() {\n        return null;\n    }",
+        "equalIndicatorV2": "4765437561ac8b8d"
+    },
+    {
+        "message": "Deprecated member 'AbstractAuthenticationToken' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic abstract class AbstractAuthenticationToken implements Authentication {\n\n    private final GrantedAuthority[] authorities;",
+        "equalIndicatorV2": "cee91c246bd4d4dc"
+    },
+    {
+        "message": "Deprecated member 'getDefaultBaseUrl' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public String getDefaultBaseUrl() {\n        return config.getUpdateCenterUrl();\n    }",
+        "equalIndicatorV2": "a303b3550c031158"
+    },
+    {
+        "message": "Deprecated member 'decorateLogger' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public OutputStream decorateLogger(AbstractBuild build, OutputStream logger) throws IOException, InterruptedException {\n        if (Util.isOverridden(ConsoleLogFilter.class, getClass(), \"decorateLogger\", Run.class, OutputStream.class)) {\n            // old client calling newer implementation. forward the call.",
+        "equalIndicatorV2": "d1d1eb8fa308a3ed"
+    },
+    {
+        "message": "Deprecated member 'getLogRotator' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public LogRotator getLogRotator() {\n        BuildDiscarder buildDiscarder = getBuildDiscarder();\n        return buildDiscarder instanceof LogRotator ? (LogRotator) buildDiscarder : null;",
+        "equalIndicatorV2": "10ff98c7a0c90162"
+    },
+    {
+        "message": "Deprecated member 'JnlpSlaveAgentProtocol' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic class JnlpSlaveAgentProtocol {\n\n    public static final HMACConfidentialKey SLAVE_SECRET = JnlpAgentReceiver.SLAVE_SECRET;",
+        "equalIndicatorV2": "17193de45a16a06b"
+    },
+    {
+        "message": "Deprecated member 'getJobAction' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public Action getJobAction(J job) {\n        return null;\n    }",
+        "equalIndicatorV2": "057d69121f5ad502"
+    },
+    {
+        "message": "Deprecated member 'USER_DETAILS_SERVICE_PROXY' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final UserDetailsServiceProxy USER_DETAILS_SERVICE_PROXY = new UserDetailsServiceProxy();\n\n    /**",
+        "equalIndicatorV2": "184eae2a8b3043d8"
+    },
+    {
+        "message": "Deprecated member 'setLogRotator' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void setLogRotator(LogRotator logRotator) throws IOException {\n        setBuildDiscarder(logRotator);\n    }",
+        "equalIndicatorV2": "e1a8b5815f0bf4e8"
+    },
+    {
+        "message": "Deprecated member 'password' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        private transient String password;\n\n        private Details(String passwordHash) {",
+        "equalIndicatorV2": "92c43160e9b30391"
+    },
+    {
+        "message": "Deprecated member 'GrantedAuthorityImpl' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic class GrantedAuthorityImpl implements GrantedAuthority, Serializable {\n\n    private static final long serialVersionUID = 1;",
+        "equalIndicatorV2": "841a024f580b15ad"
+    },
+    {
+        "message": "Deprecated member 'generateGraph' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static void generateGraph(StaplerRequest req, StaplerResponse rsp, final JFreeChart chart, int defaultW, int defaultH) throws IOException {\n        new Graph(-1, defaultW, defaultH) {\n            @Override",
+        "equalIndicatorV2": "6af3b303b0f009a8"
+    },
+    {
+        "message": "Deprecated member 'getIconFilePathPattern' is still used",
+        "contextSnippet": "    @CheckForNull\n    @Deprecated\n    public String getIconFilePathPattern() {\n        return null;\n    }",
+        "equalIndicatorV2": "0d5443c821b37a49"
+    },
+    {
+        "message": "Deprecated member 'computeQueueLength' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public abstract int computeQueueLength();\n\n    /**",
+        "equalIndicatorV2": "cb9b2a1fbcf018a2"
+    },
+    {
+        "message": "Deprecated member 'cliConnect' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void cliConnect(boolean force) throws ExecutionException, InterruptedException {\n        checkPermission(CONNECT);\n        connect(force).get();",
+        "equalIndicatorV2": "26e63caab1d83362"
+    },
+    {
+        "message": "Deprecated member 'cliDisconnect' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void cliDisconnect(String cause) throws ExecutionException, InterruptedException {\n        checkPermission(DISCONNECT);\n        disconnect(new ByCLI(cause)).get();",
+        "equalIndicatorV2": "f281121d260a7af3"
+    },
+    {
+        "message": "Deprecated member 'isLegacyDefault' is still used",
+        "contextSnippet": "    @Deprecated\n    @Restricted(NoExternalUse.class)\n    public boolean isLegacyDefault() {\n        return false;\n    }",
+        "equalIndicatorV2": "86759a7d1b0606f8"
+    },
+    {
+        "message": "Deprecated member 'onJobRenamed' is still used",
+        "contextSnippet": "    /** @deprecated Does not work properly with moved jobs. Use {@link ItemListener#onLocationChanged} instead. */\n    @Deprecated\n    public void onJobRenamed(Item item, String oldName, String newName) {}\n\n    @ExportedBean(defaultVisibility = 2)",
+        "equalIndicatorV2": "805bbfdefaba2f83"
+    },
+    {
+        "message": "Deprecated member 'API_KEY_SEED' is still used",
+        "contextSnippet": "    @Deprecated\n    @Restricted(NoExternalUse.class)\n    public static final HMACConfidentialKey API_KEY_SEED = new HMACConfidentialKey(ApiTokenProperty.class, \"seed\", 16);\n}\n",
+        "equalIndicatorV2": "21db0a9e6b2be916"
+    },
+    {
+        "message": "Deprecated member 'doQuietDown' is still used",
+        "contextSnippet": "     */\n    @Deprecated(since = \"TODO\")\n    public HttpRedirect doQuietDown(boolean block,\n                                    int timeout,\n                                    @CheckForNull String message) throws InterruptedException, IOException {",
+        "equalIndicatorV2": "848a97b222586093"
+    },
+    {
+        "message": "Deprecated member 'getRecordBuildArtifacts' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public boolean getRecordBuildArtifacts() {\n        return recordBuildArtifacts != null && recordBuildArtifacts;\n    }",
+        "equalIndicatorV2": "dbe7eecd105e9bbb"
+    },
+    {
+        "message": "Deprecated member 'ANTLRException' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic class ANTLRException extends IllegalArgumentException {\n    public ANTLRException(String message) {\n        super(message);",
+        "equalIndicatorV2": "07ee1e655abc0e88"
+    },
+    {
+        "message": "Deprecated member 'adminCheck' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static boolean adminCheck(StaplerRequest req, StaplerResponse rsp) throws IOException {\n        if (isAdmin(req)) return true;\n",
+        "equalIndicatorV2": "052f3badbb370e51"
+    },
+    {
+        "message": "Deprecated member 'compareRemoteRevisionWith' is still used",
+        "contextSnippet": "\n    @Deprecated\n    protected PollingResult compareRemoteRevisionWith(AbstractProject<?, ?> project, Launcher launcher, FilePath workspace, TaskListener listener, SCMRevisionState baseline) throws IOException, InterruptedException {\n        return compareRemoteRevisionWith((Job) project, launcher, workspace, listener, baseline);\n    }",
+        "equalIndicatorV2": "79b021ef12435b5f"
+    },
+    {
+        "message": "Deprecated member 'getLongName' is still used",
+        "contextSnippet": "    @Exported\n    @Deprecated\n    public String getLongName() {\n        String name = manifest.getMainAttributes().getValue(\"Long-Name\");\n        if (name != null)      return name;",
+        "equalIndicatorV2": "d824cfdf9e1ea8be"
+    },
+    {
+        "message": "Deprecated member 'Local' is still used",
+        "contextSnippet": "    public abstract static class Local extends ProcessTree {\n        @Deprecated\n        Local() {\n        }\n",
+        "equalIndicatorV2": "2c916fed438c4140"
+    },
+    {
+        "message": "Deprecated member 'createRunner' is still used",
+        "contextSnippet": "    @Restricted(NoExternalUse.class)\n    @Deprecated\n    protected Runner createRunner() {\n        return new BuildExecution();\n    }",
+        "equalIndicatorV2": "bf5625e49158264d"
+    },
+    {
+        "message": "Deprecated member 'getMd5' is still used",
+        "contextSnippet": "            \"This method should only be used for non-security applications where the MD5 weakness is not a problem.\")\n    @Deprecated\n    private static MessageDigest getMd5() throws NoSuchAlgorithmException {\n        return MessageDigest.getInstance(\"MD5\");\n    }",
+        "equalIndicatorV2": "24c9d8571b168d63"
+    },
+    {
+        "message": "Deprecated member 'RememberMeServices' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic interface RememberMeServices {\n\n    Authentication autoLogin(HttpServletRequest request, HttpServletResponse response);",
+        "equalIndicatorV2": "9a25a687c034d9ed"
+    },
+    {
+        "message": "Deprecated member 'getJavaHome' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public String getJavaHome() {\n        return getHome();\n    }",
+        "equalIndicatorV2": "5c4033c78129de2d"
+    },
+    {
+        "message": "Deprecated member 'filenameOf' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public String filenameOf(@NonNull String id) {\n        return null;\n    }",
+        "equalIndicatorV2": "0c4c6095ff2e28ff"
+    },
+    {
+        "message": "Deprecated member 'autoBrowserHolder' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient AutoBrowserHolder autoBrowserHolder;\n\n    /**",
+        "equalIndicatorV2": "424bf72c5a976e86"
+    },
+    {
+        "message": "Deprecated member 'shownByDefault' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public boolean shownByDefault() {\n        return true;\n    }",
+        "equalIndicatorV2": "32bca1fea8ba9749"
+    },
+    {
+        "message": "Deprecated member 'setNodeName' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public abstract void setNodeName(String name);\n\n    /**",
+        "equalIndicatorV2": "f84b715eba6b162e"
+    },
+    {
+        "message": "Deprecated member 'mavenHome' is still used",
+        "contextSnippet": "         */\n        @Deprecated // kept for backward compatibility - use getHome()\n        private transient String mavenHome;\n\n        /**",
+        "equalIndicatorV2": "f77892765dc4cf82"
+    },
+    {
+        "message": "Deprecated member 'javaHome' is still used",
+        "contextSnippet": "     */\n    @Deprecated // kept for backward compatibility - use getHome() instead\n    private transient String javaHome;\n\n    public JDK(String name, String javaHome) {",
+        "equalIndicatorV2": "7182d0bda022b4a2"
+    },
+    {
+        "message": "Deprecated member 'loadGroupByGroupname' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public GroupDetails loadGroupByGroupname(String groupname, boolean fetchMembers) throws org.acegisecurity.userdetails.UsernameNotFoundException, org.springframework.dao.DataAccessException {\n        try {\n            return loadGroupByGroupname2(groupname, fetchMembers);",
+        "equalIndicatorV2": "1e22252d4e9ff8c0"
+    },
+    {
+        "message": "Deprecated member 'PUBLISHERS' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    PublisherList PUBLISHERS = new PublisherList();\n\n    /**",
+        "equalIndicatorV2": "0b6466e416d72a4d"
+    },
+    {
+        "message": "Deprecated member 'hudsonUrl' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient String hudsonUrl;\n    private String adminAddress;\n    private String jenkinsUrl;",
+        "equalIndicatorV2": "bed4ac34c9063809"
+    },
+    {
+        "message": "Deprecated member 'checkChannel' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public Channel checkChannel() throws AbortException {\n        throw new AbortException(\"This command is requesting the -remoting mode which is no longer supported. See https://www.jenkins.io/redirect/cli-command-requires-channel\");\n    }",
+        "equalIndicatorV2": "36162727b5441ff0"
+    },
+    {
+        "message": "Deprecated member 'AbstractQueueTask' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic abstract class AbstractQueueTask implements Queue.Task {\n\n}",
+        "equalIndicatorV2": "a3f6699925724bba"
+    },
+    {
+        "message": "Deprecated member 'UserDetailsService' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic interface UserDetailsService {\n\n    UserDetails loadUserByUsername(String username) throws UsernameNotFoundException, DataAccessException;",
+        "equalIndicatorV2": "d67b290adee10009"
+    },
+    {
+        "message": "Deprecated member 'HUDSON_ADMINISTER' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final Permission HUDSON_ADMINISTER = new Permission(HUDSON_PERMISSIONS, \"Administer\", hudson.model.Messages._Hudson_AdministerPermission_Description(), null);\n\n//",
+        "equalIndicatorV2": "49923de25db3e4a6"
+    },
+    {
+        "message": "Deprecated member 'getCheckUrl' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public String getCheckUrl(String fieldName) {\n        return getCheckMethod(fieldName).toCheckUrl();\n    }",
+        "equalIndicatorV2": "e4fe253359b818ed"
+    },
+    {
+        "message": "Deprecated member 'hasCreatePermission' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public boolean hasCreatePermission(@NonNull org.acegisecurity.Authentication a, @NonNull ItemGroup c,\n                                       @NonNull TopLevelItemDescriptor d) {\n        return hasCreatePermission2(a.toSpring(), c, d);",
+        "equalIndicatorV2": "26e8ab2a685e2af6"
+    },
+    {
+        "message": "Deprecated member 'text' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private final LargeText text;\n\n    /**",
+        "equalIndicatorV2": "7cc1565e9dd968df"
+    },
+    {
+        "message": "Deprecated member 'createEmpty' is still used",
+        "contextSnippet": "\n    @Deprecated\n    public static ChangeLogSet<? extends ChangeLogSet.Entry> createEmpty(AbstractBuild build) {\n        return createEmpty((Run) build);\n    }",
+        "equalIndicatorV2": "38a3b1df76ec3e5e"
+    },
+    {
+        "message": "Deprecated member 'retryCnt' is still used",
+        "contextSnippet": "\n    @Option(name = \"-r\") @Deprecated\n    public int retryCnt = 10;\n\n    protected static final String BUILD_SCHEDULING_REFUSED = \"Build scheduling Refused by an extension, hence not in Queue.\";",
+        "equalIndicatorV2": "b6f565985c338a98"
+    },
+    {
+        "message": "Deprecated member '_disabledAgentProtocols' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    private transient String[] _disabledAgentProtocols;\n\n    /**",
+        "equalIndicatorV2": "1ddcf9904ab0f999"
+    },
+    {
+        "message": "Deprecated member 'pollSCMChanges' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public boolean pollSCMChanges(TaskListener listener) {\n        return poll(listener).hasChanges();\n    }",
+        "equalIndicatorV2": "76f1a0c7000ee39c"
+    },
+    {
+        "message": "Deprecated member 'SlaveToMasterFileCallable' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic abstract class SlaveToMasterFileCallable<T> implements FileCallable<T> {\n\n    public static final Logger LOGGER = Logger.getLogger(SlaveToMasterFileCallable.class.getName());",
+        "equalIndicatorV2": "8260fffaa75fdccc"
+    },
+    {
+        "message": "Deprecated member 'getModuleRoot' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public FilePath getModuleRoot(FilePath workspace) {\n        if (Util.isOverridden(SCM.class, getClass(), \"getModuleRoot\", FilePath.class, AbstractBuild.class))\n            // if the subtype already implements newer getModuleRoot(FilePath,AbstractBuild), call that.",
+        "equalIndicatorV2": "1080e765b10dcf56"
+    },
+    {
+        "message": "Deprecated member 'getDefaultAuthentication' is still used",
+        "contextSnippet": "         */\n        @Deprecated\n        default @NonNull org.acegisecurity.Authentication getDefaultAuthentication() {\n            return org.acegisecurity.Authentication.fromSpring(getDefaultAuthentication2());\n        }",
+        "equalIndicatorV2": "d600925fb90310e9"
+    },
+    {
+        "message": "Deprecated member 'afterDisconnect' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public void afterDisconnect(SlaveComputer computer, StreamTaskListener listener) {\n    }\n",
+        "equalIndicatorV2": "749cb9e91331149d"
+    },
+    {
+        "message": "Deprecated member 'getTransientActions' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public List<Action> getTransientActions() {\n        List<Action> actions = new ArrayList<>();\n        for (TransientBuildActionFactory factory : TransientBuildActionFactory.all()) {",
+        "equalIndicatorV2": "5cca24b1e5592b28"
+    },
+    {
+        "message": "Deprecated member 'AUTHENTICATION_MANAGER' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final AuthenticationManagerProxy AUTHENTICATION_MANAGER = new AuthenticationManagerProxy();\n\n    /**",
+        "equalIndicatorV2": "6a689cb5b2e9d465"
+    },
+    {
+        "message": "Deprecated member 'REMEMBER_ME_SERVICES_PROXY' is still used",
+        "contextSnippet": "     */\n    @Deprecated\n    public static final RememberMeServicesProxy REMEMBER_ME_SERVICES_PROXY = new RememberMeServicesProxy();\n\n    @Override",
+        "equalIndicatorV2": "50ccd74777dd60c6"
+    },
+    {
+        "message": "Deprecated member 'BuildStepCompatibilityLayer' is still used",
+        "contextSnippet": " */\n@Deprecated\npublic abstract class BuildStepCompatibilityLayer implements BuildStep {\n//\n// new definitions >= 1.150",
+        "equalIndicatorV2": "6c5f376cd0f82ab3"
+    },
+    {
+        "message": "Deprecated member 'recordBuildArtifacts' is still used",
+        "contextSnippet": "\n    @Deprecated\n    Boolean recordBuildArtifacts;\n\n    @DataBoundConstructor public Fingerprinter(String targets) {",
+        "equalIndicatorV2": "d6117ae1b49b4d84"
+    }
+]

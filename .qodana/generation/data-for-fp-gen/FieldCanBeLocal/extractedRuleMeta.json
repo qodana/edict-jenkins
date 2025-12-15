@@ -1,0 +1,36 @@
+{
+    "ruleId": "FieldCanBeLocal",
+    "ruleName": "Field can be local variable",
+    "description": "Reports redundant class fields that can be replaced with local variables. If all local usages of a field are preceded by assignments to that field, the field can be removed, and its usages can be replaced with local variables. Inspection ID: FieldCanBeLocal",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "    private final int defaultWidth;\n    private final int defaultHeight;\n    private final int defaultScale = 1;\n    private volatile JFreeChart graph;\n",
+            "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.",
+            "        private static final long sizeOf_kinfo_proc_32 = 768;\n        private static final long sizeOf_kinfo_proc_64 = 1088;\n        private final int kinfo_proc_pid_offset;\n        private static final int kinfo_proc_pid_offset_32 = 40;\n        private static final int kinfo_proc_pid_offset_64 = 72;",
+            "         * This classloader is created for this plugin. Useful during debugging.\n         */\n        private final File _for;\n\n        private List<Dependency> dependencies;",
+            "    public static class CheckMethod {\n        private final Descriptor descriptor;\n        private final Method method;\n        private final String capitalizedFieldName;\n",
+            "         */\n        @SuppressWarnings(\"unused\")\n        private final String displayName;\n\n        private CalendarField(String displayName, int field, int min, int offset, boolean redoAdjustmentIfModified, CalendarField lowerField) {",
+            " */\npublic class ImmutableSetConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableSetConverter(XStream xs) {",
+            "\n        // Local constants\n        private final long sizeOf_kinfo_proc;\n        private static final long sizeOf_kinfo_proc_32 = 768;\n        private static final long sizeOf_kinfo_proc_64 = 1088;",
+            "\n    private static final String APP = \"app\";\n    private boolean terminated;\n    private Thread initThread;\n",
+            "\n    @GuardedBy(\"provisioningLock\")\n    private StrategyState provisioningState = null;\n\n    private transient volatile long lastSuggestedReview;",
+            "        private static final int kinfo_proc_pid_offset_32 = 40;\n        private static final int kinfo_proc_pid_offset_64 = 72;\n        private final int kinfo_proc_ppid_offset;\n        private static final int kinfo_proc_ppid_offset_32 = 44;\n        private static final int kinfo_proc_ppid_offset_64 = 76;"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "    private final int defaultWidth;\n    private final int defaultHeight;\n    private final int defaultScale = 1;\n    private volatile JFreeChart graph;\n",
+            "equalIndicatorV2": "5ba5f3530480d63c"
+        },
+        "after": {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "    private final int defaultWidth;\n    private final int defaultHeight;\n    private final int defaultScale = 1;\n    private volatile JFreeChart graph;\n",
+            "equalIndicatorV2": "5ba5f3530480d63c"
+        }
+    }
+}

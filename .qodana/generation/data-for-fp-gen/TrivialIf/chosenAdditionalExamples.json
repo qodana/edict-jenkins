@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "        }\n\n        if (!isValidFragment(uri.getRawFragment())) {\n            return false;\n        }",
+            "equalIndicatorV2": "3c20abd31713ccfb"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "            return false;\n        ParameterValue other = (ParameterValue) obj;\n        if (!Objects.equals(name, other.name)) {\n            return false;\n        }",
+            "equalIndicatorV2": "042c0560bea6f299"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "        }\n\n        if (!isValidFragment(uri.getRawFragment())) {\n            return false;\n        }",
+            "equalIndicatorV2": "3c20abd31713ccfb"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "                return false;\n            }\n            if (queueLength != that.queueLength) {\n                return false;\n            }",
+            "equalIndicatorV2": "1362e9d4d90d2538"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "            if (installedVersion != null) {\n                if (compatibleSinceVersion != null) {\n                    if (new VersionNumber(installedVersion.getVersion())\n                            .isOlderThan(new VersionNumber(compatibleSinceVersion))) {\n                        return false;",
+            "equalIndicatorV2": "66a465dc76f6cf80"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "                return false;   // label mismatch\n\n            if (!(Node.SKIP_BUILD_CHECK_ON_FLYWEIGHTS && item.task instanceof Queue.FlyweightTask) && !nodeAcl.hasPermission2(item.authenticate2(), Computer.BUILD))\n                return false;   // tasks don't have a permission to run on this node\n",
+            "equalIndicatorV2": "adeb970f2b5b22f3"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "            return true;\n        }\n        else if (item.getName().equals(currentJobName)) {\n            // the candidate name returned an item, but the item is the item\n            // that the user is configuring so this is ok",
+            "equalIndicatorV2": "8b024626c09f5a61"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "        FileParameterValue other = (FileParameterValue) obj;\n\n        if (location == null && other.location == null)\n            return true; // Consider null parameters as equal\n",
+            "equalIndicatorV2": "f13626c0948b17a5"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "\n            if (getHome() != null ? !getHome().equals(that.getHome()) : that.getHome() != null) return false;\n            if (getName() != null ? !getName().equals(that.getName()) : that.getName() != null) return false;\n            return true;\n        }",
+            "equalIndicatorV2": "1b7e26dbffa0cceb"
+        },
+        {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "        if (t instanceof AccessControlled) {\n            AccessControlled taskAC = (AccessControlled) t;\n            if (taskAC.hasPermission(hudson.model.Item.READ)\n                    || taskAC.hasPermission(Permission.READ)) { // TODO should be unnecessary given the 'implies' relationship\n                return true;",
+            "equalIndicatorV2": "86b56ae2a2c4c4fc"
+        }
+    ],
+    "negativeExamples": []
+}

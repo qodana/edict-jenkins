@@ -1,0 +1,629 @@
+[
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/BuildCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 198,
+            "startColumn": 40,
+            "charOffset": 8806,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 196,
+            "startColumn": 1,
+            "charOffset": 8696,
+            "charLength": 187,
+            "snippet": {
+              "text": "                                }\n                                i++;\n                                Thread.sleep(retryInterval);\n                            }\n                        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a8470b4694a74362",
+      "equalIndicator/v1": "96dfb6c6739ee3e4896b94cd181de155ae4cfc19ab8bce7241b77ba3fb61e3b3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractBuild.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 688,
+            "startColumn": 24,
+            "charOffset": 27303,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 686,
+            "startColumn": 1,
+            "charOffset": 27204,
+            "charLength": 136,
+            "snippet": {
+              "text": "\n                listener.getLogger().println(\"Retrying after 10 seconds\");\n                Thread.sleep(10000);\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0ee352c31d5de05d",
+      "equalIndicator/v1": "eeafeb9a3b6a66b8e69064ef2ed109c722abd3546fb6772146ea65510eff0dd9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ReloadConfigurationCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 54,
+            "startColumn": 20,
+            "charOffset": 1937,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 52,
+            "startColumn": 1,
+            "charOffset": 1807,
+            "charLength": 189,
+            "snippet": {
+              "text": "        Object app;\n        while ((app = WebApp.get(j.servletContext).getApp()) instanceof HudsonIsLoading) {\n            Thread.sleep(100);\n        }\n        if (app instanceof Jenkins) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "d109d9e12b819101",
+      "equalIndicator/v1": "4e06e59e2ca98a7d426f9a48e7c049acf2fb54a0ec72e2c819885190952c4910"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/Retrier.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 86,
+            "startColumn": 32,
+            "charOffset": 4087,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 84,
+            "startColumn": 1,
+            "charOffset": 3944,
+            "charLength": 299,
+            "snippet": {
+              "text": "                    LOGGER.log(Level.FINE, Messages.Retrier_Sleeping(delay, action));\n                    try {\n                        Thread.sleep(delay);\n                    } catch (InterruptedException ie) {\n                        LOGGER.log(Level.FINE, Messages.Retrier_Interruption(action));"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8f3bddc47ab6c2c1",
+      "equalIndicator/v1": "3d8beea0861be6382f79c43cf2446219cd3314a2a773539c3d105417fd82dcb2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Run.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1711,
+            "startColumn": 24,
+            "charOffset": 59724,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1709,
+            "startColumn": 1,
+            "charOffset": 59609,
+            "charLength": 164,
+            "snippet": {
+              "text": "            if (runner == null) {\n                // polled at the wrong moment. try again.\n                Thread.sleep(0);\n                continue;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "87d604ed867b96bb",
+      "equalIndicator/v1": "cf3b96f5635b290cc0d0746a7058b3d8153696cbd0c05454ee5c338b538f70ca"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/CLI.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 407,
+            "startColumn": 36,
+            "charOffset": 16160,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 405,
+            "startColumn": 1,
+            "charOffset": 15959,
+            "charLength": 317,
+            "snippet": {
+              "text": "                            LOGGER.fine(\"sending ping\");\n                            connection.sendEncoding(Charset.defaultCharset().name()); // no-op at this point\n                            Thread.sleep(PING_INTERVAL);\n                        }\n                    } catch (IOException | InterruptedException x) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ec0009fcdbd2b5aa",
+      "equalIndicator/v1": "26ac5310e58f0695684e56551998fc2addcb6b318d73918ee44d0e120707b5ca"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 608,
+            "startColumn": 24,
+            "charOffset": 21459,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 606,
+            "startColumn": 1,
+            "charOffset": 21417,
+            "charLength": 170,
+            "snippet": {
+              "text": "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2bddcd09237f8790",
+      "equalIndicator/v1": "6af70d022e3dd2b5f9ff39b1f67d3091ea5e029191a6221a5e99108a9a7fa90e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Run.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1561,
+            "startColumn": 20,
+            "charOffset": 54692,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1559,
+            "startColumn": 1,
+            "charOffset": 54494,
+            "charLength": 294,
+            "snippet": {
+              "text": "            // Instead of us hitting the log file as many times as possible, instead we get the information once every\n            // second to avoid CPU usage getting very high.\n            Thread.sleep(1000);\n            logText = getLogText();\n            pos = logText.writeLogTo(pos, out);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2d34bea0b466205e",
+      "equalIndicator/v1": "0766701a1b3dba322f5b512cdb2271544a91d19d863b4a84f26354138c0b8038"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 831,
+            "startColumn": 24,
+            "charOffset": 29234,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 829,
+            "startColumn": 1,
+            "charOffset": 29192,
+            "charLength": 170,
+            "snippet": {
+              "text": "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3ada753038facf6a",
+      "equalIndicator/v1": "f39b7dc89113ed3ba5c88d3d3cccfed8c5a3f933bee2ffca23b1dd4f6337e86e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractItem.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 788,
+            "startColumn": 32,
+            "charOffset": 31167,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 786,
+            "startColumn": 1,
+            "charOffset": 31040,
+            "charLength": 215,
+            "snippet": {
+              "text": "                            entry.getKey().interrupt(Result.ABORTED);\n                        }\n                        Thread.sleep(50L);\n                    }\n                    if (!buildsInProgress.isEmpty()) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ee27a5fa25a9519f",
+      "equalIndicator/v1": "f41d35c94aee05a56f7839b4a3c46589041c0e13cc89711a2443bb9a0e1b905a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "BusyWait",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+      "markdown": "Call to `Thread.sleep()` in a loop, probably busy-waiting"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/PluginManager.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1749,
+            "startColumn": 36,
+            "charOffset": 79797,
+            "charLength": 5,
+            "snippet": {
+              "text": "sleep"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1747,
+            "startColumn": 1,
+            "charOffset": 79667,
+            "charLength": 284,
+            "snippet": {
+              "text": "                        try {\n                            updateCenter.persistInstallStatus();\n                            Thread.sleep(500);\n                            failures = false;\n                            for (Future<UpdateCenter.UpdateCenterJob> jobFuture : installJobs) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b6e9e9abcf83046a",
+      "equalIndicator/v1": "2b5120b6eac446c2c743854f48287f12e9c712843a15d20440c622cfe8bd63fa"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

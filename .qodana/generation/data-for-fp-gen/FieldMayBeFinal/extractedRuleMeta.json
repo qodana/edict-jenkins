@@ -1,0 +1,36 @@
+{
+    "ruleId": "FieldMayBeFinal",
+    "ruleName": "Field may be 'final'",
+    "description": "Reports fields that can be safely made 'final'. All 'final' fields have a value and this value does not change, which can make the code easier to reason about. To avoid too expensive analysis, this inspection only reports if the field has a 'private' modifier or it is defined in a local or anonymous class. A field can be 'final' if: It is 'static' and initialized once in its declaration or in one 'static' initializer. It is non-'static' and initialized once in its declaration, in one instance initializer or in every constructor And it is not modified anywhere else. Example: 'public class Person {\n    private String name; // can be final\n\n    Person(String name) {\n      this.name = name;\n    }\n\n    public String getName() {\n      return name;\n    }\n  }' After the quick-fix is applied: 'public class Person {\n    private final String name;\n\n    Person(String name) {\n      this.name = name;\n    }\n\n    public String getName() {\n      return name;\n    }\n  }' Use the \"Annotations\" button to modify the list of annotations that assume implicit field write. Inspection ID: FieldMayBeFinal",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "            \"- mandatory: all mandatory dependent plugins are also disabled, optional dependent plugins remain enabled.\\n\" +\n            \"- all: all dependent plugins are also disabled, no matter if its dependency is optional or mandatory.\")\n    private String strategy = PluginWrapper.PluginDisableStrategy.NONE.toString();\n\n    @Option(name = \"-quiet\", aliases = \"-q\", usage = \"Be quiet, print only the error messages\")",
+            "     * Parent to delegate to. Can be null.\n     */\n    private ACL parent;\n\n    public SparseACL(ACL parent) {",
+            "        private final boolean useDefaultExcludes;\n        private final String verificationRoot;\n        private OpenOption[] openOptions;\n\n        Scanner(String includes, String excludes, boolean useDefaultExcludes, String verificationRoot, OpenOption... openOptions) {",
+            "         * length of this artifact for files.\n         */\n        private String length;\n\n        Artifact(SerializableArtifact clone) {",
+            "\n    static class UrlPluginCopier implements PluginCopier {\n        private String url;\n\n        UrlPluginCopier(String url) {",
+            "\n        private boolean useDefaultExcludes = true;\n        private OpenOption[] openOptions;\n\n        public Glob(String includes, String excludes) {",
+            "public class SimpleGlobalBuildDiscarderStrategy extends GlobalBuildDiscarderStrategy {\n\n    private BuildDiscarder discarder;\n\n    @DataBoundConstructor",
+            "public abstract class PartialHeader extends Header {\n\n    private static Logger LOGGER = Logger.getLogger(PartialHeader.class.getName());\n\n    /**",
+            "    private long seek(Run<?, ?> run) throws IOException {\n        class RingBuffer {\n            long[] lastNlines = new long[n];\n            int ptr = 0;\n",
+            "     * No need to lock the entire AbstractBuild on change set calculation\n     */\n    private transient Object changeSetLock = new Object();\n\n    /**",
+            "    private List<QueueItem> queueItems;\n\n    private boolean filtered;\n\n    public BuildQueueWidget(@NonNull String ownerUrl, @NonNull List<QueueItem> queueItems) {"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Field 'strategy' may be 'final'",
+            "contextSnippet": "            \"- mandatory: all mandatory dependent plugins are also disabled, optional dependent plugins remain enabled.\\n\" +\n            \"- all: all dependent plugins are also disabled, no matter if its dependency is optional or mandatory.\")\n    private String strategy = PluginWrapper.PluginDisableStrategy.NONE.toString();\n\n    @Option(name = \"-quiet\", aliases = \"-q\", usage = \"Be quiet, print only the error messages\")",
+            "equalIndicatorV2": "4bba710edca7e0cb"
+        },
+        "after": {
+            "message": "Field 'strategy' may be 'final'",
+            "contextSnippet": "            \"- mandatory: all mandatory dependent plugins are also disabled, optional dependent plugins remain enabled.\\n\" +\n            \"- all: all dependent plugins are also disabled, no matter if its dependency is optional or mandatory.\")\n    private String strategy = PluginWrapper.PluginDisableStrategy.NONE.toString();\n\n    @Option(name = \"-quiet\", aliases = \"-q\", usage = \"Be quiet, print only the error messages\")",
+            "equalIndicatorV2": "4bba710edca7e0cb"
+        }
+    }
+}

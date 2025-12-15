@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        }\n\n        protected File getBackup() {\n            File baseDir = pm.rootDir;\n            return new File(baseDir, plugin.name + \".bak\");",
+            "equalIndicatorV2": "e03a145b877255b2"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "            }\n\n            protected synchronized boolean waitForCheckPoint(@NonNull CheckPoint identifier, @CheckForNull BuildListener listener, @CheckForNull String waiter) throws InterruptedException {\n                final Thread t = Thread.currentThread();\n                final String oldName = t.getName();",
+            "equalIndicatorV2": "8f07c83ca35b29ae"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "         * Same as {@link DiskSpace#setTriggered(boolean)}, also sets the trigger class which made the decision\n         */\n        protected void setTriggered(Class<? extends AbstractDiskSpaceMonitor> trigger, boolean triggered) {\n            this.trigger = trigger;\n            this.triggered = triggered;",
+            "equalIndicatorV2": "44a59b68c1a036f9"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**",
+            "equalIndicatorV2": "8db52604da3ad534"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "     * @see Functions#getCurrentJellyContext()\n     */\n    protected static final ThreadLocal<JellyContext> CURRENT_CONTEXT = new ThreadLocal<>();\n}\n",
+            "equalIndicatorV2": "0904dbd6b0cf40fc"
+        },
+        {
+            "message": "Class member declared 'protected' in 'final' class",
+            "contextSnippet": "            }\n\n            protected synchronized boolean waitForCheckPoint(@NonNull CheckPoint identifier, @CheckForNull BuildListener listener, @CheckForNull String waiter) throws InterruptedException {\n                final Thread t = Thread.currentThread();\n                final String oldName = t.getName();",
+            "equalIndicatorV2": "8f07c83ca35b29ae"
+        }
+    ],
+    "negativeExamples": []
+}

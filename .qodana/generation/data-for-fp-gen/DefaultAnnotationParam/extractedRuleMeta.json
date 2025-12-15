@@ -1,0 +1,35 @@
+{
+    "ruleId": "DefaultAnnotationParam",
+    "ruleName": "Default annotation parameter value",
+    "description": "Reports annotation parameters that are assigned to their 'default' value. Example: '@interface Test {\n      Class<?> expected() default Throwable.class;\n  }\n\n  @Test(expected = Throwable.class)\n  void testSmth() {}' After the quick-fix is applied: '@Test()\n  void testSmth() {}' Inspection ID: DefaultAnnotationParam",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "@Deprecated\npublic abstract class AbstractBuildRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public AbstractProject<?, ?> job;\n",
+            "    }\n\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public transient Job<?, ?> job;\n",
+            "    }\n\n    @Argument(metaVar = \"NAME\", usage = \"Name of the view\", required = false)\n    public String name;\n",
+            " */\npublic abstract class RunRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public Job<?, ?> job;\n",
+            "public class AddJobToViewCommand extends CLICommand {\n\n    @Argument(usage = \"Name of the view\", required = true, index = 0)\n    private View view;\n",
+            "public class RemoveJobFromViewCommand extends CLICommand {\n\n    @Argument(usage = \"Name of the view\", required = true, index = 0)\n    private View view;\n",
+            "     }\n\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public transient Job<?, ?> job;\n",
+            "    public Job<?, ?> job;\n\n    @Argument(metaVar = \"BUILD\", usage = \"Build number or permalink to point to the build. Defaults to the last build\", required = false, index = 1)\n    public String build = \"lastBuild\";\n",
+            " * @author Kohsuke Kawaguchi\n */\n@Extension(ordinal = 0) @Symbol(\"classLoaderStatistics\")\npublic class ClassLoaderStatisticsSlaveInfo extends SlaveSystemInfo {\n    @Override",
+            "    }\n\n    @Argument(metaVar = \"NAME\", usage = \"Name of a specific plugin\", required = false)\n    public String name;\n"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "@Deprecated\npublic abstract class AbstractBuildRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public AbstractProject<?, ?> job;\n",
+            "equalIndicatorV2": "ee3a2f8f51f1ffc1"
+        },
+        "after": {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "@Deprecated\npublic abstract class AbstractBuildRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public AbstractProject<?, ?> job;\n",
+            "equalIndicatorV2": "ee3a2f8f51f1ffc1"
+        }
+    }
+}

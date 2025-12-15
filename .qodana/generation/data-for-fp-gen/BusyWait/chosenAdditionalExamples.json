@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "\n                listener.getLogger().println(\"Retrying after 10 seconds\");\n                Thread.sleep(10000);\n            }\n        }",
+            "equalIndicatorV2": "0ee352c31d5de05d"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "        Object app;\n        while ((app = WebApp.get(j.servletContext).getApp()) instanceof HudsonIsLoading) {\n            Thread.sleep(100);\n        }\n        if (app instanceof Jenkins) {",
+            "equalIndicatorV2": "d109d9e12b819101"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                    LOGGER.log(Level.FINE, Messages.Retrier_Sleeping(delay, action));\n                    try {\n                        Thread.sleep(delay);\n                    } catch (InterruptedException ie) {\n                        LOGGER.log(Level.FINE, Messages.Retrier_Interruption(action));",
+            "equalIndicatorV2": "8f3bddc47ab6c2c1"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "            if (runner == null) {\n                // polled at the wrong moment. try again.\n                Thread.sleep(0);\n                continue;\n            }",
+            "equalIndicatorV2": "87d604ed867b96bb"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                            LOGGER.fine(\"sending ping\");\n                            connection.sendEncoding(Charset.defaultCharset().name()); // no-op at this point\n                            Thread.sleep(PING_INTERVAL);\n                        }\n                    } catch (IOException | InterruptedException x) {",
+            "equalIndicatorV2": "ec0009fcdbd2b5aa"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);",
+            "equalIndicatorV2": "2bddcd09237f8790"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "            if (runner == null) {\n                // polled at the wrong moment. try again.\n                Thread.sleep(0);\n                continue;\n            }",
+            "equalIndicatorV2": "87d604ed867b96bb"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);",
+            "equalIndicatorV2": "2bddcd09237f8790"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                            entry.getKey().interrupt(Result.ABORTED);\n                        }\n                        Thread.sleep(50L);\n                    }\n                    if (!buildsInProgress.isEmpty()) {",
+            "equalIndicatorV2": "ee27a5fa25a9519f"
+        },
+        {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                        try {\n                            updateCenter.persistInstallStatus();\n                            Thread.sleep(500);\n                            failures = false;\n                            for (Future<UpdateCenter.UpdateCenterJob> jobFuture : installJobs) {",
+            "equalIndicatorV2": "b6e9e9abcf83046a"
+        }
+    ],
+    "negativeExamples": []
+}

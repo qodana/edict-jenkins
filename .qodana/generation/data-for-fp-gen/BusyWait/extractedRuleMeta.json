@@ -1,0 +1,36 @@
+{
+    "ruleId": "BusyWait",
+    "ruleName": "Busy wait",
+    "description": "Reports calls to 'java.lang.Thread.sleep()' that occur inside loops. Such calls are indicative of \"busy-waiting\". Busy-waiting is often inefficient, and may result in unexpected deadlocks as busy-waiting threads do not release locked resources. Example: 'class X {\n     volatile int x;\n     public void waitX() throws Exception {\n      while (x > 0) {\n        Thread.sleep(10);//warning: Call to 'Thread.sleep()' in a loop, probably busy-waiting\n      }\n    }\n  }' Inspection ID: BusyWait",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "                                }\n                                i++;\n                                Thread.sleep(retryInterval);\n                            }\n                        }",
+            "\n                listener.getLogger().println(\"Retrying after 10 seconds\");\n                Thread.sleep(10000);\n            }\n        }",
+            "        Object app;\n        while ((app = WebApp.get(j.servletContext).getApp()) instanceof HudsonIsLoading) {\n            Thread.sleep(100);\n        }\n        if (app instanceof Jenkins) {",
+            "                    LOGGER.log(Level.FINE, Messages.Retrier_Sleeping(delay, action));\n                    try {\n                        Thread.sleep(delay);\n                    } catch (InterruptedException ie) {\n                        LOGGER.log(Level.FINE, Messages.Retrier_Interruption(action));",
+            "            if (runner == null) {\n                // polled at the wrong moment. try again.\n                Thread.sleep(0);\n                continue;\n            }",
+            "                            LOGGER.fine(\"sending ping\");\n                            connection.sendEncoding(Charset.defaultCharset().name()); // no-op at this point\n                            Thread.sleep(PING_INTERVAL);\n                        }\n                    } catch (IOException | InterruptedException x) {",
+            "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);",
+            "            // Instead of us hitting the log file as many times as possible, instead we get the information once every\n            // second to avoid CPU usage getting very high.\n            Thread.sleep(1000);\n            logText = getLogText();\n            pos = logText.writeLogTo(pos, out);",
+            "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);",
+            "                            entry.getKey().interrupt(Result.ABORTED);\n                        }\n                        Thread.sleep(50L);\n                    }\n                    if (!buildsInProgress.isEmpty()) {",
+            "                        try {\n                            updateCenter.persistInstallStatus();\n                            Thread.sleep(500);\n                            failures = false;\n                            for (Future<UpdateCenter.UpdateCenterJob> jobFuture : installJobs) {"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                                }\n                                i++;\n                                Thread.sleep(retryInterval);\n                            }\n                        }",
+            "equalIndicatorV2": "a8470b4694a74362"
+        },
+        "after": {
+            "message": "Call to 'Thread.sleep()' in a loop, probably busy-waiting",
+            "contextSnippet": "                                }\n                                i++;\n                                Thread.sleep(retryInterval);\n                            }\n                        }",
+            "equalIndicatorV2": "a8470b4694a74362"
+        }
+    }
+}

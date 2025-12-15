@@ -1,0 +1,162 @@
+[
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            validOctets++;\n        }\n        if (validOctets > IPV6_MAX_HEX_GROUPS || (validOctets < IPV6_MAX_HEX_GROUPS && !containsCompressedZeroes)) {\n            return false;\n        }",
+        "equalIndicatorV2": "9a768bd1351b8c8f"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        }\n\n        if (!isValidFragment(uri.getRawFragment())) {\n            return false;\n        }",
+        "equalIndicatorV2": "3c20abd31713ccfb"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            return false;\n        ParameterValue other = (ParameterValue) obj;\n        if (!Objects.equals(name, other.name)) {\n            return false;\n        }",
+        "equalIndicatorV2": "042c0560bea6f299"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "\n        int slash2Count = countToken(\"//\", path);\n        if (isOff(ALLOW_2_SLASHES) && slash2Count > 0) {\n            return false;\n        }",
+        "equalIndicatorV2": "f6c98516e956ca3b"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                return false;\n            }\n            if (queueLength != that.queueLength) {\n                return false;\n            }",
+        "equalIndicatorV2": "1362e9d4d90d2538"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            if (installedVersion != null) {\n                if (compatibleSinceVersion != null) {\n                    if (new VersionNumber(installedVersion.getVersion())\n                            .isOlderThan(new VersionNumber(compatibleSinceVersion))) {\n                        return false;",
+        "equalIndicatorV2": "66a465dc76f6cf80"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                return false;   // label mismatch\n\n            if (!(Node.SKIP_BUILD_CHECK_ON_FLYWEIGHTS && item.task instanceof Queue.FlyweightTask) && !nodeAcl.hasPermission2(item.authenticate2(), Computer.BUILD))\n                return false;   // tasks don't have a permission to run on this node\n",
+        "equalIndicatorV2": "adeb970f2b5b22f3"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            return true;\n        }\n        else if (item.getName().equals(currentJobName)) {\n            // the candidate name returned an item, but the item is the item\n            // that the user is configuring so this is ok",
+        "equalIndicatorV2": "8b024626c09f5a61"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        FileParameterValue other = (FileParameterValue) obj;\n\n        if (location == null && other.location == null)\n            return true; // Consider null parameters as equal\n",
+        "equalIndicatorV2": "f13626c0948b17a5"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "\n            if (getHome() != null ? !getHome().equals(that.getHome()) : that.getHome() != null) return false;\n            if (getName() != null ? !getName().equals(that.getName()) : that.getName() != null) return false;\n            return true;\n        }",
+        "equalIndicatorV2": "1b7e26dbffa0cceb"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        if (t instanceof AccessControlled) {\n            AccessControlled taskAC = (AccessControlled) t;\n            if (taskAC.hasPermission(hudson.model.Item.READ)\n                    || taskAC.hasPermission(Permission.READ)) { // TODO should be unnecessary given the 'implies' relationship\n                return true;",
+        "equalIndicatorV2": "86b56ae2a2c4c4fc"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            }\n\n            if (this.getAuthentication() != null && test.getAuthentication() != null\n                && this.getAuthentication().equals(test.getAuthentication())) {\n                return true;",
+        "equalIndicatorV2": "41647c653a0727a6"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "\n        v = manifest.getMainAttributes().getValue(\"Hudson-Version\");\n        if (v != null) return v;\n        return null;\n    }",
+        "equalIndicatorV2": "c5f7b0a0341a765c"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                    // check whether warning is relevant to installed version\n                    VersionNumber currentCore = plugin.getVersionNumber();\n                    if (!isRelevantToVersion(currentCore)) {\n                        return false;\n                    }",
+        "equalIndicatorV2": "0e03f144f656d282"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "\n        String extra = authorityMatcher.group(PARSE_AUTHORITY_EXTRA);\n        if (extra != null && extra.trim().length() > 0) {\n            return false;\n        }",
+        "equalIndicatorV2": "957f363a91c5aea0"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                }\n                else if (mavenReqVersion == MAVEN_30) {\n                    if (mavenVersion.startsWith(\"3.\"))\n                        return true;\n                }",
+        "equalIndicatorV2": "0d7f43d11187647a"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                // no number format exception due to the expression\n                int logNumOfRoundInt = Integer.parseInt(logNumOfRound);\n                if (logNumOfRoundInt > 0 && logNumOfRoundInt <= MAXIMUM_BCRYPT_LOG_ROUND) {\n                    return true;\n                }",
+        "equalIndicatorV2": "2543e74fb468191c"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "     */\n    public boolean canToggleLogKeep() {\n        if (!keepLog && isKeepLog()) {\n            // Definitely prevented.\n            return false;",
+        "equalIndicatorV2": "d3f0d8fc423b6c7b"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        } else {\n            ParametersAction parametersAction = run.getAction(ParametersAction.class);\n            if (parametersAction != null && fitsSearchBuildParameters(parametersAction)) {\n                return true;\n            }",
+        "equalIndicatorV2": "a25dc36311ddd85c"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                return false;\n            }\n            if (!classesWithField.contains(clazz.getName())) {\n                return false;\n            }",
+        "equalIndicatorV2": "202bc2290e306d2f"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        @Restricted(NoExternalUse.class)\n        public boolean isCauseOfBlockageNull() {\n            if (causeOfBlockage == null) {\n                return true;\n            } else {",
+        "equalIndicatorV2": "49ed65dee42be414"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            if (!mavenVersion.isEmpty()) {\n                if (mavenReqVersion == MAVEN_20) {\n                    if (mavenVersion.startsWith(\"2.\"))\n                        return true;\n                }",
+        "equalIndicatorV2": "ed249a721586d212"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        }\n        // Check it has not expired\n        if (tokenExpiryTimeMs < nowMs) {\n            return true;\n        }",
+        "equalIndicatorV2": "9f512cfb54e990c0"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                    ToolInstallerEntry sampleEntry = entryList[0];\n                    if (sampleEntry != null) {\n                        if (sampleEntry.id != null && sampleEntry.name != null && sampleEntry.url != null) {\n                            return true;\n                        }",
+        "equalIndicatorV2": "1b3d8fe94b1f4e26"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        if (!checkBits(bits[3], checkCal.get(MONTH) + 1))\n            return false;\n        if (!checkBits(dayOfWeek, checkCal.get(Calendar.DAY_OF_WEEK) - 1))\n            return false;\n",
+        "equalIndicatorV2": "98a7cf76a3d01023"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        if (fitsSearchString(item.getDisplayName())) {\n            return true;\n        } else if (fitsSearchString(item.getId())) {\n            return true;\n        }",
+        "equalIndicatorV2": "2a37fec33c529e96"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "\n        // TODO SlaveComputer.doSlaveAgentJnlp; there should be an annotation to request unprotected access\n        if ((isAgentJnlpPath(restOfPath, \"jenkins\") || isAgentJnlpPath(restOfPath, \"slave\"))\n            && \"true\".equals(Stapler.getCurrentRequest().getParameter(\"encrypt\"))) {\n            return false;",
+        "equalIndicatorV2": "721d83b383de0d13"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "                }\n                else if (mavenReqVersion == MAVEN_21) {\n                    if (mavenVersion.startsWith(\"2.\") && !mavenVersion.startsWith(\"2.0\"))\n                        return true;\n                }",
+        "equalIndicatorV2": "ff6f9186af29b279"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "            return false;\n        StringParameterValue other = (StringParameterValue) obj;\n        if (!Objects.equals(value, other.value)) {\n            return false;\n        }",
+        "equalIndicatorV2": "06ff948604b036a6"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        }\n\n        if (isOff(ALLOW_ALL_SCHEMES) && !allowedSchemes.contains(scheme.toLowerCase(Locale.ENGLISH))) {\n            return false;\n        }",
+        "equalIndicatorV2": "a1fdb6a04f4d4757"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        }\n        File parent = f.getParentFile();\n        if (parent == null || !parent.canWrite()) {\n            return false;\n        }",
+        "equalIndicatorV2": "858bf622fdfd17f7"
+    },
+    {
+        "message": "'if' statement can be simplified",
+        "contextSnippet": "        if (pos >= chunkSize) {\n            nextChunk();\n            if (eof) {\n                return true;\n            }",
+        "equalIndicatorV2": "0c3f76687fdf96a2"
+    }
+]

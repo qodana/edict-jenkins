@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                    // not found or otherwise unavailable\n                    LOGGER.log(Level.FINE, e.getMessage(), e);\n                    continue updateSiteList;\n                }\n            } catch (Exception e) {",
+            "equalIndicatorV2": "0ea9d21f33566df2"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                } catch (AccessDeniedException e) {\n                    // Need to log in to access this job, so ignore\n                    continue;\n                }\n",
+            "equalIndicatorV2": "141a23c81eb02c32"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "afad44526d51845b"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "6926dd94836e6861"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(node_s + \": \" + e.getMessage());\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "b8c5943c8eb8557e"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(node_s + \": \" + e.getMessage());\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "e08ae1380a8eff15"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                            }\n                            // ignore malformed text like \"1-10-50\"\n                            continue;\n                        }\n                    } else {",
+            "equalIndicatorV2": "97a563dda9f4538c"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "ccd94d85947bcb44"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "8e5d5bacaa508478"
+        },
+        {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                // item. This is to prevent an validation warning if the user\n                // sets the displayName to what the existing display name is\n                continue;\n            }\n            else if (displayName.equals(item.getDisplayName())) {",
+            "equalIndicatorV2": "086b868e7692beb0"
+        }
+    ],
+    "negativeExamples": []
+}

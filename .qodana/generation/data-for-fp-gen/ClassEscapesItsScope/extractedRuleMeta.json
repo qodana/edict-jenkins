@@ -1,0 +1,36 @@
+{
+    "ruleId": "ClassEscapesItsScope",
+    "ruleName": "Class is exposed outside of its visibility scope",
+    "description": "Reports usages of classes in a field or method signature where the class has less visibility than the member that uses it. While legal Java, such members cannot be used outside of the visibility scope of the class type they reference. Example: 'public class Parent {\n    public Child getChild() {\n      return new Child();\n    }\n\n    private class Child {}\n  }' Additionally, in Java 9 and higher, a module may hide some of its classes from other modules by not exporting their packages. However, if a member that is part of the exported API references a non-exported class in its signature, such a member cannot be used outside of the module. Configure the inspection: Use the Report non-exported classes exposed in module API (Java 9+) option to report module API members that expose non-exported classes. Note that the language level of the project or module needs to be 9 or higher for this option. Use the Report non-accessible classes exposed in public API option to report on public members that expose classes with a smaller visibility scope. Use the Report private classes exposed in package-local API option to report on package-local members that expose 'private' classes. Inspection ID: ClassEscapesItsScope",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }",
+            "        protected abstract boolean handle(Op op, DataInputStream dis) throws IOException;\n\n        protected final synchronized void send(Op op) throws IOException {\n            send(op, new byte[0], 0, 0);\n        }",
+            "\n    @Override\n    protected Fingerprint get(String md5sum, boolean createIfNotExist, FingerprintParams createParams) throws IOException {\n        // sanity check\n        if (md5sum.length() != 32)",
+            "        }\n\n        protected final synchronized void send(Op op, int v) throws IOException {\n            ByteArrayOutputStream baos = new ByteArrayOutputStream(4);\n            new DataOutputStream(baos).writeInt(v);",
+            "    }\n\n    @NonNull public abstract Decision decide(@NonNull String signature);\n}\n",
+            "    }\n\n    public static final MultiPasswordEncoder PASSWORD_ENCODER = new MultiPasswordEncoder();\n\n    /**",
+            "    @Override\n    @NonNull\n    public synchronized Decision decide(@NonNull String signature) {\n        if (whitelistSignaturesFromFixedList == null || whitelistSignaturesFromUserControlledList == null ||\n                blacklistSignaturesFromFixedList == null || blacklistSignaturesFromUserControlledList == null) {",
+            "        }\n\n        protected abstract boolean handle(Op op, DataInputStream dis) throws IOException;\n\n        protected final synchronized void send(Op op) throws IOException {",
+            "\n        @Override\n        protected MonitorTask createCallable(Computer c) {\n            return new MonitorTask();\n        }",
+            "    }\n\n    public WeatherIcon(String classSpec, String style, Status status) {\n        super(classSpec, status.url, style, IconFormat.EXTERNAL_SVG_SPRITE);\n    }",
+            "\n    @Override\n    protected @NonNull Fingerprint create(@NonNull String md5sum, @NonNull FingerprintParams createParams) throws IOException {\n        return new Fingerprint(createParams.build, createParams.fileName, Util.fromHexString(md5sum));\n    }"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "Class 'Op' is exposed outside its defined visibility scope",
+            "contextSnippet": "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }",
+            "equalIndicatorV2": "b72a8c5ba6bd6e00"
+        },
+        "after": {
+            "message": "Class 'Op' is exposed outside its defined visibility scope",
+            "contextSnippet": "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }",
+            "equalIndicatorV2": "b72a8c5ba6bd6e00"
+        }
+    }
+}

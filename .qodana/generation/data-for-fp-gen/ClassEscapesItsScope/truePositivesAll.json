@@ -1,0 +1,1142 @@
+[
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 221,
+            "startColumn": 35,
+            "charOffset": 8144,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 219,
+            "startColumn": 1,
+            "charOffset": 8099,
+            "charLength": 142,
+            "snippet": {
+              "text": "        }\n\n        protected final void send(Op op, byte[] chunk) throws IOException {\n            send(op, chunk, 0, chunk.length);\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b72a8c5ba6bd6e00",
+      "equalIndicator/v1": "6b87c0ee098a8f499371801bcdfaf016cebd787d3486a84d2c52219f4d304b77"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 204,
+            "startColumn": 48,
+            "charOffset": 7482,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 202,
+            "startColumn": 1,
+            "charOffset": 7344,
+            "charLength": 216,
+            "snippet": {
+              "text": "        protected abstract boolean handle(Op op, DataInputStream dis) throws IOException;\n\n        protected final synchronized void send(Op op) throws IOException {\n            send(op, new byte[0], 0, 0);\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "bdc14c1287dad42e",
+      "equalIndicator/v1": "f991e01c12883bd3e62d6093c54f5264cf812c0ee11f5adc815a080f5e6a3fd1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'FingerprintParams' is exposed outside its defined visibility scope",
+      "markdown": "Class `FingerprintParams` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/FingerprintMap.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 76,
+            "startColumn": 72,
+            "charOffset": 3131,
+            "charLength": 17,
+            "snippet": {
+              "text": "FingerprintParams"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 74,
+            "startColumn": 1,
+            "charOffset": 3045,
+            "charLength": 197,
+            "snippet": {
+              "text": "\n    @Override\n    protected Fingerprint get(String md5sum, boolean createIfNotExist, FingerprintParams createParams) throws IOException {\n        // sanity check\n        if (md5sum.length() != 32)"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9ac060532076f993",
+      "equalIndicator/v1": "beb79e8a14bae5ec230f1d5b94fb9fad34cd6dbb1d626b6ac4d214e4e9fe51e3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 208,
+            "startColumn": 48,
+            "charOffset": 7609,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 206,
+            "startColumn": 1,
+            "charOffset": 7551,
+            "charLength": 215,
+            "snippet": {
+              "text": "        }\n\n        protected final synchronized void send(Op op, int v) throws IOException {\n            ByteArrayOutputStream baos = new ByteArrayOutputStream(4);\n            new DataOutputStream(baos).writeInt(v);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ba63950c9c6262ec",
+      "equalIndicator/v1": "938408d385c70948475fead7f496d6f60e55000e5d71e884d066e4baf98f5249"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Decision' is exposed outside its defined visibility scope",
+      "markdown": "Class `Decision` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/stapler/RoutingDecisionProvider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 37,
+            "startColumn": 30,
+            "charOffset": 1440,
+            "charLength": 8,
+            "snippet": {
+              "text": "Decision"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 35,
+            "startColumn": 1,
+            "charOffset": 1404,
+            "charLength": 82,
+            "snippet": {
+              "text": "    }\n\n    @NonNull public abstract Decision decide(@NonNull String signature);\n}\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "57308cc41322747b",
+      "equalIndicator/v1": "06013ebf536925d76485cd429e37d6f70396347e755f9395ff91dc8d31a1146f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'MultiPasswordEncoder' is exposed outside its defined visibility scope",
+      "markdown": "Class `MultiPasswordEncoder` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/HudsonPrivateSecurityRealm.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 973,
+            "startColumn": 25,
+            "charOffset": 37383,
+            "charLength": 20,
+            "snippet": {
+              "text": "MultiPasswordEncoder"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 971,
+            "startColumn": 1,
+            "charOffset": 37352,
+            "charLength": 107,
+            "snippet": {
+              "text": "    }\n\n    public static final MultiPasswordEncoder PASSWORD_ENCODER = new MultiPasswordEncoder();\n\n    /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "435f121d0ec2cc4e",
+      "equalIndicator/v1": "adc073764190f34b320f4d5b2fb50f7c6fe5fb376a93ca55bbe9f0d0478d22ae"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Decision' is exposed outside its defined visibility scope",
+      "markdown": "Class `Decision` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/stapler/StaticRoutingDecisionProvider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 87,
+            "startColumn": 25,
+            "charOffset": 3238,
+            "charLength": 8,
+            "snippet": {
+              "text": "Decision"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 85,
+            "startColumn": 1,
+            "charOffset": 3187,
+            "charLength": 317,
+            "snippet": {
+              "text": "    @Override\n    @NonNull\n    public synchronized Decision decide(@NonNull String signature) {\n        if (whitelistSignaturesFromFixedList == null || whitelistSignaturesFromUserControlledList == null ||\n                blacklistSignaturesFromFixedList == null || blacklistSignaturesFromUserControlledList == null) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b982329d0c66d414",
+      "equalIndicator/v1": "f477457cdb8c1296a5a7cf6f365749cfbd0c464030bcfe6af1ded4e4b4d75fa2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 202,
+            "startColumn": 43,
+            "charOffset": 7386,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 200,
+            "startColumn": 1,
+            "charOffset": 7333,
+            "charLength": 176,
+            "snippet": {
+              "text": "        }\n\n        protected abstract boolean handle(Op op, DataInputStream dis) throws IOException;\n\n        protected final synchronized void send(Op op) throws IOException {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "98b3cd79b7461632",
+      "equalIndicator/v1": "051583643d25308806f69f4e99630e632a59a44e534d9c1ada1fdbed42ae25e5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'MonitorTask' is exposed outside its defined visibility scope",
+      "markdown": "Class `MonitorTask` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/node_monitors/SwapSpaceMonitor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 101,
+            "startColumn": 19,
+            "charOffset": 3683,
+            "charLength": 11,
+            "snippet": {
+              "text": "MonitorTask"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 99,
+            "startColumn": 1,
+            "charOffset": 3646,
+            "charLength": 125,
+            "snippet": {
+              "text": "\n        @Override\n        protected MonitorTask createCallable(Computer c) {\n            return new MonitorTask();\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "155c36c1741ebf24",
+      "equalIndicator/v1": "f0d8db26e17aefa871180edf95cd9b049aba38a562612e5a16eb8f39d4718964"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Status' is exposed outside its defined visibility scope",
+      "markdown": "Class `Status` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/org/jenkins/ui/icon/WeatherIcon.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 49,
+            "startColumn": 56,
+            "charOffset": 1896,
+            "charLength": 6,
+            "snippet": {
+              "text": "Status"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 47,
+            "startColumn": 1,
+            "charOffset": 1834,
+            "charLength": 161,
+            "snippet": {
+              "text": "    }\n\n    public WeatherIcon(String classSpec, String style, Status status) {\n        super(classSpec, status.url, style, IconFormat.EXTERNAL_SVG_SPRITE);\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "40e9c2e70914f708",
+      "equalIndicator/v1": "137e5d184e7b1f842ffe0f0588c67475347556cbf21bf6169bb934fd560280b2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'FingerprintParams' is exposed outside its defined visibility scope",
+      "markdown": "Class `FingerprintParams` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/FingerprintMap.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 86,
+            "startColumn": 76,
+            "charOffset": 3504,
+            "charLength": 17,
+            "snippet": {
+              "text": "FingerprintParams"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 84,
+            "startColumn": 1,
+            "charOffset": 3414,
+            "charLength": 251,
+            "snippet": {
+              "text": "\n    @Override\n    protected @NonNull Fingerprint create(@NonNull String md5sum, @NonNull FingerprintParams createParams) throws IOException {\n        return new Fingerprint(createParams.build, createParams.fileName, Util.fromHexString(md5sum));\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "466ba72f7c88e93a",
+      "equalIndicator/v1": "d9d83758d945bec99bdae9a4bb64060a0cc8fc6f23368c46b24387af737ae6b4"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'MethodInfo' is exposed outside its defined visibility scope",
+      "markdown": "Class `MethodInfo` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ReflectionUtils.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 131,
+            "startColumn": 26,
+            "charOffset": 4549,
+            "charLength": 10,
+            "snippet": {
+              "text": "MethodInfo"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 129,
+            "startColumn": 1,
+            "charOffset": 4490,
+            "charLength": 156,
+            "snippet": {
+              "text": "        private final int index;\n\n        public Parameter(MethodInfo parent, int index) {\n            this.parent = parent;\n            this.index = index;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8e6efe634a38a496",
+      "equalIndicator/v1": "4d9ca7f247af846ad2a2600cfe64d729d5f58225b7582c6f7b6fa77108dbce54"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 323,
+            "startColumn": 34,
+            "charOffset": 10996,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 321,
+            "startColumn": 1,
+            "charOffset": 10944,
+            "charLength": 161,
+            "snippet": {
+              "text": "\n        @Override\n        protected boolean handle(Op op, DataInputStream dis) throws IOException {\n            assert !op.clientSide;\n            switch (op) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1e09d81c1817a49b",
+      "equalIndicator/v1": "b6a15091c3d638145c84833fd71a166a9acfbccdf36a5abe641b28240bc8002d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'HashValue' is exposed outside its defined visibility scope",
+      "markdown": "Class `HashValue` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/apitoken/ApiTokenStore.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 392,
+            "startColumn": 84,
+            "charOffset": 14701,
+            "charLength": 9,
+            "snippet": {
+              "text": "HashValue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 390,
+            "startColumn": 1,
+            "charOffset": 14607,
+            "charLength": 196,
+            "snippet": {
+              "text": "        }\n\n        public static @NonNull HashedToken buildNew(@NonNull String name, @NonNull HashValue value) {\n            HashedToken result = new HashedToken();\n            result.name = name;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e755b84b45259b38",
+      "equalIndicator/v1": "9047f852dc9bf7e447a25915431da7cde2a19bdb72882daf3c91f071571579a5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 231,
+            "startColumn": 51,
+            "charOffset": 8543,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 229,
+            "startColumn": 1,
+            "charOffset": 8482,
+            "charLength": 135,
+            "snippet": {
+              "text": "        }\n\n        protected final OutputStream stream(final Op op) {\n            return new OutputStream() {\n                @Override"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "289484fdae4a59e3",
+      "equalIndicator/v1": "67a5ca8b757261d45729bcfe1bff4909c69765107986c132052ccde151d78e4c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'HashValue' is exposed outside its defined visibility scope",
+      "markdown": "Class `HashValue` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/apitoken/ApiTokenStore.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 402,
+            "startColumn": 72,
+            "charOffset": 14995,
+            "charLength": 9,
+            "snippet": {
+              "text": "HashValue"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 400,
+            "startColumn": 1,
+            "charOffset": 14913,
+            "charLength": 260,
+            "snippet": {
+              "text": "        }\n\n        public static @NonNull HashedToken buildNewFromLegacy(@NonNull HashValue value, boolean migrationFromExistingLegacy) {\n            HashedToken result = new HashedToken();\n            result.name = Messages.ApiTokenProperty_LegacyTokenName();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1be380b9b567238c",
+      "equalIndicator/v1": "59e8a04d26801983b24260134ba3bba4236740a5140c8d054f4d60633813eabb"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 225,
+            "startColumn": 35,
+            "charOffset": 8277,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 223,
+            "startColumn": 1,
+            "charOffset": 8232,
+            "charLength": 208,
+            "snippet": {
+              "text": "        }\n\n        protected final void send(Op op, String text) throws IOException {\n            ByteArrayOutputStream buf = new ByteArrayOutputStream();\n            new DataOutputStream(buf).writeUTF(text);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "bff74ab2a3289e1b",
+      "equalIndicator/v1": "6faca89527ce324739a74f8254e99c19af69d49d60af6db81e1838fe86afa627"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 264,
+            "startColumn": 40,
+            "charOffset": 9416,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 262,
+            "startColumn": 1,
+            "charOffset": 9358,
+            "charLength": 166,
+            "snippet": {
+              "text": "\n        @Override\n        protected final boolean handle(Op op, DataInputStream dis) throws IOException {\n            assert op.clientSide;\n            switch (op) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "00752614d30d5ec7",
+      "equalIndicator/v1": "ec51d400b227714c7e7bfddcdd2035af20f71243700a7831fdd15c335d704f3b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Op' is exposed outside its defined visibility scope",
+      "markdown": "Class `Op` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/PlainCLIProtocol.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 214,
+            "startColumn": 48,
+            "charOffset": 7867,
+            "charLength": 2,
+            "snippet": {
+              "text": "Op"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 212,
+            "startColumn": 1,
+            "charOffset": 7809,
+            "charLength": 205,
+            "snippet": {
+              "text": "        }\n\n        protected final synchronized void send(Op op, byte[] chunk, int off, int len) throws IOException {\n            byte[] data = new byte[len + 1];\n            data[0] = (byte) op.ordinal();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a96fde07da1d5e18",
+      "equalIndicator/v1": "df45f84f62a371e8fedaf38b8d0326c82a4974d45c3aa476f61eba3bf7ed67e3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ClassEscapesItsScope",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class 'Format' is exposed outside its defined visibility scope",
+      "markdown": "Class `Format` is exposed outside its defined visibility scope"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/ListChangesCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 44,
+            "startColumn": 12,
+            "charOffset": 1226,
+            "charLength": 6,
+            "snippet": {
+              "text": "Format"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 42,
+            "startColumn": 1,
+            "charOffset": 1119,
+            "charLength": 151,
+            "snippet": {
+              "text": "\n    @Option(name = \"-format\", usage = \"Controls how the output from this command is printed.\")\n    public Format format = Format.PLAIN;\n\n    @Override"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a02cc30fabaccd04",
+      "equalIndicator/v1": "aaf6d2aafedfdac749dabc6e5e4057d2c9783b277ff075620b003b5b3dcfc4ba"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

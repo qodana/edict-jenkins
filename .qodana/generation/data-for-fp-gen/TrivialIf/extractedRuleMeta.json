@@ -1,0 +1,36 @@
+{
+    "ruleId": "TrivialIf",
+    "ruleName": "Redundant 'if' statement",
+    "description": "Reports 'if' statements that can be simplified to a single assignment, 'return', or 'assert' statement. Example: 'if (foo()) {\n    return true;\n  } else {\n    return false;\n  }' After the quick-fix is applied: 'return foo();' Configure the inspection: Use the Ignore chained 'if' statements option if you want to hide a warning for chained 'if' statements. For example, in the following code the warning will be hidden, but the quick-fix will still be available: 'if (condition1) return true;\n  if (condition2) return false;\n  return true;' Note that replacing 'if (isTrue()) assert false;' with 'assert isTrue();' may change the program semantics when asserts are disabled if condition has side effects. Use the Ignore 'if' statements with trivial 'assert' option if you want to hide a warning for 'if' statements containing only 'assert' statement in their bodies. Inspection ID: TrivialIf",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "            validOctets++;\n        }\n        if (validOctets > IPV6_MAX_HEX_GROUPS || (validOctets < IPV6_MAX_HEX_GROUPS && !containsCompressedZeroes)) {\n            return false;\n        }",
+            "        }\n\n        if (!isValidFragment(uri.getRawFragment())) {\n            return false;\n        }",
+            "            return false;\n        ParameterValue other = (ParameterValue) obj;\n        if (!Objects.equals(name, other.name)) {\n            return false;\n        }",
+            "\n        int slash2Count = countToken(\"//\", path);\n        if (isOff(ALLOW_2_SLASHES) && slash2Count > 0) {\n            return false;\n        }",
+            "                return false;\n            }\n            if (queueLength != that.queueLength) {\n                return false;\n            }",
+            "            if (installedVersion != null) {\n                if (compatibleSinceVersion != null) {\n                    if (new VersionNumber(installedVersion.getVersion())\n                            .isOlderThan(new VersionNumber(compatibleSinceVersion))) {\n                        return false;",
+            "                return false;   // label mismatch\n\n            if (!(Node.SKIP_BUILD_CHECK_ON_FLYWEIGHTS && item.task instanceof Queue.FlyweightTask) && !nodeAcl.hasPermission2(item.authenticate2(), Computer.BUILD))\n                return false;   // tasks don't have a permission to run on this node\n",
+            "            return true;\n        }\n        else if (item.getName().equals(currentJobName)) {\n            // the candidate name returned an item, but the item is the item\n            // that the user is configuring so this is ok",
+            "        FileParameterValue other = (FileParameterValue) obj;\n\n        if (location == null && other.location == null)\n            return true; // Consider null parameters as equal\n",
+            "\n            if (getHome() != null ? !getHome().equals(that.getHome()) : that.getHome() != null) return false;\n            if (getName() != null ? !getName().equals(that.getName()) : that.getName() != null) return false;\n            return true;\n        }",
+            "        if (t instanceof AccessControlled) {\n            AccessControlled taskAC = (AccessControlled) t;\n            if (taskAC.hasPermission(hudson.model.Item.READ)\n                    || taskAC.hasPermission(Permission.READ)) { // TODO should be unnecessary given the 'implies' relationship\n                return true;"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "            validOctets++;\n        }\n        if (validOctets > IPV6_MAX_HEX_GROUPS || (validOctets < IPV6_MAX_HEX_GROUPS && !containsCompressedZeroes)) {\n            return false;\n        }",
+            "equalIndicatorV2": "9a768bd1351b8c8f"
+        },
+        "after": {
+            "message": "'if' statement can be simplified",
+            "contextSnippet": "            validOctets++;\n        }\n        if (validOctets > IPV6_MAX_HEX_GROUPS || (validOctets < IPV6_MAX_HEX_GROUPS && !containsCompressedZeroes)) {\n            return false;\n        }",
+            "equalIndicatorV2": "9a768bd1351b8c8f"
+        }
+    }
+}

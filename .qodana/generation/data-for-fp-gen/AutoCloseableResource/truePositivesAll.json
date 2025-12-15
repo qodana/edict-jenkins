@@ -1,0 +1,3071 @@
+[
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/RewindableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 77,
+            "startColumn": 9,
+            "charOffset": 2752,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 75,
+            "startColumn": 1,
+            "charOffset": 2677,
+            "charLength": 101,
+            "snippet": {
+              "text": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "dde5261dbdbb0d44",
+      "equalIndicator/v1": "006a1af7ec21b7347e24ccd9567ce165f53d682b058fdc37a2c876a0bd4c1651"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Slave.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 564,
+            "startColumn": 18,
+            "charOffset": 21049,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 562,
+            "startColumn": 1,
+            "charOffset": 20781,
+            "charLength": 446,
+            "snippet": {
+              "text": "    private void reportLauncherCreateError(@NonNull String humanReadableMsg, @CheckForNull String exceptionDetails, @NonNull TaskListener listener) {\n        String message = \"Issue with creating launcher for agent \" + name + \". \" + humanReadableMsg;\n        listener.error(message);\n        if (LOGGER.isLoggable(Level.WARNING)) {\n            // Send stacktrace to the log as well in order to diagnose the root cause of issues like JENKINS-38527"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6a9cf8e602c432a8",
+      "equalIndicator/v1": "0a53462f1c4a62ec434014901f5f334ca57746bee8774197a83a0e7ea7a45d87"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintStream' used without 'try'-with-resources statement",
+      "markdown": "'PrintStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractBuild.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 836,
+            "startColumn": 38,
+            "charOffset": 33564,
+            "charLength": 6,
+            "snippet": {
+              "text": "format"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 834,
+            "startColumn": 1,
+            "charOffset": 33434,
+            "charLength": 243,
+            "snippet": {
+              "text": "            if (!canContinue) {\n                String buildStepName = getBuildStepName(bs);\n                listener.getLogger().format(\"Build step '%s' marked build as failure%n\", buildStepName);\n            }\n            return canContinue;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5b6561309f924f4b",
+      "equalIndicator/v1": "9cc30bf63ceacaa984f52a11dc0afe338a44bd67018d9595d739568335e1e1f5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Session' used without 'try'-with-resources statement",
+      "markdown": "'Session' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "websocket/jetty10/src/main/java/jenkins/websocket/Jetty10Provider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 90,
+            "startColumn": 17,
+            "charOffset": 4158,
+            "charLength": 7,
+            "snippet": {
+              "text": "session"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 88,
+            "startColumn": 1,
+            "charOffset": 3990,
+            "charLength": 272,
+            "snippet": {
+              "text": "            public Future<Void> sendBinary(ByteBuffer data) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendBytes(data, new WriteCallbackImpl(f));\n                return f;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "websocket-jetty10",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "122498b0096fb61b",
+      "equalIndicator/v1": "766ae80719d0fdc3ce8c8876c029ad609280378e6513341a6c7f33e7c5f5347d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/RewindableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 82,
+            "startColumn": 9,
+            "charOffset": 2872,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 80,
+            "startColumn": 1,
+            "charOffset": 2779,
+            "charLength": 129,
+            "snippet": {
+              "text": "    @Override\n    public void write(byte[] b, int off, int len) throws IOException {\n        current().write(b, off, len);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0a72296db7ec9be5",
+      "equalIndicator/v1": "3b7dafdfb21b3189e7377cf8d10d15d4052b404f02947473ee3f1f7bd19dd0f9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/FileParameterDefinition.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 128,
+            "startColumn": 21,
+            "charOffset": 4589,
+            "charLength": 12,
+            "snippet": {
+              "text": "checkChannel"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 126,
+            "startColumn": 1,
+            "charOffset": 4524,
+            "charLength": 131,
+            "snippet": {
+              "text": "            name = \"stdin\";\n        } else {\n            command.checkChannel();\n            return null; // never called\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ac35f08a4e0036bb",
+      "equalIndicator/v1": "5f11b8e6a36aa30e362e22c22da392e8a6055099a90458894118c48d5ada0ab3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ReopenableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 75,
+            "startColumn": 9,
+            "charOffset": 2734,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 73,
+            "startColumn": 1,
+            "charOffset": 2659,
+            "charLength": 101,
+            "snippet": {
+              "text": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e92c7642d0caa623",
+      "equalIndicator/v1": "0e0aac8075381d60811f67ca21df53882d57a6af51f06d3dc9da0c27525911a9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Session' used without 'try'-with-resources statement",
+      "markdown": "'Session' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/CLI.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 364,
+            "startColumn": 34,
+            "charOffset": 13845,
+            "charLength": 15,
+            "snippet": {
+              "text": "connectToServer"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 362,
+            "startColumn": 1,
+            "charOffset": 13493,
+            "charLength": 616,
+            "snippet": {
+              "text": "        ClientManager client = ClientManager.createClient(JdkClientContainer.class.getName()); // ~ ContainerProvider.getWebSocketContainer()\n        client.getProperties().put(ClientProperties.REDIRECT_ENABLED, true); // https://tyrus-project.github.io/documentation/1.13.1/index/tyrus-proprietary-config.html#d0e1775\n        Session session = client.connectToServer(new CLIEndpoint(), ClientEndpointConfig.Builder.create().configurator(new Authenticator()).build(), URI.create(url.replaceFirst(\"^http\", \"ws\") + \"cli/ws\"));\n        PlainCLIProtocol.Output out = new PlainCLIProtocol.Output() {\n            @Override"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b90921426526c300",
+      "equalIndicator/v1": "2ed5c750519c1231e855232bde3dd69782812f7c81a22532c0fbfc1d57d7b7e7"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Lease' used without 'try'-with-resources statement",
+      "markdown": "'Lease' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractProject.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1439,
+            "startColumn": 39,
+            "charOffset": 52052,
+            "charLength": 7,
+            "snippet": {
+              "text": "acquire"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1437,
+            "startColumn": 1,
+            "charOffset": 51874,
+            "charLength": 321,
+            "snippet": {
+              "text": "        Node node = lb.getBuiltOn();\n        Launcher launcher = ws.createLauncher(listener).decorateByEnv(getEnvironment(node, listener));\n        WorkspaceList.Lease lease = l.acquire(ws, !concurrentBuild);\n        try {\n            String nodeName = node != null ? node.getSelfLabel().getName() : \"[node_unavailable]\";"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "228d58188d259e4f",
+      "equalIndicator/v1": "9def96983e498ca784aba74f04ff6a3c637ab098b869691fb401614c4d0f4f7f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/model/BackgroundGlobalBuildDiscarder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 69,
+            "startColumn": 30,
+            "charOffset": 2882,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 67,
+            "startColumn": 1,
+            "charOffset": 2771,
+            "charLength": 321,
+            "snippet": {
+              "text": "                    strategy.apply(job);\n                } catch (Exception ex) {\n                    listener.error(\"An exception occurred when executing \" + displayName + \": \" + ex.getMessage());\n                    LOGGER.log(Level.WARNING, \"An exception occurred when executing \" + displayName, ex);\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "7f184342d3b3efb7",
+      "equalIndicator/v1": "82c76204629d09bc1576adc705bb210ab8d565841142dd532dc5e6df24c3e4ea"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "cli/src/main/java/hudson/cli/CLI.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 439,
+            "startColumn": 52,
+            "charOffset": 17158,
+            "charLength": 11,
+            "snippet": {
+              "text": "streamStdin"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 437,
+            "startColumn": 1,
+            "charOffset": 17045,
+            "charLength": 262,
+            "snippet": {
+              "text": "                public void run() {\n                    try {\n                        final OutputStream stdin = streamStdin();\n                        byte[] buf = new byte[60_000]; // less than 64Kb frame size for WS\n                        while (!complete) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "cli",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9d34cd4d625ccb75",
+      "equalIndicator/v1": "0d73ff83615ada08846f7a8769e77cca180e72cab1d084fc5bf3c1eeff03d06e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/tasks/filters/EnvVarsFilterRuleWrapper.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 78,
+            "startColumn": 43,
+            "charOffset": 3518,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 76,
+            "startColumn": 1,
+            "charOffset": 3284,
+            "charLength": 288,
+            "snippet": {
+              "text": "            } catch (EnvVarsFilterException e) {\n                String message = String.format(\"Environment variable filtering failed due to violation with the message: %s\", e.getMessage());\n                context.getTaskListener().error(message);\n                throw e;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b33be223e1c85a28",
+      "equalIndicator/v1": "d49b93cf1509a33350dcdfe1f0a414a9faeebd90b28d3748cc15a324f73c4109"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintStream' used without 'try'-with-resources statement",
+      "markdown": "'PrintStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractBuild.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 832,
+            "startColumn": 38,
+            "charOffset": 33338,
+            "charLength": 6,
+            "snippet": {
+              "text": "format"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 830,
+            "startColumn": 1,
+            "charOffset": 33198,
+            "charLength": 267,
+            "snippet": {
+              "text": "            if (newResult != oldResult) {\n                String buildStepName = getBuildStepName(bs);\n                listener.getLogger().format(\"Build step '%s' changed build result to %s%n\", buildStepName, newResult);\n            }\n            if (!canContinue) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "76904d9312e04f68",
+      "equalIndicator/v1": "370eebdc152cdf02428aa9304b7d0e1d1a9bc960b690f451140c78ca10e92c47"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 677,
+            "startColumn": 30,
+            "charOffset": 26575,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 675,
+            "startColumn": 1,
+            "charOffset": 26501,
+            "charLength": 266,
+            "snippet": {
+              "text": "                return;\n            } else {\n                taskListener.error(\n                        \"The Remoting version is older than the minimum required version (%s).\"\n                            + \" The connection will be allowed, but compatibility is NOT\""
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "70a4b678b7c4c8f9",
+      "equalIndicator/v1": "f824d4cf73710ecde79a61099846a0657dfde89b72b2df4e581c6264c2aac1b5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Session' used without 'try'-with-resources statement",
+      "markdown": "'Session' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "websocket/jetty10/src/main/java/jenkins/websocket/Jetty10Provider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 109,
+            "startColumn": 17,
+            "charOffset": 4964,
+            "charLength": 7,
+            "snippet": {
+              "text": "session"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 107,
+            "startColumn": 1,
+            "charOffset": 4787,
+            "charLength": 291,
+            "snippet": {
+              "text": "            public Future<Void> sendPing(ByteBuffer applicationData) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendPing(applicationData, new WriteCallbackImpl(f));\n                return f;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "websocket-jetty10",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c3bbb8bee1d6bc87",
+      "equalIndicator/v1": "e2d47a1bf88574449863c33dd6f3baed31439209008844901c38477a5e8d6b34"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractBuild.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 793,
+            "startColumn": 26,
+            "charOffset": 31656,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 791,
+            "startColumn": 1,
+            "charOffset": 31478,
+            "charLength": 343,
+            "snippet": {
+              "text": "            if (e instanceof AbortException) {\n                LOGGER.log(Level.FINE, \"{0} : {1} failed\", new Object[] {AbstractBuild.this, buildStep});\n                listener.error(\"Step ‘\" + buildStep + \"’ failed: \" + e.getMessage());\n            } else {\n                String msg = \"Step ‘\" + buildStep + \"’ aborted due to exception: \";"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "4f582a82060d8a41",
+      "equalIndicator/v1": "e26ed14749156c7ac2ecbc459dc16a70e0c5758c315fc1faba70e3e470442aae"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractProject.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1335,
+            "startColumn": 22,
+            "charOffset": 46202,
+            "charLength": 10,
+            "snippet": {
+              "text": "fatalError"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1333,
+            "startColumn": 1,
+            "charOffset": 46086,
+            "charLength": 300,
+            "snippet": {
+              "text": "        } catch (AbortException e) {\n            listener.getLogger().println(e.getMessage());\n            listener.fatalError(Messages.AbstractProject_Aborted());\n            LOGGER.log(Level.FINE, \"Polling \" + this + \" aborted\", e);\n            SCMPollListener.firePollingFailed(this, listener, e);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "04db5ced190ecc40",
+      "equalIndicator/v1": "2d7b44d68a63935680b229a9b846c31eeb9b250f1b601053a137322e71b7c25e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'CapturingServletOutputStream' used without 'try'-with-resources statement",
+      "markdown": "'CapturingServletOutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/slaves/EncryptedSlaveAgentJnlpFile.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 76,
+            "startColumn": 59,
+            "charOffset": 2788,
+            "charLength": 28,
+            "snippet": {
+              "text": "CapturingServletOutputStream"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 74,
+            "startColumn": 1,
+            "charOffset": 2612,
+            "charLength": 388,
+            "snippet": {
+              "text": "        RequestDispatcher view = req.getView(it, viewName);\n        if (\"true\".equals(req.getParameter(\"encrypt\"))) {\n            final CapturingServletOutputStream csos = new CapturingServletOutputStream();\n            StaplerResponse temp = new ResponseImpl(req.getStapler(), new HttpServletResponseWrapper(res) {\n                @Override public ServletOutputStream getOutputStream() {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1fa3b247a6d9579b",
+      "equalIndicator/v1": "4d39ad1abc85d467d8e46036d04057e541abf13fa32b9cc6a29399b0aeeb9bfe"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ParserConfigurator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 81,
+            "startColumn": 34,
+            "charOffset": 3266,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 79,
+            "startColumn": 1,
+            "charOffset": 3181,
+            "charLength": 184,
+            "snippet": {
+              "text": "\n        if (Jenkins.getInstanceOrNull() == null) {\n            Channel ch = Channel.current();\n            if (ch != null)\n                all = ch.call(new GetParserConfigurators());"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e2ca1683ce6ad2ee",
+      "equalIndicator/v1": "f3a97652734eabf385defab465fdb496d8bc8cb9ca1496e09c92db9624facc8b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/CLICommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 501,
+            "startColumn": 9,
+            "charOffset": 20119,
+            "charLength": 12,
+            "snippet": {
+              "text": "checkChannel"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 499,
+            "startColumn": 1,
+            "charOffset": 19989,
+            "charLength": 185,
+            "snippet": {
+              "text": "    @Deprecated\n    protected String getClientEnvironmentVariable(String name) throws IOException, InterruptedException {\n        checkChannel();\n        return null; // never run\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b3bb5e5101defe94",
+      "equalIndicator/v1": "51a7145a3aca6350bf518cf6e836458e2d895ca625ba2a86b526009e9cac965c"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 300,
+            "startColumn": 34,
+            "charOffset": 10598,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 298,
+            "startColumn": 1,
+            "charOffset": 10471,
+            "charLength": 220,
+            "snippet": {
+              "text": "                } catch (AbortException e) {\n                    e.addSuppressed(threadInfo);\n                    taskListener.error(e.getMessage());\n                    throw e;\n                } catch (IOException e) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b34cbafea7ba234a",
+      "equalIndicator/v1": "12938ea3ba4d2336edecd667d9e03610ab9586f7c5e69143f88a7db10993761d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/InstallerTranslator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 48,
+            "startColumn": 17,
+            "charOffset": 1843,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 46,
+            "startColumn": 1,
+            "charOffset": 1660,
+            "charLength": 296,
+            "snippet": {
+              "text": "    public String getToolHome(Node node, ToolInstallation tool, TaskListener log) throws IOException, InterruptedException {\n        if (node.getRootPath() == null) {\n            log.error(node.getDisplayName() + \" is offline; cannot locate \" + tool.getName());\n            return null;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "987d743b016b0147",
+      "equalIndicator/v1": "f7feb984e5441e0c1d8d6e855315cd20bd115d0a47d4581c701c975b8f847012"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'BulkChange' used without 'try'-with-resources statement",
+      "markdown": "'BulkChange' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/PluginManager.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1590,
+            "startColumn": 33,
+            "charOffset": 73275,
+            "charLength": 10,
+            "snippet": {
+              "text": "BulkChange"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1588,
+            "startColumn": 1,
+            "charOffset": 73138,
+            "charLength": 238,
+            "snippet": {
+              "text": "        if (req.hasParameter(\"remove\")) {\n            UpdateCenter uc = Jenkins.get().getUpdateCenter();\n            BulkChange bc = new BulkChange(uc);\n            try {\n                for (String id : req.getParameterValues(\"sources\"))"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "19bfa60944491c05",
+      "equalIndicator/v1": "e77ced333ca8003eb2c4800c29a3e1afa502befa0ce41dcfa5c6deec93170529"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1407,
+            "startColumn": 51,
+            "charOffset": 53915,
+            "charLength": 13,
+            "snippet": {
+              "text": "currentOrFail"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1405,
+            "startColumn": 1,
+            "charOffset": 53702,
+            "charLength": 327,
+            "snippet": {
+              "text": "                        try {\n                            // Sync IO will fail automatically if the channel is being closed, no need to use getOpenChannelOrFail()\n                            taskChannel = Channel.currentOrFail();\n                            taskChannel.syncIO();\n                        } catch (Throwable t) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b523b2b49d68eb28",
+      "equalIndicator/v1": "9a3e4bd3c0e7102c389551c76402b1dc01ad2b8bd7bd5b858c2f6ddb676b85f1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 3514,
+            "startColumn": 26,
+            "charOffset": 137821,
+            "charLength": 27,
+            "snippet": {
+              "text": "_getChannelForSerialization"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 3512,
+            "startColumn": 1,
+            "charOffset": 137721,
+            "charLength": 338,
+            "snippet": {
+              "text": "\n    private void writeObject(ObjectOutputStream oos) throws IOException {\n        Channel target = _getChannelForSerialization();\n        if (channel != null && channel != target) {\n            throw new IllegalStateException(\"Can't send a remote FilePath to a different remote channel (current=\" + channel + \", target=\" + target + \")\");"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a91d8d3ab5f4cbd5",
+      "equalIndicator/v1": "f38992b8c0083df2a1238ca7eb0be4a0394b0e825119f18ec68a94b550dd3f6e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ReopenableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 80,
+            "startColumn": 9,
+            "charOffset": 2854,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 78,
+            "startColumn": 1,
+            "charOffset": 2761,
+            "charLength": 129,
+            "snippet": {
+              "text": "    @Override\n    public void write(byte[] b, int off, int len) throws IOException {\n        current().write(b, off, len);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "7740d51b3a5594e1",
+      "equalIndicator/v1": "ecd225d9cd7391756f56fb68f1275a7cc623514a5693685103971b13f91084d8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Session' used without 'try'-with-resources statement",
+      "markdown": "'Session' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "websocket/jetty10/src/main/java/jenkins/websocket/Jetty10Provider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 96,
+            "startColumn": 17,
+            "charOffset": 4398,
+            "charLength": 7,
+            "snippet": {
+              "text": "session"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 94,
+            "startColumn": 1,
+            "charOffset": 4264,
+            "charLength": 209,
+            "snippet": {
+              "text": "            @Override\n            public void sendBinary(ByteBuffer partialByte, boolean isLast) throws IOException {\n                session().getRemote().sendPartialBytes(partialByte, isLast);\n            }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "websocket-jetty10",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ea553fbe04db4f99",
+      "equalIndicator/v1": "7bf1830a88bcd47328597bf504944d43a5350e732dfeaf3f72a2c292e9545ec1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 586,
+            "startColumn": 33,
+            "charOffset": 22456,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 584,
+            "startColumn": 1,
+            "charOffset": 22381,
+            "charLength": 141,
+            "snippet": {
+              "text": "\n        @Override public Integer call() {\n            Channel c = Channel.current();\n            if (c == null) {\n                return -1;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1072ad3eb365b9db",
+      "equalIndicator/v1": "59a09b795eb6fc90be5e53a544554c2c9ce58b36c23fb8c695a9127534c53b60"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'URLClassLoader' used without 'try'-with-resources statement",
+      "markdown": "'URLClassLoader' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/WebAppMain.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 173,
+            "startColumn": 21,
+            "charOffset": 7173,
+            "charLength": 14,
+            "snippet": {
+              "text": "URLClassLoader"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 171,
+            "startColumn": 1,
+            "charOffset": 7102,
+            "charLength": 232,
+            "snippet": {
+              "text": "            try {\n                jvm = new JVM();\n                new URLClassLoader(new URL[0], getClass().getClassLoader());\n            } catch (SecurityException e) {\n                throw new InsufficientPermissionDetected(e);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2fd0cc732cda99b8",
+      "equalIndicator/v1": "a44546ad091e53b16d2ea24897f36f72844d6c9fb497410ea7716ba2c00f9fe3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'BulkChange' used without 'try'-with-resources statement",
+      "markdown": "'BulkChange' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/GlobalSecurityConfiguration.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 114,
+            "startColumn": 29,
+            "charOffset": 3989,
+            "charLength": 10,
+            "snippet": {
+              "text": "BulkChange"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 112,
+            "startColumn": 1,
+            "charOffset": 3835,
+            "charLength": 245,
+            "snippet": {
+              "text": "        // for compatibility reasons, the actual value is stored in Jenkins\n        JSONObject json = req.getSubmittedForm();\n        BulkChange bc = new BulkChange(Jenkins.get());\n        try {\n            boolean result = configure(req, json);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8c356d8079d9838e",
+      "equalIndicator/v1": "f36f500950cd7dc5a26573a5f70d50cfaa1217085dc81f0b16b002eefe47e297"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Slave.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 519,
+            "startColumn": 22,
+            "charOffset": 18149,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 517,
+            "startColumn": 1,
+            "charOffset": 18062,
+            "charLength": 254,
+            "snippet": {
+              "text": "        SlaveComputer c = getComputer();\n        if (c == null) {\n            listener.error(\"Issue with creating launcher for agent \" + name + \". Computer has been disconnected\");\n            return new Launcher.DummyLauncher(listener);\n        } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c369c688a51e4f1d",
+      "equalIndicator/v1": "6efd41ed10cd085312e192656eeebab5c827743a1eddec51a6d0489f6f6c3c6d"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Maven.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 323,
+            "startColumn": 30,
+            "charOffset": 11909,
+            "charLength": 10,
+            "snippet": {
+              "text": "fatalError"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 321,
+            "startColumn": 1,
+            "charOffset": 11786,
+            "charLength": 229,
+            "snippet": {
+              "text": "                String exec = mi.getExecutable(launcher);\n                if (exec == null) {\n                    listener.fatalError(Messages.Maven_NoExecutable(mi.getHome()));\n                    return false;\n                }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "533133cbac0d9732",
+      "equalIndicator/v1": "50df2b900327314d366007ffeafb4ac2cc08e7f911cdb399180bf4c85a3efc67"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'BulkChange' used without 'try'-with-resources statement",
+      "markdown": "'BulkChange' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/BulkChange.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 127,
+            "startColumn": 13,
+            "charOffset": 4142,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 125,
+            "startColumn": 1,
+            "charOffset": 4104,
+            "charLength": 172,
+            "snippet": {
+              "text": "\n    private void pop() {\n        if (current() != this)\n            throw new AssertionError(\"Trying to save BulkChange that's not in scope\");\n        INSCOPE.set(parent);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "986b9751124ee5a7",
+      "equalIndicator/v1": "1482b7f5a9ca07d58aaefa82880dc823b10f92d01562add738ad8391d5fbbc47"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/ToolInstallation.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 238,
+            "startColumn": 21,
+            "charOffset": 9124,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 236,
+            "startColumn": 1,
+            "charOffset": 9048,
+            "charLength": 161,
+            "snippet": {
+              "text": "\n    protected Object writeReplace() throws Exception {\n        if (Channel.current() == null) { // XStream\n            return this;\n        } else { // Remoting"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "27c8187ea4ed5e11",
+      "equalIndicator/v1": "c2f78115c65a5d0f972cd821cce4ff662de857412d1d0a568630f61b10b70858"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Proc.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 163,
+            "startColumn": 38,
+            "charOffset": 6313,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 161,
+            "startColumn": 1,
+            "charOffset": 6191,
+            "charLength": 280,
+            "snippet": {
+              "text": "                    try {\n                        if (!latch.await(timeout, unit)) {\n                            listener.error(\"Timeout after \" + timeout + \" \" +\n                                    unit.toString().toLowerCase(Locale.ENGLISH));\n                            kill();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e4ba7dcec99799f6",
+      "equalIndicator/v1": "092af8535fd69dec362fd913be813f095531f2e1025ad0d24c4dc7b62761181e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/RewindableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 72,
+            "startColumn": 9,
+            "charOffset": 2650,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 70,
+            "startColumn": 1,
+            "charOffset": 2578,
+            "charLength": 98,
+            "snippet": {
+              "text": "    @Override\n    public void write(int b) throws IOException {\n        current().write(b);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "444bc3ad7327855b",
+      "equalIndicator/v1": "eea113aacf047c71ba171482e067984b0cf2806e1225bfcb4a418829697a84ea"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/GroovyCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 86,
+            "startColumn": 9,
+            "charOffset": 3219,
+            "charLength": 12,
+            "snippet": {
+              "text": "checkChannel"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 84,
+            "startColumn": 1,
+            "charOffset": 3166,
+            "charLength": 111,
+            "snippet": {
+              "text": "            return IOUtils.toString(stdin);\n\n        checkChannel();\n        return null; // never called\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8a612060cedc57ba",
+      "equalIndicator/v1": "2f8cb2bf046022c8a499afc0eae1a4cd6a6cfd41062fe791540c430e55bd9300"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/FileParameterValue.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 166,
+            "startColumn": 34,
+            "charOffset": 6585,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 164,
+            "startColumn": 1,
+            "charOffset": 6376,
+            "charLength": 382,
+            "snippet": {
+              "text": "                    }\n                    if (!ALLOW_FOLDER_TRAVERSAL_OUTSIDE_WORKSPACE && (PROHIBITED_DOUBLE_DOT.matcher(location).matches() || !ws.isDescendant(location))) {\n                        listener.error(\"Rejecting file path escaping base directory with relative path: \" + location);\n                        // force the build to fail\n                        return null;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "49f44124f11321c3",
+      "equalIndicator/v1": "de695054c82a46ac0d2390e4fa97aa7c8505194c282a2c3806ccd0cb3c5feae9"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 596,
+            "startColumn": 33,
+            "charOffset": 22818,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 594,
+            "startColumn": 1,
+            "charOffset": 22642,
+            "charLength": 242,
+            "snippet": {
+              "text": "    static class LoadingPrefetchCacheCount extends MasterToSlaveCallable<Integer, RuntimeException> {\n        @Override public Integer call() {\n            Channel c = Channel.current();\n            if (c == null) {\n                return -1;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ad0084ce554632bf",
+      "equalIndicator/v1": "f46fda71c1934180253ddd3047a7787d60294d6946d156513f839b083f6aecbb"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 612,
+            "startColumn": 33,
+            "charOffset": 23261,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 610,
+            "startColumn": 1,
+            "charOffset": 23189,
+            "charLength": 139,
+            "snippet": {
+              "text": "\n        @Override public Long call() {\n            Channel c = Channel.current();\n            if (c == null) {\n                return -1L;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b5def425a1d39989",
+      "equalIndicator/v1": "f7481a418cdb980d94264bb8a9c7533d1c946854dc7a53ae6750d7a61b9d4b7b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 753,
+            "startColumn": 34,
+            "charOffset": 30428,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 751,
+            "startColumn": 1,
+            "charOffset": 30297,
+            "charLength": 264,
+            "snippet": {
+              "text": "                    cl.onOnline(this, taskListener);\n                } catch (AbortException e) {\n                    taskListener.error(e.getMessage());\n                } catch (Exception e) {\n                    // Per Javadoc log exceptions but still go online."
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0ba9b5b098d24bb5",
+      "equalIndicator/v1": "1b443ba4c2631c9458e44a739f9ba9a7b6f0e12f0f0b5ffa8ee768a26c489242"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/DailyCheck.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 95,
+            "startColumn": 22,
+            "charOffset": 3955,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 93,
+            "startColumn": 1,
+            "charOffset": 3805,
+            "charLength": 209,
+            "snippet": {
+              "text": "        HttpResponse rsp = Jenkins.get().getPluginManager().doCheckUpdatesServer();\n        if (rsp instanceof FormValidation) {\n            listener.error(((FormValidation) rsp).renderHtml());\n        }\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "fe1cd464b7e1e3ff",
+      "equalIndicator/v1": "20f357a41ee3290da755ffc615151defb6a28f86461fa9155a1f86c488ac7fae"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'BulkChange' used without 'try'-with-resources statement",
+      "markdown": "'BulkChange' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/ComputerSet.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 352,
+            "startColumn": 29,
+            "charOffset": 11697,
+            "charLength": 10,
+            "snippet": {
+              "text": "BulkChange"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 350,
+            "startColumn": 1,
+            "charOffset": 11533,
+            "charLength": 264,
+            "snippet": {
+              "text": "    @POST\n    public synchronized HttpResponse doConfigSubmit(StaplerRequest req) throws IOException, ServletException, FormException {\n        BulkChange bc = new BulkChange(MONITORS_OWNER);\n        try {\n            Jenkins.get().checkPermission(Jenkins.MANAGE);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "6c51c134e73e6bfa",
+      "equalIndicator/v1": "29cd8c0cd44b71bf9071fbd451348f34b49701e46543d870fd8918700ae06e53"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Session' used without 'try'-with-resources statement",
+      "markdown": "'Session' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "websocket/jetty10/src/main/java/jenkins/websocket/Jetty10Provider.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 102,
+            "startColumn": 17,
+            "charOffset": 4658,
+            "charLength": 7,
+            "snippet": {
+              "text": "session"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 100,
+            "startColumn": 1,
+            "charOffset": 4496,
+            "charLength": 267,
+            "snippet": {
+              "text": "            public Future<Void> sendText(String text) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendString(text, new WriteCallbackImpl(f));\n                return f;\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "websocket-jetty10",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5487466e64144588",
+      "equalIndicator/v1": "e15e64812fb3da1e1624332be887d390335fc03922b2ae76150fec7e02ab719a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/management/AsynchronousAdministrativeMonitor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 133,
+            "startColumn": 26,
+            "charOffset": 4143,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 131,
+            "startColumn": 1,
+            "charOffset": 4046,
+            "charLength": 240,
+            "snippet": {
+              "text": "                fix(listener);\n            } catch (AbortException e) {\n                listener.error(e.getMessage());\n            } catch (Throwable e) {\n                Functions.printStackTrace(e, listener.error(getName() + \" failed\"));"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "cacbd8c04a1bf696",
+      "equalIndicator/v1": "0409745c5155977a3d69fdc9e05eb44f1ef3c74f930003a707d9b4b59d485f3f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Channel' used without 'try'-with-resources statement",
+      "markdown": "'Channel' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/CLICommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 474,
+            "startColumn": 9,
+            "charOffset": 19265,
+            "charLength": 12,
+            "snippet": {
+              "text": "checkChannel"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 472,
+            "startColumn": 1,
+            "charOffset": 19140,
+            "charLength": 180,
+            "snippet": {
+              "text": "    @Deprecated\n    protected String getClientSystemProperty(String name) throws IOException, InterruptedException {\n        checkChannel();\n        return null; // never run\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c463a631a8e72ef5",
+      "equalIndicator/v1": "7fe7d40d6886659d542abdcbaf63cded7f041e0f9cbe094a843138bbd4a71635"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ReopenableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 85,
+            "startColumn": 9,
+            "charOffset": 2958,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 83,
+            "startColumn": 1,
+            "charOffset": 2891,
+            "charLength": 92,
+            "snippet": {
+              "text": "    @Override\n    public void flush() throws IOException {\n        current().flush();\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "cf3a71617f827cfe",
+      "equalIndicator/v1": "063db3443ab10137db7a9852506aac8c2d3ce6a6425ec1b328383a70cdb5d84f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'BulkChange' used without 'try'-with-resources statement",
+      "markdown": "'BulkChange' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/BulkChange.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 152,
+            "startColumn": 29,
+            "charOffset": 4952,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 150,
+            "startColumn": 1,
+            "charOffset": 4867,
+            "charLength": 203,
+            "snippet": {
+              "text": "     */\n    public static boolean contains(Saveable s) {\n        for (BulkChange b = current(); b != null; b = b.parent)\n            if (b.saveable == s || b.saveable == ALL)\n                return true;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "66e931ccedacdace",
+      "equalIndicator/v1": "399d0742e682ddcfa0c9fc0616c50f56ae649161e6646baeaae979480f596b78"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractBuild.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 676,
+            "startColumn": 30,
+            "charOffset": 26703,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 674,
+            "startColumn": 1,
+            "charOffset": 26607,
+            "charLength": 290,
+            "snippet": {
+              "text": "                    }\n                } catch (AbortException e) {\n                    listener.error(e.getMessage());\n                } catch (ClosedByInterruptException | InterruptedIOException e) {\n                    throw (InterruptedException) new InterruptedException().initCause(e);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "acc7233562125b85",
+      "equalIndicator/v1": "39ac5cc197ebb2aa853096a5e5a6e165ef0a096826a68a8da144baa3e9c54f30"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/ReopenableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 70,
+            "startColumn": 9,
+            "charOffset": 2632,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 68,
+            "startColumn": 1,
+            "charOffset": 2560,
+            "charLength": 98,
+            "snippet": {
+              "text": "    @Override\n    public void write(int b) throws IOException {\n        current().write(b);\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3c4561adfcf41dac",
+      "equalIndicator/v1": "b63e9c21ef38cc794202e6edd7ff24cfc95087030950c0223d88be6a6b3280f1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'OutputStream' used without 'try'-with-resources statement",
+      "markdown": "'OutputStream' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/io/RewindableFileOutputStream.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 87,
+            "startColumn": 9,
+            "charOffset": 2976,
+            "charLength": 7,
+            "snippet": {
+              "text": "current"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 85,
+            "startColumn": 1,
+            "charOffset": 2909,
+            "charLength": 92,
+            "snippet": {
+              "text": "    @Override\n    public void flush() throws IOException {\n        current().flush();\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "13b8de0bd92f8c5c",
+      "equalIndicator/v1": "52df881561a0a45f9885f66a3e3c2da3985239647fa264bb8de5310909ead200"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/AbstractBuild.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 847,
+            "startColumn": 26,
+            "charOffset": 34128,
+            "charLength": 5,
+            "snippet": {
+              "text": "error"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 845,
+            "startColumn": 1,
+            "charOffset": 33980,
+            "charLength": 203,
+            "snippet": {
+              "text": "            final OfflineCause offlineCause = node.toComputer().getOfflineCause();\n            if (offlineCause != null) {\n                listener.error(offlineCause.toString());\n            }\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "9af484b5d3bbcd28",
+      "equalIndicator/v1": "bbc7c1191fcd3b1256a19527897d9b352acbfab35250176f7f82d04538315c77"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "AutoCloseableResource",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'PrintWriter' used without 'try'-with-resources statement",
+      "markdown": "'PrintWriter' used without 'try'-with-resources statement"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/slaves/SlaveComputer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 668,
+            "startColumn": 30,
+            "charOffset": 25998,
+            "charLength": 10,
+            "snippet": {
+              "text": "fatalError"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 666,
+            "startColumn": 1,
+            "charOffset": 25823,
+            "charLength": 384,
+            "snippet": {
+              "text": "        if (agentVersion.isOlderThan(RemotingVersionInfo.getMinimumSupportedVersion())) {\n            if (!ALLOW_UNSUPPORTED_REMOTING_VERSIONS) {\n                taskListener.fatalError(\n                        \"Rejecting the connection because the Remoting version is older than the\"\n                            + \" minimum required version (%s). To allow the connection anyway, set\""
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "20e8ecd93580af7c",
+      "equalIndicator/v1": "27352f2da7847501ec44551f5c8d4ffd00a9614546a72cd3033bb976764d2d85"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

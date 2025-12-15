@@ -1,0 +1,117 @@
+[
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "    private final int defaultWidth;\n    private final int defaultHeight;\n    private final int defaultScale = 1;\n    private volatile JFreeChart graph;\n",
+        "equalIndicatorV2": "5ba5f3530480d63c"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.",
+        "equalIndicatorV2": "a009d59fd8f53339"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "        private static final long sizeOf_kinfo_proc_32 = 768;\n        private static final long sizeOf_kinfo_proc_64 = 1088;\n        private final int kinfo_proc_pid_offset;\n        private static final int kinfo_proc_pid_offset_32 = 40;\n        private static final int kinfo_proc_pid_offset_64 = 72;",
+        "equalIndicatorV2": "637277cfb1b1ccc9"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "         * This classloader is created for this plugin. Useful during debugging.\n         */\n        private final File _for;\n\n        private List<Dependency> dependencies;",
+        "equalIndicatorV2": "3a5922808e4ff1bc"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "    public static class CheckMethod {\n        private final Descriptor descriptor;\n        private final Method method;\n        private final String capitalizedFieldName;\n",
+        "equalIndicatorV2": "48bf1f5f8b640311"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "         */\n        @SuppressWarnings(\"unused\")\n        private final String displayName;\n\n        private CalendarField(String displayName, int field, int min, int offset, boolean redoAdjustmentIfModified, CalendarField lowerField) {",
+        "equalIndicatorV2": "88083f41398e348a"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\npublic class ImmutableSetConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableSetConverter(XStream xs) {",
+        "equalIndicatorV2": "8c4de92531068be3"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "\n        // Local constants\n        private final long sizeOf_kinfo_proc;\n        private static final long sizeOf_kinfo_proc_32 = 768;\n        private static final long sizeOf_kinfo_proc_64 = 1088;",
+        "equalIndicatorV2": "a4c9fa00a9ad7ec9"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "\n    private static final String APP = \"app\";\n    private boolean terminated;\n    private Thread initThread;\n",
+        "equalIndicatorV2": "758c13a78aa0e51b"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "\n    @GuardedBy(\"provisioningLock\")\n    private StrategyState provisioningState = null;\n\n    private transient volatile long lastSuggestedReview;",
+        "equalIndicatorV2": "288788baa0112206"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "        private static final int kinfo_proc_pid_offset_32 = 40;\n        private static final int kinfo_proc_pid_offset_64 = 72;\n        private final int kinfo_proc_ppid_offset;\n        private static final int kinfo_proc_ppid_offset_32 = 44;\n        private static final int kinfo_proc_ppid_offset_64 = 76;",
+        "equalIndicatorV2": "878c78b77d4038a4"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "        private static final int kinfo_proc_pid_offset_32 = 24;\n        private static final int kinfo_proc_pid_offset_64 = 40;\n        private final int kinfo_proc_ppid_offset;\n        private static final int kinfo_proc_ppid_offset_32 = 416;\n        private static final int kinfo_proc_ppid_offset_64 = 560;",
+        "equalIndicatorV2": "6fc7af01a7403b21"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "        private final OutputStream out;\n        private final EnvVars cookie;\n        private final String name;\n\n        private final InputStream stdout, stderr;",
+        "equalIndicatorV2": "894ac4c27f91befe"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\nclass MethodBinder {\n    private final CLICommand command;\n    private final Method method;\n    private final Object[] arguments;",
+        "equalIndicatorV2": "d6f18cbc9500bda3"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\npublic class FullDuplexHttpStream {\n    private final URL base;\n\n    private final OutputStream output;",
+        "equalIndicatorV2": "c19c6cbe4c902f4d"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.\n        private final int kinfo_proc_pid_offset;\n        private static final int kinfo_proc_pid_offset_32 = 24;\n        private static final int kinfo_proc_pid_offset_64 = 40;",
+        "equalIndicatorV2": "2cc7f5ee6e0f73c3"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\npublic class ImmutableMapConverter extends MapConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableMapConverter(XStream xs) {",
+        "equalIndicatorV2": "f854d0eb96c80771"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "     * Used to keep a marker file memory-mapped, so that we can find hs_err_pid files that belong to us.\n     */\n    private MappedByteBuffer map;\n\n    public HsErrPidList() {",
+        "equalIndicatorV2": "845de7fb16debe7a"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "\n    private static final class BuildChildPaths extends MasterToSlaveCallable<List<List<Path>>, IOException> {\n        private VirtualFile root;\n        private final VirtualFile cur;\n        private final Locale locale;",
+        "equalIndicatorV2": "764274a919b5e0bb"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\npublic class ImmutableSortedSetConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableSortedSetConverter(XStream xs) {",
+        "equalIndicatorV2": "c37da6eff47e8d3f"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": "    public static class LegacyCodeCause extends Cause {\n        @SuppressFBWarnings(value = \"URF_UNREAD_FIELD\", justification = \"for backward compatibility\")\n        private StackTraceElement [] stackTrace;\n\n        public LegacyCodeCause() {",
+        "equalIndicatorV2": "930047f4de58271f"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\npublic class ImmutableListConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableListConverter(XStream xs) {",
+        "equalIndicatorV2": "5478266b1867d1e5"
+    },
+    {
+        "message": "Field can be converted to a local variable",
+        "contextSnippet": " */\npublic class MultipartFormDataParser implements AutoCloseable {\n    private final ServletFileUpload upload = new ServletFileUpload(new DiskFileItemFactory());\n    private final Map<String, FileItem> byName = new HashMap<>();\n",
+        "equalIndicatorV2": "2cf9d44faad93152"
+    }
+]

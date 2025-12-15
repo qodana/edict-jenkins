@@ -1,0 +1,52 @@
+[
+    {
+        "message": "'copiedPlugins' may contain URL objects",
+        "contextSnippet": "        ServletContext context = Jenkins.get().servletContext;\n        Set<String> plugins = Util.fixNull(context.getResourcePaths(fromPath));\n        Set<URL> copiedPlugins = new HashSet<>();\n        Set<URL> dependencies = new HashSet<>();\n",
+        "equalIndicatorV2": "dd872a871f3dc5ea"
+    },
+    {
+        "message": "'dependencySet' may contain URL objects",
+        "contextSnippet": "                    addDependencies(dependencyURL, fromPath, dependencySet);\n                    // And then add the current plugin\n                    dependencySet.add(dependencyURL);\n                }\n            }",
+        "equalIndicatorV2": "4ba716217c162e53"
+    },
+    {
+        "message": "'copiedPlugins' may contain URL objects",
+        "contextSnippet": "        // Copy dependencies. These are not detached plugins, but are required by them.\n        for (URL dependency : dependencies) {\n            if (copiedPlugins.contains(dependency)) {\n                // Ignore. Already copied.\n                continue;",
+        "equalIndicatorV2": "b030c3819daa6637"
+    },
+    {
+        "message": "'dependencies' may contain URL objects",
+        "contextSnippet": "        Set<String> plugins = Util.fixNull(context.getResourcePaths(fromPath));\n        Set<URL> copiedPlugins = new HashSet<>();\n        Set<URL> dependencies = new HashSet<>();\n\n        for (String pluginPath : plugins) {",
+        "equalIndicatorV2": "565b147ec3ec50c5"
+    },
+    {
+        "message": "'copiedPlugins' may contain URL objects",
+        "contextSnippet": "                names.add(fileName);\n                copyBundledPlugin(dependency, fileName);\n                copiedPlugins.add(dependency);\n            } catch (IOException e) {\n                LOGGER.log(Level.SEVERE, \"Failed to extract the bundled dependency plugin \" + fileName, e);",
+        "equalIndicatorV2": "3a5eb71650be5ecd"
+    },
+    {
+        "message": "'copiedPlugins' may contain URL objects",
+        "contextSnippet": "                names.add(fileName);\n                copyBundledPlugin(Objects.requireNonNull(url), fileName);\n                copiedPlugins.add(url);\n                try {\n                    addDependencies(url, fromPath, dependencies);",
+        "equalIndicatorV2": "69b9be402f17648b"
+    },
+    {
+        "message": "'result' may contain URL objects",
+        "contextSnippet": "                        Enumeration<URL> urls = p.classLoader.getResources(name);\n                        while (urls != null && urls.hasMoreElements())\n                            result.add(urls.nextElement());\n                    }\n                }",
+        "equalIndicatorV2": "29a434965d55864b"
+    },
+    {
+        "message": "'dependencySet' may contain URL objects",
+        "contextSnippet": "    @SuppressFBWarnings(value = \"DMI_COLLECTION_OF_URLS\", justification = \"Plugin loading happens only once on Jenkins startup\")\n    protected static void addDependencies(URL hpiResUrl, String fromPath, Set<URL> dependencySet) throws URISyntaxException, MalformedURLException {\n        if (dependencySet.contains(hpiResUrl)) {\n            return;\n        }",
+        "equalIndicatorV2": "fe8bc55c04ddb955"
+    },
+    {
+        "message": "'result' may contain URL objects",
+        "contextSnippet": "                        Enumeration<URL> urls = ClassLoaderReflectionToolkit._findResources(pw.classLoader, name);\n                        while (urls != null && urls.hasMoreElements())\n                            result.add(urls.nextElement());\n                    }\n            } else {",
+        "equalIndicatorV2": "b9ad7e9ea71f5590"
+    },
+    {
+        "message": "'dependencySet' may contain URL objects",
+        "contextSnippet": "    //TODO: Consider refactoring in order to avoid DMI_COLLECTION_OF_URLS\n    @SuppressFBWarnings(value = \"DMI_COLLECTION_OF_URLS\", justification = \"Plugin loading happens only once on Jenkins startup\")\n    protected static void addDependencies(URL hpiResUrl, String fromPath, Set<URL> dependencySet) throws URISyntaxException, MalformedURLException {\n        if (dependencySet.contains(hpiResUrl)) {\n            return;",
+        "equalIndicatorV2": "e9f29b365731a682"
+    }
+]

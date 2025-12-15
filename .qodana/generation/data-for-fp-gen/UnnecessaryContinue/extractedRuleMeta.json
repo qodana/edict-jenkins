@@ -1,0 +1,36 @@
+{
+    "ruleId": "UnnecessaryContinue",
+    "ruleName": "Unnecessary 'continue' statement",
+    "description": "Reports 'continue' statements if they are the last reachable statements in the loop. These 'continue' statements are unnecessary and can be safely removed. Example: 'for (String element: elements) {\n    System.out.println();\n    continue;\n  }' After the quick-fix is applied: 'for (String element: elements) {\n    System.out.println();\n  }' The inspection doesn't analyze JSP files. Use the Ignore in then branch of 'if' statement with 'else' branch option to ignore 'continue' statements when they are placed in a 'then' branch of a complete 'if'-'else' statement. Example: 'for (String element: elements) {\n    if(element.isEmpty()) {\n      continue;\n    } else {\n      //...\n    }\n  }' Inspection ID: UnnecessaryContinue",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                    // not found or otherwise unavailable\n                    LOGGER.log(Level.FINE, e.getMessage(), e);\n                    continue updateSiteList;\n                }\n            } catch (Exception e) {",
+            "                } catch (AccessDeniedException e) {\n                    // Need to log in to access this job, so ignore\n                    continue;\n                }\n",
+            "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                stderr.println(node_s + \": \" + e.getMessage());\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                stderr.println(node_s + \": \" + e.getMessage());\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                            }\n                            // ignore malformed text like \"1-10-50\"\n                            continue;\n                        }\n                    } else {",
+            "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "                // item. This is to prevent an validation warning if the user\n                // sets the displayName to what the existing display name is\n                continue;\n            }\n            else if (displayName.equals(item.getDisplayName())) {"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "3d282f450a61d083"
+        },
+        "after": {
+            "message": "'continue' is unnecessary as the last statement in a loop",
+            "contextSnippet": "                stderr.println(errorMsg);\n                errorOccurred = true;\n                continue;\n            }\n        }",
+            "equalIndicatorV2": "3d282f450a61d083"
+        }
+    }
+}

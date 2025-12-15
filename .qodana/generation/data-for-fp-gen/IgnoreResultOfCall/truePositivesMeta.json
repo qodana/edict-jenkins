@@ -1,0 +1,137 @@
+[
+    {
+        "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+        "contextSnippet": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+        "equalIndicatorV2": "88f18a5223b37195"
+    },
+    {
+        "message": "Result of 'Class.getGenericInterfaces()' is ignored",
+        "contextSnippet": "                         */\n                        cc.getGenericSuperclass();\n                        cc.getGenericInterfaces();\n\n                        /*",
+        "equalIndicatorV2": "1c8019fbf6354f0b"
+    },
+    {
+        "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+        "contextSnippet": "                                    || method.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || method.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                method.getAnnotatedParameterTypes();\n                                method.getParameterAnnotations();\n                            }",
+        "equalIndicatorV2": "461b8783789509b7"
+    },
+    {
+        "message": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+        "contextSnippet": "        public void writePollingLogTo(long offset, XMLOutput out) throws IOException {\n            // TODO: resurrect compressed log file support\n            getPollingLogText().writeHtmlTo(offset, out.asWriter());\n        }\n",
+        "equalIndicatorV2": "1ec8cd2aa572871c"
+    },
+    {
+        "message": "Result of 'RunList.size()' is ignored",
+        "contextSnippet": "    @Deprecated\n    public R getFirstBuild() {\n        size();\n        return first;\n    }",
+        "equalIndicatorV2": "0372dcd00476505b"
+    },
+    {
+        "message": "Result of 'File.setWritable()' is ignored",
+        "contextSnippet": "         * which will have a more useful message than something we make up here.\n         */\n        path.toFile().setWritable(true);\n    }\n",
+        "equalIndicatorV2": "1963a577ef0f9650"
+    },
+    {
+        "message": "Result of 'File.setExecutable()' is ignored",
+        "contextSnippet": "        private void process(File f) {\n            if (f.isFile()) {\n                f.setExecutable(true, false);\n            } else {\n                File[] kids = f.listFiles();",
+        "equalIndicatorV2": "37c51668685a6bdb"
+    },
+    {
+        "message": "Result of 'FileChannel.write()' is ignored",
+        "contextSnippet": "        final CharBuffer charBuffer = CharBuffer.wrap(cbuf, off, len);\n        ByteBuffer byteBuffer = charset.encode(charBuffer);\n        channel.write(byteBuffer);\n    }\n",
+        "equalIndicatorV2": "6f2e60fe346582bb"
+    },
+    {
+        "message": "Result of 'AnnotatedElement.getAnnotations()' is ignored",
+        "contextSnippet": "                                    || f.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                f.getAnnotations();\n                                f.getAnnotatedType().getAnnotations();\n                                resolve(f.getType(), encountered);\n                            }",
+        "equalIndicatorV2": "f6a6a130d6579f84"
+    },
+    {
+        "message": "Result of 'Font.toString()' is ignored",
+        "contextSnippet": "    static {\n        try {\n            new Font(\"SansSerif\", Font.BOLD, 18).toString();\n        } catch (Throwable t) {\n            awtProblemCause = t;",
+        "equalIndicatorV2": "269e83bfadf1f1c2"
+    },
+    {
+        "message": "Result of 'Path.toFile()' is ignored",
+        "contextSnippet": "            for (File file : listParentFiles(f)) {\n                if (file.getName().startsWith(f.getName() + WorkspaceList.COMBINATOR)) {\n                    Util.deleteRecursive(file.toPath(), path -> path.toFile());\n                }\n            }",
+        "equalIndicatorV2": "5c85d0b92824a152"
+    },
+    {
+        "message": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+        "contextSnippet": "            }\n        }\n        getLogText().writeHtmlTo(start, out.asWriter());\n    }\n",
+        "equalIndicatorV2": "3f2ab6af7a050362"
+    },
+    {
+        "message": "Result of 'Class.getGenericSuperclass()' is ignored",
+        "contextSnippet": "                         * See {@link com.google.inject.spi.InjectionPoint#getInjectionPoints(TypeLiteral, boolean, Errors)}\n                         */\n                        cc.getGenericSuperclass();\n                        cc.getGenericInterfaces();\n",
+        "equalIndicatorV2": "961bbc54b7ead7ef"
+    },
+    {
+        "message": "Result of 'Constructor.getParameterAnnotations()' is ignored",
+        "contextSnippet": "                                    || constructor.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                constructor.getAnnotatedParameterTypes();\n                                constructor.getParameterAnnotations();\n                                foundInjectableConstructor = true;\n                            }",
+        "equalIndicatorV2": "d0147bf7a5805601"
+    },
+    {
+        "message": "Result of 'Path.toFile()' is ignored",
+        "contextSnippet": "        @Override\n        public Void invoke(File f, VirtualChannel channel) throws IOException {\n            Util.deleteRecursive(fileToPath(f), path -> path.toFile());\n            return null;\n        }",
+        "equalIndicatorV2": "510d42e417fa4dc7"
+    },
+    {
+        "message": "Result of 'InputStream.read()' is ignored",
+        "contextSnippet": "        try {\n            buffer = new byte[Math.min(in.available(), maxToRead)];\n            in.read(buffer);\n        } catch (IOException e) {\n            throw new UncheckedIOException(e);",
+        "equalIndicatorV2": "db15d058a7498f09"
+    },
+    {
+        "message": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+        "contextSnippet": "        @SuppressFBWarnings(value = \"RV_RETURN_VALUE_IGNORED\", justification = \"method signature does not permit plumbing through the return value\")\n        public void writeLogTo(XMLOutput out) throws IOException {\n            new AnnotatedLargeText<>(getLogFile(), Charset.defaultCharset(), true, this).writeHtmlTo(0, out.asWriter());\n        }\n    }",
+        "equalIndicatorV2": "2170e4cade3e22af"
+    },
+    {
+        "message": "Result of 'Constructor.getParameterAnnotations()' is ignored",
+        "contextSnippet": "                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }\n                        }",
+        "equalIndicatorV2": "7940d9d94c3112ea"
+    },
+    {
+        "message": "Result of 'Object.hashCode()' is ignored",
+        "contextSnippet": "\n    public Jetty10Provider() {\n        JettyWebSocketServerContainer.class.hashCode();\n    }\n",
+        "equalIndicatorV2": "f2fe67740598e79a"
+    },
+    {
+        "message": "Result of 'AnnotatedLargeText.writeLogTo()' is ignored",
+        "contextSnippet": "                 // Prevent jelly from flushing stream so Content-Length header can be added afterwards\n                 FlushProofOutputStream out = new FlushProofOutputStream(os)) {\n                getPollingLogText().writeLogTo(0, out);\n            }\n        }",
+        "equalIndicatorV2": "fbb0d64521e48ec4"
+    },
+    {
+        "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+        "contextSnippet": "                                    || constructor.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || constructor.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                constructor.getAnnotatedParameterTypes();\n                                constructor.getParameterAnnotations();\n                                foundInjectableConstructor = true;",
+        "equalIndicatorV2": "e9c8ec9ed0123407"
+    },
+    {
+        "message": "Result of 'Method.getParameterAnnotations()' is ignored",
+        "contextSnippet": "                                    || method.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                method.getAnnotatedParameterTypes();\n                                method.getParameterAnnotations();\n                            }\n                        }",
+        "equalIndicatorV2": "65d8303ffabb38d4"
+    },
+    {
+        "message": "Result of 'Thread.interrupted()' is ignored",
+        "contextSnippet": "        // as a result we need to clean the interrupt flag so that the lock's lock method doesn't\n        // get confused and think it was interrupted while awaiting the lock\n        Thread.interrupted();\n        // we need to use a write lock as we may be repeatedly interrupted while processing and\n        // we need the same lock as used in void interrupt(Result,boolean,CauseOfInterruption...)",
+        "equalIndicatorV2": "070a02da51b8fdfa"
+    },
+    {
+        "message": "Result of 'AccessibleObject.getAnnotations()' is ignored",
+        "contextSnippet": "                                    || f.isAnnotationPresent(jakarta.inject.Inject.class)\n                                    || f.isAnnotationPresent(com.google.inject.Inject.class)) {\n                                f.getAnnotations();\n                                f.getAnnotatedType().getAnnotations();\n                                resolve(f.getType(), encountered);",
+        "equalIndicatorV2": "c67ee5d431646845"
+    },
+    {
+        "message": "Result of 'Run.getPreviousBuild()' is ignored",
+        "contextSnippet": "            }\n            builds.put(lastBuild);\n            lastBuild.getPreviousBuild(); // JENKINS-20662: create connection to previous build\n            return lastBuild;\n        } catch (InvocationTargetException e) {",
+        "equalIndicatorV2": "6d7daee0d153f3cb"
+    },
+    {
+        "message": "Result of 'Path.toFile()' is ignored",
+        "contextSnippet": "        @Override\n        public Void invoke(File f, VirtualChannel channel) throws IOException {\n            Util.deleteContentsRecursive(fileToPath(f), path -> path.toFile());\n            return null;\n        }",
+        "equalIndicatorV2": "8e96898100a382fa"
+    },
+    {
+        "message": "Result of 'Thread.interrupted()' is ignored",
+        "contextSnippet": "                // It might make sense to introduce retries, but it's probably not going to get better.\n                LOGGER.log(Level.FINE, \"Caught InterruptedException while checking if vetoers exist: \", ie);\n                Thread.interrupted(); // Clear the interrupt flag and just accept that no known vetoers exist.\n            }\n            catch (Exception e) {",
+        "equalIndicatorV2": "e156aae58ce6ed84"
+    }
+]

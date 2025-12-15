@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Deprecated member 'getShellOrDefault' is still used",
+            "contextSnippet": "         */\n        @Deprecated\n        public String getShellOrDefault() {\n            if (shell == null) {\n                return Functions.isWindows() ? \"sh\" : \"/bin/sh\";",
+            "equalIndicatorV2": "2de4c8bfd8472b7a"
+        },
+        {
+            "message": "Deprecated member 'isAnonymous' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public static boolean isAnonymous(@NonNull org.acegisecurity.Authentication authentication) {\n        return isAnonymous2(authentication.toSpring());\n    }",
+            "equalIndicatorV2": "09e219433e188695"
+        },
+        {
+            "message": "Deprecated member 'computeIdleExecutors' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public abstract int computeIdleExecutors();\n\n    /**",
+            "equalIndicatorV2": "3e1dc460f973117e"
+        },
+        {
+            "message": "Deprecated member 'CloudList' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public static class CloudList extends Jenkins.CloudList {\n        public CloudList(Jenkins h) {\n            super(h);",
+            "equalIndicatorV2": "86889cdd2903956c"
+        },
+        {
+            "message": "Deprecated member 'getSecretKey' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public String getSecretKey() {\n        return secretKey;\n    }",
+            "equalIndicatorV2": "5111877da7355337"
+        },
+        {
+            "message": "Deprecated member 'HUDSON_PERMISSIONS' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public static final PermissionGroup HUDSON_PERMISSIONS = new PermissionGroup(Hudson.class, hudson.model.Messages._Hudson_Permissions_Title());\n    /**\n     * {@link Permission} that represents the God-like access. Equivalent of Unix root.",
+            "equalIndicatorV2": "410f858b5d8079fc"
+        },
+        {
+            "message": "Deprecated member 'onChangeLogParsed' is still used",
+            "contextSnippet": "\n    @Deprecated\n    public void onChangeLogParsed(AbstractBuild<?, ?> build, BuildListener listener, ChangeLogSet<?> changelog) throws Exception {\n        if (Util.isOverridden(SCMListener.class, getClass(), \"onChangeLogParsed\", Run.class, SCM.class, TaskListener.class, ChangeLogSet.class)) {\n            onChangeLogParsed(build, build.getProject().getScm(), listener, changelog);",
+            "equalIndicatorV2": "54da9ead217ca39b"
+        },
+        {
+            "message": "Deprecated member 'SCMedItem' is still used",
+            "contextSnippet": " */\n@Deprecated\npublic interface SCMedItem extends BuildableItem {\n    /**\n     * Gets the {@link SCM} for this item.",
+            "equalIndicatorV2": "e02727cf0e0adb27"
+        },
+        {
+            "message": "Deprecated member 'getChildProjects' is still used",
+            "contextSnippet": "    /** @deprecated use {@link #getChildJobs} */\n    @Deprecated\n    public List<AbstractProject> getChildProjects(AbstractProject owner) {\n        return getChildProjects(owner == null ? null : owner.getParent());\n    }",
+            "equalIndicatorV2": "7ee0fc435e5f1a8e"
+        },
+        {
+            "message": "Deprecated member 'getProjectAction' is still used",
+            "contextSnippet": "     */\n    @Deprecated\n    public Action getProjectAction(AbstractProject job) {\n        return null;\n    }",
+            "equalIndicatorV2": "5e1b6d8f23e8496c"
+        }
+    ],
+    "negativeExamples": []
+}

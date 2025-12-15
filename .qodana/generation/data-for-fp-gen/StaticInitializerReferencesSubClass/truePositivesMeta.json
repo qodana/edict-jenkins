@@ -1,0 +1,77 @@
+[
+    {
+        "message": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+        "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TARGZ = new TarArchiverFactory(TarCompression.GZIP);\n\n    /**",
+        "equalIndicatorV2": "2acdbded9ccf0b72"
+    },
+    {
+        "message": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+        "contextSnippet": "            }\n        };\n        public static final Permalink LAST_FAILED_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+        "equalIndicatorV2": "f85fe4d21683021b"
+    },
+    {
+        "message": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+        "contextSnippet": "            }\n        };\n        public static final Permalink LAST_COMPLETED_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+        "equalIndicatorV2": "abffd7e9186002cf"
+    },
+    {
+        "message": "Referencing subclass TarArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+        "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory TAR = new TarArchiverFactory(TarCompression.NONE);\n\n    /**",
+        "equalIndicatorV2": "40ca0d7138efb723"
+    },
+    {
+        "message": "Referencing subclass Unsecured from superclass AuthorizationStrategy initializer might lead to class loading deadlock",
+        "contextSnippet": "     * This singleton is safe because {@link Unsecured} is stateless.\n     */\n    public static final AuthorizationStrategy UNSECURED = new Unsecured();\n\n    public static final class Unsecured extends AuthorizationStrategy implements Serializable {",
+        "equalIndicatorV2": "17315ad6c1979114"
+    },
+    {
+        "message": "Referencing subclass Default from superclass FileSystemProvisioner initializer might lead to class loading deadlock",
+        "contextSnippet": "    }\n\n    public static final FileSystemProvisioner DEFAULT = new Default();\n\n    public static final class Default extends FileSystemProvisioner {",
+        "equalIndicatorV2": "b5565cb8ea1b4479"
+    },
+    {
+        "message": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+        "contextSnippet": "        };\n\n        public static final Permalink LAST_UNSTABLE_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+        "equalIndicatorV2": "63eeef279480d6c7"
+    },
+    {
+        "message": "Referencing subclass DefaultProjectNamingStrategy from superclass ProjectNamingStrategy initializer might lead to class loading deadlock",
+        "contextSnippet": "     * The default naming strategy which does not restrict the name of a job.\n     */\n    public static final ProjectNamingStrategy DEFAULT_NAMING_STRATEGY = new DefaultProjectNamingStrategy();\n\n    /**",
+        "equalIndicatorV2": "eb465a558bec5965"
+    },
+    {
+        "message": "Referencing subclass Always from superclass RetentionStrategy initializer might lead to class loading deadlock",
+        "contextSnippet": "     * Convenient singleton instance, since this {@link RetentionStrategy} is stateless.\n     */\n    public static final Always INSTANCE = new Always();\n\n    /**",
+        "equalIndicatorV2": "ac619d9295fadfd4"
+    },
+    {
+        "message": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+        "contextSnippet": "        };\n\n        public static final Permalink LAST_UNSUCCESSFUL_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+        "equalIndicatorV2": "ebda2bac58d5c263"
+    },
+    {
+        "message": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+        "contextSnippet": "            }\n        };\n        public static final Permalink LAST_STABLE_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+        "equalIndicatorV2": "46a2fb503e3c057f"
+    },
+    {
+        "message": "Referencing subclass ZipArchiverFactory from superclass ArchiverFactory initializer might lead to class loading deadlock",
+        "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in plugin\")\n    public static ArchiverFactory ZIP = new ZipArchiverFactory();\n\n    /**",
+        "equalIndicatorV2": "9509cfd05c83f1b0"
+    },
+    {
+        "message": "Referencing subclass Local from superclass ProcessTree initializer might lead to class loading deadlock",
+        "contextSnippet": "     * Empty process list as a default value if the platform doesn't support it.\n     */\n    /*package*/ static final ProcessTree DEFAULT = new Local() {\n        @Override\n        public OSProcess get(@NonNull final Process proc) {",
+        "equalIndicatorV2": "8cad84ec7d12f013"
+    },
+    {
+        "message": "Referencing subclass CaseInsensitive from superclass IdStrategy initializer might lead to class loading deadlock",
+        "contextSnippet": "     */\n    @SuppressFBWarnings(value = \"MS_SHOULD_BE_FINAL\", justification = \"used in several plugins\")\n    public static IdStrategy CASE_INSENSITIVE = new CaseInsensitive();\n\n    /**",
+        "equalIndicatorV2": "8f80dc1cbac28811"
+    },
+    {
+        "message": "Referencing subclass PeepholePermalink from superclass Permalink initializer might lead to class loading deadlock",
+        "contextSnippet": "            }\n        };\n        public static final Permalink LAST_SUCCESSFUL_BUILD = new PeepholePermalink() {\n            @Override\n            public String getDisplayName() {",
+        "equalIndicatorV2": "b33330f2f914e0dc"
+    }
+]

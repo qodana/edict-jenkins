@@ -1,0 +1,36 @@
+{
+    "ruleId": "AutoCloseableResource",
+    "ruleName": "AutoCloseable used without 'try'-with-resources",
+    "description": "Reports 'AutoCloseable' instances which are not used in a try-with-resources statement, also known as Automatic Resource Management. This means that the \"open resource before/in 'try', close in 'finally'\" style that had been used before try-with-resources became available, is also reported. This inspection is meant to replace all opened but not safely closed inspections when developing in Java 7 and higher. Example: 'private static void foo() throws IOException {\n    InputStream profile = Thread.currentThread().getContextClassLoader().getResourceAsStream(\"/someFile\");\n    System.out.println(profile.read());\n  }' Use the following options to configure the inspection: List subclasses of 'AutoCloseable' that do not need to be closed and should be ignored by this inspection. Note: The inspection will still report streams returned from the 'java.nio.file.Files' methods 'lines()', 'walk()', 'list()' and 'find()', even when 'java.util.stream.Stream' is listed to be ignored. These streams contain an associated I/O resource that needs to be closed. List methods returning 'AutoCloseable' that should be ignored when called. Whether to ignore an 'AutoCloseable' if it is the result of a method call. When this option is enabled, the results of factory methods will also be ignored. Whether the inspection should report if an 'AutoCloseable' instance is passed as a method call argument. If this option is enabled, the inspection assumes the resource is closed in the called method. Method calls inside a 'finally' block with 'close' in the name and an 'AutoCloseable' argument will not be ignored. Whether to ignore method references to constructors of resource classes. Whether to ignore methods that return a resource and whose name starts with 'get'. This can reduce false positives because most of the getters do not transfer the ownership of the resource, and their call sites are not responsible for closing the resource. This inspection depends on the Java feature 'Try-with-resources', which is available since Java 7. Inspection ID: AutoCloseableResource",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+            "    private void reportLauncherCreateError(@NonNull String humanReadableMsg, @CheckForNull String exceptionDetails, @NonNull TaskListener listener) {\n        String message = \"Issue with creating launcher for agent \" + name + \". \" + humanReadableMsg;\n        listener.error(message);\n        if (LOGGER.isLoggable(Level.WARNING)) {\n            // Send stacktrace to the log as well in order to diagnose the root cause of issues like JENKINS-38527",
+            "            if (!canContinue) {\n                String buildStepName = getBuildStepName(bs);\n                listener.getLogger().format(\"Build step '%s' marked build as failure%n\", buildStepName);\n            }\n            return canContinue;",
+            "            public Future<Void> sendBinary(ByteBuffer data) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendBytes(data, new WriteCallbackImpl(f));\n                return f;\n            }",
+            "    @Override\n    public void write(byte[] b, int off, int len) throws IOException {\n        current().write(b, off, len);\n    }\n",
+            "            name = \"stdin\";\n        } else {\n            command.checkChannel();\n            return null; // never called\n        }",
+            "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+            "        ClientManager client = ClientManager.createClient(JdkClientContainer.class.getName()); // ~ ContainerProvider.getWebSocketContainer()\n        client.getProperties().put(ClientProperties.REDIRECT_ENABLED, true); // https://tyrus-project.github.io/documentation/1.13.1/index/tyrus-proprietary-config.html#d0e1775\n        Session session = client.connectToServer(new CLIEndpoint(), ClientEndpointConfig.Builder.create().configurator(new Authenticator()).build(), URI.create(url.replaceFirst(\"^http\", \"ws\") + \"cli/ws\"));\n        PlainCLIProtocol.Output out = new PlainCLIProtocol.Output() {\n            @Override",
+            "        Node node = lb.getBuiltOn();\n        Launcher launcher = ws.createLauncher(listener).decorateByEnv(getEnvironment(node, listener));\n        WorkspaceList.Lease lease = l.acquire(ws, !concurrentBuild);\n        try {\n            String nodeName = node != null ? node.getSelfLabel().getName() : \"[node_unavailable]\";",
+            "                    strategy.apply(job);\n                } catch (Exception ex) {\n                    listener.error(\"An exception occurred when executing \" + displayName + \": \" + ex.getMessage());\n                    LOGGER.log(Level.WARNING, \"An exception occurred when executing \" + displayName, ex);\n                }",
+            "                public void run() {\n                    try {\n                        final OutputStream stdin = streamStdin();\n                        byte[] buf = new byte[60_000]; // less than 64Kb frame size for WS\n                        while (!complete) {"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "'OutputStream' used without 'try'-with-resources statement",
+            "contextSnippet": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+            "equalIndicatorV2": "dde5261dbdbb0d44"
+        },
+        "after": {
+            "message": "'OutputStream' used without 'try'-with-resources statement",
+            "contextSnippet": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+            "equalIndicatorV2": "dde5261dbdbb0d44"
+        }
+    }
+}

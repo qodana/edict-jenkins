@@ -1,0 +1,50 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "    }\n\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public transient Job<?, ?> job;\n",
+            "equalIndicatorV2": "9420c96c0852e85e"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "    }\n\n    @Argument(metaVar = \"NAME\", usage = \"Name of the view\", required = false)\n    public String name;\n",
+            "equalIndicatorV2": "17c3c554ada2a1fe"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": " */\npublic abstract class RunRangeCommand extends CLICommand {\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public Job<?, ?> job;\n",
+            "equalIndicatorV2": "cb5204b806c69dac"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "public class AddJobToViewCommand extends CLICommand {\n\n    @Argument(usage = \"Name of the view\", required = true, index = 0)\n    private View view;\n",
+            "equalIndicatorV2": "6d9eea4b05b98fc8"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "public class RemoveJobFromViewCommand extends CLICommand {\n\n    @Argument(usage = \"Name of the view\", required = true, index = 0)\n    private View view;\n",
+            "equalIndicatorV2": "603da7161aecbb6b"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "     }\n\n    @Argument(metaVar = \"JOB\", usage = \"Name of the job to build\", required = true, index = 0)\n    public transient Job<?, ?> job;\n",
+            "equalIndicatorV2": "ea8f9489dc0bbc4a"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "    public Job<?, ?> job;\n\n    @Argument(metaVar = \"BUILD\", usage = \"Build number or permalink to point to the build. Defaults to the last build\", required = false, index = 1)\n    public String build = \"lastBuild\";\n",
+            "equalIndicatorV2": "599d5e3445113858"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": " * @author Kohsuke Kawaguchi\n */\n@Extension(ordinal = 0) @Symbol(\"classLoaderStatistics\")\npublic class ClassLoaderStatisticsSlaveInfo extends SlaveSystemInfo {\n    @Override",
+            "equalIndicatorV2": "8cfbf6ca1fd643ac"
+        },
+        {
+            "message": "Redundant default parameter value assignment",
+            "contextSnippet": "    }\n\n    @Argument(metaVar = \"NAME\", usage = \"Name of a specific plugin\", required = false)\n    public String name;\n",
+            "equalIndicatorV2": "8bcb6f26aeb7d1c6"
+        }
+    ],
+    "negativeExamples": []
+}

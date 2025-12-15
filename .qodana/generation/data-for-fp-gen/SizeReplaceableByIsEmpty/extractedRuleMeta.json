@@ -1,0 +1,36 @@
+{
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "ruleName": "'size() == 0' can be replaced with 'isEmpty()'",
+    "description": "Reports '.size()' or '.length()' comparisons with a '0' literal that can be replaced with a call to '.isEmpty()'. Example: 'boolean emptyList = list.size() == 0;' After the quick-fix is applied: 'boolean emptyList = list.isEmpty();' Use the Ignored classes table to add classes for which any '.size()' or '.length()' comparisons should not be replaced. Use the Ignore expressions which would be replaced with '!isEmpty()' option to ignore any expressions which would be replaced with '!isEmpty()'. Inspection ID: SizeReplaceableByIsEmpty",
+    "language": "Java",
+    "severity": "High",
+    "examples": {
+        "withViolation": [
+            "                    // If relative path, not collapsible so leave as-is\n                    tokens.remove(0);\n                    if (tokens.size() > 0) token += tokens.remove(0);\n                    if (!isAbsolute) buf.append(token);\n                } else {",
+            "                try {\n                    String lastVersion = XMLUtils.getValue(\"/hudson/version\", configFile);\n                    if (lastVersion.length() > 0) {\n                        LOGGER.log(Level.FINE, \"discovered serialized lastVersion {0}\", lastVersion);\n                        return lastVersion;",
+            "                    for (int j = 0; j < 3; j++) tokens.remove(i);\n                    if (i > 0) tokens.remove(i - 1);\n                    else if (tokens.size() > 0) tokens.remove(0);\n                }\n            } else",
+            "        // check whitelist\n        ExtensionList<RoutingDecisionProvider> decisionProviders = ExtensionList.lookup(RoutingDecisionProvider.class);\n        if (decisionProviders.size() > 0) {\n            for (RoutingDecisionProvider provider : decisionProviders) {\n                RoutingDecisionProvider.Decision fieldDecision = provider.decide(signature);",
+            "     */\n    public boolean hasMaskedArguments() {\n        return mask.length() > 0;\n    }\n",
+            "            }\n            String port = authorityMatcher.group(PARSE_AUTHORITY_PORT);\n            if (port != null && port.length() > 0) {\n                try {\n                    int iPort = Integer.parseInt(port);",
+            "\n        public FormValidation doCheckCommand(@QueryParameter String value) {\n            if (value.length() > 0) {\n                return FormValidation.ok();\n            } else {",
+            "     */\n    public String prepend(String prefix, String body) {\n        if (body != null && body.length() > 0)\n            return prefix + body;\n        return body;",
+            "    public Object getTarget() {\n        StaplerRequest req = Stapler.getCurrentRequest();\n        if (req.getRestOfPath().length() == 0 && \"POST\".equals(req.getMethod())) {\n            // CLI connection request\n            if (\"false\".equals(req.getParameter(\"remoting\"))) {",
+            "        @Override\n        public Boolean call() throws IOException {\n            return ProcessKillingVeto.all().size() > 0;\n        }\n    }",
+            "            if (token.equals(\".\")) {\n                tokens.remove(i);\n                if (tokens.size() > 0)\n                    tokens.remove(i > 0 ? i - 1 : i);\n            } else if (token.equals(\"..\")) {"
+        ],
+        "withoutViolation": []
+    },
+    "commitReference": "c5fbbbe88dc280d0a0876614c0f9aa6fba2ea2af",
+    "verification": {
+        "before": {
+            "message": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+            "contextSnippet": "                    // If relative path, not collapsible so leave as-is\n                    tokens.remove(0);\n                    if (tokens.size() > 0) token += tokens.remove(0);\n                    if (!isAbsolute) buf.append(token);\n                } else {",
+            "equalIndicatorV2": "3ed080410f4db503"
+        },
+        "after": {
+            "message": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+            "contextSnippet": "                    // If relative path, not collapsible so leave as-is\n                    tokens.remove(0);\n                    if (tokens.size() > 0) token += tokens.remove(0);\n                    if (!isAbsolute) buf.append(token);\n                } else {",
+            "equalIndicatorV2": "3ed080410f4db503"
+        }
+    }
+}

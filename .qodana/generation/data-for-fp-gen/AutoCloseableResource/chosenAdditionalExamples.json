@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "'PrintWriter' used without 'try'-with-resources statement",
+            "contextSnippet": "    private void reportLauncherCreateError(@NonNull String humanReadableMsg, @CheckForNull String exceptionDetails, @NonNull TaskListener listener) {\n        String message = \"Issue with creating launcher for agent \" + name + \". \" + humanReadableMsg;\n        listener.error(message);\n        if (LOGGER.isLoggable(Level.WARNING)) {\n            // Send stacktrace to the log as well in order to diagnose the root cause of issues like JENKINS-38527",
+            "equalIndicatorV2": "6a9cf8e602c432a8"
+        },
+        {
+            "message": "'PrintStream' used without 'try'-with-resources statement",
+            "contextSnippet": "            if (!canContinue) {\n                String buildStepName = getBuildStepName(bs);\n                listener.getLogger().format(\"Build step '%s' marked build as failure%n\", buildStepName);\n            }\n            return canContinue;",
+            "equalIndicatorV2": "5b6561309f924f4b"
+        },
+        {
+            "message": "'Session' used without 'try'-with-resources statement",
+            "contextSnippet": "            public Future<Void> sendBinary(ByteBuffer data) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendBytes(data, new WriteCallbackImpl(f));\n                return f;\n            }",
+            "equalIndicatorV2": "122498b0096fb61b"
+        },
+        {
+            "message": "'OutputStream' used without 'try'-with-resources statement",
+            "contextSnippet": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+            "equalIndicatorV2": "dde5261dbdbb0d44"
+        },
+        {
+            "message": "'Channel' used without 'try'-with-resources statement",
+            "contextSnippet": "            name = \"stdin\";\n        } else {\n            command.checkChannel();\n            return null; // never called\n        }",
+            "equalIndicatorV2": "ac35f08a4e0036bb"
+        },
+        {
+            "message": "'OutputStream' used without 'try'-with-resources statement",
+            "contextSnippet": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+            "equalIndicatorV2": "e92c7642d0caa623"
+        },
+        {
+            "message": "'Session' used without 'try'-with-resources statement",
+            "contextSnippet": "        ClientManager client = ClientManager.createClient(JdkClientContainer.class.getName()); // ~ ContainerProvider.getWebSocketContainer()\n        client.getProperties().put(ClientProperties.REDIRECT_ENABLED, true); // https://tyrus-project.github.io/documentation/1.13.1/index/tyrus-proprietary-config.html#d0e1775\n        Session session = client.connectToServer(new CLIEndpoint(), ClientEndpointConfig.Builder.create().configurator(new Authenticator()).build(), URI.create(url.replaceFirst(\"^http\", \"ws\") + \"cli/ws\"));\n        PlainCLIProtocol.Output out = new PlainCLIProtocol.Output() {\n            @Override",
+            "equalIndicatorV2": "b90921426526c300"
+        },
+        {
+            "message": "'Lease' used without 'try'-with-resources statement",
+            "contextSnippet": "        Node node = lb.getBuiltOn();\n        Launcher launcher = ws.createLauncher(listener).decorateByEnv(getEnvironment(node, listener));\n        WorkspaceList.Lease lease = l.acquire(ws, !concurrentBuild);\n        try {\n            String nodeName = node != null ? node.getSelfLabel().getName() : \"[node_unavailable]\";",
+            "equalIndicatorV2": "228d58188d259e4f"
+        },
+        {
+            "message": "'PrintWriter' used without 'try'-with-resources statement",
+            "contextSnippet": "                    strategy.apply(job);\n                } catch (Exception ex) {\n                    listener.error(\"An exception occurred when executing \" + displayName + \": \" + ex.getMessage());\n                    LOGGER.log(Level.WARNING, \"An exception occurred when executing \" + displayName, ex);\n                }",
+            "equalIndicatorV2": "7f184342d3b3efb7"
+        },
+        {
+            "message": "'Session' used without 'try'-with-resources statement",
+            "contextSnippet": "        ClientManager client = ClientManager.createClient(JdkClientContainer.class.getName()); // ~ ContainerProvider.getWebSocketContainer()\n        client.getProperties().put(ClientProperties.REDIRECT_ENABLED, true); // https://tyrus-project.github.io/documentation/1.13.1/index/tyrus-proprietary-config.html#d0e1775\n        Session session = client.connectToServer(new CLIEndpoint(), ClientEndpointConfig.Builder.create().configurator(new Authenticator()).build(), URI.create(url.replaceFirst(\"^http\", \"ws\") + \"cli/ws\"));\n        PlainCLIProtocol.Output out = new PlainCLIProtocol.Output() {\n            @Override",
+            "equalIndicatorV2": "b90921426526c300"
+        }
+    ],
+    "negativeExamples": []
+}

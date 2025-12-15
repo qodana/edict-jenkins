@@ -1,0 +1,828 @@
+[
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 204,
+            "startColumn": 9,
+            "charOffset": 7362,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 202,
+            "startColumn": 1,
+            "charOffset": 7300,
+            "charLength": 142,
+            "snippet": {
+              "text": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8db52604da3ad534",
+      "equalIndicator/v1": "906ee811f1d443b1e4247c3503f47b3e0fccdcc7f25ffc21e8db6a0e88f6cdff"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/UpdateCenter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2438,
+            "startColumn": 9,
+            "charOffset": 92442,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2436,
+            "startColumn": 1,
+            "charOffset": 92423,
+            "charLength": 146,
+            "snippet": {
+              "text": "        }\n\n        protected File getBackup() {\n            File baseDir = pm.rootDir;\n            return new File(baseDir, plugin.name + \".bak\");"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e03a145b877255b2",
+      "equalIndicator/v1": "c3e1fd929d46e76172bef483bf45eb1a9fa4cfc64c486be19989403fb127667e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Run.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1751,
+            "startColumn": 13,
+            "charOffset": 61138,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1749,
+            "startColumn": 1,
+            "charOffset": 61111,
+            "charLength": 313,
+            "snippet": {
+              "text": "            }\n\n            protected synchronized boolean waitForCheckPoint(@NonNull CheckPoint identifier, @CheckForNull BuildListener listener, @CheckForNull String waiter) throws InterruptedException {\n                final Thread t = Thread.currentThread();\n                final String oldName = t.getName();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "8f07c83ca35b29ae",
+      "equalIndicator/v1": "2b5d2999cb69a95572883807e0b9b5c6649d45b0761e6109958d7006bb8cc3b1"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 187,
+            "startColumn": 9,
+            "charOffset": 6762,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 185,
+            "startColumn": 1,
+            "charOffset": 6691,
+            "charLength": 150,
+            "snippet": {
+              "text": "        protected List<String> commands;\n        @CheckForNull\n        protected boolean[] masks;\n        private boolean quiet;\n        @CheckForNull"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "352b8761d18bda16",
+      "equalIndicator/v1": "e4d37b2bb840e71eb841e1f54c0bc5a1fa12b0c5b3b1f86b1ff8dc3fa04fee6a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 185,
+            "startColumn": 9,
+            "charOffset": 6699,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 183,
+            "startColumn": 1,
+            "charOffset": 6646,
+            "charLength": 142,
+            "snippet": {
+              "text": "     */\n    public final class ProcStarter {\n        protected List<String> commands;\n        @CheckForNull\n        protected boolean[] masks;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ef05a55d5322baae",
+      "equalIndicator/v1": "3ed0890a2b346a740ee9f1648eaad7adeae8a0268b4058706acf778230c598b0"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/node_monitors/DiskSpaceMonitorDescriptor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 128,
+            "startColumn": 9,
+            "charOffset": 4416,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 126,
+            "startColumn": 1,
+            "charOffset": 4284,
+            "charLength": 307,
+            "snippet": {
+              "text": "         * Same as {@link DiskSpace#setTriggered(boolean)}, also sets the trigger class which made the decision\n         */\n        protected void setTriggered(Class<? extends AbstractDiskSpaceMonitor> trigger, boolean triggered) {\n            this.trigger = trigger;\n            this.triggered = triggered;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "44a59b68c1a036f9",
+      "equalIndicator/v1": "c1f8df49300ac08a345cf25e6f99caf8630bb848aa1b2226a4de57c51d932311"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 216,
+            "startColumn": 9,
+            "charOffset": 7851,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 214,
+            "startColumn": 1,
+            "charOffset": 7807,
+            "charLength": 118,
+            "snippet": {
+              "text": "         * @since 1.399\n         */\n        protected boolean reverseStdin, reverseStdout, reverseStderr;\n\n        /**"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "30b041c9c5d3ad66",
+      "equalIndicator/v1": "8126e742a7afdf78fc3a7e1cf3eead6ba45783021b716f2d7111d2009940f47b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 192,
+            "startColumn": 9,
+            "charOffset": 6904,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 190,
+            "startColumn": 1,
+            "charOffset": 6842,
+            "charLength": 201,
+            "snippet": {
+              "text": "        protected FilePath pwd;\n        @CheckForNull\n        protected OutputStream stdout = OutputStream.nullOutputStream(), stderr;\n        @CheckForNull\n        private TaskListener stdoutListener;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "ce2eba24004e6f48",
+      "equalIndicator/v1": "e553838b970632fd9d116c6af19862aff813c0adf118ba06418ad8935cf9a9cb"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 196,
+            "startColumn": 9,
+            "charOffset": 7074,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 194,
+            "startColumn": 1,
+            "charOffset": 6999,
+            "charLength": 185,
+            "snippet": {
+              "text": "        private TaskListener stdoutListener;\n        @CheckForNull\n        protected InputStream stdin = NULL_INPUT_STREAM;\n        @CheckForNull\n        protected String[] envs = null;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2ee23116608a632c",
+      "equalIndicator/v1": "2c10579d6833875af5b99c4b5be6a90b54314112bd51caea5d430ac2b5efdcbd"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/ExpressionFactory2.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 187,
+            "startColumn": 5,
+            "charOffset": 5439,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 185,
+            "startColumn": 1,
+            "charOffset": 5380,
+            "charLength": 149,
+            "snippet": {
+              "text": "     * @see Functions#getCurrentJellyContext()\n     */\n    protected static final ThreadLocal<JellyContext> CURRENT_CONTEXT = new ThreadLocal<>();\n}\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "0904dbd6b0cf40fc",
+      "equalIndicator/v1": "07d674522b0fe7e4a0c3ad6295066408d0ff6e716471f540f57bf20f4cfb2eef"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Run.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1746,
+            "startColumn": 13,
+            "charOffset": 60968,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1744,
+            "startColumn": 1,
+            "charOffset": 60918,
+            "charLength": 192,
+            "snippet": {
+              "text": "            private boolean allDone;\n\n            protected synchronized void report(@NonNull CheckPoint identifier) {\n                checkpoints.add(identifier);\n                notifyAll();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "84f57aa34314a5df",
+      "equalIndicator/v1": "0a47125d83ec89f8a410a521da6230330321b73fb1f63bd18a8469b3cdd0bff6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/node_monitors/DiskSpaceMonitorDescriptor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 121,
+            "startColumn": 9,
+            "charOffset": 4172,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 119,
+            "startColumn": 1,
+            "charOffset": 4107,
+            "charLength": 163,
+            "snippet": {
+              "text": "         * the acceptable conditions or not.\n         */\n        protected void setTriggered(boolean triggered) {\n            this.triggered = triggered;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a20444e6c818937e",
+      "equalIndicator/v1": "0c299abf3fcca4d0b0a265e959e956cc0cac852434ffb7c6537624e643011f82"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 198,
+            "startColumn": 9,
+            "charOffset": 7153,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 196,
+            "startColumn": 1,
+            "charOffset": 7066,
+            "charLength": 221,
+            "snippet": {
+              "text": "        protected InputStream stdin = NULL_INPUT_STREAM;\n        @CheckForNull\n        protected String[] envs = null;\n        /**\n         * Represent the build step, either from legacy build process or from pipeline one"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a2711f43afac6048",
+      "equalIndicator/v1": "b33c40774be395bb5530911564c322dcb1e1bc990321797a7c32426d137cab63"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "ProtectedMemberInFinalClass",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "Class member declared 'protected' in 'final' class",
+      "markdown": "Class member declared `protected` in 'final' class"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Launcher.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 190,
+            "startColumn": 9,
+            "charOffset": 6850,
+            "charLength": 9,
+            "snippet": {
+              "text": "protected"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 188,
+            "startColumn": 1,
+            "charOffset": 6789,
+            "charLength": 187,
+            "snippet": {
+              "text": "        private boolean quiet;\n        @CheckForNull\n        protected FilePath pwd;\n        @CheckForNull\n        protected OutputStream stdout = OutputStream.nullOutputStream(), stderr;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "b3cc6318347ebfdf",
+      "equalIndicator/v1": "3749a0adc6c04e7e05f5b9c987d69cb9cf3d42e840300357cb66bbf1fcb54a27"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "hasCleanup": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

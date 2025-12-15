@@ -1,0 +1,267 @@
+[
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+        "equalIndicatorV2": "dde5261dbdbb0d44"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "    private void reportLauncherCreateError(@NonNull String humanReadableMsg, @CheckForNull String exceptionDetails, @NonNull TaskListener listener) {\n        String message = \"Issue with creating launcher for agent \" + name + \". \" + humanReadableMsg;\n        listener.error(message);\n        if (LOGGER.isLoggable(Level.WARNING)) {\n            // Send stacktrace to the log as well in order to diagnose the root cause of issues like JENKINS-38527",
+        "equalIndicatorV2": "6a9cf8e602c432a8"
+    },
+    {
+        "message": "'PrintStream' used without 'try'-with-resources statement",
+        "contextSnippet": "            if (!canContinue) {\n                String buildStepName = getBuildStepName(bs);\n                listener.getLogger().format(\"Build step '%s' marked build as failure%n\", buildStepName);\n            }\n            return canContinue;",
+        "equalIndicatorV2": "5b6561309f924f4b"
+    },
+    {
+        "message": "'Session' used without 'try'-with-resources statement",
+        "contextSnippet": "            public Future<Void> sendBinary(ByteBuffer data) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendBytes(data, new WriteCallbackImpl(f));\n                return f;\n            }",
+        "equalIndicatorV2": "122498b0096fb61b"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void write(byte[] b, int off, int len) throws IOException {\n        current().write(b, off, len);\n    }\n",
+        "equalIndicatorV2": "0a72296db7ec9be5"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "            name = \"stdin\";\n        } else {\n            command.checkChannel();\n            return null; // never called\n        }",
+        "equalIndicatorV2": "ac35f08a4e0036bb"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void write(byte[] b) throws IOException {\n        current().write(b);\n    }\n",
+        "equalIndicatorV2": "e92c7642d0caa623"
+    },
+    {
+        "message": "'Session' used without 'try'-with-resources statement",
+        "contextSnippet": "        ClientManager client = ClientManager.createClient(JdkClientContainer.class.getName()); // ~ ContainerProvider.getWebSocketContainer()\n        client.getProperties().put(ClientProperties.REDIRECT_ENABLED, true); // https://tyrus-project.github.io/documentation/1.13.1/index/tyrus-proprietary-config.html#d0e1775\n        Session session = client.connectToServer(new CLIEndpoint(), ClientEndpointConfig.Builder.create().configurator(new Authenticator()).build(), URI.create(url.replaceFirst(\"^http\", \"ws\") + \"cli/ws\"));\n        PlainCLIProtocol.Output out = new PlainCLIProtocol.Output() {\n            @Override",
+        "equalIndicatorV2": "b90921426526c300"
+    },
+    {
+        "message": "'Lease' used without 'try'-with-resources statement",
+        "contextSnippet": "        Node node = lb.getBuiltOn();\n        Launcher launcher = ws.createLauncher(listener).decorateByEnv(getEnvironment(node, listener));\n        WorkspaceList.Lease lease = l.acquire(ws, !concurrentBuild);\n        try {\n            String nodeName = node != null ? node.getSelfLabel().getName() : \"[node_unavailable]\";",
+        "equalIndicatorV2": "228d58188d259e4f"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                    strategy.apply(job);\n                } catch (Exception ex) {\n                    listener.error(\"An exception occurred when executing \" + displayName + \": \" + ex.getMessage());\n                    LOGGER.log(Level.WARNING, \"An exception occurred when executing \" + displayName, ex);\n                }",
+        "equalIndicatorV2": "7f184342d3b3efb7"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "                public void run() {\n                    try {\n                        final OutputStream stdin = streamStdin();\n                        byte[] buf = new byte[60_000]; // less than 64Kb frame size for WS\n                        while (!complete) {",
+        "equalIndicatorV2": "9d34cd4d625ccb75"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "            } catch (EnvVarsFilterException e) {\n                String message = String.format(\"Environment variable filtering failed due to violation with the message: %s\", e.getMessage());\n                context.getTaskListener().error(message);\n                throw e;\n            }",
+        "equalIndicatorV2": "b33be223e1c85a28"
+    },
+    {
+        "message": "'PrintStream' used without 'try'-with-resources statement",
+        "contextSnippet": "            if (newResult != oldResult) {\n                String buildStepName = getBuildStepName(bs);\n                listener.getLogger().format(\"Build step '%s' changed build result to %s%n\", buildStepName, newResult);\n            }\n            if (!canContinue) {",
+        "equalIndicatorV2": "76904d9312e04f68"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                return;\n            } else {\n                taskListener.error(\n                        \"The Remoting version is older than the minimum required version (%s).\"\n                            + \" The connection will be allowed, but compatibility is NOT\"",
+        "equalIndicatorV2": "70a4b678b7c4c8f9"
+    },
+    {
+        "message": "'Session' used without 'try'-with-resources statement",
+        "contextSnippet": "            public Future<Void> sendPing(ByteBuffer applicationData) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendPing(applicationData, new WriteCallbackImpl(f));\n                return f;\n            }",
+        "equalIndicatorV2": "c3bbb8bee1d6bc87"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "            if (e instanceof AbortException) {\n                LOGGER.log(Level.FINE, \"{0} : {1} failed\", new Object[] {AbstractBuild.this, buildStep});\n                listener.error(\"Step ‘\" + buildStep + \"’ failed: \" + e.getMessage());\n            } else {\n                String msg = \"Step ‘\" + buildStep + \"’ aborted due to exception: \";",
+        "equalIndicatorV2": "4f582a82060d8a41"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "        } catch (AbortException e) {\n            listener.getLogger().println(e.getMessage());\n            listener.fatalError(Messages.AbstractProject_Aborted());\n            LOGGER.log(Level.FINE, \"Polling \" + this + \" aborted\", e);\n            SCMPollListener.firePollingFailed(this, listener, e);",
+        "equalIndicatorV2": "04db5ced190ecc40"
+    },
+    {
+        "message": "'CapturingServletOutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "        RequestDispatcher view = req.getView(it, viewName);\n        if (\"true\".equals(req.getParameter(\"encrypt\"))) {\n            final CapturingServletOutputStream csos = new CapturingServletOutputStream();\n            StaplerResponse temp = new ResponseImpl(req.getStapler(), new HttpServletResponseWrapper(res) {\n                @Override public ServletOutputStream getOutputStream() {",
+        "equalIndicatorV2": "1fa3b247a6d9579b"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "\n        if (Jenkins.getInstanceOrNull() == null) {\n            Channel ch = Channel.current();\n            if (ch != null)\n                all = ch.call(new GetParserConfigurators());",
+        "equalIndicatorV2": "e2ca1683ce6ad2ee"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Deprecated\n    protected String getClientEnvironmentVariable(String name) throws IOException, InterruptedException {\n        checkChannel();\n        return null; // never run\n    }",
+        "equalIndicatorV2": "b3bb5e5101defe94"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                } catch (AbortException e) {\n                    e.addSuppressed(threadInfo);\n                    taskListener.error(e.getMessage());\n                    throw e;\n                } catch (IOException e) {",
+        "equalIndicatorV2": "b34cbafea7ba234a"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "    public String getToolHome(Node node, ToolInstallation tool, TaskListener log) throws IOException, InterruptedException {\n        if (node.getRootPath() == null) {\n            log.error(node.getDisplayName() + \" is offline; cannot locate \" + tool.getName());\n            return null;\n        }",
+        "equalIndicatorV2": "987d743b016b0147"
+    },
+    {
+        "message": "'BulkChange' used without 'try'-with-resources statement",
+        "contextSnippet": "        if (req.hasParameter(\"remove\")) {\n            UpdateCenter uc = Jenkins.get().getUpdateCenter();\n            BulkChange bc = new BulkChange(uc);\n            try {\n                for (String id : req.getParameterValues(\"sources\"))",
+        "equalIndicatorV2": "19bfa60944491c05"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "                        try {\n                            // Sync IO will fail automatically if the channel is being closed, no need to use getOpenChannelOrFail()\n                            taskChannel = Channel.currentOrFail();\n                            taskChannel.syncIO();\n                        } catch (Throwable t) {",
+        "equalIndicatorV2": "b523b2b49d68eb28"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "\n    private void writeObject(ObjectOutputStream oos) throws IOException {\n        Channel target = _getChannelForSerialization();\n        if (channel != null && channel != target) {\n            throw new IllegalStateException(\"Can't send a remote FilePath to a different remote channel (current=\" + channel + \", target=\" + target + \")\");",
+        "equalIndicatorV2": "a91d8d3ab5f4cbd5"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void write(byte[] b, int off, int len) throws IOException {\n        current().write(b, off, len);\n    }\n",
+        "equalIndicatorV2": "7740d51b3a5594e1"
+    },
+    {
+        "message": "'Session' used without 'try'-with-resources statement",
+        "contextSnippet": "            @Override\n            public void sendBinary(ByteBuffer partialByte, boolean isLast) throws IOException {\n                session().getRemote().sendPartialBytes(partialByte, isLast);\n            }\n",
+        "equalIndicatorV2": "ea553fbe04db4f99"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "\n        @Override public Integer call() {\n            Channel c = Channel.current();\n            if (c == null) {\n                return -1;",
+        "equalIndicatorV2": "1072ad3eb365b9db"
+    },
+    {
+        "message": "'URLClassLoader' used without 'try'-with-resources statement",
+        "contextSnippet": "            try {\n                jvm = new JVM();\n                new URLClassLoader(new URL[0], getClass().getClassLoader());\n            } catch (SecurityException e) {\n                throw new InsufficientPermissionDetected(e);",
+        "equalIndicatorV2": "2fd0cc732cda99b8"
+    },
+    {
+        "message": "'BulkChange' used without 'try'-with-resources statement",
+        "contextSnippet": "        // for compatibility reasons, the actual value is stored in Jenkins\n        JSONObject json = req.getSubmittedForm();\n        BulkChange bc = new BulkChange(Jenkins.get());\n        try {\n            boolean result = configure(req, json);",
+        "equalIndicatorV2": "8c356d8079d9838e"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "        SlaveComputer c = getComputer();\n        if (c == null) {\n            listener.error(\"Issue with creating launcher for agent \" + name + \". Computer has been disconnected\");\n            return new Launcher.DummyLauncher(listener);\n        } else {",
+        "equalIndicatorV2": "c369c688a51e4f1d"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                String exec = mi.getExecutable(launcher);\n                if (exec == null) {\n                    listener.fatalError(Messages.Maven_NoExecutable(mi.getHome()));\n                    return false;\n                }",
+        "equalIndicatorV2": "533133cbac0d9732"
+    },
+    {
+        "message": "'BulkChange' used without 'try'-with-resources statement",
+        "contextSnippet": "\n    private void pop() {\n        if (current() != this)\n            throw new AssertionError(\"Trying to save BulkChange that's not in scope\");\n        INSCOPE.set(parent);",
+        "equalIndicatorV2": "986b9751124ee5a7"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "\n    protected Object writeReplace() throws Exception {\n        if (Channel.current() == null) { // XStream\n            return this;\n        } else { // Remoting",
+        "equalIndicatorV2": "27c8187ea4ed5e11"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                    try {\n                        if (!latch.await(timeout, unit)) {\n                            listener.error(\"Timeout after \" + timeout + \" \" +\n                                    unit.toString().toLowerCase(Locale.ENGLISH));\n                            kill();",
+        "equalIndicatorV2": "e4ba7dcec99799f6"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void write(int b) throws IOException {\n        current().write(b);\n    }\n",
+        "equalIndicatorV2": "444bc3ad7327855b"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "            return IOUtils.toString(stdin);\n\n        checkChannel();\n        return null; // never called\n    }",
+        "equalIndicatorV2": "8a612060cedc57ba"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                    }\n                    if (!ALLOW_FOLDER_TRAVERSAL_OUTSIDE_WORKSPACE && (PROHIBITED_DOUBLE_DOT.matcher(location).matches() || !ws.isDescendant(location))) {\n                        listener.error(\"Rejecting file path escaping base directory with relative path: \" + location);\n                        // force the build to fail\n                        return null;",
+        "equalIndicatorV2": "49f44124f11321c3"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "    static class LoadingPrefetchCacheCount extends MasterToSlaveCallable<Integer, RuntimeException> {\n        @Override public Integer call() {\n            Channel c = Channel.current();\n            if (c == null) {\n                return -1;",
+        "equalIndicatorV2": "ad0084ce554632bf"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "\n        @Override public Long call() {\n            Channel c = Channel.current();\n            if (c == null) {\n                return -1L;",
+        "equalIndicatorV2": "b5def425a1d39989"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                    cl.onOnline(this, taskListener);\n                } catch (AbortException e) {\n                    taskListener.error(e.getMessage());\n                } catch (Exception e) {\n                    // Per Javadoc log exceptions but still go online.",
+        "equalIndicatorV2": "0ba9b5b098d24bb5"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "        HttpResponse rsp = Jenkins.get().getPluginManager().doCheckUpdatesServer();\n        if (rsp instanceof FormValidation) {\n            listener.error(((FormValidation) rsp).renderHtml());\n        }\n    }",
+        "equalIndicatorV2": "fe1cd464b7e1e3ff"
+    },
+    {
+        "message": "'BulkChange' used without 'try'-with-resources statement",
+        "contextSnippet": "    @POST\n    public synchronized HttpResponse doConfigSubmit(StaplerRequest req) throws IOException, ServletException, FormException {\n        BulkChange bc = new BulkChange(MONITORS_OWNER);\n        try {\n            Jenkins.get().checkPermission(Jenkins.MANAGE);",
+        "equalIndicatorV2": "6c51c134e73e6bfa"
+    },
+    {
+        "message": "'Session' used without 'try'-with-resources statement",
+        "contextSnippet": "            public Future<Void> sendText(String text) throws IOException {\n                CompletableFuture<Void> f = new CompletableFuture<>();\n                session().getRemote().sendString(text, new WriteCallbackImpl(f));\n                return f;\n            }",
+        "equalIndicatorV2": "5487466e64144588"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                fix(listener);\n            } catch (AbortException e) {\n                listener.error(e.getMessage());\n            } catch (Throwable e) {\n                Functions.printStackTrace(e, listener.error(getName() + \" failed\"));",
+        "equalIndicatorV2": "cacbd8c04a1bf696"
+    },
+    {
+        "message": "'Channel' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Deprecated\n    protected String getClientSystemProperty(String name) throws IOException, InterruptedException {\n        checkChannel();\n        return null; // never run\n    }",
+        "equalIndicatorV2": "c463a631a8e72ef5"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void flush() throws IOException {\n        current().flush();\n    }\n",
+        "equalIndicatorV2": "cf3a71617f827cfe"
+    },
+    {
+        "message": "'BulkChange' used without 'try'-with-resources statement",
+        "contextSnippet": "     */\n    public static boolean contains(Saveable s) {\n        for (BulkChange b = current(); b != null; b = b.parent)\n            if (b.saveable == s || b.saveable == ALL)\n                return true;",
+        "equalIndicatorV2": "66e931ccedacdace"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "                    }\n                } catch (AbortException e) {\n                    listener.error(e.getMessage());\n                } catch (ClosedByInterruptException | InterruptedIOException e) {\n                    throw (InterruptedException) new InterruptedException().initCause(e);",
+        "equalIndicatorV2": "acc7233562125b85"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void write(int b) throws IOException {\n        current().write(b);\n    }\n",
+        "equalIndicatorV2": "3c4561adfcf41dac"
+    },
+    {
+        "message": "'OutputStream' used without 'try'-with-resources statement",
+        "contextSnippet": "    @Override\n    public void flush() throws IOException {\n        current().flush();\n    }\n",
+        "equalIndicatorV2": "13b8de0bd92f8c5c"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "            final OfflineCause offlineCause = node.toComputer().getOfflineCause();\n            if (offlineCause != null) {\n                listener.error(offlineCause.toString());\n            }\n        }",
+        "equalIndicatorV2": "9af484b5d3bbcd28"
+    },
+    {
+        "message": "'PrintWriter' used without 'try'-with-resources statement",
+        "contextSnippet": "        if (agentVersion.isOlderThan(RemotingVersionInfo.getMinimumSupportedVersion())) {\n            if (!ALLOW_UNSUPPORTED_REMOTING_VERSIONS) {\n                taskListener.fatalError(\n                        \"Rejecting the connection because the Remoting version is older than the\"\n                            + \" minimum required version (%s). To allow the connection anyway, set\"",
+        "equalIndicatorV2": "20e8ecd93580af7c"
+    }
+]

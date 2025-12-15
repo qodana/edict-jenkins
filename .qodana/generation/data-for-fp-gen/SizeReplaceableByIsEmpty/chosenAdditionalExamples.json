@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "'lastVersion.length() > 0' can be replaced with '!lastVersion.isEmpty()'",
+            "contextSnippet": "                try {\n                    String lastVersion = XMLUtils.getValue(\"/hudson/version\", configFile);\n                    if (lastVersion.length() > 0) {\n                        LOGGER.log(Level.FINE, \"discovered serialized lastVersion {0}\", lastVersion);\n                        return lastVersion;",
+            "equalIndicatorV2": "06546c77be12d9c1"
+        },
+        {
+            "message": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+            "contextSnippet": "                    // If relative path, not collapsible so leave as-is\n                    tokens.remove(0);\n                    if (tokens.size() > 0) token += tokens.remove(0);\n                    if (!isAbsolute) buf.append(token);\n                } else {",
+            "equalIndicatorV2": "3ed080410f4db503"
+        },
+        {
+            "message": "'decisionProviders.size() > 0' can be replaced with '!decisionProviders.isEmpty()'",
+            "contextSnippet": "        // check whitelist\n        ExtensionList<RoutingDecisionProvider> decisionProviders = ExtensionList.lookup(RoutingDecisionProvider.class);\n        if (decisionProviders.size() > 0) {\n            for (RoutingDecisionProvider provider : decisionProviders) {\n                RoutingDecisionProvider.Decision fieldDecision = provider.decide(signature);",
+            "equalIndicatorV2": "53bc1d00bdacc17d"
+        },
+        {
+            "message": "'mask.length() > 0' can be replaced with '!mask.isEmpty()'",
+            "contextSnippet": "     */\n    public boolean hasMaskedArguments() {\n        return mask.length() > 0;\n    }\n",
+            "equalIndicatorV2": "a6ea4f4ef3f9c022"
+        },
+        {
+            "message": "'port.length() > 0' can be replaced with '!port.isEmpty()'",
+            "contextSnippet": "            }\n            String port = authorityMatcher.group(PARSE_AUTHORITY_PORT);\n            if (port != null && port.length() > 0) {\n                try {\n                    int iPort = Integer.parseInt(port);",
+            "equalIndicatorV2": "67606e138a7f32a4"
+        },
+        {
+            "message": "'value.length() > 0' can be replaced with '!value.isEmpty()'",
+            "contextSnippet": "\n        public FormValidation doCheckCommand(@QueryParameter String value) {\n            if (value.length() > 0) {\n                return FormValidation.ok();\n            } else {",
+            "equalIndicatorV2": "05742eeba44a1cb3"
+        },
+        {
+            "message": "'body.length() > 0' can be replaced with '!body.isEmpty()'",
+            "contextSnippet": "     */\n    public String prepend(String prefix, String body) {\n        if (body != null && body.length() > 0)\n            return prefix + body;\n        return body;",
+            "equalIndicatorV2": "cc2d258a38e3ef2f"
+        },
+        {
+            "message": "'req.getRestOfPath().length() == 0' can be replaced with 'req.getRestOfPath().isEmpty()'",
+            "contextSnippet": "    public Object getTarget() {\n        StaplerRequest req = Stapler.getCurrentRequest();\n        if (req.getRestOfPath().length() == 0 && \"POST\".equals(req.getMethod())) {\n            // CLI connection request\n            if (\"false\".equals(req.getParameter(\"remoting\"))) {",
+            "equalIndicatorV2": "d199f2257c48e94a"
+        },
+        {
+            "message": "'ProcessKillingVeto.all().size() > 0' can be replaced with '!ProcessKillingVeto.all().isEmpty()'",
+            "contextSnippet": "        @Override\n        public Boolean call() throws IOException {\n            return ProcessKillingVeto.all().size() > 0;\n        }\n    }",
+            "equalIndicatorV2": "c893a1e4bd1a0bde"
+        },
+        {
+            "message": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+            "contextSnippet": "                    // If relative path, not collapsible so leave as-is\n                    tokens.remove(0);\n                    if (tokens.size() > 0) token += tokens.remove(0);\n                    if (!isAbsolute) buf.append(token);\n                } else {",
+            "equalIndicatorV2": "3ed080410f4db503"
+        }
+    ],
+    "negativeExamples": []
+}

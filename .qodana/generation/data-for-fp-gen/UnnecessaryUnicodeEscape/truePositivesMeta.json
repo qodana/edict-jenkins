@@ -1,0 +1,62 @@
+[
+    {
+        "message": "Unicode escape sequence '\\u2018' can be replaced with '‘'",
+        "contextSnippet": "                    AbstractItem project = Items.findNearest(AbstractItem.class, job_s, jenkins);\n                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));",
+        "equalIndicatorV2": "48522a4c9e6ebc84"
+    },
+    {
+        "message": "Unicode escape sequence '\\u002E' can be replaced with '.'",
+        "contextSnippet": "            char lastChar = input.charAt(length - 1); // fetch original last char\n            switch (lastChar) {\n                case '\\u002E': // \".\" full stop\n                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop",
+        "equalIndicatorV2": "7921e2c4193e5674"
+    },
+    {
+        "message": "Unicode escape sequence '\\u2018' can be replaced with '‘'",
+        "contextSnippet": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }",
+        "equalIndicatorV2": "e4c280b1070b752c"
+    },
+    {
+        "message": "Unicode escape sequence '\\uFF61' can be replaced with '｡'",
+        "contextSnippet": "                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop\n                case '\\uFF61': // halfwidth ideographic full stop\n                    return ascii + \".\"; // restore the missing stop\n                default:",
+        "equalIndicatorV2": "df897e525b0462b8"
+    },
+    {
+        "message": "Unicode escape sequence '\\uFF0E' can be replaced with '．'",
+        "contextSnippet": "                case '\\u002E': // \".\" full stop\n                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop\n                case '\\uFF61': // halfwidth ideographic full stop\n                    return ascii + \".\"; // restore the missing stop",
+        "equalIndicatorV2": "e5f47af7e1e2de2f"
+    },
+    {
+        "message": "Unicode escape sequence '\\u57f7' can be replaced with '執'",
+        "contextSnippet": "        Jenkins.get().checkPermission(Jenkins.ADMINISTER);\n        // expected is non-ASCII String\n        final String expected = \"\\u57f7\\u4e8b\";\n        final String value = fixEmpty(request.getParameter(\"value\"));\n",
+        "equalIndicatorV2": "442901a6d99d4f8a"
+    },
+    {
+        "message": "Unicode escape sequence '\\u4e8b' can be replaced with '事'",
+        "contextSnippet": "        Jenkins.get().checkPermission(Jenkins.ADMINISTER);\n        // expected is non-ASCII String\n        final String expected = \"\\u57f7\\u4e8b\";\n        final String value = fixEmpty(request.getParameter(\"value\"));\n",
+        "equalIndicatorV2": "c7787ef34c3a4624"
+    },
+    {
+        "message": "Unicode escape sequence '\\u2019' can be replaced with '’'",
+        "contextSnippet": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }",
+        "equalIndicatorV2": "01912256c72f5a70"
+    },
+    {
+        "message": "Unicode escape sequence '\\u2018' can be replaced with '‘'",
+        "contextSnippet": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }",
+        "equalIndicatorV2": "b6b239269c8ded79"
+    },
+    {
+        "message": "Unicode escape sequence '\\u2019' can be replaced with '’'",
+        "contextSnippet": "                    AbstractItem project = Items.findNearest(AbstractItem.class, job_s, jenkins);\n                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));",
+        "equalIndicatorV2": "b4c1ac4e0138db95"
+    },
+    {
+        "message": "Unicode escape sequence '\\u2019' can be replaced with '’'",
+        "contextSnippet": "                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }",
+        "equalIndicatorV2": "f06c366f229cbd37"
+    },
+    {
+        "message": "Unicode escape sequence '\\u3002' can be replaced with '。'",
+        "contextSnippet": "            switch (lastChar) {\n                case '\\u002E': // \".\" full stop\n                case '\\u3002': // ideographic full stop\n                case '\\uFF0E': // fullwidth full stop\n                case '\\uFF61': // halfwidth ideographic full stop",
+        "equalIndicatorV2": "884240f922be0291"
+    }
+]

@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.",
+            "equalIndicatorV2": "a009d59fd8f53339"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.",
+            "equalIndicatorV2": "a009d59fd8f53339"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "         * This classloader is created for this plugin. Useful during debugging.\n         */\n        private final File _for;\n\n        private List<Dependency> dependencies;",
+            "equalIndicatorV2": "3a5922808e4ff1bc"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "    public static class CheckMethod {\n        private final Descriptor descriptor;\n        private final Method method;\n        private final String capitalizedFieldName;\n",
+            "equalIndicatorV2": "48bf1f5f8b640311"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "         */\n        @SuppressWarnings(\"unused\")\n        private final String displayName;\n\n        private CalendarField(String displayName, int field, int min, int offset, boolean redoAdjustmentIfModified, CalendarField lowerField) {",
+            "equalIndicatorV2": "88083f41398e348a"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": " */\npublic class ImmutableSetConverter extends CollectionConverter {\n    private final SerializableConverter sc;\n\n    public ImmutableSetConverter(XStream xs) {",
+            "equalIndicatorV2": "8c4de92531068be3"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.",
+            "equalIndicatorV2": "a009d59fd8f53339"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "\n    private static final String APP = \"app\";\n    private boolean terminated;\n    private Thread initThread;\n",
+            "equalIndicatorV2": "758c13a78aa0e51b"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "\n    @GuardedBy(\"provisioningLock\")\n    private StrategyState provisioningState = null;\n\n    private transient volatile long lastSuggestedReview;",
+            "equalIndicatorV2": "288788baa0112206"
+        },
+        {
+            "message": "Field can be converted to a local variable",
+            "contextSnippet": "\n        // local constants\n        private final int sizeOf_kinfo_proc;\n        private static final int sizeOf_kinfo_proc_32 = 492; // on 32bit Mac OS X.\n        private static final int sizeOf_kinfo_proc_64 = 648; // on 64bit Mac OS X.",
+            "equalIndicatorV2": "a009d59fd8f53339"
+        }
+    ],
+    "negativeExamples": []
+}

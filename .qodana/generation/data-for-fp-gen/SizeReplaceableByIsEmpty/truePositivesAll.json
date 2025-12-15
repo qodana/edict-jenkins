@@ -1,0 +1,2032 @@
+[
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+      "markdown": "`tokens.size() > 0` can be replaced with '!tokens.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 354,
+            "startColumn": 25,
+            "charOffset": 14268,
+            "charLength": 17,
+            "snippet": {
+              "text": "tokens.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 352,
+            "startColumn": 1,
+            "charOffset": 14134,
+            "charLength": 260,
+            "snippet": {
+              "text": "                    // If relative path, not collapsible so leave as-is\n                    tokens.remove(0);\n                    if (tokens.size() > 0) token += tokens.remove(0);\n                    if (!isAbsolute) buf.append(token);\n                } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3ed080410f4db503",
+      "equalIndicator/v1": "ca865e2c18f8a24b36ef8c254fff706c01d1ace347beb31b107665bd2d96f29f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'lastVersion.length() > 0' can be replaced with '!lastVersion.isEmpty()'",
+      "markdown": "`lastVersion.length() > 0` can be replaced with '!lastVersion.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/install/InstallUtil.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 238,
+            "startColumn": 25,
+            "charOffset": 10383,
+            "charLength": 24,
+            "snippet": {
+              "text": "lastVersion.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 236,
+            "startColumn": 1,
+            "charOffset": 10246,
+            "charLength": 310,
+            "snippet": {
+              "text": "                try {\n                    String lastVersion = XMLUtils.getValue(\"/hudson/version\", configFile);\n                    if (lastVersion.length() > 0) {\n                        LOGGER.log(Level.FINE, \"discovered serialized lastVersion {0}\", lastVersion);\n                        return lastVersion;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "06546c77be12d9c1",
+      "equalIndicator/v1": "ac589f3f4a4a3b3bdd794566227d3e9160de7c353ba71d377183698ccb73d851"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+      "markdown": "`tokens.size() > 0` can be replaced with '!tokens.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 361,
+            "startColumn": 30,
+            "charOffset": 14653,
+            "charLength": 17,
+            "snippet": {
+              "text": "tokens.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 359,
+            "startColumn": 1,
+            "charOffset": 14505,
+            "charLength": 221,
+            "snippet": {
+              "text": "                    for (int j = 0; j < 3; j++) tokens.remove(i);\n                    if (i > 0) tokens.remove(i - 1);\n                    else if (tokens.size() > 0) tokens.remove(0);\n                }\n            } else"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1d65aa1940654807",
+      "equalIndicator/v1": "44cbc23f978dd0b3f9b97b2023540f04484cfb50d4b2a1760cb6732ed8c65fad"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'decisionProviders.size() > 0' can be replaced with '!decisionProviders.isEmpty()'",
+      "markdown": "`decisionProviders.size() > 0` can be replaced with '!decisionProviders.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/stapler/TypedFilter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 150,
+            "startColumn": 13,
+            "charOffset": 5552,
+            "charLength": 28,
+            "snippet": {
+              "text": "decisionProviders.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 148,
+            "startColumn": 1,
+            "charOffset": 5393,
+            "charLength": 356,
+            "snippet": {
+              "text": "        // check whitelist\n        ExtensionList<RoutingDecisionProvider> decisionProviders = ExtensionList.lookup(RoutingDecisionProvider.class);\n        if (decisionProviders.size() > 0) {\n            for (RoutingDecisionProvider provider : decisionProviders) {\n                RoutingDecisionProvider.Decision fieldDecision = provider.decide(signature);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "53bc1d00bdacc17d",
+      "equalIndicator/v1": "847830959cb992862504db6abfb4b905f23f4996198e50c74ea5a136b987c23f"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'mask.length() > 0' can be replaced with '!mask.isEmpty()'",
+      "markdown": "`mask.length() > 0` can be replaced with '!mask.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ArgumentListBuilder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 403,
+            "startColumn": 16,
+            "charOffset": 14983,
+            "charLength": 17,
+            "snippet": {
+              "text": "mask.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 401,
+            "startColumn": 1,
+            "charOffset": 14918,
+            "charLength": 90,
+            "snippet": {
+              "text": "     */\n    public boolean hasMaskedArguments() {\n        return mask.length() > 0;\n    }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a6ea4f4ef3f9c022",
+      "equalIndicator/v1": "4091fdfae65cb152c0798cadf9bc3a58596a27692585c3ea64fbae59bd3d3ce0"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'port.length() > 0' can be replaced with '!port.isEmpty()'",
+      "markdown": "`port.length() > 0` can be replaced with '!port.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/UrlValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 423,
+            "startColumn": 33,
+            "charOffset": 16942,
+            "charLength": 17,
+            "snippet": {
+              "text": "port.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 421,
+            "startColumn": 1,
+            "charOffset": 16824,
+            "charLength": 216,
+            "snippet": {
+              "text": "            }\n            String port = authorityMatcher.group(PARSE_AUTHORITY_PORT);\n            if (port != null && port.length() > 0) {\n                try {\n                    int iPort = Integer.parseInt(port);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "67606e138a7f32a4",
+      "equalIndicator/v1": "f88e50adc8c04e53b8b89ba4286143d82232d95aaa547def997979139da21877"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'value.length() > 0' can be replaced with '!value.isEmpty()'",
+      "markdown": "`value.length() > 0` can be replaced with '!value.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/AbstractCommandInstaller.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 93,
+            "startColumn": 17,
+            "charOffset": 3303,
+            "charLength": 18,
+            "snippet": {
+              "text": "value.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 91,
+            "startColumn": 1,
+            "charOffset": 3209,
+            "charLength": 180,
+            "snippet": {
+              "text": "\n        public FormValidation doCheckCommand(@QueryParameter String value) {\n            if (value.length() > 0) {\n                return FormValidation.ok();\n            } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "05742eeba44a1cb3",
+      "equalIndicator/v1": "4f24931bd50b676736d90f11d3bf63f302e7078ed135196565d3746035b94ed8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'body.length() > 0' can be replaced with '!body.isEmpty()'",
+      "markdown": "`body.length() > 0` can be replaced with '!body.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/Functions.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 2039,
+            "startColumn": 29,
+            "charOffset": 75591,
+            "charLength": 17,
+            "snippet": {
+              "text": "body.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 2037,
+            "startColumn": 1,
+            "charOffset": 75499,
+            "charLength": 165,
+            "snippet": {
+              "text": "     */\n    public String prepend(String prefix, String body) {\n        if (body != null && body.length() > 0)\n            return prefix + body;\n        return body;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "cc2d258a38e3ef2f",
+      "equalIndicator/v1": "44291c0e4fea0fe076db77cd5e2a69309e2b0515bee8d4af6161f7b6c51602ea"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'req.getRestOfPath().length() == 0' can be replaced with 'req.getRestOfPath().isEmpty()'",
+      "markdown": "`req.getRestOfPath().length() == 0` can be replaced with 'req.getRestOfPath().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/CLIAction.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 192,
+            "startColumn": 13,
+            "charOffset": 6592,
+            "charLength": 33,
+            "snippet": {
+              "text": "req.getRestOfPath().length() == 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 190,
+            "startColumn": 1,
+            "charOffset": 6490,
+            "charLength": 274,
+            "snippet": {
+              "text": "    public Object getTarget() {\n        StaplerRequest req = Stapler.getCurrentRequest();\n        if (req.getRestOfPath().length() == 0 && \"POST\".equals(req.getMethod())) {\n            // CLI connection request\n            if (\"false\".equals(req.getParameter(\"remoting\"))) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "d199f2257c48e94a",
+      "equalIndicator/v1": "88d4a9c897c0e8c3a50d8de3ff41d4c6fa361192ecc007fa3da2fd7c312e866b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'ProcessKillingVeto.all().size() > 0' can be replaced with '!ProcessKillingVeto.all().isEmpty()'",
+      "markdown": "`ProcessKillingVeto.all().size() > 0` can be replaced with '!ProcessKillingVeto.all().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/util/ProcessTree.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 486,
+            "startColumn": 20,
+            "charOffset": 17788,
+            "charLength": 35,
+            "snippet": {
+              "text": "ProcessKillingVeto.all().size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 484,
+            "startColumn": 1,
+            "charOffset": 17700,
+            "charLength": 140,
+            "snippet": {
+              "text": "        @Override\n        public Boolean call() throws IOException {\n            return ProcessKillingVeto.all().size() > 0;\n        }\n    }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c893a1e4bd1a0bde",
+      "equalIndicator/v1": "2c92cc9c77d282748451e20d4f2a74012570d8b8125bf770988cba3f087830d3"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'tokens.size() > 0' can be replaced with '!tokens.isEmpty()'",
+      "markdown": "`tokens.size() > 0` can be replaced with '!tokens.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/FilePath.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 347,
+            "startColumn": 21,
+            "charOffset": 13918,
+            "charLength": 17,
+            "snippet": {
+              "text": "tokens.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 345,
+            "startColumn": 1,
+            "charOffset": 13827,
+            "charLength": 208,
+            "snippet": {
+              "text": "            if (token.equals(\".\")) {\n                tokens.remove(i);\n                if (tokens.size() > 0)\n                    tokens.remove(i > 0 ? i - 1 : i);\n            } else if (token.equals(\"..\")) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "7021253f27e0aa2c",
+      "equalIndicator/v1": "d30e18324f8cb3f8512327a25340c8f873f7fa1a903730fa5cbc5fac20f92b52"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'p.getUpstreamProjects().size() == 0' can be replaced with 'p.getUpstreamProjects().isEmpty()'",
+      "markdown": "`p.getUpstreamProjects().size() == 0` can be replaced with 'p.getUpstreamProjects().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/DependencyRunner.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 61,
+            "startColumn": 21,
+            "charOffset": 2295,
+            "charLength": 35,
+            "snippet": {
+              "text": "p.getUpstreamProjects().size() == 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 59,
+            "startColumn": 1,
+            "charOffset": 2133,
+            "charLength": 321,
+            "snippet": {
+              "text": "            LOGGER.fine(\"assembling top level projects\");\n            for (AbstractProject p : Jenkins.get().allItems(AbstractProject.class))\n                if (p.getUpstreamProjects().size() == 0) {\n                    LOGGER.fine(\"adding top level project \" + p.getName());\n                    topLevelProjects.add(p);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "cfcf197f0e93e626",
+      "equalIndicator/v1": "65a9fcc44ef69973bfb4e7ba96dd3247d640b98d5c13532f01a2287020cc73d2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'si.password1.length() != 0' can be replaced with '!si.password1.isEmpty()'",
+      "markdown": "`si.password1.length() != 0` can be replaced with '!si.password1.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/HudsonPrivateSecurityRealm.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 444,
+            "startColumn": 39,
+            "charOffset": 18167,
+            "charLength": 26,
+            "snippet": {
+              "text": "si.password1.length() != 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 442,
+            "startColumn": 1,
+            "charOffset": 18118,
+            "charLength": 199,
+            "snippet": {
+              "text": "        }\n\n        if (!(si.password1 != null && si.password1.length() != 0)) {\n            si.errors.put(\"password1\", Messages.HudsonPrivateSecurityRealm_CreateAccount_PasswordRequired());\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "41db5b2c3b0b5fcb",
+      "equalIndicator/v1": "d45d7bdaf0ca5c85cdb94dd4f5272674cfd8b21ccc52c593cc83a5b518be0337"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'decision.size() > 0' can be replaced with '!decision.isEmpty()'",
+      "markdown": "`decision.size() > 0` can be replaced with '!decision.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/stapler/TypedFilter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 207,
+            "startColumn": 13,
+            "charOffset": 8246,
+            "charLength": 19,
+            "snippet": {
+              "text": "decision.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 205,
+            "startColumn": 1,
+            "charOffset": 8096,
+            "charLength": 330,
+            "snippet": {
+              "text": "        // check whitelist\n        ExtensionList<RoutingDecisionProvider> decision = ExtensionList.lookup(RoutingDecisionProvider.class);\n        if (decision.size() > 0) {\n            for (RoutingDecisionProvider provider : decision) {\n                RoutingDecisionProvider.Decision methodDecision = provider.decide(signature);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "37d27d6e074a42d3",
+      "equalIndicator/v1": "74d214841106917578776605b29165f2dea7f8f6829a73ca95fbbece896be269"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'oneResult.getDependentsDisableStatus().size() > 0' can be replaced with '!oneResult.getDependentsDisableStatus().isEmpty()'",
+      "markdown": "`oneResult.getDependentsDisableStatus().size() > 0` can be replaced with '!oneResult.getDependentsDisableStatus().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/DisablePluginCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 185,
+            "startColumn": 13,
+            "charOffset": 7798,
+            "charLength": 49,
+            "snippet": {
+              "text": "oneResult.getDependentsDisableStatus().size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 183,
+            "startColumn": 1,
+            "charOffset": 7775,
+            "charLength": 251,
+            "snippet": {
+              "text": "        }\n\n        if (oneResult.getDependentsDisableStatus().size() > 0) {\n            for (PluginWrapper.PluginDisableResult oneDependentResult : oneResult.getDependentsDisableStatus()) {\n                if (restartIfNecessary(oneDependentResult)) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "db952ac2fc578abf",
+      "equalIndicator/v1": "491a9fc2b7be13cd1de6bf0651772aa515c42de4a76e2fc98299cd9fd9f23c44"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'value.length() > 0' can be replaced with '!value.isEmpty()'",
+      "markdown": "`value.length() > 0` can be replaced with '!value.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tools/AbstractCommandInstaller.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 101,
+            "startColumn": 17,
+            "charOffset": 3594,
+            "charLength": 18,
+            "snippet": {
+              "text": "value.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 99,
+            "startColumn": 1,
+            "charOffset": 3499,
+            "charLength": 181,
+            "snippet": {
+              "text": "\n        public FormValidation doCheckToolHome(@QueryParameter String value) {\n            if (value.length() > 0) {\n                return FormValidation.ok();\n            } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "fb3976b9d9493bae",
+      "equalIndicator/v1": "e34d7477deb2d5222d6c018ab063c1f20bd3cccab46f9a2f4a132e1852b65010"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'oneResult.getDependentsDisableStatus().size() > 0' can be replaced with '!oneResult.getDependentsDisableStatus().isEmpty()'",
+      "markdown": "`oneResult.getDependentsDisableStatus().size() > 0` can be replaced with '!oneResult.getDependentsDisableStatus().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/cli/DisablePluginCommand.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 150,
+            "startColumn": 13,
+            "charOffset": 6334,
+            "charLength": 49,
+            "snippet": {
+              "text": "oneResult.getDependentsDisableStatus().size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 148,
+            "startColumn": 1,
+            "charOffset": 6175,
+            "charLength": 361,
+            "snippet": {
+              "text": "\n        printIndented(indent, Messages.DisablePluginCommand_StatusMessage(oneResult.getPlugin(), oneResult.getStatus(), oneResult.getMessage()));\n        if (oneResult.getDependentsDisableStatus().size() > 0) {\n            indent += INDENT_SPACE;\n            for (PluginWrapper.PluginDisableResult oneDependentResult : oneResult.getDependentsDisableStatus()) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e900cec1f49d9ab6",
+      "equalIndicator/v1": "c3e5d5e2dfdb2b77bc3a1f03538d5326bcfdbb61ccb0bd87263b75ab44e7a4a6"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'jsonList.size() == 0' can be replaced with 'jsonList.isEmpty()'",
+      "markdown": "`jsonList.size() == 0` can be replaced with 'jsonList.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/DownloadService.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 407,
+            "startColumn": 17,
+            "charOffset": 16268,
+            "charLength": 20,
+            "snippet": {
+              "text": "jsonList.size() == 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 405,
+            "startColumn": 1,
+            "charOffset": 16205,
+            "charLength": 285,
+            "snippet": {
+              "text": "                jsonList.add(o);\n            }\n            if (jsonList.size() == 0 && toolInstallerMetadataExists) {\n                return FormValidation.warning(\"None of the tool installer metadata passed the signature check\");\n            } else if (!toolInstallerMetadataExists) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3e94e604eed77502",
+      "equalIndicator/v1": "dd637a44399114959ca372c159dc45f92ca6f42539fb2d5259affeadae24f223"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'json.length() > 0' can be replaced with '!json.isEmpty()'",
+      "markdown": "`json.length() > 0` can be replaced with '!json.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/ListView.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 362,
+            "startColumn": 29,
+            "charOffset": 11636,
+            "charLength": 17,
+            "snippet": {
+              "text": "json.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 360,
+            "startColumn": 1,
+            "charOffset": 11471,
+            "charLength": 271,
+            "snippet": {
+              "text": "    private boolean needToAddToCurrentView(StaplerRequest req) throws ServletException {\n        String json = req.getParameter(\"json\");\n        if (json != null && json.length() > 0) {\n            // Submitted via UI\n            JSONObject form = req.getSubmittedForm();"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "4bd8dfbbc9ea85f4",
+      "equalIndicator/v1": "d310bd64bcb64c5928cf020671913c94fa979e047f67d78ee2dc12f01fa9a124"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'req.getContextPath().length() > 0' can be replaced with '!req.getContextPath().isEmpty()'",
+      "markdown": "`req.getContextPath().length() > 0` can be replaced with '!req.getContextPath().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/SecurityRealm.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 330,
+            "startColumn": 30,
+            "charOffset": 13981,
+            "charLength": 33,
+            "snippet": {
+              "text": "req.getContextPath().length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 328,
+            "startColumn": 1,
+            "charOffset": 13905,
+            "charLength": 250,
+            "snippet": {
+              "text": "        SecurityContextHolder.clearContext();\n\n        String contextPath = req.getContextPath().length() > 0 ? req.getContextPath() : \"/\";\n        resetRememberMeCookie(req, rsp, contextPath);\n        clearStaleSessionCookies(req, rsp, contextPath);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "1886ca297728e41c",
+      "equalIndicator/v1": "737b369600b9aa1589d3be59feba582c7f3d488357e0e4f7393c3795c898e341"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'targets.length() != 0' can be replaced with '!targets.isEmpty()'",
+      "markdown": "`targets.length() != 0` can be replaced with '!targets.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/tasks/Fingerprinter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 185,
+            "startColumn": 17,
+            "charOffset": 5970,
+            "charLength": 21,
+            "snippet": {
+              "text": "targets.length() != 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 183,
+            "startColumn": 1,
+            "charOffset": 5895,
+            "charLength": 233,
+            "snippet": {
+              "text": "            Map<String, String> record = new HashMap<>();\n\n            if (targets.length() != 0) {\n                String expandedTargets = targets;\n                if (build instanceof AbstractBuild) { // no expansion for pipelines"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "3e7bc2d4aed086ed",
+      "equalIndicator/v1": "e915c8799cec23cf7c2ba0ae578d9e5be022b2855417b2d3e7609b6f9024ef9b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'labels.length() > 0' can be replaced with '!labels.isEmpty()'",
+      "markdown": "`labels.length() > 0` can be replaced with '!labels.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/Label.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 594,
+            "startColumn": 13,
+            "charOffset": 18424,
+            "charLength": 19,
+            "snippet": {
+              "text": "labels.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 592,
+            "startColumn": 1,
+            "charOffset": 18328,
+            "charLength": 218,
+            "snippet": {
+              "text": "        final Set<LabelAtom> r = new TreeSet<>();\n        labels = fixNull(labels);\n        if (labels.length() > 0) {\n            Jenkins j = Jenkins.get();\n            LabelAtom labelAtom = j.tryGetLabelAtom(labels);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e78e7047fde3af7b",
+      "equalIndicator/v1": "724dcdc61aecdfb33060e502eea548009dfccc638caa1cacb34ecef89fce27d8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'ancestors.size() == 0' can be replaced with 'ancestors.isEmpty()'",
+      "markdown": "`ancestors.size() == 0` can be replaced with 'ancestors.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/management/AdministrativeMonitorsDecorator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 153,
+            "startColumn": 34,
+            "charOffset": 5995,
+            "charLength": 21,
+            "snippet": {
+              "text": "ancestors.size() == 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 151,
+            "startColumn": 1,
+            "charOffset": 5906,
+            "charLength": 157,
+            "snippet": {
+              "text": "        List<Ancestor> ancestors = req.getAncestors();\n\n        if (ancestors == null || ancestors.size() == 0) {\n            // ???\n            return null;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "59e36a60e779428e",
+      "equalIndicator/v1": "fc92c9166aac1c69a7edf4199e39ed9c4d60c0eef9dca719ef0a34ff419dd29e"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'whitelistProviders.size() > 0' can be replaced with '!whitelistProviders.isEmpty()'",
+      "markdown": "`whitelistProviders.size() > 0` can be replaced with '!whitelistProviders.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/security/stapler/DoActionFilter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 68,
+            "startColumn": 13,
+            "charOffset": 2721,
+            "charLength": 29,
+            "snippet": {
+              "text": "whitelistProviders.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 66,
+            "startColumn": 1,
+            "charOffset": 2561,
+            "charLength": 360,
+            "snippet": {
+              "text": "        // check whitelist\n        ExtensionList<RoutingDecisionProvider> whitelistProviders = ExtensionList.lookup(RoutingDecisionProvider.class);\n        if (whitelistProviders.size() > 0) {\n            for (RoutingDecisionProvider provider : whitelistProviders) {\n                RoutingDecisionProvider.Decision methodDecision = provider.decide(signature);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "89398386959f02b6",
+      "equalIndicator/v1": "5fce96ce395d15b14570108b46ec6c4528fdfe9f6ba1a496591772a9de317ea5"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'trimmedToken.length() > 0' can be replaced with '!trimmedToken.isEmpty()'",
+      "markdown": "`trimmedToken.length() > 0` can be replaced with '!trimmedToken.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/org/jenkins/ui/icon/Icon.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 283,
+            "startColumn": 17,
+            "charOffset": 9324,
+            "charLength": 25,
+            "snippet": {
+              "text": "trimmedToken.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 281,
+            "startColumn": 1,
+            "charOffset": 9201,
+            "charLength": 214,
+            "snippet": {
+              "text": "        for (String classNameTok : classNameTokA) {\n            String trimmedToken = classNameTok.trim();\n            if (trimmedToken.length() > 0) {\n                classNameTokL.add(trimmedToken);\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "e917d13c36260a5e",
+      "equalIndicator/v1": "9b5dbe5de3e10393d5b0bfe877b36f97587f2fb2af8942deac2ebc0c713bf8ec"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'kind.trim().length() > 0' can be replaced with '!kind.trim().isEmpty()'",
+      "markdown": "`kind.trim().length() > 0` can be replaced with '!kind.trim().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/scm/ChangeLogSet.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 241,
+            "startColumn": 37,
+            "charOffset": 7468,
+            "charLength": 24,
+            "snippet": {
+              "text": "kind.trim().length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 239,
+            "startColumn": 1,
+            "charOffset": 7350,
+            "charLength": 273,
+            "snippet": {
+              "text": "            if (null != parent) {\n                String kind = parent.getKind();\n                if (null != kind && kind.trim().length() > 0) scm = kind;\n            }\n            throw new UnsupportedOperationException(\"getAffectedFiles() is not implemented by \" + scm);"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "88177e809d01a6f2",
+      "equalIndicator/v1": "322126450484f28bb10b1590f68807cdc81feb29a690daaf60ed17e6267653ee"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'getWarnings().size() > 0' can be replaced with '!getWarnings().isEmpty()'",
+      "markdown": "`getWarnings().size() > 0` can be replaced with '!getWarnings().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/UpdateSite.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 1564,
+            "startColumn": 20,
+            "charOffset": 56793,
+            "charLength": 24,
+            "snippet": {
+              "text": "getWarnings().size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 1562,
+            "startColumn": 1,
+            "charOffset": 56699,
+            "charLength": 130,
+            "snippet": {
+              "text": "        @Restricted(DoNotUse.class)\n        public boolean hasWarnings() {\n            return getWarnings().size() > 0;\n        }\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "20d8b8c73eeb070a",
+      "equalIndicator/v1": "0727b2f62153b96b616d6794e03b1aad8c36a4aaa9d73aa249c92d96994157d4"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'runs.size() > 0' can be replaced with '!runs.isEmpty()'",
+      "markdown": "`runs.size() > 0` can be replaced with '!runs.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/widgets/HistoryPageFilter.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 266,
+            "startColumn": 13,
+            "charOffset": 10596,
+            "charLength": 15,
+            "snippet": {
+              "text": "runs.size() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 264,
+            "startColumn": 1,
+            "charOffset": 10453,
+            "charLength": 315,
+            "snippet": {
+              "text": "        HistoryPageEntry<Run> entry = new HistoryPageEntry<>(run);\n        // Assert that runs have been added in descending order\n        if (runs.size() > 0) {\n            if (entry.getEntryId() > runs.get(runs.size() - 1).getEntryId()) {\n                throw new IllegalStateException(\"Runs were out of order\");"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2bb97c5b033a10a2",
+      "equalIndicator/v1": "7eb003075a924ea65174927dcfccd2ba41f4991edba61bf99d27fbbdc5e8597a"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'c.getName().length() > 0' can be replaced with '!c.getName().isEmpty()'",
+      "markdown": "`c.getName().length() > 0` can be replaced with '!c.getName().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/logging/LogRecorder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 395,
+            "startColumn": 21,
+            "charOffset": 14504,
+            "charLength": 24,
+            "snippet": {
+              "text": "c.getName().length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 393,
+            "startColumn": 1,
+            "charOffset": 14395,
+            "charLength": 249,
+            "snippet": {
+              "text": "        void broadcast() {\n            for (Computer c : Jenkins.get().getComputers()) {\n                if (c.getName().length() > 0) { // i.e. not master\n                    VirtualChannel ch = c.getChannel();\n                    if (ch != null) {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "055ee510c716d910",
+      "equalIndicator/v1": "bf4d3eaba07f298de0a7c0b6edfd00d42d4b95c46090c8136b17042fd0c9cec4"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'extra.trim().length() > 0' can be replaced with '!extra.trim().isEmpty()'",
+      "markdown": "`extra.trim().length() > 0` can be replaced with '!extra.trim().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/org/apache/commons/validator/routines/UrlValidator.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 436,
+            "startColumn": 30,
+            "charOffset": 17438,
+            "charLength": 25,
+            "snippet": {
+              "text": "extra.trim().length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 434,
+            "startColumn": 1,
+            "charOffset": 17338,
+            "charLength": 164,
+            "snippet": {
+              "text": "\n        String extra = authorityMatcher.group(PARSE_AUTHORITY_EXTRA);\n        if (extra != null && extra.trim().length() > 0) {\n            return false;\n        }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "caa78f5be6bf89af",
+      "equalIndicator/v1": "c004a0997646944b7f7ff56e2da3469d08b85ae368e7c9159a3ddaa3dda8c943"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'Jenkins.RESOURCE_PATH.length() > 0' can be replaced with '!Jenkins.RESOURCE_PATH.isEmpty()'",
+      "markdown": "`Jenkins.RESOURCE_PATH.length() > 0` can be replaced with '!Jenkins.RESOURCE_PATH.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/TopLevelItemDescriptor.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 242,
+            "startColumn": 17,
+            "charOffset": 8786,
+            "charLength": 34,
+            "snippet": {
+              "text": "Jenkins.RESOURCE_PATH.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 240,
+            "startColumn": 1,
+            "charOffset": 8692,
+            "charLength": 284,
+            "snippet": {
+              "text": "                return IconSet.toNormalizedIconNameClass(path);\n            }\n            if (Jenkins.RESOURCE_PATH.length() > 0 && path.startsWith(Jenkins.RESOURCE_PATH)) {\n                // will to live falling\n                path = path.substring(Jenkins.RESOURCE_PATH.length());"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "22ffbee120823027",
+      "equalIndicator/v1": "c864e4d8bd35c394185d373aeef0b95ecd20f335bdab2c1bc052f299748661aa"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'label.length() > 0' can be replaced with '!label.isEmpty()'",
+      "markdown": "`label.length() > 0` can be replaced with '!label.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/jenkins/util/TreeString.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 68,
+            "startColumn": 34,
+            "charOffset": 2495,
+            "charLength": 18,
+            "snippet": {
+              "text": "label.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 66,
+            "startColumn": 1,
+            "charOffset": 2386,
+            "charLength": 231,
+            "snippet": {
+              "text": "\n    /* package */TreeString(final TreeString parent, final String label) {\n        assert parent == null || label.length() > 0; // if there's a parent,\n                                                     // label can't be empty.\n"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "2c588fd5e0bdbddd",
+      "equalIndicator/v1": "2271613cab0349ed59aecaf8b9238e0b41cdca1f7e7d821b83e0ec0ed0199f83"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'crumb.length() > 0' can be replaced with '!crumb.isEmpty()'",
+      "markdown": "`crumb.length() > 0` can be replaced with '!crumb.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/security/csrf/CrumbIssuer.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 81,
+            "startColumn": 38,
+            "charOffset": 2888,
+            "charLength": 18,
+            "snippet": {
+              "text": "crumb.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 79,
+            "startColumn": 1,
+            "charOffset": 2743,
+            "charLength": 257,
+            "snippet": {
+              "text": "            crumb = issueCrumb(request, getDescriptor().getCrumbSalt());\n            if (request != null) {\n                if (crumb != null && crumb.length() > 0) {\n                    request.setAttribute(CRUMB_ATTRIBUTE, crumb);\n                } else {"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "a325d2ba5698e89e",
+      "equalIndicator/v1": "60e5988b84ebced525cfc4ab3fcb2599c9e2812d43681a967b6954471476e43b"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'rest.length() > 0' can be replaced with '!rest.isEmpty()'",
+      "markdown": "`rest.length() > 0` can be replaced with '!rest.isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/model/DirectoryBrowserSupport.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 319,
+            "startColumn": 35,
+            "charOffset": 13128,
+            "charLength": 17,
+            "snippet": {
+              "text": "rest.length() > 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 317,
+            "startColumn": 1,
+            "charOffset": 13051,
+            "charLength": 184,
+            "snippet": {
+              "text": "\n            List<List<Path>> glob = null;\n            boolean patternUsed = rest.length() > 0;\n            boolean containsSymlink = false;\n            boolean containsTmpDir = false;"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "5de0c1237c5c15b6",
+      "equalIndicator/v1": "959d22e8a739e8dd35401d11046a42420cb8b1608fd2ea71fd503c74a0d01ad2"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  },
+  {
+    "ruleId": "SizeReplaceableByIsEmpty",
+    "kind": "fail",
+    "level": "warning",
+    "message": {
+      "text": "'c.getName().length() == 0' can be replaced with 'c.getName().isEmpty()'",
+      "markdown": "`c.getName().length() == 0` can be replaced with 'c.getName().isEmpty()'"
+    },
+    "locations": [
+      {
+        "physicalLocation": {
+          "artifactLocation": {
+            "uri": "core/src/main/java/hudson/logging/LogRecorder.java",
+            "uriBaseId": "SRCROOT"
+          },
+          "region": {
+            "startLine": 586,
+            "startColumn": 17,
+            "charOffset": 20898,
+            "charLength": 25,
+            "snippet": {
+              "text": "c.getName().length() == 0"
+            },
+            "sourceLanguage": "JAVA"
+          },
+          "contextRegion": {
+            "startLine": 584,
+            "startColumn": 1,
+            "charOffset": 20812,
+            "charLength": 164,
+            "snippet": {
+              "text": "        });\n        for (Computer c : Jenkins.get().getComputers()) {\n            if (c.getName().length() == 0) {\n                continue; // master\n            }"
+            },
+            "sourceLanguage": "JAVA"
+          }
+        },
+        "logicalLocations": [
+          {
+            "fullyQualifiedName": "jenkins-core",
+            "kind": "module"
+          }
+        ]
+      }
+    ],
+    "partialFingerprints": {
+      "equalIndicator/v2": "c024ac993f9fc617",
+      "equalIndicator/v1": "4ee79ec4ac34908a7e096a723078002d34b5c5fc9c07b50b0fe4968724128fe8"
+    },
+    "properties": {
+      "ideaSeverity": "WARNING",
+      "qodanaSeverity": "High",
+      "problemType": "REGULAR",
+      "hasFixes": true,
+      "tags": [
+        "JAVA"
+      ]
+    }
+  }
+]

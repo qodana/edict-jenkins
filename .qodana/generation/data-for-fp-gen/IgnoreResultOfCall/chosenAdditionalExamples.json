@@ -1,0 +1,55 @@
+{
+    "positiveExamples": [
+        {
+            "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+            "contextSnippet": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+            "equalIndicatorV2": "88f18a5223b37195"
+        },
+        {
+            "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+            "contextSnippet": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+            "equalIndicatorV2": "88f18a5223b37195"
+        },
+        {
+            "message": "Result of 'AnnotatedLargeText.writeHtmlTo()' is ignored",
+            "contextSnippet": "        public void writePollingLogTo(long offset, XMLOutput out) throws IOException {\n            // TODO: resurrect compressed log file support\n            getPollingLogText().writeHtmlTo(offset, out.asWriter());\n        }\n",
+            "equalIndicatorV2": "1ec8cd2aa572871c"
+        },
+        {
+            "message": "Result of 'RunList.size()' is ignored",
+            "contextSnippet": "    @Deprecated\n    public R getFirstBuild() {\n        size();\n        return first;\n    }",
+            "equalIndicatorV2": "0372dcd00476505b"
+        },
+        {
+            "message": "Result of 'File.setWritable()' is ignored",
+            "contextSnippet": "         * which will have a more useful message than something we make up here.\n         */\n        path.toFile().setWritable(true);\n    }\n",
+            "equalIndicatorV2": "1963a577ef0f9650"
+        },
+        {
+            "message": "Result of 'File.setExecutable()' is ignored",
+            "contextSnippet": "        private void process(File f) {\n            if (f.isFile()) {\n                f.setExecutable(true, false);\n            } else {\n                File[] kids = f.listFiles();",
+            "equalIndicatorV2": "37c51668685a6bdb"
+        },
+        {
+            "message": "Result of 'FileChannel.write()' is ignored",
+            "contextSnippet": "        final CharBuffer charBuffer = CharBuffer.wrap(cbuf, off, len);\n        ByteBuffer byteBuffer = charset.encode(charBuffer);\n        channel.write(byteBuffer);\n    }\n",
+            "equalIndicatorV2": "6f2e60fe346582bb"
+        },
+        {
+            "message": "Result of 'Executable.getAnnotatedParameterTypes()' is ignored",
+            "contextSnippet": "                            }\n                            if (noArg != null) {\n                                noArg.getAnnotatedParameterTypes();\n                                noArg.getParameterAnnotations();\n                            }",
+            "equalIndicatorV2": "88f18a5223b37195"
+        },
+        {
+            "message": "Result of 'Font.toString()' is ignored",
+            "contextSnippet": "    static {\n        try {\n            new Font(\"SansSerif\", Font.BOLD, 18).toString();\n        } catch (Throwable t) {\n            awtProblemCause = t;",
+            "equalIndicatorV2": "269e83bfadf1f1c2"
+        },
+        {
+            "message": "Result of 'Path.toFile()' is ignored",
+            "contextSnippet": "            for (File file : listParentFiles(f)) {\n                if (file.getName().startsWith(f.getName() + WorkspaceList.COMBINATOR)) {\n                    Util.deleteRecursive(file.toPath(), path -> path.toFile());\n                }\n            }",
+            "equalIndicatorV2": "5c85d0b92824a152"
+        }
+    ],
+    "negativeExamples": []
+}
