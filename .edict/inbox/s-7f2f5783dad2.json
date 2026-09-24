@@ -1,0 +1,23 @@
+{
+    "id": "s-7f2f5783dad2",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/cli/ReloadJobCommand.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 78,
+                "end": 83
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "UnnecessaryUnicodeEscape",
+        "inspectionDescription": "Reports unnecessary Unicode escape sequences. A Unicode escape sequence is unnecessary when the file encoding can handle the character without escaping it. This inspection does not report Unicode control characters, except for line feed and horizonal tab. Example: 'String s = \"\\u0078\";' After the quick-fix is applied: 'String s = \"x\";' Inspection ID: UnnecessaryUnicodeEscape",
+        "codeSnippet": "                    AbstractItem project = Items.findNearest(AbstractItem.class, job_s, jenkins);\n                    throw new IllegalArgumentException(project == null ?\n                        \"No such item \\u2018\" + job_s + \"\\u2019 exists.\" :\n                        String.format(\"No such item \\u2018%s\\u2019 exists. Perhaps you meant \\u2018%s\\u2019?\",\n                                job_s, project.getFullName()));\n                }",
+        "reason": "Benchmark example imported from benchmark/UnnecessaryUnicodeEscape/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/UnnecessaryUnicodeEscape/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for UnnecessaryUnicodeEscape; this code should be reported."
+}

@@ -1,0 +1,23 @@
+{
+    "id": "s-f3b0f588176c",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/tasks/ArtifactArchiver.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 79,
+                "end": 84
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "FieldMayBeFinal",
+        "inspectionDescription": "Reports fields that can be safely made 'final'. All 'final' fields have a value and this value does not change, which can make the code easier to reason about. To avoid too expensive analysis, this inspection only reports if the field has a 'private' modifier or it is defined in a local or anonymous class. A field can be 'final' if: It is 'static' and initialized once in its declaration or in one 'static' initializer. It is non-'static' and initialized once in its declaration, in one instance initializer or in every constructor And it is not modified anywhere else. Example: 'public class Person {\n    private String name; // can be final\n\n    Person(String name) {\n      this.name = name;\n    }\n\n    public String getName() {\n      return name;\n    }\n  }' After the quick-fix is applied: 'public class Person {\n    private final String name;\n\n    Person(String name) {\n      this.name = name;\n    }\n\n    public String getName() {\n      return name;\n    }\n  }' Use the \"Annotations\" button to modify the list of annotations that assume implicit field write. Inspection ID: FieldMayBeFinal",
+        "codeSnippet": "     * Comma- or space-separated list of patterns of files/directories to be archived.\n     */\n    private String artifacts;\n\n    /**\n     * Possibly null 'excludes' pattern as in Ant.",
+        "reason": "Benchmark example imported from benchmark/FieldMayBeFinal/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/FieldMayBeFinal/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for FieldMayBeFinal; this code should be reported."
+}

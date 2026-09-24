@@ -1,0 +1,23 @@
+{
+    "id": "s-dae10935fc06",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/Functions.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 1562,
+                "end": 1567
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "StringConcatenationInsideStringBufferAppend",
+        "inspectionDescription": "Reports 'String' concatenation used as the argument to 'StringBuffer.append()', 'StringBuilder.append()' or 'Appendable.append()'. Such calls may profitably be turned into chained append calls on the existing 'StringBuffer/Builder/Appendable' saving the cost of an extra 'StringBuffer/Builder' allocation. This inspection ignores compile-time evaluated 'String' concatenations, in which case the conversion would only worsen performance. Inspection ID: StringConcatenationInsideStringBufferAppend",
+        "codeSnippet": "                                             ti.getThreadState());\n        if (ti.getLockName() != null) {\n            sb.append(\" on \" + ti.getLockName());\n        }\n        if (ti.getLockOwnerName() != null) {\n            sb.append(\" owned by \\\"\" + ti.getLockOwnerName() +",
+        "reason": "Benchmark example imported from benchmark/StringConcatenationInsideStringBufferAppend/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/StringConcatenationInsideStringBufferAppend/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for StringConcatenationInsideStringBufferAppend; this code should be reported."
+}

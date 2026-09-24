@@ -1,0 +1,23 @@
+{
+    "id": "s-f3d38aee7ff7",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/security/stapler/StaplerDispatchValidator.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 312,
+                "end": 317
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "InnerClassMayBeStatic",
+        "inspectionDescription": "Reports inner classes that can be made 'static'. A 'static' inner class does not keep an implicit reference to its enclosing instance. When using Java 17 or before, this prevents a common cause of memory leaks and uses less memory per instance of the class. Inspection ID: InnerClassMayBeStatic",
+        "codeSnippet": "        }\n\n        private class Validator {\n            // lazy load parents to avoid trying to load potentially unavailable classes\n            private final Supplier<Collection<Validator>> parentsSupplier;\n            private volatile Collection<Validator> parents;",
+        "reason": "Benchmark example imported from benchmark/InnerClassMayBeStatic/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/InnerClassMayBeStatic/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for InnerClassMayBeStatic; this code should be reported."
+}

@@ -1,0 +1,23 @@
+{
+    "id": "s-8f0257ca584a",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/model/Jenkins.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 5285,
+                "end": 5290
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "UnnecessaryContinue",
+        "inspectionDescription": "Reports 'continue' statements if they are the last reachable statements in the loop. These 'continue' statements are unnecessary and can be safely removed. Example: 'for (String element: elements) {\n    System.out.println();\n    continue;\n  }' After the quick-fix is applied: 'for (String element: elements) {\n    System.out.println();\n  }' Inspection ID: UnnecessaryContinue",
+        "codeSnippet": "                // item. This is to prevent an validation warning if the user\n                // sets the displayName to what the existing display name is\n                continue;\n            }\n            else if (displayName.equals(item.getDisplayName())) {\n                return false;",
+        "reason": "Benchmark example imported from benchmark/UnnecessaryContinue/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/UnnecessaryContinue/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for UnnecessaryContinue; this code should be reported."
+}

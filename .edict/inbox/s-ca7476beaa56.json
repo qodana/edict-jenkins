@@ -1,0 +1,23 @@
+{
+    "id": "s-ca7476beaa56",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/model/Computer.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 289,
+                "end": 294
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "RedundantMethodOverride",
+        "inspectionDescription": "Reports methods that are identical to their super methods. Such methods have the same signature as their super method and either have an identical body or only their body consists only of a call to the super method. These methods are redundant and can be removed. Use the first checkbox below to run the inspection for the methods that override library methods. Checking library methods may slow down the inspection. Use the second checkbox below to ignore methods that only delegate calls to their super methods. Inspection ID: RedundantMethodOverride",
+        "codeSnippet": "    @SuppressWarnings({\"ConstantConditions\", \"deprecation\"})\n    @Override\n    public void addAction(@NonNull Action a) {\n        if (a == null) {\n            throw new IllegalArgumentException(\"Action must be non-null\");\n        }",
+        "reason": "Benchmark example imported from benchmark/RedundantMethodOverride/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/RedundantMethodOverride/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for RedundantMethodOverride; this code should be reported."
+}

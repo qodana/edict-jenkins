@@ -1,0 +1,23 @@
+{
+    "id": "s-76d229d7bf57",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/security/ApiTokenProperty.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 673,
+                "end": 678
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "DeprecatedIsStillUsed",
+        "inspectionDescription": "Reports deprecated classes, methods, and fields that are used in your code nonetheless. Example: 'class MyCode {\n    @Deprecated\n    void oldMethod() {}// warning: \"Deprecated member is still used\"\n\n    void newMethod() {\n      oldMethod(); // forgotten usage\n    }\n  }' Usages within deprecated elements are ignored. NOTE: Due to performance reasons, a non-private member is checked only when its name rarely occurs in the project. Inspection ID: DeprecatedIsStillUsed",
+        "codeSnippet": "    @Deprecated\n    @Restricted(NoExternalUse.class)\n    public static final HMACConfidentialKey API_KEY_SEED = new HMACConfidentialKey(ApiTokenProperty.class, \"seed\", 16);\n}",
+        "reason": "Benchmark example imported from benchmark/DeprecatedIsStillUsed/specification.json#positiveExamples/0. The supplied range 673–678 exceeds the file length of 676 lines; the range is preserved and the snippet includes the available lines.",
+        "suggestionId": "benchmark/DeprecatedIsStillUsed/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for DeprecatedIsStillUsed; this code should be reported."
+}

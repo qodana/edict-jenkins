@@ -1,0 +1,23 @@
+{
+    "id": "s-b73b41da658e",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/Launcher.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 202,
+                "end": 207
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "ProtectedMemberInFinalClass",
+        "inspectionDescription": "Reports 'protected' members in 'final' classes with no 'protected' modifier. Since 'final' classes cannot be inherited, marking the method as 'protected' may be confusing. It is better to declare such members as 'private' or package-visible instead. Example: 'record Bar(int a, int b) {\n  protected int sum() { \n     return a + b;\n  }\n}'\n After the quick-fix is applied: 'record Bar(int a, int b) {\n  int sum() { \n     return a + b;\n  }\n}' As shown in the example, a class can be marked as 'final' explicitly or implicitly. Inspection ID: ProtectedMemberInFinalClass",
+        "codeSnippet": "        @CheckForNull\n        @Restricted(Beta.class)\n        protected EnvVarsFilterableBuilder envVarsFilterableBuilder = null;\n\n        /**\n         * True to reverse the I/O direction.",
+        "reason": "Optional benchmark example imported from benchmark/ProtectedMemberInFinalClass/specification.json#optionalPositiveExamples/4.",
+        "suggestionId": "benchmark/ProtectedMemberInFinalClass/specification.json#optionalPositiveExamples/4"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Optional benchmark example for ProtectedMemberInFinalClass; this code should be reported."
+}

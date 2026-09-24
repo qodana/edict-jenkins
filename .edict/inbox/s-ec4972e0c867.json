@@ -1,0 +1,23 @@
+{
+    "id": "s-ec4972e0c867",
+    "fileRevision": {
+        "path": "core/src/main/java/org/acegisecurity/providers/ProviderNotFoundException.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 31,
+                "end": 36
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "DeprecatedIsStillUsed",
+        "inspectionDescription": "Reports deprecated classes, methods, and fields that are used in your code nonetheless. Example: 'class MyCode {\n    @Deprecated\n    void oldMethod() {}// warning: \"Deprecated member is still used\"\n\n    void newMethod() {\n      oldMethod(); // forgotten usage\n    }\n  }' Usages within deprecated elements are ignored. NOTE: Due to performance reasons, a non-private member is checked only when its name rarely occurs in the project. Inspection ID: DeprecatedIsStillUsed",
+        "codeSnippet": " */\n@Deprecated\npublic class ProviderNotFoundException extends AuthenticationException {\n\n    public ProviderNotFoundException(String msg) {\n        super(msg);",
+        "reason": "Benchmark example imported from benchmark/DeprecatedIsStillUsed/specification.json#negativeExamples/0.",
+        "suggestionId": "benchmark/DeprecatedIsStillUsed/specification.json#negativeExamples/0"
+    },
+    "label": "NEGATIVE",
+    "description": "NEGATIVE: Benchmark example for DeprecatedIsStillUsed; this code must not be reported."
+}

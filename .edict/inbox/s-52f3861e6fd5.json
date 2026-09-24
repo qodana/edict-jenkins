@@ -1,0 +1,23 @@
+{
+    "id": "s-52f3861e6fd5",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/security/csrf/CrumbIssuer.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 79,
+                "end": 84
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "SizeReplaceableByIsEmpty",
+        "inspectionDescription": "Reports '.size()' or '.length()' comparisons with a '0' literal that can be replaced with a call to '.isEmpty()'. Example: 'boolean emptyList = list.size() == 0;' After the quick-fix is applied: 'boolean emptyList = list.isEmpty();' Use the Ignored classes table to add classes for which any '.size()' or '.length()' comparisons should not be replaced. Use the Ignore expressions which would be replaced with '!isEmpty()' option to ignore any expressions which would be replaced with '!isEmpty()'. Inspection ID: SizeReplaceableByIsEmpty",
+        "codeSnippet": "            crumb = issueCrumb(request, getDescriptor().getCrumbSalt());\n            if (request != null) {\n                if (crumb != null && crumb.length() > 0) {\n                    request.setAttribute(CRUMB_ATTRIBUTE, crumb);\n                } else {\n                    request.removeAttribute(CRUMB_ATTRIBUTE);",
+        "reason": "Benchmark example imported from benchmark/SizeReplaceableByIsEmpty/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/SizeReplaceableByIsEmpty/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for SizeReplaceableByIsEmpty; this code should be reported."
+}

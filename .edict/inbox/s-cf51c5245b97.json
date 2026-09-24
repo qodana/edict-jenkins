@@ -1,0 +1,23 @@
+{
+    "id": "s-cf51c5245b97",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/PluginManager.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 711,
+                "end": 716
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "UrlHashCode",
+        "inspectionDescription": "Reports 'hashCode()' and 'equals()' calls on 'java.net.URL' objects and calls that add 'URL' objects to maps and sets. 'URL''s 'equals()' and 'hashCode()' methods can perform a DNS lookup to resolve the host name. This may cause significant delays, depending on the availability and speed of the network and the DNS server. Using 'java.net.URI' instead of 'java.net.URL' will avoid the DNS lookup. Example: 'boolean urlEquals(URL url1, URL url2) {\n      return url1.equals(url2);\n  }' Inspection ID: UrlHashCode",
+        "codeSnippet": "    //TODO: Consider refactoring in order to avoid DMI_COLLECTION_OF_URLS\n    @SuppressFBWarnings(value = \"DMI_COLLECTION_OF_URLS\", justification = \"Plugin loading happens only once on Jenkins startup\")\n    protected static void addDependencies(URL hpiResUrl, String fromPath, Set<URL> dependencySet) throws URISyntaxException, MalformedURLException {\n        if (dependencySet.contains(hpiResUrl)) {\n            return;\n        }",
+        "reason": "Benchmark example imported from benchmark/UrlHashCode/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/UrlHashCode/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for UrlHashCode; this code should be reported."
+}

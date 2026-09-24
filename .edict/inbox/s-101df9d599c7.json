@@ -1,0 +1,23 @@
+{
+    "id": "s-101df9d599c7",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/util/FormValidation.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 624,
+                "end": 629
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "FieldCanBeLocal",
+        "inspectionDescription": "Reports redundant class fields that can be replaced with local variables. If all local usages of a field are preceded by assignments to that field, the field can be removed, and its usages can be replaced with local variables. Inspection ID: FieldCanBeLocal",
+        "codeSnippet": "    public static class CheckMethod {\n        private final Descriptor descriptor;\n        private final Method method;\n        private final String capitalizedFieldName;\n\n        /**",
+        "reason": "Benchmark example imported from benchmark/FieldCanBeLocal/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/FieldCanBeLocal/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for FieldCanBeLocal; this code should be reported."
+}

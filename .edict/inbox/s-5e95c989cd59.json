@@ -1,0 +1,23 @@
+{
+    "id": "s-5e95c989cd59",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/FilePath.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 3059,
+                "end": 3064
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "OctalLiteral",
+        "inspectionDescription": "Reports octal integer literals. Some coding standards prohibit the use of octal literals, as they may be easily confused with decimal literals. Example: 'int i = 015;\n  int j = 0_777;' Inspection ID: OctalLiteral",
+        "codeSnippet": "\n                        Files.setLastModifiedTime(Util.fileToPath(f), FileTime.from(te.getModTime().toInstant()));\n                        int mode = te.getMode() & 0777;\n                        if (mode != 0 && !Functions.isWindows()) // be defensive\n                            _chmod(f, mode);\n                    }",
+        "reason": "Benchmark example imported from benchmark/OctalLiteral/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/OctalLiteral/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for OctalLiteral; this code should be reported."
+}

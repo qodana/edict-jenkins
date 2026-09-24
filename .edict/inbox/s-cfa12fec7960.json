@@ -1,0 +1,23 @@
+{
+    "id": "s-cfa12fec7960",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/util/groovy/AbstractGroovyViewModule.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 29,
+                "end": 34
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "FieldCanBeLocal",
+        "inspectionDescription": "Reports redundant class fields that can be replaced with local variables. If all local usages of a field are preceded by assignments to that field, the field can be removed, and its usages can be replaced with local variables. Inspection ID: FieldCanBeLocal",
+        "codeSnippet": "    public JenkinsTagLib t;\n    @SuppressFBWarnings(value = \"URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD\", justification = \"read by Stapler\")\n    public Namespace st;\n\n    protected AbstractGroovyViewModule(JellyBuilder b) {\n        builder = b;",
+        "reason": "Benchmark example imported from benchmark/FieldCanBeLocal/specification.json#negativeExamples/0.",
+        "suggestionId": "benchmark/FieldCanBeLocal/specification.json#negativeExamples/0"
+    },
+    "label": "NEGATIVE",
+    "description": "NEGATIVE: Benchmark example for FieldCanBeLocal; this code must not be reported."
+}

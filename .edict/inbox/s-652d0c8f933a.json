@@ -1,0 +1,23 @@
+{
+    "id": "s-652d0c8f933a",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/util/ProcessTree.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 829,
+                "end": 834
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "BusyWait",
+        "inspectionDescription": "Reports calls to 'java.lang.Thread.sleep()' that occur inside loops. Such calls are indicative of \"busy-waiting\". Busy-waiting is often inefficient, and may result in unexpected deadlocks as busy-waiting threads do not release locked resources. Example: 'class X {\n     volatile int x;\n     public void waitX() throws Exception {\n      while (x > 0) {\n        Thread.sleep(10);//warning: Call to 'Thread.sleep()' in a loop, probably busy-waiting\n      }\n    }\n  }' Inspection ID: BusyWait",
+        "codeSnippet": "                }\n\n                Thread.sleep(sleepTime);\n                sleepTime = Math.min(sleepTime * 2, 1000);\n            } while (System.nanoTime() < deadline);\n            killByKiller();",
+        "reason": "Benchmark example imported from benchmark/BusyWait/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/BusyWait/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for BusyWait; this code should be reported."
+}

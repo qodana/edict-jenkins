@@ -1,0 +1,23 @@
+{
+    "id": "s-67ada6ba475d",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/security/ImpersonatingScheduledExecutorService.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 71,
+                "end": 76
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "ProtectedMemberInFinalClass",
+        "inspectionDescription": "Reports 'protected' members in 'final' classes with no 'protected' modifier. Since 'final' classes cannot be inherited, marking the method as 'protected' may be confusing. It is better to declare such members as 'private' or package-visible instead. Example: 'record Bar(int a, int b) {\n  protected int sum() { \n     return a + b;\n  }\n}'\n After the quick-fix is applied: 'record Bar(int a, int b) {\n  int sum() { \n     return a + b;\n  }\n}' As shown in the example, a class can be marked as 'final' explicitly or implicitly. Inspection ID: ProtectedMemberInFinalClass",
+        "codeSnippet": "    }\n\n    @Override\n    protected <V> Callable<V> wrap(final Callable<V> r) {\n        return new Callable<>() {\n            @Override",
+        "reason": "Optional benchmark example imported from benchmark/ProtectedMemberInFinalClass/specification.json#optionalNegativeExamples/5.",
+        "suggestionId": "benchmark/ProtectedMemberInFinalClass/specification.json#optionalNegativeExamples/5"
+    },
+    "label": "NEGATIVE",
+    "description": "NEGATIVE: Optional benchmark example for ProtectedMemberInFinalClass; this code must not be reported."
+}

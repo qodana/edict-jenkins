@@ -1,0 +1,23 @@
+{
+    "id": "s-b44bd9a25dfe",
+    "fileRevision": {
+        "path": "core/src/main/java/hudson/util/FileChannelWriter.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 70,
+                "end": 75
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "IgnoreResultOfCall",
+        "inspectionDescription": "Reports method calls whose result is ignored. For many methods, ignoring the result is perfectly legitimate, but for some it is almost certainly an error. Examples of methods where ignoring the result is likely an error include 'java.io.inputStream.read()', which returns the number of bytes actually read, and any method on 'java.lang.String' or 'java.math.BigInteger'. These methods do not produce side-effects and thus pointless if their result is ignored. The calls to the following methods are inspected: Simple getters (which do nothing except return a field) Methods specified in the settings of this inspection Methods annotated with 'org.jetbrains.annotations.Contract(pure=true)' Methods annotated with .*.'CheckReturnValue' Methods in a class or package annotated with 'javax.annotation.CheckReturnValue' Optionally, all non-library methods Calls to methods annotated with Error Prone's or AssertJ's '@CanIgnoreReturnValue' annotation are not reported. Use the inspection settings to specify the classes to check. Methods are matched by name or name pattern using Java regular expression syntax. For classes, use fully-qualified names. Each entry applies to both the class and all its inheritors. Inspection ID: IgnoreResultOfCall",
+        "codeSnippet": "        final CharBuffer charBuffer = CharBuffer.wrap(cbuf, off, len);\n        ByteBuffer byteBuffer = charset.encode(charBuffer);\n        channel.write(byteBuffer);\n    }\n\n    @Override",
+        "reason": "Benchmark example imported from benchmark/IgnoreResultOfCall/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/IgnoreResultOfCall/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for IgnoreResultOfCall; this code should be reported."
+}

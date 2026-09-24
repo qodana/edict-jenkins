@@ -1,0 +1,23 @@
+{
+    "id": "s-40ec2c97df11",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/fingerprints/FileFingerprintStorage.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 144,
+                "end": 149
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "SynchronizationOnLocalVariableOrMethodParameter",
+        "inspectionDescription": "Reports synchronization on a local variable or parameter. It is very difficult to guarantee correct operation when such synchronization is used. It may be possible to improve such code, for example, by controlling access using a synchronized wrapper class or by synchronizing on a field. Example: 'void bar() {\n    final Object lock = new Object();\n    synchronized (lock) { }\n  }' Inspection ID: SynchronizationOnLocalVariableOrMethodParameter",
+        "codeSnippet": "    public void save(Fingerprint fp) throws IOException {\n        final File file;\n        synchronized (fp) {\n            file = getFingerprintFile(fp.getHashString());\n            save(fp, file);\n        }",
+        "reason": "Benchmark example imported from benchmark/SynchronizationOnLocalVariableOrMethodParameter/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/SynchronizationOnLocalVariableOrMethodParameter/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for SynchronizationOnLocalVariableOrMethodParameter; this code should be reported."
+}

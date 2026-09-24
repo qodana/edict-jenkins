@@ -1,0 +1,23 @@
+{
+    "id": "s-d8e7625fc04f",
+    "fileRevision": {
+        "path": "core/src/main/java/jenkins/model/lazy/BuildReferenceMapAdapter.java",
+        "revision": "5a82aeb196ed0528cb19e0fd7a227325d2906786",
+        "expectedRanges": [
+            {
+                "start": 194,
+                "end": 199
+            }
+        ]
+    },
+    "source": {
+        "type": "SubmittedFeedback",
+        "inspectionName": "UseBulkOperation",
+        "inspectionDescription": "Reports single operations inside loops that could be replaced with a bulk method. Not only are bulk methods shorter, but in some cases they may be more performant as well. Example: 'void test(Collection<Integer> numbers) {\n    List<Integer> result = new ArrayList<>();\n    for (Integer i : numbers) {\n      result.add(i);\n    }\n  }' After the fix is applied: 'void test(Collection<Integer> numbers) {\n    List<Integer> result = new ArrayList<>();\n    result.addAll(numbers);\n  }' The Use Arrays.asList() to wrap arrays option allows to report arrays, even if the bulk method requires a collection. In this case the quick-fix will automatically wrap the array in 'Arrays.asList()' call. Inspection ID: UseBulkOperation",
+        "codeSnippet": "            List<Object> list = new ArrayList<>(size());\n            for (var e : this) {\n                list.add(e);\n            }\n            return list.toArray();\n        }",
+        "reason": "Benchmark example imported from benchmark/UseBulkOperation/specification.json#positiveExamples/0.",
+        "suggestionId": "benchmark/UseBulkOperation/specification.json#positiveExamples/0"
+    },
+    "label": "POSITIVE",
+    "description": "POSITIVE: Benchmark example for UseBulkOperation; this code should be reported."
+}
