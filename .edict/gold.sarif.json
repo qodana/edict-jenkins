@@ -2847,63 +2847,6 @@
           }
         },
         {
-          "ruleId": "CopyConstructorMissesField",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
-            "text": "Copy constructor does not copy field 'causeBag'",
-            "markdown": "Copy constructor does not copy field 'causeBag'"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "core/src/main/java/hudson/model/CauseAction.java",
-                  "uriBaseId": "SRCROOT"
-                },
-                "region": {
-                  "startLine": 84,
-                  "startColumn": 12,
-                  "charOffset": 2833,
-                  "charLength": 11,
-                  "snippet": {
-                    "text": "CauseAction"
-                  },
-                  "sourceLanguage": "JAVA"
-                },
-                "contextRegion": {
-                  "startLine": 82,
-                  "startColumn": 1,
-                  "charOffset": 2815,
-                  "charLength": 88,
-                  "snippet": {
-                    "text": "    }\n\n    public CauseAction(CauseAction ca) {\n        addCauses(ca.getCauses());\n    }"
-                  },
-                  "sourceLanguage": "JAVA"
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "jenkins-core",
-                  "kind": "module"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "equalIndicator/v2": "e86d8ffc986f43fe",
-            "equalIndicator/v1": "76e8889d1f43eadff213d7bf7750fa82c888a9b20c6fd9a87331a3f0ec438230"
-          },
-          "properties": {
-            "ideaSeverity": "WARNING",
-            "qodanaSeverity": "High",
-            "problemType": "REGULAR",
-            "tags": [
-              "JAVA"
-            ]
-          }
-        },
-        {
           "ruleId": "DeprecatedIsStillUsed",
           "kind": "fail",
           "level": "warning",
