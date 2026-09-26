@@ -26813,64 +26813,6 @@
           "kind": "fail",
           "level": "warning",
           "message": {
-            "text": "Method 'addAction()' is identical to its super method",
-            "markdown": "Method `addAction()` is identical to its super method"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "core/src/main/java/hudson/model/Computer.java",
-                  "uriBaseId": "SRCROOT"
-                },
-                "region": {
-                  "startLine": 291,
-                  "startColumn": 17,
-                  "charOffset": 11035,
-                  "charLength": 9,
-                  "snippet": {
-                    "text": "addAction"
-                  },
-                  "sourceLanguage": "JAVA"
-                },
-                "contextRegion": {
-                  "startLine": 289,
-                  "startColumn": 1,
-                  "charOffset": 10944,
-                  "charLength": 221,
-                  "snippet": {
-                    "text": "    @SuppressWarnings({\"ConstantConditions\", \"deprecation\"})\n    @Override\n    public void addAction(@NonNull Action a) {\n        if (a == null) {\n            throw new IllegalArgumentException(\"Action must be non-null\");"
-                  },
-                  "sourceLanguage": "JAVA"
-                }
-              },
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "jenkins-core",
-                  "kind": "module"
-                }
-              ]
-            }
-          ],
-          "partialFingerprints": {
-            "equalIndicator/v2": "3722def8ae780a6f",
-            "equalIndicator/v1": "6d97ff2549175a9e7ab92f2fc7f82b0cd838cbf242ecac5cfb52a65d1f209a11"
-          },
-          "properties": {
-            "ideaSeverity": "WARNING",
-            "qodanaSeverity": "High",
-            "problemType": "REGULAR",
-            "hasFixes": true,
-            "tags": [
-              "JAVA"
-            ]
-          }
-        },
-        {
-          "ruleId": "RedundantMethodOverride",
-          "kind": "fail",
-          "level": "warning",
-          "message": {
             "text": "Method 'markSupported()' is identical to its super method",
             "markdown": "Method `markSupported()` is identical to its super method"
           },
