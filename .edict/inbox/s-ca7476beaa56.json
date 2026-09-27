@@ -14,7 +14,6 @@
         "type": "SubmittedFeedback",
         "inspectionName": "RedundantMethodOverride",
         "inspectionDescription": "Reports methods that are identical to their super methods. Such methods have the same signature as their super method and either have an identical body or only their body consists only of a call to the super method. These methods are redundant and can be removed. Use the first checkbox below to run the inspection for the methods that override library methods. Checking library methods may slow down the inspection. Use the second checkbox below to ignore methods that only delegate calls to their super methods. Inspection ID: RedundantMethodOverride",
-        "problemMessage": "Method 'getFingerprint()' is identical to its super method",
         "codeSnippet": "getFingerprint",
         "reason": "Benchmark example imported from benchmark/RedundantMethodOverride/specification.json#positiveExamples/0.",
         "suggestionId": "benchmark/RedundantMethodOverride/specification.json#positiveExamples/0"

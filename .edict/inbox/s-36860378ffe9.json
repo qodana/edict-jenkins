@@ -14,7 +14,6 @@
         "type": "SubmittedFeedback",
         "inspectionName": "CopyConstructorMissesField",
         "inspectionDescription": "Reports copy constructors that don't copy all the fields of the class. 'final' fields with initializers and 'transient' fields are considered unnecessary to copy. Example: 'class Point {\n\n    private int x;\n    private int y;\n\n    Point(int x, int y) {\n      this.x = x;\n      this.y = y;\n    }\n\n    Point(Point other) {\n      // fields x and y are not initialized\n    }\n  }' Inspection ID: CopyConstructorMissesField",
-        "problemMessage": "Copy constructor does not copy field 'envVarsFilterRuleWrapper'",
         "codeSnippet": "Launcher",
         "reason": "Benchmark example imported from benchmark/CopyConstructorMissesField/specification.json#positiveExamples/0.",
         "suggestionId": "benchmark/CopyConstructorMissesField/specification.json#positiveExamples/0"
